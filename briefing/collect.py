@@ -121,17 +121,31 @@ def collect_highs_lows(cfg, per, cal, members, sector_pct, log):
     now_hi, now_lo = hi_src.loc[during, ok].max(), lo_src.loc[during, ok].min()
     ret = (close.loc[per.end, ok] / close.loc[per.base, ok] - 1) * 100
 
+    # 업종지수가 없는 업종(은행·기타금융 등)은 소속 종목의 시가총액 가중 평균으로 계산
+    all_ret = (close.loc[per.end] / close.loc[per.base] - 1) * 100
+    estimated = {}
+
+    def sector_rate(mk, sector):
+        if (mk, sector) in sector_pct:
+            return sector_pct[(mk, sector)], False
+        if (mk, sector) not in estimated:
+            codes = members.index[(members["시장"] == mk) & (members["업종명"] == sector)]
+            r = all_ret.reindex(codes).dropna()
+            w = panel["mktcap"].reindex(r.index).fillna(0)
+            estimated[(mk, sector)] = _r((r * w).sum() / w.sum()) if w.sum() > 0 else None
+        return estimated[(mk, sector)], True
+
     def rows(codes, fn, names):
         out = []
         for t in codes:
             mk, sector = members.at[t, "시장"], members.at[t, "업종명"]
-            sp = sector_pct.get((mk, sector))
+            sp, est = sector_rate(mk, sector)
             if sp is None or pd.isna(ret[t]):
                 continue
             kind, excess = fn(float(ret[t]), sp, j)
             out.append({"code": t, "name": members.at[t, "종목명"], "market": mk, "sector": sector,
-                        "change_pct": _r(ret[t]), "sector_change_pct": sp, "excess_pp": excess,
-                        "kind": kind, "verdict": names[kind]})
+                        "change_pct": _r(ret[t]), "sector_change_pct": sp, "sector_estimated": est,
+                        "excess_pp": excess, "kind": kind, "verdict": names[kind]})
         return out
 
     highs = rows(now_hi.index[now_hi > prior_hi], judge_high, HIGH_VERDICTS)

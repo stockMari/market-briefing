@@ -65,7 +65,7 @@ def group_by_sector(rows: list[dict], verdict_names: dict) -> list[dict]:
         counts = {k: sum(1 for r in items if r["kind"] == k) for k in verdict_names}
         rates = {}
         for r in items:
-            rates.setdefault(r["market"], r["sector_change_pct"])
+            rates.setdefault(r["market"], (r["sector_change_pct"], r.get("sector_estimated", False)))
         out.append({"sector": sector, "stocks": items, "counts": counts, "rates": rates})
     out.sort(key=lambda g: (-len(g["stocks"]), g["sector"]))
     return out

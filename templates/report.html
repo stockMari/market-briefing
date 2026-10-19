@@ -191,7 +191,7 @@
         <details class="sgroup" {% if loop.index <= 3 %}open{% endif %}>
           <summary>
             <b>{{ g.sector }}</b><span class="cnt">{{ g.stocks | length }}종목</span>
-            <span class="rates">{% for m, rate in g.rates.items() %}<span>섹터({{ m }}) <b class="num {{ rate | sign }}">{{ rate | pct }}</b></span>{% endfor %}</span>
+            <span class="rates">{% for m, (rate, est) in g.rates.items() %}<span>섹터({{ m }}) <b class="num {{ rate | sign }}">{{ rate | pct }}{% if est %}*{% endif %}</b></span>{% endfor %}</span>
           </summary>
           <div class="tbl-wrap">
             <table class="fixed">
@@ -202,7 +202,7 @@
                 <tr>
                   <td><span class="stock"><b>{{ s.name }}</b><span class="code">{{ s.code }}</span>{% if s.market == 'KOSDAQ' %}<span class="mkt">KQ</span>{% endif %}</span></td>
                   <td class="r num {{ s.change_pct | sign }}"><b>{{ s.change_pct | pct }}</b></td>
-                  <td class="r num {{ s.sector_change_pct | sign }}">{{ s.sector_change_pct | pct }}</td>
+                  <td class="r num {{ s.sector_change_pct | sign }}">{{ s.sector_change_pct | pct }}{% if s.sector_estimated %}*{% endif %}</td>
                   <td class="r num {{ s.excess_pp | sign }}">{{ s.excess_pp | pp }}</td>
                   <td><span class="vchip"><i class="k-{{ s.kind }}"></i>{{ s.verdict }}</span></td>
                 </tr>
@@ -223,6 +223,7 @@
       섹터 대비 초과수익 <b class="num">{{ '%.1f' | format(r.judgment.individual_excess_pp) }}%p</b> 이상이면 "강한 종목",
       섹터 등락률 <b class="num">{{ '%.1f' | format(r.judgment.sector_weak_pct) }}%</b> 이하면 "약한 섹터"로 봅니다.
       약한 섹터 속 강한 종목은 <b>개별 강세(개인기)</b>, 오른 섹터 속 강한 종목은 <b>섹터 동반 + 주도주</b>입니다.
+      <br>* 표시: KRX 업종지수가 없는 업종(은행 등)이라 소속 종목의 시가총액 가중 평균으로 계산한 값입니다.
     </div>
   </section>
 

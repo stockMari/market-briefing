@@ -55,7 +55,8 @@ jobs:
           ARGS="--mode ${{ inputs.mode }}"
           if [ -n "${{ inputs.date }}" ]; then ARGS="$ARGS --date ${{ inputs.date }}"; fi
           set -o pipefail
-          python run.py $ARGS 2>&1 | tee logs/last-run.log
+          # pykrx 가 출력하는 로그인 아이디는 기록에서 지움
+          python run.py $ARGS 2>&1 | sed -u '/로그인 ID/d' | tee logs/last-run.log
 
       - name: 결과 저장 (site 폴더 + 실행 기록)
         if: always()
