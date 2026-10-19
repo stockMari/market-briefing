@@ -14,7 +14,7 @@
   "notes": []
  },
  "sample": false,
- "generated_at": "2026-10-19T19:49+09:00",
+ "generated_at": "2026-10-19T19:54+09:00",
  "judgment": {
   "individual_excess_pp": 5.0,
   "sector_weak_pct": 0.0,
@@ -413,6 +413,7 @@
    "sector": "일반서비스",
    "change_pct": 2.67,
    "sector_change_pct": 1.43,
+   "sector_estimated": false,
    "excess_pp": 1.24,
    "kind": "together",
    "verdict": "섹터 동반"
@@ -424,6 +425,7 @@
    "sector": "화학",
    "change_pct": 5.45,
    "sector_change_pct": 1.24,
+   "sector_estimated": false,
    "excess_pp": 4.21,
    "kind": "together",
    "verdict": "섹터 동반"
@@ -435,6 +437,7 @@
    "sector": "음식료·담배",
    "change_pct": 0.79,
    "sector_change_pct": 2.1,
+   "sector_estimated": false,
    "excess_pp": -1.31,
    "kind": "together",
    "verdict": "섹터 동반"
@@ -446,6 +449,7 @@
    "sector": "IT 서비스",
    "change_pct": 0.72,
    "sector_change_pct": 3.23,
+   "sector_estimated": false,
    "excess_pp": -2.51,
    "kind": "together",
    "verdict": "섹터 동반"
@@ -457,6 +461,7 @@
    "sector": "전기·전자",
    "change_pct": 16.81,
    "sector_change_pct": 3.69,
+   "sector_estimated": false,
    "excess_pp": 13.12,
    "kind": "leader",
    "verdict": "섹터 동반 + 주도주"
@@ -468,6 +473,7 @@
    "sector": "IT 서비스",
    "change_pct": 2.28,
    "sector_change_pct": 3.23,
+   "sector_estimated": false,
    "excess_pp": -0.95,
    "kind": "together",
    "verdict": "섹터 동반"
@@ -479,6 +485,7 @@
    "sector": "기계·장비",
    "change_pct": 2.62,
    "sector_change_pct": 4.77,
+   "sector_estimated": false,
    "excess_pp": -2.15,
    "kind": "together",
    "verdict": "섹터 동반"
@@ -490,6 +497,7 @@
    "sector": "화학",
    "change_pct": 6.58,
    "sector_change_pct": 3.09,
+   "sector_estimated": false,
    "excess_pp": 3.49,
    "kind": "together",
    "verdict": "섹터 동반"
@@ -501,6 +509,7 @@
    "sector": "금속",
    "change_pct": 26.01,
    "sector_change_pct": 4.23,
+   "sector_estimated": false,
    "excess_pp": 21.78,
    "kind": "leader",
    "verdict": "섹터 동반 + 주도주"
@@ -514,6 +523,7 @@
    "sector": "제약",
    "change_pct": -1.09,
    "sector_change_pct": 4.65,
+   "sector_estimated": false,
    "excess_pp": -5.74,
    "kind": "solo",
    "verdict": "개별 약세"
@@ -525,6 +535,7 @@
    "sector": "음식료·담배",
    "change_pct": -0.12,
    "sector_change_pct": 2.1,
+   "sector_estimated": false,
    "excess_pp": -2.22,
    "kind": "mixed",
    "verdict": "혼조"
@@ -536,6 +547,7 @@
    "sector": "운송장비·부품",
    "change_pct": -0.42,
    "sector_change_pct": 4.21,
+   "sector_estimated": false,
    "excess_pp": -4.63,
    "kind": "mixed",
    "verdict": "혼조"
@@ -547,6 +559,7 @@
    "sector": "종이·목재",
    "change_pct": -2.91,
    "sector_change_pct": 1.62,
+   "sector_estimated": false,
    "excess_pp": -4.53,
    "kind": "mixed",
    "verdict": "혼조"
@@ -558,6 +571,7 @@
    "sector": "유통",
    "change_pct": -0.14,
    "sector_change_pct": 5.08,
+   "sector_estimated": false,
    "excess_pp": -5.22,
    "kind": "solo",
    "verdict": "개별 약세"
@@ -569,6 +583,7 @@
    "sector": "건설",
    "change_pct": -0.71,
    "sector_change_pct": 1.38,
+   "sector_estimated": false,
    "excess_pp": -2.09,
    "kind": "mixed",
    "verdict": "혼조"
@@ -580,6 +595,7 @@
    "sector": "전기·전자",
    "change_pct": -2.55,
    "sector_change_pct": 3.69,
+   "sector_estimated": false,
    "excess_pp": -6.24,
    "kind": "solo",
    "verdict": "개별 약세"
@@ -591,6 +607,7 @@
    "sector": "제약",
    "change_pct": -0.1,
    "sector_change_pct": 5.72,
+   "sector_estimated": false,
    "excess_pp": -5.82,
    "kind": "solo",
    "verdict": "개별 약세"
@@ -602,6 +619,7 @@
    "sector": "제약",
    "change_pct": -0.33,
    "sector_change_pct": 5.72,
+   "sector_estimated": false,
    "excess_pp": -6.05,
    "kind": "solo",
    "verdict": "개별 약세"
@@ -613,7 +631,20 @@
    "sector": "음식료·담배",
    "change_pct": -0.27,
    "sector_change_pct": 2.1,
+   "sector_estimated": false,
    "excess_pp": -2.37,
+   "kind": "mixed",
+   "verdict": "혼조"
+  },
+  {
+   "code": "267250",
+   "name": "HD현대",
+   "market": "KOSPI",
+   "sector": "기타금융",
+   "change_pct": -0.32,
+   "sector_change_pct": 1.46,
+   "sector_estimated": true,
+   "excess_pp": -1.78,
    "kind": "mixed",
    "verdict": "혼조"
   },
@@ -624,6 +655,7 @@
    "sector": "운송장비·부품",
    "change_pct": -0.28,
    "sector_change_pct": 4.21,
+   "sector_estimated": false,
    "excess_pp": -4.49,
    "kind": "mixed",
    "verdict": "혼조"
@@ -635,6 +667,7 @@
    "sector": "의료·정밀기기",
    "change_pct": -2.63,
    "sector_change_pct": 6.95,
+   "sector_estimated": false,
    "excess_pp": -9.58,
    "kind": "solo",
    "verdict": "개별 약세"
@@ -646,6 +679,7 @@
    "sector": "일반서비스",
    "change_pct": -21.23,
    "sector_change_pct": 6.09,
+   "sector_estimated": false,
    "excess_pp": -27.32,
    "kind": "solo",
    "verdict": "개별 약세"
