@@ -1,0 +1,46 @@
+# ─────────────────────────────────────────────────────────────
+#  마켓 브리핑 설정 파일
+#  '#' 뒤는 설명입니다. 값(콜론 오른쪽)만 바꾸면 다음 실행부터 반영됩니다.
+# ─────────────────────────────────────────────────────────────
+
+site:
+  title: "Market Briefing"
+  output_dir: "site"          # 완성된 웹페이지가 저장되는 폴더
+
+# 1. 주요 지수 (순서대로 표시)
+#    source: krx  → 한국거래소(pykrx)에서 가져옴
+#    ticker: ...  → 야후 파이낸스(yfinance) 코드
+indices:
+  - { name: "KOSPI",    region: "한국", source: krx, code: "1001" }
+  - { name: "KOSDAQ",   region: "한국", source: krx, code: "2001" }
+  - { name: "다우",      region: "미국", ticker: "^DJI" }
+  - { name: "나스닥",    region: "미국", ticker: "^IXIC" }
+  - { name: "S&P500",   region: "미국", ticker: "^GSPC" }
+  - { name: "닛케이225", region: "아시아", ticker: "^N225" }
+  - { name: "상해종합",  region: "아시아", ticker: "000001.SS" }
+  - { name: "대만가권",  region: "아시아", ticker: "^TWII" }
+
+# 2. 투자자별 수급
+flows:
+  daily_trend_days: 20        # Daily: 최근 20거래일 추이
+  weekly_trend_weeks: 12      # Weekly: 최근 12주 추이
+
+# 4. 52주 신고가/신저가 판정 기준
+judgment:
+  individual_excess_pp: 5.0   # 종목이 섹터보다 이 값(%p) 이상 강하면 "개별 강세(개인기)" 후보
+  sector_weak_pct: 0.0        # 섹터 등락률이 이 값(%) 이하면 "약한 섹터"로 봄
+  high_basis: close           # 신고가 기준: close(종가) 또는 high(장중 고가)
+  min_market_cap_eok: 500     # 시가총액 500억원 미만 소형주는 제외 (0이면 전체)
+
+# 5·6. 외국인/기관 순매수 상위
+top_buyers:
+  count: 10                   # 상위 몇 종목까지 보여줄지
+
+# 9. 주요 종목 신용잔고
+credit:
+  top_n_by_market_cap: 20     # KOSPI 시가총액 상위 몇 종목
+
+# 8. 뉴스 (4단계에서 사용, 지금은 보류)
+telegram_channels: []
+blogs_rss: []
+news_count: { min: 5, max: 10 }

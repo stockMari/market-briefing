@@ -1,0 +1,64 @@
+# 마켓 브리핑 만들기 (GitHub에서 실행)
+# 지금은 'Run workflow' 버튼으로 직접 실행만 됩니다. 자동 시간 실행은 6단계에서 추가합니다.
+name: Market Briefing
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "daily 또는 weekly"
+        required: true
+        default: weekly
+        type: choice
+        options: [weekly, daily]
+      date:
+        description: "실행일로 볼 날짜 (YYYY-MM-DD, 비우면 오늘)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: briefing
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      TZ: Asia/Seoul
+      KRX_ID: ${{ secrets.KRX_ID }}
+      KRX_PW: ${{ secrets.KRX_PW }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 지난 시세 캐시 불러오기 (52주 신고가 계산용)
+        uses: actions/cache@v4
+        with:
+          path: cache
+          key: krx-cache-${{ github.run_id }}
+          restore-keys: krx-cache-
+
+      - name: 프로그램 설치
+        run: pip install -r requirements.txt
+
+      - name: 리포트 만들기
+        run: |
+          ARGS="--mode ${{ inputs.mode }}"
+          if [ -n "${{ inputs.date }}" ]; then ARGS="$ARGS --date ${{ inputs.date }}"; fi
+          python run.py $ARGS
+
+      - name: 결과 저장 (site 폴더)
+        run: |
+          git config user.name "market-briefing-bot"
+          git config user.email "market-briefing-bot@users.noreply.github.com"
+          git add site
+          git diff --cached --quiet || git commit -m "briefing: ${{ inputs.mode }} $(date +%F)"
+          git push

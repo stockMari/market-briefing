@@ -1,0 +1,350 @@
+{%- set weekly = r.mode == 'weekly' -%}
+{%- set U = '주' if weekly else '일' -%}
+{%- set per = r.period -%}
+{%- if standalone %}<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+{%- endif %}
+<title>Market Briefing {{ r.label }}</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<style>
+{% include "style.css" %}
+</style>
+{%- if standalone %}
+</head>
+<body>
+{%- endif %}
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="{{ root }}index.html" aria-label="Market Briefing 첫 화면">
+      <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true">
+        <rect x="0.5" y="0.5" width="25" height="25" rx="6" fill="var(--ink)"/>
+        <line x1="8" y1="6" x2="8" y2="20" stroke="var(--surface)" stroke-width="1.5"/>
+        <rect x="5.5" y="9" width="5" height="7" rx="1" fill="var(--up-fill)"/>
+        <line x1="18" y1="5" x2="18" y2="19" stroke="var(--surface)" stroke-width="1.5"/>
+        <rect x="15.5" y="8" width="5" height="8" rx="1" fill="var(--down-fill)"/>
+      </svg>
+      <span><b>Market Briefing</b> <small>마켓 브리핑</small></span>
+    </a>
+    <nav class="tabs" aria-label="리포트 종류">
+      {%- for m, name in (('daily', 'Daily'), ('weekly', 'Weekly')) %}
+        {%- if m == r.mode %}<span class="on" aria-current="page">{{ name }}</span>
+        {%- elif manifest[m] %}<a href="{{ root }}{{ m }}/{{ manifest[m][0].label }}.html">{{ name }}</a>
+        {%- else %}<span class="off" title="아직 리포트가 없습니다">{{ name }}</span>{% endif %}
+      {%- endfor %}
+    </nav>
+    <a class="head-link" href="#archive">지난 리포트</a>
+  </div>
+</header>
+
+{%- if r.sample %}
+<div class="sample-bar" role="note">
+  <div class="wrap"><b>샘플 데이터</b><span>화면 디자인 확인용으로 만든 가짜 숫자입니다. 실제 시세가 아닙니다.</span></div>
+</div>
+{%- endif %}
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><b>{{ 'Weekly' if weekly else 'Daily' }} Briefing</b> · {{ r.label }}</div>
+    <h1>{{ r.title }} 마켓 브리핑</h1>
+    <div class="period">
+      <span>{{ '지난주' if weekly else '전일' }} 종가 <b class="mono">{{ per.base | md }}</b> → {{ '이번 주' if weekly else '당일' }} 종가 <b class="mono">{{ per.end | md }}</b> 기준</span>
+      {%- for n in per.notes %}<span class="chip warn">휴장 반영 · {{ n }}</span>{% endfor %}
+    </div>
+    <nav class="toc" aria-label="목차">
+      <a href="#indices">주요 지수</a><a href="#flows">투자자 수급</a><a href="#sectors">업종</a>
+      <a href="#highs">52주 신고가·신저가</a><a href="#buyers">순매수 상위</a><a href="#credit">신용잔고</a>
+    </nav>
+  </div>
+</section>
+
+<main>
+<div class="wrap">
+
+  <section class="panel summary" aria-labelledby="h-summary">
+    <div class="panel-head"><h2 id="h-summary">{{ '이번 주' if weekly else '오늘' }} 시장 요약</h2><span class="note">Claude 작성</span></div>
+    {%- if r.summary %}
+    <ol>{% for line in r.summary %}<li>{{ line }}</li>{% endfor %}</ol>
+    {%- else %}
+    <p class="placeholder">5단계에서 연결합니다. 아래 데이터를 읽고 Claude가 핵심 3줄을 이 자리에 씁니다.</p>
+    {%- endif %}
+  </section>
+
+  <!-- 1. 주요 지수 -->
+  <section class="panel" id="indices" aria-labelledby="h-indices">
+    <div class="panel-head">
+      <div><span class="kicker">Indices</span><h2 id="h-indices">주요 지수 등락률</h2></div>
+      <span class="note">{{ '지난주 금요일 종가 대비' if weekly else '전 거래일 종가 대비' }}</span>
+    </div>
+    <div class="grid-2">
+      <div class="chart" id="c-indices" role="img" aria-label="주요 지수 등락률 막대그래프"></div>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>지수</th><th class="r">종가</th><th class="r hide-sm">등락</th><th class="r">등락률</th><th class="r">비교 구간</th></tr></thead>
+          <tbody>
+          {%- for region, rows in v.indices_by_region %}
+            <tr class="group"><td colspan="5">{{ region }}</td></tr>
+            {%- for ix in rows %}
+            <tr>
+              <td><b>{{ ix.name }}</b></td>
+              <td class="r num">{{ ix.close | num(2) }}</td>
+              <td class="r num hide-sm {{ ix.change | sign }}">{{ ix.change | signed(2) }}</td>
+              <td class="r num {{ ix.change_pct | sign }}"><b>{{ ix.change_pct | pct }}</b></td>
+              <td class="r num note">{{ ix.base_date | md }}→{{ ix.end_date | md }}</td>
+            </tr>
+            {%- endfor %}
+          {%- endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. 투자자별 수급 -->
+  <section class="panel" id="flows" aria-labelledby="h-flows">
+    <div class="panel-head">
+      <div><span class="kicker">Investor flows</span><h2 id="h-flows">투자자별 수급</h2></div>
+      <span class="note">순매수 금액 · 단위 억원</span>
+    </div>
+    <div class="grid-2">
+      <div>
+        <h3 class="sub">{{ '이번 주' if weekly else '오늘' }} 순매수</h3>
+        <div class="chart short" id="c-flows" role="img" aria-label="KOSPI, KOSDAQ 외국인·기관 순매수 막대그래프"></div>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>시장</th><th class="r">외국인</th><th class="r">기관</th><th class="r">개인</th></tr></thead>
+            <tbody>
+            {%- for m, f in r.flows.current.items() %}
+              <tr><td><b>{{ m }}</b></td>
+                {%- for who in ('외국인', '기관', '개인') %}<td class="r num {{ f[who] | sign }}">{{ f[who] | signed }}</td>{% endfor %}
+              </tr>
+            {%- endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h3 class="sub" style="justify-content:space-between;flex-wrap:wrap">
+          <span>최근 {{ r.flows.trend.labels | length }}{{ '주' if weekly else '거래일' }} 추이</span>
+          <span class="seg" role="group" aria-label="추이 보기 방식">
+            <button type="button" id="flow-cum" aria-pressed="true">누적</button>
+            <button type="button" id="flow-each" aria-pressed="false">{{ '주별' if weekly else '일별' }}</button>
+          </span>
+        </h3>
+        <div class="chart short" id="c-flow-kospi" role="img" aria-label="KOSPI 수급 추이"></div>
+        <div class="chart short" id="c-flow-kosdaq" role="img" aria-label="KOSDAQ 수급 추이"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. 업종 -->
+  <section class="panel" id="sectors" aria-labelledby="h-sectors">
+    <div class="panel-head">
+      <div><span class="kicker">Sectors</span><h2 id="h-sectors">강세·약세 업종</h2></div>
+      <span class="seg" role="group" aria-label="시장 선택">
+        <button type="button" data-market="KOSPI" aria-pressed="true">KOSPI</button>
+        <button type="button" data-market="KOSDAQ" aria-pressed="false">KOSDAQ</button>
+      </span>
+    </div>
+    <div class="grid-2">
+      <div>
+        {%- for m, rows in r.sectors.items() %}
+        <div class="rank5" data-sector-market="{{ m }}" {% if not loop.first %}hidden{% endif %}>
+          <div><h3>상위 5 · {{ m }}</h3><ol>
+            {%- for s in rows[:5] %}<li><span>{{ s.name }}</span><b class="num {{ s.change_pct | sign }}">{{ s.change_pct | pct }}</b></li>{% endfor %}
+          </ol></div>
+          <div><h3>하위 5 · {{ m }}</h3><ol>
+            {%- for s in rows[-5:] | reverse %}<li><span>{{ s.name }}</span><b class="num {{ s.change_pct | sign }}">{{ s.change_pct | pct }}</b></li>{% endfor %}
+          </ol></div>
+        </div>
+        {%- endfor %}
+        <p class="note">KRX 업종지수 기준. 막대그래프는 전체 업종을 등락률 순으로 정렬한 것입니다.</p>
+      </div>
+      <div class="chart tall" id="c-sectors" style="--h: {{ (r.sectors.values() | map('length') | max) * 22 + 40 }}px" role="img" aria-label="전체 업종 등락률 가로 막대그래프"></div>
+    </div>
+  </section>
+
+  <!-- 4. 52주 신고가 / 신저가 -->
+  <section class="panel" id="highs" aria-labelledby="h-highs">
+    <div class="panel-head">
+      <div><span class="kicker">52-week high / low</span><h2 id="h-highs">52주 신고가·신저가</h2></div>
+      <span class="seg" role="group" aria-label="신고가 신저가 선택">
+        <button type="button" data-hl="high" aria-pressed="true">신고가 {{ r.highs | length }}</button>
+        <button type="button" data-hl="low" aria-pressed="false">신저가 {{ r.lows | length }}</button>
+      </span>
+    </div>
+
+    {%- for key, groups, verdicts, rows in (('high', v.high_groups, v.high_verdicts, r.highs), ('low', v.low_groups, v.low_verdicts, r.lows)) %}
+    <div data-hl-panel="{{ key }}" {% if key == 'low' %}hidden{% endif %}>
+      <h3 class="sub">섹터별 {{ '신고가' if key == 'high' else '신저가' }} 종목 수 <span class="note">어느 섹터에 몰렸는지</span></h3>
+      <div class="legend">{% for k, name in verdicts.items() %}<span><i class="k-{{ k }}"></i>{{ name }}</span>{% endfor %}</div>
+      <div class="chart tall" id="c-{{ key }}s" style="--h: {{ groups | length * 30 + 30 }}px" role="img" aria-label="섹터별 종목 수 막대그래프"></div>
+
+      <div class="sector-groups">
+      {%- for g in groups %}
+        <details class="sgroup" {% if loop.index <= 3 %}open{% endif %}>
+          <summary>
+            <b>{{ g.sector }}</b><span class="cnt">{{ g.stocks | length }}종목</span>
+            <span class="rates">{% for m, rate in g.rates.items() %}<span>섹터({{ m }}) <b class="num {{ rate | sign }}">{{ rate | pct }}</b></span>{% endfor %}</span>
+          </summary>
+          <div class="tbl-wrap">
+            <table class="fixed">
+              <colgroup><col class="c-name"><col class="c-v"><col class="c-v"><col class="c-v"><col class="c-verdict"></colgroup>
+              <thead><tr><th>종목</th><th class="r">종목 등락률</th><th class="r">섹터 등락률</th><th class="r">섹터 대비</th><th>판정</th></tr></thead>
+              <tbody>
+              {%- for s in g.stocks %}
+                <tr>
+                  <td><span class="stock"><b>{{ s.name }}</b><span class="code">{{ s.code }}</span>{% if s.market == 'KOSDAQ' %}<span class="mkt">KQ</span>{% endif %}</span></td>
+                  <td class="r num {{ s.change_pct | sign }}"><b>{{ s.change_pct | pct }}</b></td>
+                  <td class="r num {{ s.sector_change_pct | sign }}">{{ s.sector_change_pct | pct }}</td>
+                  <td class="r num {{ s.excess_pp | sign }}">{{ s.excess_pp | pp }}</td>
+                  <td><span class="vchip"><i class="k-{{ s.kind }}"></i>{{ s.verdict }}</span></td>
+                </tr>
+              {%- endfor %}
+              </tbody>
+            </table>
+          </div>
+        </details>
+      {%- else %}
+        <p class="empty">이 기간에는 해당 종목이 없습니다.</p>
+      {%- endfor %}
+      </div>
+    </div>
+    {%- endfor %}
+
+    <div class="criteria">
+      판정 기준 (<code>config.yaml</code> → <code>judgment</code>에서 변경):
+      섹터 대비 초과수익 <b class="num">{{ '%.1f' | format(r.judgment.individual_excess_pp) }}%p</b> 이상이면 "강한 종목",
+      섹터 등락률 <b class="num">{{ '%.1f' | format(r.judgment.sector_weak_pct) }}%</b> 이하면 "약한 섹터"로 봅니다.
+      약한 섹터 속 강한 종목은 <b>개별 강세(개인기)</b>, 오른 섹터 속 강한 종목은 <b>섹터 동반 + 주도주</b>입니다.
+    </div>
+  </section>
+
+  <!-- 5·6. 외국인 / 기관 순매수 상위 -->
+  <section class="panel" id="buyers" aria-labelledby="h-buyers">
+    <div class="panel-head">
+      <div><span class="kicker">Top net buying</span><h2 id="h-buyers">외국인·기관 순매수 상위 {{ r.top_buyers['외국인'] | length }}</h2></div>
+      <span class="note">KOSPI+KOSDAQ · 단위 억원</span>
+    </div>
+    {%- if v.both_names %}
+    <p class="both-line"><b>양쪽 모두 순매수 {{ v.both_names | length }}종목</b> · {{ v.both_names | join(', ') }}</p>
+    {%- endif %}
+    <div class="grid-2">
+      {%- for who in ('외국인', '기관') %}
+      <div>
+        <h3 class="sub">{{ who }} 순매수 상위</h3>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>#</th><th>종목</th><th class="r">순매수</th><th class="r">등락률</th></tr></thead>
+            <tbody>
+            {%- for s in r.top_buyers[who] %}
+              <tr {% if s.code in v.both_codes %}class="both"{% endif %}>
+                <td class="num note">{{ s.rank }}</td>
+                <td><span class="stock"><b>{{ s.name }}</b>{% if s.market == 'KOSDAQ' %}<span class="mkt">KQ</span>{% endif %}{% if s.code in v.both_codes %}<span class="badge-both">동반</span>{% endif %}</span></td>
+                <td class="r num">{{ s.net_buy | num }}</td>
+                <td class="r num {{ s.change_pct | sign }}">{{ s.change_pct | pct }}</td>
+              </tr>
+            {%- endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+  </section>
+
+  <!-- 9. 신용잔고 -->
+  <section class="panel" id="credit" aria-labelledby="h-credit">
+    <div class="panel-head">
+      <div><span class="kicker">Margin balance</span><h2 id="h-credit">주요 종목 신용잔고</h2></div>
+      <span class="note">KOSPI 시가총액 상위 {{ r.credit.stocks | length or 20 }} · {{ r.credit.as_of | md }} 기준</span>
+    </div>
+    {%- if not r.credit.stocks %}
+    <p class="placeholder">데이터 출처를 확정하는 중입니다. 종목별 신용잔고를 받을 곳이 정해지면 이 자리에 표와 추이 그래프가 들어갑니다.</p>
+    {%- else %}
+    <div class="grid-2">
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>#</th><th>종목</th><th class="r">신용잔고(억원)</th><th class="r">잔고율</th><th class="r">{{ '전주' if weekly else '전일' }} 대비</th><th class="r">주가</th></tr></thead>
+          <tbody>
+          {%- for s in r.credit.stocks %}
+            <tr>
+              <td class="num note">{{ s.rank }}</td>
+              <td><b>{{ s.name }}</b></td>
+              <td class="r num">{{ s.credit_eok | num }}</td>
+              <td class="r num">{{ '%.2f' | format(s.ratio) }}%</td>
+              <td class="r num {{ s.ratio_change_pp | sign }}">{{ s.ratio_change_pp | pp(2) }}</td>
+              <td class="r num {{ s.change_pct | sign }}">{{ s.change_pct | pct }}</td>
+            </tr>
+          {%- endfor %}
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h3 class="sub">시장 전체 신용융자 잔고 <span class="note">단위 조원</span></h3>
+        <div class="chart" id="c-credit" role="img" aria-label="KOSPI, KOSDAQ 신용융자 잔고 추이"></div>
+        <p class="note">잔고율 = 신용으로 산 주식 수 ÷ 상장 주식 수. 잔고율이 빠르게 늘면 빚을 낸 매수가 몰린다는 뜻입니다.{% if r.credit.source_pending %} 종목별 신용잔고 출처는 접속이 열리면 확정합니다.{% endif %}</p>
+      </div>
+    </div>
+    {%- endif %}
+  </section>
+
+  <section class="panel summary" aria-labelledby="h-news">
+    <div class="panel-head"><h2 id="h-news">{{ '이번 주' if weekly else '오늘' }}의 중요 뉴스</h2><span class="note">텔레그램 · 블로그</span></div>
+    {%- if r.news %}
+    {# 4~5단계에서 채움 #}
+    {%- else %}
+    <p class="placeholder">보류 중입니다. 텔레그램 채널과 블로그 주소를 정하면 4~5단계에서 이 자리에 5~10개를 넣습니다.</p>
+    {%- endif %}
+  </section>
+
+  <!-- 지난 리포트 -->
+  <section class="panel" id="archive" aria-labelledby="h-archive">
+    <div class="panel-head"><div><span class="kicker">Archive</span><h2 id="h-archive">지난 리포트</h2></div></div>
+    <div class="archive">
+      {%- for m, name in (('weekly', 'Weekly'), ('daily', 'Daily')) %}
+      <div>
+        <h3 class="sub">{{ name }}</h3>
+        {%- if manifest[m] %}
+        <ul>
+          {%- for it in manifest[m] %}
+          <li>
+            {%- set inner %}<span class="lbl">{{ it.label }}</span><span class="ttl">{{ it.title }}<small>{{ it.base | md }}→{{ it.end | md }}</small></span><span class="num {{ it.kospi_pct | sign }}">KOSPI {{ it.kospi_pct | pct }}</span>{% endset %}
+            {%- if m == r.mode and it.label == r.label %}<span class="cur" aria-current="page">{{ inner }}</span>
+            {%- else %}<a href="{{ root }}{{ m }}/{{ it.label }}.html">{{ inner }}</a>{% endif %}
+          </li>
+          {%- endfor %}
+        </ul>
+        {%- else %}
+        <p class="empty">아직 없습니다. 3단계에서 Daily 리포트를 만들면 여기에 날짜별로 쌓입니다.</p>
+        {%- endif %}
+      </div>
+      {%- endfor %}
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>데이터: KRX(pykrx), Yahoo Finance(yfinance)</span>
+    <span>생성: {{ r.generated_at[:16] | replace('T', ' ') }} KST</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.1/echarts.min.js"></script>
+<script id="chart-data" type="application/json">{{ chart_data | safe }}</script>
+<script>
+{% include "charts.js" %}
+</script>
+{%- if standalone %}
+</body>
+</html>
+{%- endif %}
