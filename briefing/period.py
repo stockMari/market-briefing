@@ -76,12 +76,22 @@ def weekly(run_date: date, trading_days: list[date], weeks: int = 12) -> Period:
 
 def daily(run_date: date, trading_days: list[date], days: int = 20) -> Period:
     # 아침 7시 30분 실행 → 한국장은 아직 안 열렸으므로 '어제까지'가 대상
-    end = last_trading_day_on_or_before(run_date - timedelta(days=1), trading_days)
-    base = last_trading_day_on_or_before(end - timedelta(days=1), trading_days)
+    target_end = _prev_weekday(run_date)
+    end = last_trading_day_on_or_before(target_end, trading_days)
+    target_base = _prev_weekday(end)
+    base = last_trading_day_on_or_before(target_base, trading_days)
     return Period(
         mode="daily",
         label=end.isoformat(),
         title=f"{end.month}월 {end.day}일({WEEKDAYS[end.weekday()]})",
-        base=base, end=end, target_base=base, target_end=end,
+        base=base, end=end, target_base=target_base, target_end=target_end,
         trend_len=days,
     )
+
+
+def _prev_weekday(d: date) -> date:
+    """d 바로 전 평일 (주말은 건너뜀)."""
+    d -= timedelta(days=1)
+    while d.weekday() >= 5:
+        d -= timedelta(days=1)
+    return d
