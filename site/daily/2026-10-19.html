@@ -1,0 +1,1341 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Market Briefing 2026-10-19</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: one 1120px reading column; sticky header with Daily/Weekly tabs;
+   each data block is a white panel on a cool-grey page, numbers set in mono. */
+:root {
+  --bg: #f2f4f7;
+  --surface: #ffffff;
+  --surface-2: #f6f7f9;
+  --ink: #111722;
+  --ink-2: #465063;
+  --muted: #737d8f;
+  --line: #e0e4ea;
+  --accent: #9a5b00;
+  --accent-soft: #fff1d6;
+  --accent-line: #f0c77a;
+  --up: #c92a35;
+  --down: #1d5bbf;
+  --up-fill: #e34948;
+  --down-fill: #2a78d6;
+  --s-foreign: #0f9d9a;
+  --s-inst: #6250d6;
+  --s-kospi: #465063;
+  --s-kosdaq: #c98500;
+  --v-together: #1baf7a;
+  --v-leader: #6250d6;
+  --v-solo: #e87ba4;
+  --v-mixed: #b3bac6;
+  --font-sans: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --radius: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1116; --surface: #161a21; --surface-2: #1c2129; --ink: #e8ecf2; --ink-2: #b3bbc7;
+    --muted: #8a93a3; --line: #2a303a; --accent: #e3a43c; --accent-soft: #33270f; --accent-line: #6b4f1c;
+    --up: #f27474; --down: #6aa3f5; --up-fill: #e66767; --down-fill: #3987e5;
+    --s-foreign: #16a19c; --s-inst: #9085e9; --s-kospi: #b3bbc7; --s-kosdaq: #e3a43c;
+    --v-together: #199e70; --v-leader: #9085e9; --v-solo: #d55181; --v-mixed: #5d6574;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1116; --surface: #161a21; --surface-2: #1c2129; --ink: #e8ecf2; --ink-2: #b3bbc7;
+  --muted: #8a93a3; --line: #2a303a; --accent: #e3a43c; --accent-soft: #33270f; --accent-line: #6b4f1c;
+  --up: #f27474; --down: #6aa3f5; --up-fill: #e66767; --down-fill: #3987e5;
+  --s-foreign: #16a19c; --s-inst: #9085e9; --s-kospi: #b3bbc7; --s-kosdaq: #e3a43c;
+  --v-together: #199e70; --v-leader: #9085e9; --v-solo: #d55181; --v-mixed: #5d6574;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-sans); font-size: 15px; line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.mono, .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.up { color: var(--up); } .down { color: var(--down); } .flat { color: var(--muted); }
+
+.wrap {
+  max-width: 1120px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+
+/* ── header ── */
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 10; background: var(--surface);
+}
+.site-head {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9;
+  background: var(--surface); border-bottom: 1px solid var(--line);
+}
+.site-head .wrap { display: flex; align-items: center; gap: 16px; padding-block: 10px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; margin-right: auto; }
+.brand svg { flex: none; }
+.brand b { font-weight: 700; font-size: 16px; letter-spacing: -0.01em; }
+.brand small { color: var(--muted); font-size: 12px; }
+.tabs { display: inline-flex; background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 3px; }
+.tabs a, .tabs span {
+  font-size: 13px; font-weight: 600; padding: 5px 14px; border-radius: 6px; text-decoration: none; color: var(--ink-2);
+}
+.tabs a:hover { color: var(--ink); }
+.tabs .on { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,.08), inset 0 -2px 0 var(--accent); }
+.tabs .off { color: var(--muted); opacity: .6; cursor: not-allowed; }
+.head-link { font-size: 13px; color: var(--ink-2); text-decoration: none; }
+.head-link:hover { color: var(--ink); text-decoration: underline; }
+
+.sample-bar { background: var(--accent-soft); border-bottom: 1px solid var(--accent-line); color: var(--ink); font-size: 13px; }
+.sample-bar .wrap { padding-block: 8px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.sample-bar b { color: var(--accent); }
+
+/* ── hero ── */
+.hero .wrap { padding-block: 28px 8px; display: grid; gap: 10px; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.eyebrow b { color: var(--accent); font-weight: 500; }
+.hero h1 { margin: 0; font-size: clamp(28px, 5vw, 40px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; text-wrap: balance; }
+.period { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; color: var(--ink-2); font-size: 14px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 3px 9px;
+  border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); white-space: nowrap;
+}
+.chip.warn { border-color: var(--accent-line); background: var(--accent-soft); color: var(--ink); }
+.toc { display: flex; gap: 6px; overflow-x: auto; padding-block: 6px 2px; scrollbar-width: none; }
+.toc::-webkit-scrollbar { display: none; }
+.toc a { font-size: 13px; text-decoration: none; padding: 5px 11px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); color: var(--ink-2); white-space: nowrap; }
+.toc a:hover { color: var(--ink); border-color: var(--muted); }
+
+/* ── panels ── */
+main .wrap { display: grid; gap: 16px; padding-block: 16px 40px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; min-width: 0; }
+.panel-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 8px 16px; margin-bottom: 14px; }
+.panel-head h2 { margin: 0; font-size: 19px; font-weight: 700; letter-spacing: -0.01em; text-wrap: balance; }
+.panel-head .kicker { display: block; font-family: var(--font-mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+.note { font-size: 12.5px; color: var(--muted); }
+.grid-2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; }
+.grid-2 > * { min-width: 0; }
+@media (max-width: 760px) { .grid-2 { grid-template-columns: minmax(0, 1fr); } .panel { padding: 16px; } }
+.sub { font-size: 14px; font-weight: 700; margin: 0 0 8px; display: flex; gap: 8px; align-items: baseline; }
+.sub .note { font-weight: 400; }
+
+.chart { width: 100%; height: 300px; }
+.chart.tall { height: var(--h, 520px); }
+.chart.short { height: 240px; }
+
+/* segmented control */
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; padding: 2px; background: var(--surface-2); }
+.seg button {
+  font: inherit; font-size: 12.5px; font-weight: 600; border: 0; background: transparent; color: var(--ink-2);
+  padding: 4px 12px; border-radius: 6px; cursor: pointer;
+}
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,.08); }
+
+/* summary */
+.summary { border-style: dashed; background: transparent; }
+.summary ol { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+.placeholder { color: var(--muted); font-size: 14px; margin: 0; }
+
+/* tables */
+.tbl-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { font-size: 12px; font-weight: 600; color: var(--muted); text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+td { padding: 9px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+th.r, td.r { text-align: right; }
+td.num { font-size: 13.5px; }
+tr.group td { background: var(--surface-2); font-size: 12px; font-weight: 600; color: var(--ink-2); padding-block: 5px; }
+.code { font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); }
+.mkt { font-size: 10.5px; font-weight: 600; letter-spacing: .02em; padding: 1px 5px; border-radius: 4px; border: 1px solid var(--line); color: var(--ink-2); vertical-align: 1px; }
+.stock { display: inline-flex; align-items: baseline; gap: 6px; }
+.stock b { font-weight: 600; }
+
+/* top/bottom 5 */
+.rank5 { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; }
+@media (max-width: 420px) { .rank5 { grid-template-columns: 1fr; } }
+.rank5 ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.rank5 li { display: flex; justify-content: space-between; gap: 8px; font-size: 14px; padding: 6px 0; border-bottom: 1px solid var(--line); }
+.rank5 li:last-child { border-bottom: 0; }
+.rank5 li span:first-child { color: var(--ink-2); }
+.rank5 h3 { margin: 0 0 4px; font-size: 12px; color: var(--muted); font-weight: 600; letter-spacing: .02em; }
+
+/* verdict chips & legend */
+.vchip { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: var(--ink); }
+.vchip i, .legend i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; flex: none; }
+.k-together { background: var(--v-together); } .k-leader { background: var(--v-leader); }
+.k-solo { background: var(--v-solo); } .k-mixed { background: var(--v-mixed); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12.5px; color: var(--ink-2); margin-bottom: 8px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.criteria { font-size: 12.5px; color: var(--ink-2); background: var(--surface-2); border-radius: 8px; padding: 10px 12px; margin-top: 12px; line-height: 1.6; }
+.criteria code { font-family: var(--font-mono); font-size: 12px; color: var(--ink); }
+
+.sector-groups { display: grid; gap: 14px; margin-top: 16px; }
+.sgroup { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.sgroup summary {
+  list-style: none; cursor: pointer; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px;
+  padding: 10px 12px; background: var(--surface-2);
+}
+.sgroup summary::-webkit-details-marker { display: none; }
+.sgroup summary::before { content: "▸"; color: var(--muted); font-size: 12px; transition: transform .15s; }
+.sgroup[open] summary::before { transform: rotate(90deg); }
+.sgroup summary b { font-size: 15px; }
+.sgroup summary .cnt { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+.sgroup summary .rates { margin-left: auto; font-size: 12.5px; color: var(--ink-2); display: flex; gap: 10px; }
+
+table.fixed { table-layout: fixed; min-width: 600px; }
+table.fixed col.c-name { width: 34%; }
+table.fixed col.c-v { width: 15%; }
+table.fixed col.c-verdict { width: 21%; }
+table.fixed td:first-child { white-space: normal; }
+
+@media (max-width: 480px) { .hide-sm { display: none; } }
+
+/* top buyers */
+tr.both td { background: var(--accent-soft); }
+tr.both td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
+.badge-both { font-size: 10.5px; font-weight: 700; color: var(--accent); border: 1px solid var(--accent-line); border-radius: 4px; padding: 0 4px; margin-left: 4px; }
+.both-line { font-size: 13.5px; margin: 0 0 14px; padding: 10px 12px; border-radius: 8px; background: var(--accent-soft); border: 1px solid var(--accent-line); }
+.both-line b { color: var(--accent); }
+
+/* archive */
+.archive { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 760px) { .archive { grid-template-columns: 1fr; } }
+.archive ul { list-style: none; margin: 0; padding: 0; }
+.archive li a, .archive li .cur {
+  display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: baseline;
+  padding: 10px 6px; border-bottom: 1px solid var(--line); text-decoration: none;
+}
+.archive li a:hover { background: var(--surface-2); }
+.archive li .cur { background: var(--accent-soft); border-radius: 6px; }
+.archive .lbl { font-family: var(--font-mono); font-size: 12.5px; color: var(--muted); }
+.archive .ttl { font-weight: 600; font-size: 14px; }
+.archive .ttl small { font-weight: 400; color: var(--muted); margin-left: 6px; }
+.empty { color: var(--muted); font-size: 13.5px; padding: 12px 6px; border: 1px dashed var(--line); border-radius: 8px; }
+
+.site-foot { color: var(--muted); font-size: 12.5px; }
+.site-foot .wrap { padding-block: 0 32px; display: flex; flex-wrap: wrap; gap: 6px 18px; }
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Market Briefing 첫 화면">
+      <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true">
+        <rect x="0.5" y="0.5" width="25" height="25" rx="6" fill="var(--ink)"/>
+        <line x1="8" y1="6" x2="8" y2="20" stroke="var(--surface)" stroke-width="1.5"/>
+        <rect x="5.5" y="9" width="5" height="7" rx="1" fill="var(--up-fill)"/>
+        <line x1="18" y1="5" x2="18" y2="19" stroke="var(--surface)" stroke-width="1.5"/>
+        <rect x="15.5" y="8" width="5" height="8" rx="1" fill="var(--down-fill)"/>
+      </svg>
+      <span><b>Market Briefing</b> <small>마켓 브리핑</small></span>
+    </a>
+    <nav class="tabs" aria-label="리포트 종류"><span class="on" aria-current="page">Daily</span><a href="../weekly/2026-W42.html">Weekly</a>
+    </nav>
+    <a class="head-link" href="#archive">지난 리포트</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><b>Daily Briefing</b> · 2026-10-19</div>
+    <h1>10월 19일(월) 마켓 브리핑</h1>
+    <div class="period">
+      <span>전일 종가 <b class="mono">10/16</b> → 당일 종가 <b class="mono">10/19</b> 기준</span>
+    </div>
+    <nav class="toc" aria-label="목차">
+      <a href="#indices">주요 지수</a><a href="#flows">투자자 수급</a><a href="#sectors">업종</a>
+      <a href="#highs">52주 신고가·신저가</a><a href="#buyers">순매수 상위</a><a href="#credit">신용잔고</a>
+    </nav>
+  </div>
+</section>
+
+<main>
+<div class="wrap">
+
+  <section class="panel summary" aria-labelledby="h-summary">
+    <div class="panel-head"><h2 id="h-summary">당일 시장 요약</h2><span class="note">Claude 작성</span></div>
+    <p class="placeholder">5단계에서 연결합니다. 아래 데이터를 읽고 Claude가 핵심 3줄을 이 자리에 씁니다.</p>
+  </section>
+
+  <!-- 1. 주요 지수 -->
+  <section class="panel" id="indices" aria-labelledby="h-indices">
+    <div class="panel-head">
+      <div><span class="kicker">Indices</span><h2 id="h-indices">주요 지수 등락률</h2></div>
+      <span class="note">전 거래일 종가 대비</span>
+    </div>
+    <div class="grid-2">
+      <div class="chart" id="c-indices" role="img" aria-label="주요 지수 등락률 막대그래프"></div>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>지수</th><th class="r">종가</th><th class="r hide-sm">등락</th><th class="r">등락률</th><th class="r">비교 구간</th></tr></thead>
+          <tbody>
+            <tr class="group"><td colspan="5">한국</td></tr>
+            <tr>
+              <td><b>KOSPI</b></td>
+              <td class="r num">5,768.01</td>
+              <td class="r num hide-sm up">+99.96</td>
+              <td class="r num up"><b>+1.76%</b></td>
+              <td class="r num note">10/16→10/19</td>
+            </tr>
+            <tr>
+              <td><b>KOSDAQ</b></td>
+              <td class="r num">808.89</td>
+              <td class="r num hide-sm up">+14.11</td>
+              <td class="r num up"><b>+1.78%</b></td>
+              <td class="r num note">10/16→10/19</td>
+            </tr>
+            <tr class="group"><td colspan="5">미국</td></tr>
+            <tr>
+              <td><b>다우</b></td>
+              <td class="r num">51,966.03</td>
+              <td class="r num hide-sm down">-36.38</td>
+              <td class="r num down"><b>-0.07%</b></td>
+              <td class="r num note">10/16→10/19</td>
+            </tr>
+            <tr>
+              <td><b>나스닥</b></td>
+              <td class="r num">26,430.89</td>
+              <td class="r num hide-sm up">+290.86</td>
+              <td class="r num up"><b>+1.11%</b></td>
+              <td class="r num note">10/16→10/19</td>
+            </tr>
+            <tr>
+              <td><b>S&amp;P500</b></td>
+              <td class="r num">7,690.73</td>
+              <td class="r num hide-sm up">+31.29</td>
+              <td class="r num up"><b>+0.41%</b></td>
+              <td class="r num note">10/16→10/19</td>
+            </tr>
+            <tr class="group"><td colspan="5">아시아</td></tr>
+            <tr>
+              <td><b>닛케이225</b></td>
+              <td class="r num">65,324.29</td>
+              <td class="r num hide-sm up">+898.34</td>
+              <td class="r num up"><b>+1.39%</b></td>
+              <td class="r num note">10/15→10/16</td>
+            </tr>
+            <tr>
+              <td><b>상해종합</b></td>
+              <td class="r num">3,716.28</td>
+              <td class="r num hide-sm up">+8.81</td>
+              <td class="r num up"><b>+0.24%</b></td>
+              <td class="r num note">10/15→10/16</td>
+            </tr>
+            <tr>
+              <td><b>대만가권</b></td>
+              <td class="r num">47,111.26</td>
+              <td class="r num hide-sm up">+141.39</td>
+              <td class="r num up"><b>+0.30%</b></td>
+              <td class="r num note">10/15→10/16</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. 투자자별 수급 -->
+  <section class="panel" id="flows" aria-labelledby="h-flows">
+    <div class="panel-head">
+      <div><span class="kicker">Investor flows</span><h2 id="h-flows">투자자별 수급</h2></div>
+      <span class="note">순매수 금액 · 단위 억원</span>
+    </div>
+    <div class="grid-2">
+      <div>
+        <h3 class="sub">당일 순매수</h3>
+        <div class="chart short" id="c-flows" role="img" aria-label="KOSPI, KOSDAQ 외국인·기관 순매수 막대그래프"></div>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>시장</th><th class="r">외국인</th><th class="r">기관</th><th class="r">개인</th></tr></thead>
+            <tbody>
+              <tr><td><b>KOSPI</b></td><td class="r num up">+947</td><td class="r num up">+10,378</td><td class="r num down">-12,393</td>
+              </tr>
+              <tr><td><b>KOSDAQ</b></td><td class="r num down">-1,618</td><td class="r num up">+686</td><td class="r num up">+783</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h3 class="sub" style="justify-content:space-between;flex-wrap:wrap">
+          <span>최근 20거래일 추이</span>
+          <span class="seg" role="group" aria-label="추이 보기 방식">
+            <button type="button" id="flow-cum" aria-pressed="true">누적</button>
+            <button type="button" id="flow-each" aria-pressed="false">일별</button>
+          </span>
+        </h3>
+        <div class="chart short" id="c-flow-kospi" role="img" aria-label="KOSPI 수급 추이"></div>
+        <div class="chart short" id="c-flow-kosdaq" role="img" aria-label="KOSDAQ 수급 추이"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. 업종 -->
+  <section class="panel" id="sectors" aria-labelledby="h-sectors">
+    <div class="panel-head">
+      <div><span class="kicker">Sectors</span><h2 id="h-sectors">강세·약세 업종</h2></div>
+      <span class="seg" role="group" aria-label="시장 선택">
+        <button type="button" data-market="KOSPI" aria-pressed="true">KOSPI</button>
+        <button type="button" data-market="KOSDAQ" aria-pressed="false">KOSDAQ</button>
+      </span>
+    </div>
+    <div class="grid-2">
+      <div>
+        <div class="rank5" data-sector-market="KOSPI" >
+          <div><h3>상위 5 · KOSPI</h3><ol><li><span>제약</span><b class="num up">+5.77%</b></li><li><span>금속</span><b class="num up">+4.98%</b></li><li><span>오락·문화</span><b class="num up">+4.24%</b></li><li><span>화학</span><b class="num up">+3.56%</b></li><li><span>보험</span><b class="num up">+2.85%</b></li>
+          </ol></div>
+          <div><h3>하위 5 · KOSPI</h3><ol><li><span>의료·정밀기기</span><b class="num down">-2.83%</b></li><li><span>섬유·의류</span><b class="num down">-0.84%</b></li><li><span>종이·목재</span><b class="num down">-0.05%</b></li><li><span>통신</span><b class="num up">+0.60%</b></li><li><span>부동산</span><b class="num up">+0.71%</b></li>
+          </ol></div>
+        </div>
+        <div class="rank5" data-sector-market="KOSDAQ" hidden>
+          <div><h3>상위 5 · KOSDAQ</h3><ol><li><span>금융</span><b class="num up">+7.10%</b></li><li><span>금속</span><b class="num up">+4.03%</b></li><li><span>종이·목재</span><b class="num up">+3.12%</b></li><li><span>운송장비·부품</span><b class="num up">+3.02%</b></li><li><span>오락·문화</span><b class="num up">+2.44%</b></li>
+          </ol></div>
+          <div><h3>하위 5 · KOSDAQ</h3><ol><li><span>비금속</span><b class="num down">-1.28%</b></li><li><span>통신</span><b class="num down">-0.10%</b></li><li><span>유통</span><b class="num up">+0.01%</b></li><li><span>운송·창고</span><b class="num up">+0.31%</b></li><li><span>건설</span><b class="num up">+0.48%</b></li>
+          </ol></div>
+        </div>
+        <p class="note">KRX 업종지수 기준. 막대그래프는 전체 업종을 등락률 순으로 정렬한 것입니다.</p>
+      </div>
+      <div class="chart tall" id="c-sectors" style="--h: 524px" role="img" aria-label="전체 업종 등락률 가로 막대그래프"></div>
+    </div>
+  </section>
+
+  <!-- 4. 52주 신고가 / 신저가 -->
+  <section class="panel" id="highs" aria-labelledby="h-highs">
+    <div class="panel-head">
+      <div><span class="kicker">52-week high / low</span><h2 id="h-highs">52주 신고가·신저가</h2></div>
+      <span class="seg" role="group" aria-label="신고가 신저가 선택">
+        <button type="button" data-hl="high" aria-pressed="true">신고가 11</button>
+        <button type="button" data-hl="low" aria-pressed="false">신저가 8</button>
+      </span>
+    </div>
+    <div data-hl-panel="high" >
+      <h3 class="sub">섹터별 신고가 종목 수 <span class="note">어느 섹터에 몰렸는지</span></h3>
+      <div class="legend"><span><i class="k-together"></i>섹터 동반</span><span><i class="k-leader"></i>섹터 동반 + 주도주</span><span><i class="k-solo"></i>개별 강세(개인기)</span><span><i class="k-mixed"></i>혼조</span></div>
+      <div class="chart tall" id="c-highs" style="--h: 300px" role="img" aria-label="섹터별 종목 수 막대그래프"></div>
+
+      <div class="sector-groups">
+        <details class="sgroup" open>
+          <summary>
+            <b>IT 서비스</b><span class="cnt">2종목</span>
+            <span class="rates"><span>섹터(KOSDAQ) <b class="num up">+1.66%</b></span></span>
+          </summary>
+          <div class="tbl-wrap">
+            <table class="fixed">
+              <colgroup><col class="c-name"><col class="c-v"><col class="c-v"><col class="c-v"><col class="c-verdict"></colgroup>
+              <thead><tr><th>종목</th><th class="r">종목 등락률</th><th class="r">섹터 등락률</th><th class="r">섹터 대비</th><th>판정</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><span class="stock"><b>지어소프트</b><span class="code">051160</span><span class="mkt">KQ</span></span></td>
+                  <td class="r num up"><b>+9.41%</b></td>
+                  <td class="r num up">+1.66%</td>
+                  <td class="r num up">+7.8%p</td>
+                  <td><span class="vchip"><i class="k-leader"></i>섹터 동반 + 주도주</span></td>
+                </tr>
+                <tr>
+                  <td><span class="stock"><b>네오리진</b><span class="code">094860</span><span class="mkt">KQ</span></span></td>
+                  <td class="r num up"><b>+5.52%</b></td>
+                  <td class="r num up">+1.66%</td>
+                  <td class="r num up">+3.9%p</td>
+                  <td><span class="vchip"><i class="k-together"></i>섹터 동반</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <details class="sgroup" open>
+          <summary>
+            <b>운송장비·부품</b><span class="cnt">2종목</span>
+            <span class="rates"><span>섹터(KOSPI) <b class="num up">+2.78%</b></span><span>섹터(KOSDAQ) <b class="num up">+3.02%</b></span></span>
+          </summary>
+          <div class="tbl-wrap">
+            <table class="fixed">
+              <colgroup><col class="c-name"><col class="c-v"><col class="c-v"><col class="c-v"><col class="c-verdict"></colgroup>
+              <thead><tr><th>종목</th><th class="r">종목 등락률</th><th class="r">섹터 등락률</th><th class="r">섹터 대비</th><th>판정</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><span class="stock"><b>에스엠벡셀</b><span class="code">010580</span></span></td>
+                  <td class="r num up"><b>+29.90%</b></td>
+                  <td class="r num up">+2.78%</td>
+                  <td class="r num up">+27.1%p</td>
+                  <td><span class="vchip"><i class="k-leader"></i>섹터 동반 + 주도주</span></td>
+                </tr>
+                <tr>
+                  <td><span class="stock"><b>삼기에너지솔루션즈</b><span class="code">419050</span><span class="mkt">KQ</span></span></td>
+                  <td class="r num up"><b>+25.64%</b></td>
+                  <td class="r num up">+3.02%</td>
+                  <td class="r num up">+22.6%p</td>
+                  <td><span class="vchip"><i class="k-leader"></i>섹터 동반 + 주도주</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <details class="sgroup" open>
+          <summary>
+            <b>금속</b><span class="cnt">1종목</span>
+            <span class="rates"><span>섹터(KOSDAQ) <b class="num up">+4.03%</b></span></span>
+          </summary>
+          <div class="tbl-wrap">
+            <table class="fixed">
+              <colgroup><col class="c-name"><col class="c-v"><col class="c-v"><col class="c-v"><col class="c-verdict"></colgroup>
+              <thead><tr><th>종목</th><th class="r">종목 등락률</th><th class="r">섹터 등락률</th><th class="r">섹터 대비</th><th>판정</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><span class="stock"><b>HT로보틱스</b><span class="code">396300</span><span class="mkt">KQ</span></span></td>
+                  <td class="r num up"><b>+1.22%</b></td>
+                  <td class="r num up">+4.03%</td>
+                  <td class="r num down">-2.8%p</td>
+                  <td><span class="vchip"><i class="k-together"></i>섹터 동반</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <details class="sgroup" >
+          <summary>
+            <b>기계·장비</b><span class="cnt">1종목</span>
+            <span class="rates"><span>섹터(KOSDAQ) <b class="num up">+0.72%</b></span></span>
+          </summary>
+          <div class="tbl-wrap">
+            <table class="fixed">
+              <colgroup><col class="c-name"><col class="c-v"><col class="c-v"><col class="c-v"><col class="c-verdict"></colgroup>
+              <thead><tr><th>종목</th><th class="r">종목 등락률</th><th class="r">섹터 등락률</th><th class="r">섹터 대비</th><th>판정</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><span class="stock"><b>나래나노텍</b><span class="code">137080</span><span class="mkt">KQ</span></span></td>
+                  <td class="r num up"><b>+0.71%</b></td>
+                  <td class="r num up">+0.72%</td>
+                  <td class="r num down">-0.0%p</td>
+                  <td><span class="vchip"><i class="k-together"></i>섹터 동반</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <details class="sgroup" >
+          <summary>
+            <b>유통</b><span class="cnt">1종목</span>
+            <span class="rates"><span>섹터(KOSPI) <b class="num up">+1.22%</b></span></span>
+          </summary>
+          <div class="tbl-wrap">
+            <table class="fixed">
+              <colgroup><col class="c-name"><col class="c-v"><col class="c-v"><col class="c-v"><col class="c-verdict"></colgroup>
+              <thead><tr><th>종목</th><th class="r">종목 등락률</th><th class="r">섹터 등락률</th><th class="r">섹터 대비</th><th>판정</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><span class="stock"><b>현대그린푸드</b><span class="code">453340</span></span></td>
+                  <td class="r num up"><b>+4.07%</b></td>
+                  <td class="r num up">+1.22%</td>
+                  <td class="r num up">+2.9%p</td>
+                  <td><span class="vchip"><i class="k-together"></i>섹터 동반</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <details class="sgroup" >
+          <summary>
+            <b>음식료·담배</b><span class="cnt">1종목</span>
+            <span class="rates"><span>섹터(KOSPI) <b class="num up">+1.20%</b></span></span>
+          </summary>
+          <div class="tbl-wrap">
+            <table class="fixed">
+              <colgroup><col class="c-name"><col class="c-v"><col class="c-v"><col class="c-v"><col class="c-verdict"></colgroup>
+              <thead><tr><th>종목</th><th class="r">종목 등락률</th><th class="r">섹터 등락률</th><th class="r">섹터 대비</th><th>판정</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><span class="stock"><b>KT&amp;G</b><span class="code">033780</span></span></td>
+                  <td class="r num up"><b>+1.36%</b></td>
+                  <td class="r num up">+1.20%</td>
+                  <td class="r num up">+0.2%p</td>
+                  <td><span class="vchip"><i class="k-together"></i>섹터 동반</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <details class="sgroup" >
+          <summary>
+            <b>일반서비스</b><span class="cnt">1종목</span>
+            <span class="rates"><span>섹터(KOSPI) <b class="num up">+2.17%</b></span></span>
+          </summary>
+          <div class="tbl-wrap">
+            <table class="fixed">
+              <colgroup><col class="c-name"><col class="c-v"><col class="c-v"><col class="c-v"><col class="c-verdict"></colgroup>
+              <thead><tr><th>종목</th><th class="r">종목 등락률</th><th class="r">섹터 등락률</th><th class="r">섹터 대비</th><th>판정</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><span class="stock"><b>코웨이</b><span class="code">021240</span></span></td>
+                  <td class="r num up"><b>+0.56%</b></td>
+                  <td class="r num up">+2.17%</td>
+                  <td class="r num down">-1.6%p</td>
+                  <td><span class="vchip"><i class="k-together"></i>섹터 동반</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <details class="sgroup" >
+          <summary>
+            <b>전기·전자</b><span class="cnt">1종목</span>
+            <span class="rates"><span>섹터(KOSDAQ) <b class="num up">+1.73%</b></span></span>
+          </summary>
+          <div class="tbl-wrap">
+            <table class="fixed">
+              <colgroup><col class="c-name"><col class="c-v"><col class="c-v"><col class="c-v"><col class="c-verdict"></colgroup>
+              <thead><tr><th>종목</th><th class="r">종목 등락률</th><th class="r">섹터 등락률</th><th class="r">섹터 대비</th><th>판정</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><span class="stock"><b>블루콤</b><span class="code">033560</span><span class="mkt">KQ</span></span></td>
+                  <td class="r num up"><b>+3.25%</b></td>
+                  <td class="r num up">+1.73%</td>
+                  <td class="r num up">+1.5%p</td>
+                  <td><span class="vchip"><i class="k-together"></i>섹터 동반</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <details class="sgroup" >
+          <summary>
+            <b>화학</b><span class="cnt">1종목</span>
+            <span class="rates"><span>섹터(KOSDAQ) <b class="num up">+1.97%</b></span></span>
+          </summary>
+          <div class="tbl-wrap">
+            <table class="fixed">
+              <colgroup><col class="c-name"><col class="c-v"><col class="c-v"><col class="c-v"><col class="c-verdict"></colgroup>
+              <thead><tr><th>종목</th><th class="r">종목 등락률</th><th class="r">섹터 등락률</th><th class="r">섹터 대비</th><th>판정</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><span class="stock"><b>펌텍코리아</b><span class="code">251970</span><span class="mkt">KQ</span></span></td>
+                  <td class="r num up"><b>+0.70%</b></td>
+                  <td class="r num up">+1.97%</td>
+                  <td class="r num down">-1.3%p</td>
+                  <td><span class="vchip"><i class="k-together"></i>섹터 동반</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+      </div>
+    </div>
+    <div data-hl-panel="low" hidden>
+      <h3 class="sub">섹터별 신저가 종목 수 <span class="note">어느 섹터에 몰렸는지</span></h3>
+      <div class="legend"><span><i class="k-together"></i>섹터 동반 약세</span><span><i class="k-leader"></i>섹터 약세 + 낙폭 과대</span><span><i class="k-solo"></i>개별 약세</span><span><i class="k-mixed"></i>혼조</span></div>
+      <div class="chart tall" id="c-lows" style="--h: 210px" role="img" aria-label="섹터별 종목 수 막대그래프"></div>
+
+      <div class="sector-groups">
+        <details class="sgroup" open>
+          <summary>
+            <b>일반서비스</b><span class="cnt">2종목</span>
+            <span class="rates"><span>섹터(KOSPI) <b class="num up">+2.17%</b></span><span>섹터(KOSDAQ) <b class="num up">+2.32%</b></span></span>
+          </summary>
+          <div class="tbl-wrap">
+            <table class="fixed">
+              <colgroup><col class="c-name"><col class="c-v"><col class="c-v"><col class="c-v"><col class="c-verdict"></colgroup>
+              <thead><tr><th>종목</th><th class="r">종목 등락률</th><th class="r">섹터 등락률</th><th class="r">섹터 대비</th><th>판정</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><span class="stock"><b>대교</b><span class="code">019680</span></span></td>
+                  <td class="r num down"><b>-2.42%</b></td>
+                  <td class="r num up">+2.17%</td>
+                  <td class="r num down">-4.6%p</td>
+                  <td><span class="vchip"><i class="k-mixed"></i>혼조</span></td>
+                </tr>
+                <tr>
+                  <td><span class="stock"><b>우진엔텍</b><span class="code">457550</span><span class="mkt">KQ</span></span></td>
+                  <td class="r num down"><b>-5.03%</b></td>
+                  <td class="r num up">+2.32%</td>
+                  <td class="r num down">-7.3%p</td>
+                  <td><span class="vchip"><i class="k-solo"></i>개별 약세</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <details class="sgroup" open>
+          <summary>
+            <b>전기·전자</b><span class="cnt">2종목</span>
+            <span class="rates"><span>섹터(KOSDAQ) <b class="num up">+1.73%</b></span></span>
+          </summary>
+          <div class="tbl-wrap">
+            <table class="fixed">
+              <colgroup><col class="c-name"><col class="c-v"><col class="c-v"><col class="c-v"><col class="c-verdict"></colgroup>
+              <thead><tr><th>종목</th><th class="r">종목 등락률</th><th class="r">섹터 등락률</th><th class="r">섹터 대비</th><th>판정</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><span class="stock"><b>아이티엠반도체</b><span class="code">084850</span><span class="mkt">KQ</span></span></td>
+                  <td class="r num down"><b>-0.87%</b></td>
+                  <td class="r num up">+1.73%</td>
+                  <td class="r num down">-2.6%p</td>
+                  <td><span class="vchip"><i class="k-mixed"></i>혼조</span></td>
+                </tr>
+                <tr>
+                  <td><span class="stock"><b>중앙첨단소재</b><span class="code">051980</span><span class="mkt">KQ</span></span></td>
+                  <td class="r num down"><b>-1.52%</b></td>
+                  <td class="r num up">+1.73%</td>
+                  <td class="r num down">-3.2%p</td>
+                  <td><span class="vchip"><i class="k-mixed"></i>혼조</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <details class="sgroup" open>
+          <summary>
+            <b>기타금융</b><span class="cnt">1종목</span>
+            <span class="rates"><span>섹터(KOSPI) <b class="num up">+0.88%*</b></span></span>
+          </summary>
+          <div class="tbl-wrap">
+            <table class="fixed">
+              <colgroup><col class="c-name"><col class="c-v"><col class="c-v"><col class="c-v"><col class="c-verdict"></colgroup>
+              <thead><tr><th>종목</th><th class="r">종목 등락률</th><th class="r">섹터 등락률</th><th class="r">섹터 대비</th><th>판정</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><span class="stock"><b>HL홀딩스</b><span class="code">060980</span></span></td>
+                  <td class="r num down"><b>-2.21%</b></td>
+                  <td class="r num up">+0.88%*</td>
+                  <td class="r num down">-3.1%p</td>
+                  <td><span class="vchip"><i class="k-mixed"></i>혼조</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <details class="sgroup" >
+          <summary>
+            <b>운송장비·부품</b><span class="cnt">1종목</span>
+            <span class="rates"><span>섹터(KOSPI) <b class="num up">+2.78%</b></span></span>
+          </summary>
+          <div class="tbl-wrap">
+            <table class="fixed">
+              <colgroup><col class="c-name"><col class="c-v"><col class="c-v"><col class="c-v"><col class="c-verdict"></colgroup>
+              <thead><tr><th>종목</th><th class="r">종목 등락률</th><th class="r">섹터 등락률</th><th class="r">섹터 대비</th><th>판정</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><span class="stock"><b>HD현대중공업</b><span class="code">329180</span></span></td>
+                  <td class="r num down"><b>-1.71%</b></td>
+                  <td class="r num up">+2.78%</td>
+                  <td class="r num down">-4.5%p</td>
+                  <td><span class="vchip"><i class="k-mixed"></i>혼조</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <details class="sgroup" >
+          <summary>
+            <b>제약</b><span class="cnt">1종목</span>
+            <span class="rates"><span>섹터(KOSPI) <b class="num up">+5.77%</b></span></span>
+          </summary>
+          <div class="tbl-wrap">
+            <table class="fixed">
+              <colgroup><col class="c-name"><col class="c-v"><col class="c-v"><col class="c-v"><col class="c-verdict"></colgroup>
+              <thead><tr><th>종목</th><th class="r">종목 등락률</th><th class="r">섹터 등락률</th><th class="r">섹터 대비</th><th>판정</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><span class="stock"><b>종근당홀딩스</b><span class="code">001630</span></span></td>
+                  <td class="r num down"><b>-0.41%</b></td>
+                  <td class="r num up">+5.77%</td>
+                  <td class="r num down">-6.2%p</td>
+                  <td><span class="vchip"><i class="k-solo"></i>개별 약세</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+        <details class="sgroup" >
+          <summary>
+            <b>종이·목재</b><span class="cnt">1종목</span>
+            <span class="rates"><span>섹터(KOSPI) <b class="num down">-0.05%</b></span></span>
+          </summary>
+          <div class="tbl-wrap">
+            <table class="fixed">
+              <colgroup><col class="c-name"><col class="c-v"><col class="c-v"><col class="c-v"><col class="c-verdict"></colgroup>
+              <thead><tr><th>종목</th><th class="r">종목 등락률</th><th class="r">섹터 등락률</th><th class="r">섹터 대비</th><th>판정</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><span class="stock"><b>한국제지</b><span class="code">027970</span></span></td>
+                  <td class="r num down"><b>-6.40%</b></td>
+                  <td class="r num down">-0.05%</td>
+                  <td class="r num down">-6.3%p</td>
+                  <td><span class="vchip"><i class="k-leader"></i>섹터 약세 + 낙폭 과대</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <div class="criteria">
+      판정 기준 (<code>config.yaml</code> → <code>judgment</code>에서 변경):
+      섹터 대비 초과수익 <b class="num">5.0%p</b> 이상이면 "강한 종목",
+      섹터 등락률 <b class="num">0.0%</b> 이하면 "약한 섹터"로 봅니다.
+      약한 섹터 속 강한 종목은 <b>개별 강세(개인기)</b>, 오른 섹터 속 강한 종목은 <b>섹터 동반 + 주도주</b>입니다.
+      <br>* 표시: KRX 업종지수가 없는 업종(은행 등)이라 소속 종목의 시가총액 가중 평균으로 계산한 값입니다.
+    </div>
+  </section>
+
+  <!-- 5·6. 외국인 / 기관 순매수 상위 -->
+  <section class="panel" id="buyers" aria-labelledby="h-buyers">
+    <div class="panel-head">
+      <div><span class="kicker">Top net buying</span><h2 id="h-buyers">외국인·기관 순매수 상위 10</h2></div>
+      <span class="note">KOSPI+KOSDAQ · 단위 억원</span>
+    </div>
+    <p class="both-line"><b>양쪽 모두 순매수 1종목</b> · 삼성SDI</p>
+    <div class="grid-2">
+      <div>
+        <h3 class="sub">외국인 순매수 상위</h3>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>#</th><th>종목</th><th class="r">순매수</th><th class="r">등락률</th></tr></thead>
+            <tbody>
+              <tr >
+                <td class="num note">1</td>
+                <td><span class="stock"><b>삼성전자</b></span></td>
+                <td class="r num">2,711</td>
+                <td class="r num up">+1.16%</td>
+              </tr>
+              <tr class="both">
+                <td class="num note">2</td>
+                <td><span class="stock"><b>삼성SDI</b><span class="badge-both">동반</span></span></td>
+                <td class="r num">1,116</td>
+                <td class="r num up">+11.70%</td>
+              </tr>
+              <tr >
+                <td class="num note">3</td>
+                <td><span class="stock"><b>SK스퀘어</b></span></td>
+                <td class="r num">426</td>
+                <td class="r num down">-0.51%</td>
+              </tr>
+              <tr >
+                <td class="num note">4</td>
+                <td><span class="stock"><b>두산</b></span></td>
+                <td class="r num">347</td>
+                <td class="r num up">+4.59%</td>
+              </tr>
+              <tr >
+                <td class="num note">5</td>
+                <td><span class="stock"><b>삼성전기</b></span></td>
+                <td class="r num">305</td>
+                <td class="r num down">-1.52%</td>
+              </tr>
+              <tr >
+                <td class="num note">6</td>
+                <td><span class="stock"><b>유한양행</b></span></td>
+                <td class="r num">215</td>
+                <td class="r num up">+8.71%</td>
+              </tr>
+              <tr >
+                <td class="num note">7</td>
+                <td><span class="stock"><b>에코프로</b><span class="mkt">KQ</span></span></td>
+                <td class="r num">188</td>
+                <td class="r num up">+11.19%</td>
+              </tr>
+              <tr >
+                <td class="num note">8</td>
+                <td><span class="stock"><b>대한항공</b></span></td>
+                <td class="r num">184</td>
+                <td class="r num up">+2.85%</td>
+              </tr>
+              <tr >
+                <td class="num note">9</td>
+                <td><span class="stock"><b>포스코퓨처엠</b></span></td>
+                <td class="r num">163</td>
+                <td class="r num up">+10.90%</td>
+              </tr>
+              <tr >
+                <td class="num note">10</td>
+                <td><span class="stock"><b>LS ELECTRIC</b></span></td>
+                <td class="r num">129</td>
+                <td class="r num up">+3.78%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h3 class="sub">기관 순매수 상위</h3>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>#</th><th>종목</th><th class="r">순매수</th><th class="r">등락률</th></tr></thead>
+            <tbody>
+              <tr >
+                <td class="num note">1</td>
+                <td><span class="stock"><b>한화오션</b></span></td>
+                <td class="r num">5,049</td>
+                <td class="r num down">-1.23%</td>
+              </tr>
+              <tr >
+                <td class="num note">2</td>
+                <td><span class="stock"><b>LG에너지솔루션</b></span></td>
+                <td class="r num">1,317</td>
+                <td class="r num up">+7.20%</td>
+              </tr>
+              <tr class="both">
+                <td class="num note">3</td>
+                <td><span class="stock"><b>삼성SDI</b><span class="badge-both">동반</span></span></td>
+                <td class="r num">1,158</td>
+                <td class="r num up">+11.70%</td>
+              </tr>
+              <tr >
+                <td class="num note">4</td>
+                <td><span class="stock"><b>삼성바이오로직스</b></span></td>
+                <td class="r num">1,011</td>
+                <td class="r num up">+9.94%</td>
+              </tr>
+              <tr >
+                <td class="num note">5</td>
+                <td><span class="stock"><b>삼성전자우</b></span></td>
+                <td class="r num">475</td>
+                <td class="r num up">+2.21%</td>
+              </tr>
+              <tr >
+                <td class="num note">6</td>
+                <td><span class="stock"><b>현대차</b></span></td>
+                <td class="r num">410</td>
+                <td class="r num up">+4.49%</td>
+              </tr>
+              <tr >
+                <td class="num note">7</td>
+                <td><span class="stock"><b>셀트리온</b></span></td>
+                <td class="r num">375</td>
+                <td class="r num up">+2.16%</td>
+              </tr>
+              <tr >
+                <td class="num note">8</td>
+                <td><span class="stock"><b>기아</b></span></td>
+                <td class="r num">350</td>
+                <td class="r num up">+5.26%</td>
+              </tr>
+              <tr >
+                <td class="num note">9</td>
+                <td><span class="stock"><b>삼양식품</b></span></td>
+                <td class="r num">316</td>
+                <td class="r num up">+1.71%</td>
+              </tr>
+              <tr >
+                <td class="num note">10</td>
+                <td><span class="stock"><b>하이브</b></span></td>
+                <td class="r num">314</td>
+                <td class="r num up">+6.62%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. 신용잔고 -->
+  <section class="panel" id="credit" aria-labelledby="h-credit">
+    <div class="panel-head">
+      <div><span class="kicker">Margin balance</span><h2 id="h-credit">주요 종목 신용잔고</h2></div>
+      <span class="note">KOSPI 시가총액 상위 20 · 10/19 기준</span>
+    </div>
+    <p class="placeholder">데이터 출처를 확정하는 중입니다. 종목별 신용잔고를 받을 곳이 정해지면 이 자리에 표와 추이 그래프가 들어갑니다.</p>
+  </section>
+
+  <section class="panel summary" aria-labelledby="h-news">
+    <div class="panel-head"><h2 id="h-news">오늘의 중요 뉴스</h2><span class="note">텔레그램 · 블로그</span></div>
+    <p class="placeholder">보류 중입니다. 텔레그램 채널과 블로그 주소를 정하면 4~5단계에서 이 자리에 5~10개를 넣습니다.</p>
+  </section>
+
+  <!-- 지난 리포트 -->
+  <section class="panel" id="archive" aria-labelledby="h-archive">
+    <div class="panel-head"><div><span class="kicker">Archive</span><h2 id="h-archive">지난 리포트</h2></div></div>
+    <div class="archive">
+      <div>
+        <h3 class="sub">Weekly</h3>
+        <ul>
+          <li><a href="../weekly/2026-W42.html"><span class="lbl">2026-W42</span><span class="ttl">10월 3주차<small>10/8→10/16</small></span><span class="num down">KOSPI -14.46%</span></a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="sub">Daily</h3>
+        <ul>
+          <li><span class="cur" aria-current="page"><span class="lbl">2026-10-19</span><span class="ttl">10월 19일(월)<small>10/16→10/19</small></span><span class="num up">KOSPI +1.76%</span></span>
+          </li>
+          <li><a href="../daily/2026-10-16.html"><span class="lbl">2026-10-16</span><span class="ttl">10월 16일(금)<small>10/15→10/16</small></span><span class="num up">KOSPI +2.05%</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>데이터: KRX(pykrx), Yahoo Finance(yfinance)</span>
+    <span>생성: 2026-10-20 07:35 KST</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.1/echarts.min.js"></script>
+<script id="chart-data" type="application/json">{"mode": "daily", "unit": "일", "indices": [{"name": "KOSPI", "region": "한국", "close": 5768.01, "change": 99.96, "change_pct": 1.76, "base_date": "2026-10-16", "end_date": "2026-10-19"}, {"name": "KOSDAQ", "region": "한국", "close": 808.89, "change": 14.11, "change_pct": 1.78, "base_date": "2026-10-16", "end_date": "2026-10-19"}, {"name": "다우", "region": "미국", "close": 51966.03, "change": -36.38, "change_pct": -0.07, "base_date": "2026-10-16", "end_date": "2026-10-19"}, {"name": "나스닥", "region": "미국", "close": 26430.89, "change": 290.86, "change_pct": 1.11, "base_date": "2026-10-16", "end_date": "2026-10-19"}, {"name": "S&P500", "region": "미국", "close": 7690.73, "change": 31.29, "change_pct": 0.41, "base_date": "2026-10-16", "end_date": "2026-10-19"}, {"name": "닛케이225", "region": "아시아", "close": 65324.29, "change": 898.34, "change_pct": 1.39, "base_date": "2026-10-15", "end_date": "2026-10-16"}, {"name": "상해종합", "region": "아시아", "close": 3716.28, "change": 8.81, "change_pct": 0.24, "base_date": "2026-10-15", "end_date": "2026-10-16"}, {"name": "대만가권", "region": "아시아", "close": 47111.26, "change": 141.39, "change_pct": 0.3, "base_date": "2026-10-15", "end_date": "2026-10-16"}], "flows": {"unit": "억원", "current": {"KOSPI": {"외국인": 947, "기관": 10378, "개인": -12393}, "KOSDAQ": {"외국인": -1618, "기관": 686, "개인": 783}}, "trend": {"KOSPI": {"외국인": [-16846, -26321, 4486, 71, 479, -4987, -32682, -29937, -20646, 1194, -1080, -17577, -26188, -20767, -20110, -45789, -11791, -37582, 3204, 947], "기관": [12371, 2497, 15322, 15190, -1295, 3233, -10169, 1037, -7993, 3252, 4155, -37, -7101, -16750, -1338, 16685, 8119, 17121, -6403, 10378]}, "KOSDAQ": {"외국인": [-272, 467, -478, -995, -566, -476, 538, -1305, -713, 2290, -1767, 1151, -2499, 780, -130, 1339, -2128, 2223, -931, -1618], "기관": [222, 508, 226, -285, -952, 106, -730, 66, 482, 5675, 936, 1082, -2098, -1075, -2196, 459, -1787, -1609, 1709, 686]}, "labels": ["9/16", "9/17", "9/18", "9/21", "9/22", "9/23", "9/28", "9/29", "9/30", "10/1", "10/2", "10/6", "10/7", "10/8", "10/12", "10/13", "10/14", "10/15", "10/16", "10/19"]}}, "sectors": {"KOSPI": [{"name": "제약", "change_pct": 5.77}, {"name": "금속", "change_pct": 4.98}, {"name": "오락·문화", "change_pct": 4.24}, {"name": "화학", "change_pct": 3.56}, {"name": "보험", "change_pct": 2.85}, {"name": "IT 서비스", "change_pct": 2.81}, {"name": "운송장비·부품", "change_pct": 2.78}, {"name": "기계·장비", "change_pct": 2.42}, {"name": "일반서비스", "change_pct": 2.17}, {"name": "운송·창고", "change_pct": 1.97}, {"name": "증권", "change_pct": 1.83}, {"name": "전기·가스", "change_pct": 1.58}, {"name": "전기·전자", "change_pct": 1.35}, {"name": "비금속", "change_pct": 1.22}, {"name": "유통", "change_pct": 1.22}, {"name": "음식료·담배", "change_pct": 1.2}, {"name": "건설", "change_pct": 1.13}, {"name": "부동산", "change_pct": 0.71}, {"name": "통신", "change_pct": 0.6}, {"name": "종이·목재", "change_pct": -0.05}, {"name": "섬유·의류", "change_pct": -0.84}, {"name": "의료·정밀기기", "change_pct": -2.83}], "KOSDAQ": [{"name": "금융", "change_pct": 7.1}, {"name": "금속", "change_pct": 4.03}, {"name": "종이·목재", "change_pct": 3.12}, {"name": "운송장비·부품", "change_pct": 3.02}, {"name": "오락·문화", "change_pct": 2.44}, {"name": "일반서비스", "change_pct": 2.32}, {"name": "화학", "change_pct": 1.97}, {"name": "제약", "change_pct": 1.9}, {"name": "전기·전자", "change_pct": 1.73}, {"name": "IT 서비스", "change_pct": 1.66}, {"name": "출판·매체복제", "change_pct": 1.56}, {"name": "기타제조", "change_pct": 1.09}, {"name": "음식료·담배", "change_pct": 1.02}, {"name": "섬유·의류", "change_pct": 0.96}, {"name": "기계·장비", "change_pct": 0.72}, {"name": "의료·정밀기기", "change_pct": 0.67}, {"name": "건설", "change_pct": 0.48}, {"name": "운송·창고", "change_pct": 0.31}, {"name": "유통", "change_pct": 0.01}, {"name": "통신", "change_pct": -0.1}, {"name": "비금속", "change_pct": -1.28}]}, "highGroups": [{"sector": "IT 서비스", "counts": {"together": 1, "leader": 1, "solo": 0, "mixed": 0}}, {"sector": "운송장비·부품", "counts": {"together": 0, "leader": 2, "solo": 0, "mixed": 0}}, {"sector": "금속", "counts": {"together": 1, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "기계·장비", "counts": {"together": 1, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "유통", "counts": {"together": 1, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "음식료·담배", "counts": {"together": 1, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "일반서비스", "counts": {"together": 1, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "전기·전자", "counts": {"together": 1, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "화학", "counts": {"together": 1, "leader": 0, "solo": 0, "mixed": 0}}], "lowGroups": [{"sector": "일반서비스", "counts": {"together": 0, "leader": 0, "solo": 1, "mixed": 1}}, {"sector": "전기·전자", "counts": {"together": 0, "leader": 0, "solo": 0, "mixed": 2}}, {"sector": "기타금융", "counts": {"together": 0, "leader": 0, "solo": 0, "mixed": 1}}, {"sector": "운송장비·부품", "counts": {"together": 0, "leader": 0, "solo": 0, "mixed": 1}}, {"sector": "제약", "counts": {"together": 0, "leader": 0, "solo": 1, "mixed": 0}}, {"sector": "종이·목재", "counts": {"together": 0, "leader": 1, "solo": 0, "mixed": 0}}], "highVerdicts": {"together": "섹터 동반", "leader": "섹터 동반 + 주도주", "solo": "개별 강세(개인기)", "mixed": "혼조"}, "lowVerdicts": {"together": "섹터 동반 약세", "leader": "섹터 약세 + 낙폭 과대", "solo": "개별 약세", "mixed": "혼조"}, "creditTrend": null}</script>
+<script>
+(function () {
+  "use strict";
+  var D = JSON.parse(document.getElementById("chart-data").textContent);
+  var charts = {};
+  var state = { flowCum: true, market: "KOSPI" };
+
+  function tok(name) {
+    return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  }
+  function signed(v, digits) {
+    var s = Number(v).toLocaleString("ko-KR", { minimumFractionDigits: digits || 0, maximumFractionDigits: digits || 0 });
+    return (v > 0 ? "+" : "") + s;
+  }
+  function pct(v) { return signed(v, 2) + "%"; }
+  function md(iso) { var p = iso.split("-"); return +p[1] + "/" + +p[2]; }
+  function signColor(v, T) { return v >= 0 ? T.upFill : T.downFill; }
+  function endRadius(v, horizontal) {
+    if (horizontal) return v >= 0 ? [0, 4, 4, 0] : [4, 0, 0, 4];
+    return v >= 0 ? [4, 4, 0, 0] : [0, 0, 4, 4];
+  }
+
+  function theme() {
+    return {
+      ink: tok("--ink"), ink2: tok("--ink-2"), muted: tok("--muted"), line: tok("--line"),
+      surface: tok("--surface"), upFill: tok("--up-fill"), downFill: tok("--down-fill"),
+      up: tok("--up"), down: tok("--down"),
+      foreign: tok("--s-foreign"), inst: tok("--s-inst"), kospi: tok("--s-kospi"), kosdaq: tok("--s-kosdaq"),
+      v: { together: tok("--v-together"), leader: tok("--v-leader"), solo: tok("--v-solo"), mixed: tok("--v-mixed") },
+      font: tok("--font-sans"), mono: tok("--font-mono"),
+    };
+  }
+
+  function base(T) {
+    return {
+      animationDuration: 400,
+      textStyle: { fontFamily: T.font, color: T.ink2 },
+      tooltip: {
+        backgroundColor: T.surface, borderColor: T.line, borderWidth: 1, padding: [8, 10],
+        textStyle: { color: T.ink, fontSize: 12.5, fontFamily: T.font },
+        extraCssText: "box-shadow:0 4px 14px rgba(0,0,0,.12);border-radius:8px;",
+        confine: true,
+      },
+    };
+  }
+  function valueAxis(T, fmt) {
+    return {
+      type: "value",
+      axisLabel: { color: T.muted, fontSize: 11, fontFamily: T.mono, formatter: fmt },
+      splitLine: { lineStyle: { color: T.line } },
+      axisLine: { show: false },
+    };
+  }
+  // 막대 끝 숫자 라벨이 들어갈 여유를 양쪽에 둡니다
+  function paddedAxis(T, rows, c) {
+    var vals = rows.map(function (r) { return r.change_pct; });
+    var lo = Math.min(0, Math.min.apply(null, vals)), hi = Math.max(0, Math.max.apply(null, vals));
+    // 숫자 라벨(약 56px)이 들어갈 만큼, 그래프 실제 폭에 맞춰 여백 계산
+    var plotW = Math.max(c.getWidth() - 110, 120), label = 56;
+    var sides = (lo < 0 ? 1 : 0) + (hi > 0 ? 1 : 0);
+    var pad = (hi - lo) * label / Math.max(plotW - sides * label, 40) || 1;
+    return Object.assign(valueAxis(T, function (v) { return v + "%"; }), {
+      min: lo < 0 ? +(lo - pad).toFixed(1) : 0, max: hi > 0 ? +(hi + pad).toFixed(1) : 0,
+      axisLabel: { show: false }, splitLine: { show: false },
+    });
+  }
+  function catAxis(T, data, extra) {
+    return Object.assign({
+      type: "category", data: data,
+      axisTick: { show: false },
+      axisLine: { lineStyle: { color: T.line } },
+      axisLabel: { color: T.ink2, fontSize: 12 },
+    }, extra || {});
+  }
+  function row(color, label, value) {
+    return '<div style="display:flex;gap:14px;justify-content:space-between;align-items:center">' +
+      '<span><i style="display:inline-block;width:8px;height:8px;border-radius:2px;background:' + color + ';margin-right:6px"></i>' +
+      label + "</span><b style=\"font-family:" + tok("--font-mono") + '">' + value + "</b></div>";
+  }
+
+  function mount(id) {
+    var el = document.getElementById(id);
+    if (!el) return null;
+    if (charts[id]) charts[id].dispose();
+    charts[id] = echarts.init(el, null, { renderer: "svg" });
+    return charts[id];
+  }
+
+  // 1. 주요 지수 — 가로 막대 (설정 파일 순서 고정)
+  function drawIndices(T) {
+    var c = mount("c-indices"); if (!c) return;
+    var rows = D.indices;
+    c.setOption(Object.assign(base(T), {
+      grid: { left: 8, right: 8, top: 8, bottom: 8, containLabel: true },
+      xAxis: paddedAxis(T, rows, c),
+      yAxis: catAxis(T, rows.map(function (r) { return r.name; }), { inverse: true, axisLine: { show: false } }),
+      tooltip: Object.assign(base(T).tooltip, {
+        trigger: "item",
+        formatter: function (p) {
+          var r = rows[p.dataIndex];
+          return "<b>" + r.name + "</b><br>" +
+            row(signColor(r.change_pct, T), "등락률", pct(r.change_pct)) +
+            row(T.line, "종가", Number(r.close).toLocaleString("ko-KR", { minimumFractionDigits: 2 })) +
+            row(T.line, "비교 구간", md(r.base_date) + " → " + md(r.end_date));
+        },
+      }),
+      series: [{
+        type: "bar", barWidth: 14,
+        data: rows.map(function (r) {
+          return { value: r.change_pct, itemStyle: { color: signColor(r.change_pct, T), borderRadius: endRadius(r.change_pct, true) } };
+        }),
+        label: {
+          show: true, fontFamily: T.mono, fontSize: 11.5,
+          formatter: function (p) { return pct(p.value); },
+          color: T.ink,
+          position: "right",
+        },
+        labelLayout: function (p) {
+          var v = rows[p.dataIndex].change_pct;
+          return v < 0 ? { x: p.rect.x - 4, align: "right" } : {};
+        },
+      }],
+    }));
+  }
+
+  // 2-a. 순매수 막대 (시장 × 투자자)
+  function drawFlows(T) {
+    var c = mount("c-flows"); if (!c) return;
+    var mk = Object.keys(D.flows.current);
+    var who = [["외국인", T.foreign], ["기관", T.inst]];
+    c.setOption(Object.assign(base(T), {
+      legend: { top: 0, left: 0, icon: "roundRect", itemWidth: 10, itemHeight: 10, textStyle: { color: T.ink2 } },
+      grid: { left: 8, right: 8, top: 34, bottom: 4, containLabel: true },
+      xAxis: catAxis(T, mk),
+      // 막대 끝 숫자가 축 글씨와 겹치지 않게 위아래로 여유
+      yAxis: Object.assign(valueAxis(T, function (v) { return v.toLocaleString("ko-KR"); }), {
+        min: function (v) { return v.min < 0 ? Math.round(v.min * 1.25) : 0; },
+        max: function (v) { return v.max > 0 ? Math.round(v.max * 1.25) : 0; },
+      }),
+      tooltip: Object.assign(base(T).tooltip, {
+        trigger: "axis", axisPointer: { type: "shadow", shadowStyle: { color: "rgba(127,127,127,.08)" } },
+        formatter: function (ps) {
+          return "<b>" + ps[0].name + "</b> 순매수<br>" + ps.map(function (p) {
+            return row(p.color, p.seriesName, signed(p.value) + "억");
+          }).join("");
+        },
+      }),
+      series: who.map(function (w) {
+        return {
+          name: w[0], type: "bar", barWidth: 22, barGap: "30%", color: w[1],
+          data: mk.map(function (m) {
+            var v = D.flows.current[m][w[0]];
+            return { value: v, itemStyle: { borderRadius: endRadius(v, false) } };
+          }),
+          label: { show: true, position: "outside", fontFamily: T.mono, fontSize: 11, color: T.ink2,
+                   formatter: function (p) { return signed(p.value); } },
+        };
+      }),
+    }));
+  }
+
+  // 2-b. 수급 추이 선그래프 (누적 / 기간별)
+  function drawFlowTrend(T, id, market) {
+    var c = mount(id); if (!c) return;
+    var tr = D.flows.trend, labels = tr.labels;
+    function series(arr) {
+      if (!state.flowCum) return arr;
+      var s = 0; return arr.map(function (v) { s += v; return s; });
+    }
+    var who = [["외국인", T.foreign], ["기관", T.inst]];
+    var big = who.some(function (w) { return series(tr[market][w[0]]).some(function (v) { return Math.abs(v) >= 10000; }); });
+    c.setOption(Object.assign(base(T), {
+      title: { text: market, left: 0, top: 0, textStyle: { fontSize: 13, fontWeight: 700, color: T.ink, fontFamily: T.font } },
+      legend: { top: 1, right: 0, icon: "roundRect", itemWidth: 10, itemHeight: 3, textStyle: { color: T.ink2, fontSize: 12 } },
+      grid: { left: 8, right: 12, top: 32, bottom: 4, containLabel: true },
+      xAxis: catAxis(T, labels, { boundaryGap: false, axisLabel: { color: T.muted, fontSize: 11, fontFamily: T.mono, hideOverlap: true } }),
+      yAxis: valueAxis(T, function (v) { return big ? (v / 10000).toFixed(1) + "조" : v.toLocaleString("ko-KR"); }),
+      tooltip: Object.assign(base(T).tooltip, {
+        trigger: "axis", axisPointer: { type: "line", lineStyle: { color: T.muted, type: "dashed" } },
+        formatter: function (ps) {
+          var i = ps[0].dataIndex;
+          return "<b>" + market + " · " + ps[0].name + "</b>" + (state.flowCum ? " (누적)" : "") + "<br>" + ps.map(function (p) {
+            var raw = tr[market][p.seriesName][i];
+            var txt = signed(p.value) + "억" + (state.flowCum ? ' <span style="color:' + T.muted + '">(' + D.unit + " " + signed(raw) + ")</span>" : "");
+            return row(p.color, p.seriesName, txt);
+          }).join("");
+        },
+      }),
+      series: who.map(function (w) {
+        var data = series(tr[market][w[0]]);
+        return {
+          name: w[0], type: "line", color: w[1], data: data, symbol: "circle", symbolSize: 5, showSymbol: false,
+          lineStyle: { width: 2 },
+          emphasis: { focus: "series" },
+          markPoint: {
+            symbol: "circle", symbolSize: 8, itemStyle: { color: w[1], borderColor: T.surface, borderWidth: 2 },
+            data: [{ coord: [labels.length - 1, data[data.length - 1]] }], label: { show: false },
+          },
+          markLine: w[0] === "외국인" ? { silent: true, symbol: "none", label: { show: false },
+                                           lineStyle: { color: T.muted, width: 1, type: "solid", opacity: .5 }, data: [{ yAxis: 0 }] } : undefined,
+        };
+      }),
+    }));
+  }
+
+  // 3. 업종 전체 — 등락률 순 가로 막대
+  function drawSectors(T) {
+    var c = mount("c-sectors"); if (!c) return;
+    var rows = D.sectors[state.market];
+    c.setOption(Object.assign(base(T), {
+      grid: { left: 8, right: 8, top: 4, bottom: 4, containLabel: true },
+      xAxis: paddedAxis(T, rows, c),
+      yAxis: catAxis(T, rows.map(function (r) { return r.name; }), { inverse: true, axisLine: { show: false }, axisLabel: { color: T.ink2, fontSize: 11.5, interval: 0 } }),
+      tooltip: Object.assign(base(T).tooltip, {
+        trigger: "item",
+        formatter: function (p) { return "<b>" + p.name + "</b> · " + state.market + "<br>" + row(p.color, "등락률", pct(p.value)) + row(T.line, "순위", (p.dataIndex + 1) + " / " + rows.length); },
+      }),
+      series: [{
+        type: "bar", barWidth: 12,
+        data: rows.map(function (r) {
+          return { value: r.change_pct, itemStyle: { color: signColor(r.change_pct, T), borderRadius: endRadius(r.change_pct, true) } };
+        }),
+        label: { show: true, position: "right", fontFamily: T.mono, fontSize: 10.5, color: T.ink2, formatter: function (p) { return pct(p.value); } },
+        labelLayout: function (p) { return rows[p.dataIndex].change_pct < 0 ? { x: p.rect.x - 4, align: "right" } : {}; },
+      }],
+    }));
+  }
+
+  // 4. 섹터별 신고가/신저가 종목 수 — 판정별 누적 가로 막대
+  function drawHL(T, id, groups, verdicts) {
+    var c = mount(id); if (!c) return;
+    if (!groups.length) { c.dispose(); delete charts[id]; return; }
+    var kinds = Object.keys(verdicts);
+    var totals = groups.map(function (g) { return kinds.reduce(function (s, k) { return s + g.counts[k]; }, 0); });
+    var series = kinds.map(function (k) {
+      return {
+        name: verdicts[k], type: "bar", stack: "n", barWidth: 14, color: T.v[k],
+        itemStyle: { borderColor: T.surface, borderWidth: 1 },
+        data: groups.map(function (g) { return g.counts[k] || null; }),
+      };
+    });
+    series.push({
+      name: "합계", type: "bar", stack: "n", data: totals.map(function () { return 0; }), silent: true,
+      label: { show: true, position: "right", fontFamily: T.mono, fontSize: 11.5, color: T.ink,
+               formatter: function (p) { return totals[p.dataIndex]; } },
+      itemStyle: { color: "transparent" },
+    });
+    c.setOption(Object.assign(base(T), {
+      grid: { left: 8, right: 30, top: 4, bottom: 4, containLabel: true },
+      xAxis: Object.assign(valueAxis(T), { minInterval: 1 }),
+      yAxis: catAxis(T, groups.map(function (g) { return g.sector; }), { inverse: true, axisLine: { show: false }, axisLabel: { color: T.ink2, fontSize: 12, interval: 0 } }),
+      tooltip: Object.assign(base(T).tooltip, {
+        trigger: "axis", axisPointer: { type: "shadow", shadowStyle: { color: "rgba(127,127,127,.08)" } },
+        formatter: function (ps) {
+          var i = ps[0].dataIndex;
+          return "<b>" + ps[0].name + "</b> · " + totals[i] + "종목<br>" + ps.filter(function (p) { return p.value && p.seriesName !== "합계"; })
+            .map(function (p) { return row(p.color, p.seriesName, p.value + "종목"); }).join("");
+        },
+      }),
+      series: series,
+    }));
+  }
+
+  // 9. 시장 전체 신용융자 잔고
+  function drawCredit(T) {
+    var c = mount("c-credit"); if (!c) return;
+    var ct = D.creditTrend;
+    if (!ct) { c.dispose(); delete charts["c-credit"]; return; }
+    var mk = [["KOSPI", T.kospi], ["KOSDAQ", T.kosdaq]];
+    c.setOption(Object.assign(base(T), {
+      legend: { top: 0, left: 0, icon: "roundRect", itemWidth: 10, itemHeight: 3, textStyle: { color: T.ink2 } },
+      grid: { left: 8, right: 44, top: 30, bottom: 4, containLabel: true },
+      xAxis: catAxis(T, ct.labels, { boundaryGap: false, axisLabel: { color: T.muted, fontSize: 11, fontFamily: T.mono, hideOverlap: true } }),
+      yAxis: Object.assign(valueAxis(T, function (v) { return v + "조"; }), { scale: true }),
+      tooltip: Object.assign(base(T).tooltip, {
+        trigger: "axis", axisPointer: { type: "line", lineStyle: { color: T.muted, type: "dashed" } },
+        formatter: function (ps) {
+          return "<b>" + ps[0].name + "</b> 신용융자 잔고<br>" + ps.map(function (p) { return row(p.color, p.seriesName, p.value.toFixed(2) + "조"); }).join("");
+        },
+      }),
+      series: mk.map(function (m) {
+        var data = ct[m[0]];
+        return {
+          name: m[0], type: "line", color: m[1], data: data, showSymbol: false, symbolSize: 5, lineStyle: { width: 2 },
+          endLabel: { show: true, fontFamily: T.mono, fontSize: 11, color: T.ink2, formatter: function (p) { return p.value.toFixed(1); } },
+        };
+      }),
+    }));
+  }
+
+  function drawAll() {
+    if (typeof echarts === "undefined") return;
+    var T = theme();
+    drawIndices(T);
+    drawFlows(T);
+    drawFlowTrend(T, "c-flow-kospi", "KOSPI");
+    drawFlowTrend(T, "c-flow-kosdaq", "KOSDAQ");
+    drawSectors(T);
+    drawHL(T, "c-highs", D.highGroups, D.highVerdicts);
+    drawHL(T, "c-lows", D.lowGroups, D.lowVerdicts);
+    drawCredit(T);
+  }
+
+  // ── 버튼 ──
+  function press(group, btn) {
+    group.querySelectorAll("button").forEach(function (b) { b.setAttribute("aria-pressed", String(b === btn)); });
+  }
+  var cum = document.getElementById("flow-cum"), each = document.getElementById("flow-each");
+  [cum, each].forEach(function (b) {
+    b && b.addEventListener("click", function () {
+      state.flowCum = b === cum; press(b.parentNode, b);
+      var T = theme(); drawFlowTrend(T, "c-flow-kospi", "KOSPI"); drawFlowTrend(T, "c-flow-kosdaq", "KOSDAQ");
+    });
+  });
+  document.querySelectorAll("[data-market]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      state.market = b.dataset.market; press(b.parentNode, b);
+      document.querySelectorAll("[data-sector-market]").forEach(function (el) { el.hidden = el.dataset.sectorMarket !== state.market; });
+      drawSectors(theme());
+    });
+  });
+  document.querySelectorAll("[data-hl]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      press(b.parentNode, b);
+      document.querySelectorAll("[data-hl-panel]").forEach(function (el) { el.hidden = el.dataset.hlPanel !== b.dataset.hl; });
+    });
+  });
+
+  // ── 크기·테마 변화에 맞춰 다시 그리기 ──
+  if (window.ResizeObserver) {
+    var ro = new ResizeObserver(function (entries) {
+      entries.forEach(function (e) { var c = charts[e.target.id]; if (c) c.resize(); });
+    });
+    document.querySelectorAll(".chart").forEach(function (el) { ro.observe(el); });
+  }
+  if (window.matchMedia) {
+    var mq = window.matchMedia("(prefers-color-scheme: dark)");
+    (mq.addEventListener ? mq.addEventListener.bind(mq, "change") : mq.addListener.bind(mq))(drawAll);
+  }
+  new MutationObserver(drawAll).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
+  drawAll();
+})();
+</script>
+</body>
+</html>

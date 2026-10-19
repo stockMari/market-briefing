@@ -1,0 +1,814 @@
+{
+ "mode": "daily",
+ "label": "2026-10-19",
+ "title": "10월 19일(월)",
+ "period": {
+  "mode": "daily",
+  "label": "2026-10-19",
+  "title": "10월 19일(월)",
+  "base": "2026-10-16",
+  "end": "2026-10-19",
+  "target_base": "2026-10-16",
+  "target_end": "2026-10-19",
+  "trend_len": 20,
+  "notes": []
+ },
+ "sample": false,
+ "generated_at": "2026-10-20T07:35+09:00",
+ "judgment": {
+  "individual_excess_pp": 5.0,
+  "sector_weak_pct": 0.0,
+  "high_basis": "close",
+  "min_market_cap_eok": 500
+ },
+ "summary": null,
+ "indices": [
+  {
+   "name": "KOSPI",
+   "region": "한국",
+   "close": 5768.01,
+   "change": 99.96,
+   "change_pct": 1.76,
+   "base_date": "2026-10-16",
+   "end_date": "2026-10-19"
+  },
+  {
+   "name": "KOSDAQ",
+   "region": "한국",
+   "close": 808.89,
+   "change": 14.11,
+   "change_pct": 1.78,
+   "base_date": "2026-10-16",
+   "end_date": "2026-10-19"
+  },
+  {
+   "name": "다우",
+   "region": "미국",
+   "close": 51966.03,
+   "change": -36.38,
+   "change_pct": -0.07,
+   "base_date": "2026-10-16",
+   "end_date": "2026-10-19"
+  },
+  {
+   "name": "나스닥",
+   "region": "미국",
+   "close": 26430.89,
+   "change": 290.86,
+   "change_pct": 1.11,
+   "base_date": "2026-10-16",
+   "end_date": "2026-10-19"
+  },
+  {
+   "name": "S&P500",
+   "region": "미국",
+   "close": 7690.73,
+   "change": 31.29,
+   "change_pct": 0.41,
+   "base_date": "2026-10-16",
+   "end_date": "2026-10-19"
+  },
+  {
+   "name": "닛케이225",
+   "region": "아시아",
+   "close": 65324.29,
+   "change": 898.34,
+   "change_pct": 1.39,
+   "base_date": "2026-10-15",
+   "end_date": "2026-10-16"
+  },
+  {
+   "name": "상해종합",
+   "region": "아시아",
+   "close": 3716.28,
+   "change": 8.81,
+   "change_pct": 0.24,
+   "base_date": "2026-10-15",
+   "end_date": "2026-10-16"
+  },
+  {
+   "name": "대만가권",
+   "region": "아시아",
+   "close": 47111.26,
+   "change": 141.39,
+   "change_pct": 0.3,
+   "base_date": "2026-10-15",
+   "end_date": "2026-10-16"
+  }
+ ],
+ "flows": {
+  "unit": "억원",
+  "current": {
+   "KOSPI": {
+    "외국인": 947,
+    "기관": 10378,
+    "개인": -12393
+   },
+   "KOSDAQ": {
+    "외국인": -1618,
+    "기관": 686,
+    "개인": 783
+   }
+  },
+  "trend": {
+   "KOSPI": {
+    "외국인": [
+     -16846,
+     -26321,
+     4486,
+     71,
+     479,
+     -4987,
+     -32682,
+     -29937,
+     -20646,
+     1194,
+     -1080,
+     -17577,
+     -26188,
+     -20767,
+     -20110,
+     -45789,
+     -11791,
+     -37582,
+     3204,
+     947
+    ],
+    "기관": [
+     12371,
+     2497,
+     15322,
+     15190,
+     -1295,
+     3233,
+     -10169,
+     1037,
+     -7993,
+     3252,
+     4155,
+     -37,
+     -7101,
+     -16750,
+     -1338,
+     16685,
+     8119,
+     17121,
+     -6403,
+     10378
+    ]
+   },
+   "KOSDAQ": {
+    "외국인": [
+     -272,
+     467,
+     -478,
+     -995,
+     -566,
+     -476,
+     538,
+     -1305,
+     -713,
+     2290,
+     -1767,
+     1151,
+     -2499,
+     780,
+     -130,
+     1339,
+     -2128,
+     2223,
+     -931,
+     -1618
+    ],
+    "기관": [
+     222,
+     508,
+     226,
+     -285,
+     -952,
+     106,
+     -730,
+     66,
+     482,
+     5675,
+     936,
+     1082,
+     -2098,
+     -1075,
+     -2196,
+     459,
+     -1787,
+     -1609,
+     1709,
+     686
+    ]
+   },
+   "labels": [
+    "9/16",
+    "9/17",
+    "9/18",
+    "9/21",
+    "9/22",
+    "9/23",
+    "9/28",
+    "9/29",
+    "9/30",
+    "10/1",
+    "10/2",
+    "10/6",
+    "10/7",
+    "10/8",
+    "10/12",
+    "10/13",
+    "10/14",
+    "10/15",
+    "10/16",
+    "10/19"
+   ]
+  }
+ },
+ "sectors": {
+  "KOSPI": [
+   {
+    "name": "제약",
+    "change_pct": 5.77
+   },
+   {
+    "name": "금속",
+    "change_pct": 4.98
+   },
+   {
+    "name": "오락·문화",
+    "change_pct": 4.24
+   },
+   {
+    "name": "화학",
+    "change_pct": 3.56
+   },
+   {
+    "name": "보험",
+    "change_pct": 2.85
+   },
+   {
+    "name": "IT 서비스",
+    "change_pct": 2.81
+   },
+   {
+    "name": "운송장비·부품",
+    "change_pct": 2.78
+   },
+   {
+    "name": "기계·장비",
+    "change_pct": 2.42
+   },
+   {
+    "name": "일반서비스",
+    "change_pct": 2.17
+   },
+   {
+    "name": "운송·창고",
+    "change_pct": 1.97
+   },
+   {
+    "name": "증권",
+    "change_pct": 1.83
+   },
+   {
+    "name": "전기·가스",
+    "change_pct": 1.58
+   },
+   {
+    "name": "전기·전자",
+    "change_pct": 1.35
+   },
+   {
+    "name": "비금속",
+    "change_pct": 1.22
+   },
+   {
+    "name": "유통",
+    "change_pct": 1.22
+   },
+   {
+    "name": "음식료·담배",
+    "change_pct": 1.2
+   },
+   {
+    "name": "건설",
+    "change_pct": 1.13
+   },
+   {
+    "name": "부동산",
+    "change_pct": 0.71
+   },
+   {
+    "name": "통신",
+    "change_pct": 0.6
+   },
+   {
+    "name": "종이·목재",
+    "change_pct": -0.05
+   },
+   {
+    "name": "섬유·의류",
+    "change_pct": -0.84
+   },
+   {
+    "name": "의료·정밀기기",
+    "change_pct": -2.83
+   }
+  ],
+  "KOSDAQ": [
+   {
+    "name": "금융",
+    "change_pct": 7.1
+   },
+   {
+    "name": "금속",
+    "change_pct": 4.03
+   },
+   {
+    "name": "종이·목재",
+    "change_pct": 3.12
+   },
+   {
+    "name": "운송장비·부품",
+    "change_pct": 3.02
+   },
+   {
+    "name": "오락·문화",
+    "change_pct": 2.44
+   },
+   {
+    "name": "일반서비스",
+    "change_pct": 2.32
+   },
+   {
+    "name": "화학",
+    "change_pct": 1.97
+   },
+   {
+    "name": "제약",
+    "change_pct": 1.9
+   },
+   {
+    "name": "전기·전자",
+    "change_pct": 1.73
+   },
+   {
+    "name": "IT 서비스",
+    "change_pct": 1.66
+   },
+   {
+    "name": "출판·매체복제",
+    "change_pct": 1.56
+   },
+   {
+    "name": "기타제조",
+    "change_pct": 1.09
+   },
+   {
+    "name": "음식료·담배",
+    "change_pct": 1.02
+   },
+   {
+    "name": "섬유·의류",
+    "change_pct": 0.96
+   },
+   {
+    "name": "기계·장비",
+    "change_pct": 0.72
+   },
+   {
+    "name": "의료·정밀기기",
+    "change_pct": 0.67
+   },
+   {
+    "name": "건설",
+    "change_pct": 0.48
+   },
+   {
+    "name": "운송·창고",
+    "change_pct": 0.31
+   },
+   {
+    "name": "유통",
+    "change_pct": 0.01
+   },
+   {
+    "name": "통신",
+    "change_pct": -0.1
+   },
+   {
+    "name": "비금속",
+    "change_pct": -1.28
+   }
+  ]
+ },
+ "highs": [
+  {
+   "code": "010580",
+   "name": "에스엠벡셀",
+   "market": "KOSPI",
+   "sector": "운송장비·부품",
+   "change_pct": 29.9,
+   "sector_change_pct": 2.78,
+   "sector_estimated": false,
+   "excess_pp": 27.12,
+   "kind": "leader",
+   "verdict": "섹터 동반 + 주도주"
+  },
+  {
+   "code": "021240",
+   "name": "코웨이",
+   "market": "KOSPI",
+   "sector": "일반서비스",
+   "change_pct": 0.56,
+   "sector_change_pct": 2.17,
+   "sector_estimated": false,
+   "excess_pp": -1.61,
+   "kind": "together",
+   "verdict": "섹터 동반"
+  },
+  {
+   "code": "033560",
+   "name": "블루콤",
+   "market": "KOSDAQ",
+   "sector": "전기·전자",
+   "change_pct": 3.25,
+   "sector_change_pct": 1.73,
+   "sector_estimated": false,
+   "excess_pp": 1.52,
+   "kind": "together",
+   "verdict": "섹터 동반"
+  },
+  {
+   "code": "033780",
+   "name": "KT&G",
+   "market": "KOSPI",
+   "sector": "음식료·담배",
+   "change_pct": 1.36,
+   "sector_change_pct": 1.2,
+   "sector_estimated": false,
+   "excess_pp": 0.16,
+   "kind": "together",
+   "verdict": "섹터 동반"
+  },
+  {
+   "code": "051160",
+   "name": "지어소프트",
+   "market": "KOSDAQ",
+   "sector": "IT 서비스",
+   "change_pct": 9.41,
+   "sector_change_pct": 1.66,
+   "sector_estimated": false,
+   "excess_pp": 7.75,
+   "kind": "leader",
+   "verdict": "섹터 동반 + 주도주"
+  },
+  {
+   "code": "094860",
+   "name": "네오리진",
+   "market": "KOSDAQ",
+   "sector": "IT 서비스",
+   "change_pct": 5.52,
+   "sector_change_pct": 1.66,
+   "sector_estimated": false,
+   "excess_pp": 3.86,
+   "kind": "together",
+   "verdict": "섹터 동반"
+  },
+  {
+   "code": "137080",
+   "name": "나래나노텍",
+   "market": "KOSDAQ",
+   "sector": "기계·장비",
+   "change_pct": 0.71,
+   "sector_change_pct": 0.72,
+   "sector_estimated": false,
+   "excess_pp": -0.01,
+   "kind": "together",
+   "verdict": "섹터 동반"
+  },
+  {
+   "code": "251970",
+   "name": "펌텍코리아",
+   "market": "KOSDAQ",
+   "sector": "화학",
+   "change_pct": 0.7,
+   "sector_change_pct": 1.97,
+   "sector_estimated": false,
+   "excess_pp": -1.27,
+   "kind": "together",
+   "verdict": "섹터 동반"
+  },
+  {
+   "code": "396300",
+   "name": "HT로보틱스",
+   "market": "KOSDAQ",
+   "sector": "금속",
+   "change_pct": 1.22,
+   "sector_change_pct": 4.03,
+   "sector_estimated": false,
+   "excess_pp": -2.81,
+   "kind": "together",
+   "verdict": "섹터 동반"
+  },
+  {
+   "code": "419050",
+   "name": "삼기에너지솔루션즈",
+   "market": "KOSDAQ",
+   "sector": "운송장비·부품",
+   "change_pct": 25.64,
+   "sector_change_pct": 3.02,
+   "sector_estimated": false,
+   "excess_pp": 22.62,
+   "kind": "leader",
+   "verdict": "섹터 동반 + 주도주"
+  },
+  {
+   "code": "453340",
+   "name": "현대그린푸드",
+   "market": "KOSPI",
+   "sector": "유통",
+   "change_pct": 4.07,
+   "sector_change_pct": 1.22,
+   "sector_estimated": false,
+   "excess_pp": 2.85,
+   "kind": "together",
+   "verdict": "섹터 동반"
+  }
+ ],
+ "lows": [
+  {
+   "code": "001630",
+   "name": "종근당홀딩스",
+   "market": "KOSPI",
+   "sector": "제약",
+   "change_pct": -0.41,
+   "sector_change_pct": 5.77,
+   "sector_estimated": false,
+   "excess_pp": -6.18,
+   "kind": "solo",
+   "verdict": "개별 약세"
+  },
+  {
+   "code": "019680",
+   "name": "대교",
+   "market": "KOSPI",
+   "sector": "일반서비스",
+   "change_pct": -2.42,
+   "sector_change_pct": 2.17,
+   "sector_estimated": false,
+   "excess_pp": -4.59,
+   "kind": "mixed",
+   "verdict": "혼조"
+  },
+  {
+   "code": "027970",
+   "name": "한국제지",
+   "market": "KOSPI",
+   "sector": "종이·목재",
+   "change_pct": -6.4,
+   "sector_change_pct": -0.05,
+   "sector_estimated": false,
+   "excess_pp": -6.35,
+   "kind": "leader",
+   "verdict": "섹터 약세 + 낙폭 과대"
+  },
+  {
+   "code": "051980",
+   "name": "중앙첨단소재",
+   "market": "KOSDAQ",
+   "sector": "전기·전자",
+   "change_pct": -1.52,
+   "sector_change_pct": 1.73,
+   "sector_estimated": false,
+   "excess_pp": -3.25,
+   "kind": "mixed",
+   "verdict": "혼조"
+  },
+  {
+   "code": "060980",
+   "name": "HL홀딩스",
+   "market": "KOSPI",
+   "sector": "기타금융",
+   "change_pct": -2.21,
+   "sector_change_pct": 0.88,
+   "sector_estimated": true,
+   "excess_pp": -3.09,
+   "kind": "mixed",
+   "verdict": "혼조"
+  },
+  {
+   "code": "084850",
+   "name": "아이티엠반도체",
+   "market": "KOSDAQ",
+   "sector": "전기·전자",
+   "change_pct": -0.87,
+   "sector_change_pct": 1.73,
+   "sector_estimated": false,
+   "excess_pp": -2.6,
+   "kind": "mixed",
+   "verdict": "혼조"
+  },
+  {
+   "code": "329180",
+   "name": "HD현대중공업",
+   "market": "KOSPI",
+   "sector": "운송장비·부품",
+   "change_pct": -1.71,
+   "sector_change_pct": 2.78,
+   "sector_estimated": false,
+   "excess_pp": -4.49,
+   "kind": "mixed",
+   "verdict": "혼조"
+  },
+  {
+   "code": "457550",
+   "name": "우진엔텍",
+   "market": "KOSDAQ",
+   "sector": "일반서비스",
+   "change_pct": -5.03,
+   "sector_change_pct": 2.32,
+   "sector_estimated": false,
+   "excess_pp": -7.35,
+   "kind": "solo",
+   "verdict": "개별 약세"
+  }
+ ],
+ "top_buyers": {
+  "외국인": [
+   {
+    "rank": 1,
+    "code": "005930",
+    "name": "삼성전자",
+    "market": "KOSPI",
+    "net_buy": 2711,
+    "change_pct": 1.16
+   },
+   {
+    "rank": 2,
+    "code": "006400",
+    "name": "삼성SDI",
+    "market": "KOSPI",
+    "net_buy": 1116,
+    "change_pct": 11.7
+   },
+   {
+    "rank": 3,
+    "code": "402340",
+    "name": "SK스퀘어",
+    "market": "KOSPI",
+    "net_buy": 426,
+    "change_pct": -0.51
+   },
+   {
+    "rank": 4,
+    "code": "000150",
+    "name": "두산",
+    "market": "KOSPI",
+    "net_buy": 347,
+    "change_pct": 4.59
+   },
+   {
+    "rank": 5,
+    "code": "009150",
+    "name": "삼성전기",
+    "market": "KOSPI",
+    "net_buy": 305,
+    "change_pct": -1.52
+   },
+   {
+    "rank": 6,
+    "code": "000100",
+    "name": "유한양행",
+    "market": "KOSPI",
+    "net_buy": 215,
+    "change_pct": 8.71
+   },
+   {
+    "rank": 7,
+    "code": "086520",
+    "name": "에코프로",
+    "market": "KOSDAQ",
+    "net_buy": 188,
+    "change_pct": 11.19
+   },
+   {
+    "rank": 8,
+    "code": "003490",
+    "name": "대한항공",
+    "market": "KOSPI",
+    "net_buy": 184,
+    "change_pct": 2.85
+   },
+   {
+    "rank": 9,
+    "code": "003670",
+    "name": "포스코퓨처엠",
+    "market": "KOSPI",
+    "net_buy": 163,
+    "change_pct": 10.9
+   },
+   {
+    "rank": 10,
+    "code": "010120",
+    "name": "LS ELECTRIC",
+    "market": "KOSPI",
+    "net_buy": 129,
+    "change_pct": 3.78
+   }
+  ],
+  "기관": [
+   {
+    "rank": 1,
+    "code": "042660",
+    "name": "한화오션",
+    "market": "KOSPI",
+    "net_buy": 5049,
+    "change_pct": -1.23
+   },
+   {
+    "rank": 2,
+    "code": "373220",
+    "name": "LG에너지솔루션",
+    "market": "KOSPI",
+    "net_buy": 1317,
+    "change_pct": 7.2
+   },
+   {
+    "rank": 3,
+    "code": "006400",
+    "name": "삼성SDI",
+    "market": "KOSPI",
+    "net_buy": 1158,
+    "change_pct": 11.7
+   },
+   {
+    "rank": 4,
+    "code": "207940",
+    "name": "삼성바이오로직스",
+    "market": "KOSPI",
+    "net_buy": 1011,
+    "change_pct": 9.94
+   },
+   {
+    "rank": 5,
+    "code": "005935",
+    "name": "삼성전자우",
+    "market": "KOSPI",
+    "net_buy": 475,
+    "change_pct": 2.21
+   },
+   {
+    "rank": 6,
+    "code": "005380",
+    "name": "현대차",
+    "market": "KOSPI",
+    "net_buy": 410,
+    "change_pct": 4.49
+   },
+   {
+    "rank": 7,
+    "code": "068270",
+    "name": "셀트리온",
+    "market": "KOSPI",
+    "net_buy": 375,
+    "change_pct": 2.16
+   },
+   {
+    "rank": 8,
+    "code": "000270",
+    "name": "기아",
+    "market": "KOSPI",
+    "net_buy": 350,
+    "change_pct": 5.26
+   },
+   {
+    "rank": 9,
+    "code": "003230",
+    "name": "삼양식품",
+    "market": "KOSPI",
+    "net_buy": 316,
+    "change_pct": 1.71
+   },
+   {
+    "rank": 10,
+    "code": "352820",
+    "name": "하이브",
+    "market": "KOSPI",
+    "net_buy": 314,
+    "change_pct": 6.62
+   }
+  ]
+ },
+ "credit": {
+  "unit": "억원",
+  "as_of": "2026-10-19",
+  "stocks": [],
+  "market_trend": null,
+  "source_pending": true
+ },
+ "news": null
+}
