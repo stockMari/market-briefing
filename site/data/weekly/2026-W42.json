@@ -16,7 +16,7 @@
   ]
  },
  "sample": false,
- "generated_at": "2026-10-19T19:37+09:00",
+ "generated_at": "2026-10-19T19:52+09:00",
  "judgment": {
   "individual_excess_pp": 5.0,
   "sector_weak_pct": 0.0,
@@ -375,6 +375,7 @@
    "sector": "유통",
    "change_pct": 3.44,
    "sector_change_pct": -5.93,
+   "sector_estimated": false,
    "excess_pp": 9.37,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -386,6 +387,7 @@
    "sector": "운송장비·부품",
    "change_pct": 33.48,
    "sector_change_pct": -3.55,
+   "sector_estimated": false,
    "excess_pp": 37.03,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -397,6 +399,7 @@
    "sector": "일반서비스",
    "change_pct": 15.8,
    "sector_change_pct": -2.71,
+   "sector_estimated": false,
    "excess_pp": 18.51,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -408,6 +411,7 @@
    "sector": "종이·목재",
    "change_pct": -0.23,
    "sector_change_pct": -6.47,
+   "sector_estimated": false,
    "excess_pp": 6.24,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -419,6 +423,7 @@
    "sector": "일반서비스",
    "change_pct": 6.31,
    "sector_change_pct": -2.71,
+   "sector_estimated": false,
    "excess_pp": 9.02,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -430,6 +435,7 @@
    "sector": "화학",
    "change_pct": 11.53,
    "sector_change_pct": -6.57,
+   "sector_estimated": false,
    "excess_pp": 18.1,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -441,6 +447,7 @@
    "sector": "운송·창고",
    "change_pct": 11.44,
    "sector_change_pct": 2.63,
+   "sector_estimated": false,
    "excess_pp": 8.81,
    "kind": "leader",
    "verdict": "섹터 동반 + 주도주"
@@ -452,6 +459,7 @@
    "sector": "기계·장비",
    "change_pct": -5.01,
    "sector_change_pct": -15.76,
+   "sector_estimated": false,
    "excess_pp": 10.75,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -463,6 +471,7 @@
    "sector": "전기·전자",
    "change_pct": -1.35,
    "sector_change_pct": -15.79,
+   "sector_estimated": false,
    "excess_pp": 14.44,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -474,6 +483,7 @@
    "sector": "음식료·담배",
    "change_pct": 7.38,
    "sector_change_pct": 4.61,
+   "sector_estimated": false,
    "excess_pp": 2.77,
    "kind": "together",
    "verdict": "섹터 동반"
@@ -485,6 +495,7 @@
    "sector": "금속",
    "change_pct": 0.6,
    "sector_change_pct": -7.25,
+   "sector_estimated": false,
    "excess_pp": 7.85,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -496,6 +507,7 @@
    "sector": "제약",
    "change_pct": -4.58,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": 0.62,
    "kind": "mixed",
    "verdict": "혼조"
@@ -507,6 +519,7 @@
    "sector": "IT 서비스",
    "change_pct": 35.8,
    "sector_change_pct": -5.46,
+   "sector_estimated": false,
    "excess_pp": 41.26,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -518,6 +531,7 @@
    "sector": "IT 서비스",
    "change_pct": 17.4,
    "sector_change_pct": -5.46,
+   "sector_estimated": false,
    "excess_pp": 22.86,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -529,6 +543,7 @@
    "sector": "전기·전자",
    "change_pct": 22.39,
    "sector_change_pct": -15.79,
+   "sector_estimated": false,
    "excess_pp": 38.18,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -540,6 +555,7 @@
    "sector": "기계·장비",
    "change_pct": -4.79,
    "sector_change_pct": -15.76,
+   "sector_estimated": false,
    "excess_pp": 10.97,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -551,6 +567,7 @@
    "sector": "비금속",
    "change_pct": 54.42,
    "sector_change_pct": -13.39,
+   "sector_estimated": false,
    "excess_pp": 67.81,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -562,6 +579,7 @@
    "sector": "전기·전자",
    "change_pct": 4.32,
    "sector_change_pct": -15.79,
+   "sector_estimated": false,
    "excess_pp": 20.11,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -573,6 +591,7 @@
    "sector": "기계·장비",
    "change_pct": 1.5,
    "sector_change_pct": -15.76,
+   "sector_estimated": false,
    "excess_pp": 17.26,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -584,6 +603,7 @@
    "sector": "IT 서비스",
    "change_pct": 7.44,
    "sector_change_pct": -5.46,
+   "sector_estimated": false,
    "excess_pp": 12.9,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -595,6 +615,7 @@
    "sector": "화학",
    "change_pct": -5.53,
    "sector_change_pct": -6.57,
+   "sector_estimated": false,
    "excess_pp": 1.04,
    "kind": "mixed",
    "verdict": "혼조"
@@ -606,6 +627,7 @@
    "sector": "의료·정밀기기",
    "change_pct": -4.34,
    "sector_change_pct": -5.71,
+   "sector_estimated": false,
    "excess_pp": 1.37,
    "kind": "mixed",
    "verdict": "혼조"
@@ -617,6 +639,7 @@
    "sector": "기계·장비",
    "change_pct": 3.68,
    "sector_change_pct": -15.76,
+   "sector_estimated": false,
    "excess_pp": 19.44,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -628,6 +651,7 @@
    "sector": "기계·장비",
    "change_pct": -0.94,
    "sector_change_pct": -15.76,
+   "sector_estimated": false,
    "excess_pp": 14.82,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -639,6 +663,7 @@
    "sector": "화학",
    "change_pct": 8.85,
    "sector_change_pct": -10.24,
+   "sector_estimated": false,
    "excess_pp": 19.09,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -650,6 +675,7 @@
    "sector": "기계·장비",
    "change_pct": 11.47,
    "sector_change_pct": -15.76,
+   "sector_estimated": false,
    "excess_pp": 27.23,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -661,6 +687,7 @@
    "sector": "금속",
    "change_pct": 51.68,
    "sector_change_pct": -7.25,
+   "sector_estimated": false,
    "excess_pp": 58.93,
    "kind": "solo",
    "verdict": "개별 강세(개인기)"
@@ -674,9 +701,34 @@
    "sector": "운송·창고",
    "change_pct": 0.58,
    "sector_change_pct": 2.63,
+   "sector_estimated": false,
    "excess_pp": -2.05,
    "kind": "mixed",
    "verdict": "혼조"
+  },
+  {
+   "code": "000140",
+   "name": "하이트진로홀딩스",
+   "market": "KOSPI",
+   "sector": "기타금융",
+   "change_pct": -0.13,
+   "sector_change_pct": -9.97,
+   "sector_estimated": true,
+   "excess_pp": 9.84,
+   "kind": "together",
+   "verdict": "섹터 동반 약세"
+  },
+  {
+   "code": "000320",
+   "name": "노루홀딩스",
+   "market": "KOSPI",
+   "sector": "기타금융",
+   "change_pct": -2.31,
+   "sector_change_pct": -9.97,
+   "sector_estimated": true,
+   "excess_pp": 7.66,
+   "kind": "together",
+   "verdict": "섹터 동반 약세"
   },
   {
    "code": "001270",
@@ -685,6 +737,7 @@
    "sector": "증권",
    "change_pct": -4.47,
    "sector_change_pct": -8.43,
+   "sector_estimated": false,
    "excess_pp": 3.96,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -696,6 +749,7 @@
    "sector": "증권",
    "change_pct": -6.91,
    "sector_change_pct": -8.43,
+   "sector_estimated": false,
    "excess_pp": 1.52,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -707,6 +761,7 @@
    "sector": "의료·정밀기기",
    "change_pct": -23.12,
    "sector_change_pct": -5.71,
+   "sector_estimated": false,
    "excess_pp": -17.41,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -718,6 +773,7 @@
    "sector": "제약",
    "change_pct": -2.68,
    "sector_change_pct": 4.75,
+   "sector_estimated": false,
    "excess_pp": -7.43,
    "kind": "solo",
    "verdict": "개별 약세"
@@ -729,7 +785,20 @@
    "sector": "증권",
    "change_pct": -7.14,
    "sector_change_pct": -8.43,
+   "sector_estimated": false,
    "excess_pp": 1.29,
+   "kind": "together",
+   "verdict": "섹터 동반 약세"
+  },
+  {
+   "code": "002020",
+   "name": "코오롱",
+   "market": "KOSPI",
+   "sector": "기타금융",
+   "change_pct": -4.19,
+   "sector_change_pct": -9.97,
+   "sector_estimated": true,
+   "excess_pp": 5.78,
    "kind": "together",
    "verdict": "섹터 동반 약세"
   },
@@ -740,6 +809,7 @@
    "sector": "화학",
    "change_pct": -0.44,
    "sector_change_pct": -6.57,
+   "sector_estimated": false,
    "excess_pp": 6.13,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -751,7 +821,20 @@
    "sector": "금속",
    "change_pct": -2.42,
    "sector_change_pct": -5.64,
+   "sector_estimated": false,
    "excess_pp": 3.22,
+   "kind": "together",
+   "verdict": "섹터 동반 약세"
+  },
+  {
+   "code": "002450",
+   "name": "삼익악기",
+   "market": "KOSPI",
+   "sector": "기타제조",
+   "change_pct": -1.67,
+   "sector_change_pct": -2.22,
+   "sector_estimated": true,
+   "excess_pp": 0.55,
    "kind": "together",
    "verdict": "섹터 동반 약세"
   },
@@ -762,6 +845,7 @@
    "sector": "건설",
    "change_pct": -6.43,
    "sector_change_pct": -10.33,
+   "sector_estimated": false,
    "excess_pp": 3.9,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -773,6 +857,7 @@
    "sector": "제약",
    "change_pct": -0.1,
    "sector_change_pct": 4.75,
+   "sector_estimated": false,
    "excess_pp": -4.85,
    "kind": "mixed",
    "verdict": "혼조"
@@ -784,6 +869,7 @@
    "sector": "증권",
    "change_pct": -4.67,
    "sector_change_pct": -8.43,
+   "sector_estimated": false,
    "excess_pp": 3.76,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -795,6 +881,7 @@
    "sector": "음식료·담배",
    "change_pct": -2.89,
    "sector_change_pct": 4.61,
+   "sector_estimated": false,
    "excess_pp": -7.5,
    "kind": "solo",
    "verdict": "개별 약세"
@@ -806,6 +893,7 @@
    "sector": "화학",
    "change_pct": -3.68,
    "sector_change_pct": -6.57,
+   "sector_estimated": false,
    "excess_pp": 2.89,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -817,7 +905,20 @@
    "sector": "화학",
    "change_pct": 0.0,
    "sector_change_pct": -6.57,
+   "sector_estimated": false,
    "excess_pp": 6.57,
+   "kind": "together",
+   "verdict": "섹터 동반 약세"
+  },
+  {
+   "code": "005740",
+   "name": "크라운해태홀딩스",
+   "market": "KOSPI",
+   "sector": "기타금융",
+   "change_pct": -1.38,
+   "sector_change_pct": -9.97,
+   "sector_estimated": true,
+   "excess_pp": 8.59,
    "kind": "together",
    "verdict": "섹터 동반 약세"
   },
@@ -828,6 +929,7 @@
    "sector": "제약",
    "change_pct": -1.0,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": 4.2,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -839,6 +941,7 @@
    "sector": "화학",
    "change_pct": -2.47,
    "sector_change_pct": -6.57,
+   "sector_estimated": false,
    "excess_pp": 4.1,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -850,6 +953,7 @@
    "sector": "제약",
    "change_pct": -4.82,
    "sector_change_pct": 4.75,
+   "sector_estimated": false,
    "excess_pp": -9.57,
    "kind": "solo",
    "verdict": "개별 약세"
@@ -861,9 +965,22 @@
    "sector": "제약",
    "change_pct": -8.18,
    "sector_change_pct": 4.75,
+   "sector_estimated": false,
    "excess_pp": -12.93,
    "kind": "solo",
    "verdict": "개별 약세"
+  },
+  {
+   "code": "007700",
+   "name": "F&F홀딩스",
+   "market": "KOSPI",
+   "sector": "기타금융",
+   "change_pct": 0.45,
+   "sector_change_pct": -9.97,
+   "sector_estimated": true,
+   "excess_pp": 10.42,
+   "kind": "together",
+   "verdict": "섹터 동반 약세"
   },
   {
    "code": "008770",
@@ -872,6 +989,7 @@
    "sector": "유통",
    "change_pct": -3.1,
    "sector_change_pct": -5.93,
+   "sector_estimated": false,
    "excess_pp": 2.83,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -883,7 +1001,20 @@
    "sector": "기계·장비",
    "change_pct": -10.98,
    "sector_change_pct": -15.76,
+   "sector_estimated": false,
    "excess_pp": 4.78,
+   "kind": "together",
+   "verdict": "섹터 동반 약세"
+  },
+  {
+   "code": "009540",
+   "name": "HD한국조선해양",
+   "market": "KOSPI",
+   "sector": "기타금융",
+   "change_pct": -9.09,
+   "sector_change_pct": -9.97,
+   "sector_estimated": true,
+   "excess_pp": 0.88,
    "kind": "together",
    "verdict": "섹터 동반 약세"
   },
@@ -894,6 +1025,7 @@
    "sector": "운송장비·부품",
    "change_pct": -4.28,
    "sector_change_pct": -3.55,
+   "sector_estimated": false,
    "excess_pp": -0.73,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -905,6 +1037,7 @@
    "sector": "운송장비·부품",
    "change_pct": -2.44,
    "sector_change_pct": -3.55,
+   "sector_estimated": false,
    "excess_pp": 1.11,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -916,6 +1049,7 @@
    "sector": "운송장비·부품",
    "change_pct": -6.06,
    "sector_change_pct": -3.55,
+   "sector_estimated": false,
    "excess_pp": -2.51,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -927,6 +1061,7 @@
    "sector": "운송장비·부품",
    "change_pct": 1.69,
    "sector_change_pct": -3.55,
+   "sector_estimated": false,
    "excess_pp": 5.24,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -938,6 +1073,7 @@
    "sector": "비금속",
    "change_pct": -0.89,
    "sector_change_pct": -0.1,
+   "sector_estimated": false,
    "excess_pp": -0.79,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -949,6 +1085,7 @@
    "sector": "음식료·담배",
    "change_pct": -4.26,
    "sector_change_pct": 4.61,
+   "sector_estimated": false,
    "excess_pp": -8.87,
    "kind": "solo",
    "verdict": "개별 약세"
@@ -960,6 +1097,7 @@
    "sector": "운송장비·부품",
    "change_pct": -4.23,
    "sector_change_pct": -3.55,
+   "sector_estimated": false,
    "excess_pp": -0.68,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -971,9 +1109,22 @@
    "sector": "종이·목재",
    "change_pct": -18.25,
    "sector_change_pct": -3.49,
+   "sector_estimated": false,
    "excess_pp": -14.76,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
+  },
+  {
+   "code": "0126Z0",
+   "name": "삼성에피스홀딩스",
+   "market": "KOSPI",
+   "sector": "기타금융",
+   "change_pct": -2.64,
+   "sector_change_pct": -9.97,
+   "sector_estimated": true,
+   "excess_pp": 7.33,
+   "kind": "together",
+   "verdict": "섹터 동반 약세"
   },
   {
    "code": "013310",
@@ -982,7 +1133,20 @@
    "sector": "운송장비·부품",
    "change_pct": -3.26,
    "sector_change_pct": -10.52,
+   "sector_estimated": false,
    "excess_pp": 7.26,
+   "kind": "together",
+   "verdict": "섹터 동반 약세"
+  },
+  {
+   "code": "013890",
+   "name": "지누스",
+   "market": "KOSPI",
+   "sector": "기타제조",
+   "change_pct": -5.1,
+   "sector_change_pct": -2.22,
+   "sector_estimated": true,
+   "excess_pp": -2.88,
    "kind": "together",
    "verdict": "섹터 동반 약세"
   },
@@ -993,6 +1157,7 @@
    "sector": "종이·목재",
    "change_pct": -14.5,
    "sector_change_pct": -3.49,
+   "sector_estimated": false,
    "excess_pp": -11.01,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -1004,6 +1169,7 @@
    "sector": "비금속",
    "change_pct": -4.33,
    "sector_change_pct": -0.1,
+   "sector_estimated": false,
    "excess_pp": -4.23,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1015,7 +1181,32 @@
    "sector": "전기·가스",
    "change_pct": -1.72,
    "sector_change_pct": -1.65,
+   "sector_estimated": false,
    "excess_pp": -0.07,
+   "kind": "together",
+   "verdict": "섹터 동반 약세"
+  },
+  {
+   "code": "016800",
+   "name": "퍼시스",
+   "market": "KOSPI",
+   "sector": "기타제조",
+   "change_pct": -1.43,
+   "sector_change_pct": -2.22,
+   "sector_estimated": true,
+   "excess_pp": 0.79,
+   "kind": "together",
+   "verdict": "섹터 동반 약세"
+  },
+  {
+   "code": "016880",
+   "name": "웅진",
+   "market": "KOSPI",
+   "sector": "기타금융",
+   "change_pct": -7.72,
+   "sector_change_pct": -9.97,
+   "sector_estimated": true,
+   "excess_pp": 2.25,
    "kind": "together",
    "verdict": "섹터 동반 약세"
   },
@@ -1026,6 +1217,7 @@
    "sector": "음식료·담배",
    "change_pct": -1.04,
    "sector_change_pct": 4.61,
+   "sector_estimated": false,
    "excess_pp": -5.65,
    "kind": "solo",
    "verdict": "개별 약세"
@@ -1037,6 +1229,7 @@
    "sector": "금속",
    "change_pct": -7.0,
    "sector_change_pct": -5.64,
+   "sector_estimated": false,
    "excess_pp": -1.36,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1048,6 +1241,7 @@
    "sector": "운송장비·부품",
    "change_pct": -0.99,
    "sector_change_pct": -3.55,
+   "sector_estimated": false,
    "excess_pp": 2.56,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1059,6 +1253,7 @@
    "sector": "전기·전자",
    "change_pct": -7.53,
    "sector_change_pct": -19.66,
+   "sector_estimated": false,
    "excess_pp": 12.13,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1070,6 +1265,7 @@
    "sector": "금융",
    "change_pct": -5.0,
    "sector_change_pct": -8.92,
+   "sector_estimated": false,
    "excess_pp": 3.92,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1081,6 +1277,7 @@
    "sector": "일반서비스",
    "change_pct": -6.03,
    "sector_change_pct": -2.71,
+   "sector_estimated": false,
    "excess_pp": -3.32,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1092,6 +1289,7 @@
    "sector": "금융",
    "change_pct": -7.09,
    "sector_change_pct": -8.92,
+   "sector_estimated": false,
    "excess_pp": 1.83,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1103,6 +1301,7 @@
    "sector": "운송장비·부품",
    "change_pct": -4.99,
    "sector_change_pct": -3.55,
+   "sector_estimated": false,
    "excess_pp": -1.44,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1114,6 +1313,7 @@
    "sector": "운송장비·부품",
    "change_pct": -0.37,
    "sector_change_pct": -10.52,
+   "sector_estimated": false,
    "excess_pp": 10.15,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1125,7 +1325,20 @@
    "sector": "전기·전자",
    "change_pct": -2.22,
    "sector_change_pct": -19.66,
+   "sector_estimated": false,
    "excess_pp": 17.44,
+   "kind": "together",
+   "verdict": "섹터 동반 약세"
+  },
+  {
+   "code": "027410",
+   "name": "BGF",
+   "market": "KOSPI",
+   "sector": "기타금융",
+   "change_pct": -5.26,
+   "sector_change_pct": -9.97,
+   "sector_estimated": true,
+   "excess_pp": 4.71,
    "kind": "together",
    "verdict": "섹터 동반 약세"
   },
@@ -1136,6 +1349,7 @@
    "sector": "종이·목재",
    "change_pct": -7.58,
    "sector_change_pct": -3.49,
+   "sector_estimated": false,
    "excess_pp": -4.09,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1147,6 +1361,7 @@
    "sector": "전기·전자",
    "change_pct": 2.25,
    "sector_change_pct": -19.66,
+   "sector_estimated": false,
    "excess_pp": 21.91,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1158,6 +1373,7 @@
    "sector": "일반서비스",
    "change_pct": -4.14,
    "sector_change_pct": -2.71,
+   "sector_estimated": false,
    "excess_pp": -1.43,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1169,6 +1385,7 @@
    "sector": "화학",
    "change_pct": -5.0,
    "sector_change_pct": -10.24,
+   "sector_estimated": false,
    "excess_pp": 5.24,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1180,6 +1397,7 @@
    "sector": "전기·전자",
    "change_pct": -8.21,
    "sector_change_pct": -19.66,
+   "sector_estimated": false,
    "excess_pp": 11.45,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1191,6 +1409,7 @@
    "sector": "IT 서비스",
    "change_pct": -2.07,
    "sector_change_pct": -1.72,
+   "sector_estimated": false,
    "excess_pp": -0.35,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1202,6 +1421,7 @@
    "sector": "IT 서비스",
    "change_pct": -1.39,
    "sector_change_pct": -1.72,
+   "sector_estimated": false,
    "excess_pp": 0.33,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1213,7 +1433,20 @@
    "sector": "IT 서비스",
    "change_pct": -2.8,
    "sector_change_pct": -5.46,
+   "sector_estimated": false,
    "excess_pp": 2.66,
+   "kind": "together",
+   "verdict": "섹터 동반 약세"
+  },
+  {
+   "code": "036530",
+   "name": "SNT홀딩스",
+   "market": "KOSPI",
+   "sector": "기타금융",
+   "change_pct": -3.15,
+   "sector_change_pct": -9.97,
+   "sector_estimated": true,
+   "excess_pp": 6.82,
    "kind": "together",
    "verdict": "섹터 동반 약세"
   },
@@ -1224,6 +1457,7 @@
    "sector": "유통",
    "change_pct": -5.6,
    "sector_change_pct": -8.87,
+   "sector_estimated": false,
    "excess_pp": 3.27,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1235,6 +1469,7 @@
    "sector": "화학",
    "change_pct": -4.68,
    "sector_change_pct": -10.24,
+   "sector_estimated": false,
    "excess_pp": 5.56,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1246,6 +1481,7 @@
    "sector": "기계·장비",
    "change_pct": -9.34,
    "sector_change_pct": -15.76,
+   "sector_estimated": false,
    "excess_pp": 6.42,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1257,6 +1493,7 @@
    "sector": "IT 서비스",
    "change_pct": 0.33,
    "sector_change_pct": -1.72,
+   "sector_estimated": false,
    "excess_pp": 2.05,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1268,6 +1505,7 @@
    "sector": "오락·문화",
    "change_pct": -1.63,
    "sector_change_pct": 4.12,
+   "sector_estimated": false,
    "excess_pp": -5.75,
    "kind": "solo",
    "verdict": "개별 약세"
@@ -1279,6 +1517,7 @@
    "sector": "일반서비스",
    "change_pct": -1.85,
    "sector_change_pct": -2.71,
+   "sector_estimated": false,
    "excess_pp": 0.86,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1290,6 +1529,7 @@
    "sector": "증권",
    "change_pct": -8.44,
    "sector_change_pct": -8.43,
+   "sector_estimated": false,
    "excess_pp": -0.01,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1301,6 +1541,7 @@
    "sector": "건설",
    "change_pct": -0.27,
    "sector_change_pct": -10.33,
+   "sector_estimated": false,
    "excess_pp": 10.06,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1312,6 +1553,7 @@
    "sector": "의료·정밀기기",
    "change_pct": -4.62,
    "sector_change_pct": -5.71,
+   "sector_estimated": false,
    "excess_pp": 1.09,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1323,6 +1565,7 @@
    "sector": "운송장비·부품",
    "change_pct": -9.72,
    "sector_change_pct": -3.55,
+   "sector_estimated": false,
    "excess_pp": -6.17,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -1334,6 +1577,7 @@
    "sector": "IT 서비스",
    "change_pct": -7.34,
    "sector_change_pct": -5.46,
+   "sector_estimated": false,
    "excess_pp": -1.88,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1345,6 +1589,7 @@
    "sector": "의료·정밀기기",
    "change_pct": -7.78,
    "sector_change_pct": -5.71,
+   "sector_estimated": false,
    "excess_pp": -2.07,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1356,6 +1601,7 @@
    "sector": "건설",
    "change_pct": -4.13,
    "sector_change_pct": -10.33,
+   "sector_estimated": false,
    "excess_pp": 6.2,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1367,6 +1613,7 @@
    "sector": "IT 서비스",
    "change_pct": -6.68,
    "sector_change_pct": -5.46,
+   "sector_estimated": false,
    "excess_pp": -1.22,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1378,6 +1625,7 @@
    "sector": "제약",
    "change_pct": -3.79,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": 1.41,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1389,6 +1637,7 @@
    "sector": "오락·문화",
    "change_pct": -0.62,
    "sector_change_pct": 4.12,
+   "sector_estimated": false,
    "excess_pp": -4.74,
    "kind": "mixed",
    "verdict": "혼조"
@@ -1400,6 +1649,7 @@
    "sector": "전기·전자",
    "change_pct": -4.62,
    "sector_change_pct": -15.79,
+   "sector_estimated": false,
    "excess_pp": 11.17,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1411,6 +1661,7 @@
    "sector": "전기·전자",
    "change_pct": -13.25,
    "sector_change_pct": -15.79,
+   "sector_estimated": false,
    "excess_pp": 2.54,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1422,6 +1673,7 @@
    "sector": "기계·장비",
    "change_pct": -21.69,
    "sector_change_pct": -15.76,
+   "sector_estimated": false,
    "excess_pp": -5.93,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -1433,6 +1685,7 @@
    "sector": "IT 서비스",
    "change_pct": -2.04,
    "sector_change_pct": -5.46,
+   "sector_estimated": false,
    "excess_pp": 3.42,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1444,6 +1697,7 @@
    "sector": "IT 서비스",
    "change_pct": -2.74,
    "sector_change_pct": -1.72,
+   "sector_estimated": false,
    "excess_pp": -1.02,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1455,6 +1709,7 @@
    "sector": "금속",
    "change_pct": -7.2,
    "sector_change_pct": -7.25,
+   "sector_estimated": false,
    "excess_pp": 0.05,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1466,7 +1721,20 @@
    "sector": "유통",
    "change_pct": -11.6,
    "sector_change_pct": -8.87,
+   "sector_estimated": false,
    "excess_pp": -2.73,
+   "kind": "together",
+   "verdict": "섹터 동반 약세"
+  },
+  {
+   "code": "060980",
+   "name": "HL홀딩스",
+   "market": "KOSPI",
+   "sector": "기타금융",
+   "change_pct": -3.98,
+   "sector_change_pct": -9.97,
+   "sector_estimated": true,
+   "excess_pp": 5.99,
    "kind": "together",
    "verdict": "섹터 동반 약세"
   },
@@ -1477,6 +1745,7 @@
    "sector": "제약",
    "change_pct": -3.23,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": 1.97,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1488,6 +1757,7 @@
    "sector": "운송장비·부품",
    "change_pct": -7.89,
    "sector_change_pct": -3.55,
+   "sector_estimated": false,
    "excess_pp": -4.34,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1499,6 +1769,7 @@
    "sector": "운송장비·부품",
    "change_pct": -8.47,
    "sector_change_pct": -10.52,
+   "sector_estimated": false,
    "excess_pp": 2.05,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1510,6 +1781,7 @@
    "sector": "운송장비·부품",
    "change_pct": -5.5,
    "sector_change_pct": -3.55,
+   "sector_estimated": false,
    "excess_pp": -1.95,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1521,6 +1793,7 @@
    "sector": "유통",
    "change_pct": -11.06,
    "sector_change_pct": -8.87,
+   "sector_estimated": false,
    "excess_pp": -2.19,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1532,6 +1805,7 @@
    "sector": "전기·전자",
    "change_pct": -20.04,
    "sector_change_pct": -15.79,
+   "sector_estimated": false,
    "excess_pp": -4.25,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1543,6 +1817,7 @@
    "sector": "제약",
    "change_pct": 0.26,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": 5.46,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1554,6 +1829,7 @@
    "sector": "제약",
    "change_pct": -3.23,
    "sector_change_pct": 4.75,
+   "sector_estimated": false,
    "excess_pp": -7.98,
    "kind": "solo",
    "verdict": "개별 약세"
@@ -1565,6 +1841,7 @@
    "sector": "일반서비스",
    "change_pct": -7.45,
    "sector_change_pct": -2.71,
+   "sector_estimated": false,
    "excess_pp": -4.74,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1576,6 +1853,7 @@
    "sector": "유통",
    "change_pct": -0.51,
    "sector_change_pct": -5.93,
+   "sector_estimated": false,
    "excess_pp": 5.42,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1587,6 +1865,7 @@
    "sector": "기계·장비",
    "change_pct": -4.21,
    "sector_change_pct": -15.58,
+   "sector_estimated": false,
    "excess_pp": 11.37,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1598,6 +1877,7 @@
    "sector": "운송장비·부품",
    "change_pct": -10.22,
    "sector_change_pct": -3.55,
+   "sector_estimated": false,
    "excess_pp": -6.67,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -1609,6 +1889,7 @@
    "sector": "기계·장비",
    "change_pct": -10.68,
    "sector_change_pct": -15.58,
+   "sector_estimated": false,
    "excess_pp": 4.9,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1620,6 +1901,7 @@
    "sector": "전기·전자",
    "change_pct": -3.97,
    "sector_change_pct": -15.79,
+   "sector_estimated": false,
    "excess_pp": 11.82,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1631,6 +1913,7 @@
    "sector": "일반서비스",
    "change_pct": -7.94,
    "sector_change_pct": -8.14,
+   "sector_estimated": false,
    "excess_pp": 0.2,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1642,6 +1925,7 @@
    "sector": "금속",
    "change_pct": -3.12,
    "sector_change_pct": -7.25,
+   "sector_estimated": false,
    "excess_pp": 4.12,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1653,9 +1937,22 @@
    "sector": "기계·장비",
    "change_pct": -9.01,
    "sector_change_pct": -15.58,
+   "sector_estimated": false,
    "excess_pp": 6.57,
    "kind": "together",
    "verdict": "섹터 동반 약세"
+  },
+  {
+   "code": "084680",
+   "name": "이월드",
+   "market": "KOSPI",
+   "sector": "기타제조",
+   "change_pct": -7.78,
+   "sector_change_pct": -2.22,
+   "sector_estimated": true,
+   "excess_pp": -5.56,
+   "kind": "leader",
+   "verdict": "섹터 약세 + 낙폭 과대"
   },
   {
    "code": "084850",
@@ -1664,6 +1961,7 @@
    "sector": "전기·전자",
    "change_pct": -11.01,
    "sector_change_pct": -15.79,
+   "sector_estimated": false,
    "excess_pp": 4.78,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1675,6 +1973,7 @@
    "sector": "제약",
    "change_pct": -6.1,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": -0.9,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1686,6 +1985,7 @@
    "sector": "제약",
    "change_pct": 3.03,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": 8.23,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1697,6 +1997,7 @@
    "sector": "제약",
    "change_pct": 8.42,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": 13.62,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1708,6 +2009,7 @@
    "sector": "IT 서비스",
    "change_pct": -2.49,
    "sector_change_pct": -5.46,
+   "sector_estimated": false,
    "excess_pp": 2.97,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1719,6 +2021,7 @@
    "sector": "전기·전자",
    "change_pct": -6.89,
    "sector_change_pct": -15.79,
+   "sector_estimated": false,
    "excess_pp": 8.9,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1730,6 +2033,7 @@
    "sector": "운송·창고",
    "change_pct": -4.25,
    "sector_change_pct": 2.63,
+   "sector_estimated": false,
    "excess_pp": -6.88,
    "kind": "solo",
    "verdict": "개별 약세"
@@ -1741,6 +2045,7 @@
    "sector": "기계·장비",
    "change_pct": -0.99,
    "sector_change_pct": -15.58,
+   "sector_estimated": false,
    "excess_pp": 14.59,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1752,6 +2057,7 @@
    "sector": "일반서비스",
    "change_pct": -1.1,
    "sector_change_pct": -2.71,
+   "sector_estimated": false,
    "excess_pp": 1.61,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1763,6 +2069,7 @@
    "sector": "IT 서비스",
    "change_pct": -11.37,
    "sector_change_pct": -5.46,
+   "sector_estimated": false,
    "excess_pp": -5.91,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -1774,6 +2081,7 @@
    "sector": "건설",
    "change_pct": -10.64,
    "sector_change_pct": -10.33,
+   "sector_estimated": false,
    "excess_pp": -0.31,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1785,6 +2093,7 @@
    "sector": "금속",
    "change_pct": -13.91,
    "sector_change_pct": -7.25,
+   "sector_estimated": false,
    "excess_pp": -6.66,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -1796,6 +2105,7 @@
    "sector": "금속",
    "change_pct": -12.31,
    "sector_change_pct": -5.64,
+   "sector_estimated": false,
    "excess_pp": -6.67,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -1807,6 +2117,7 @@
    "sector": "운송장비·부품",
    "change_pct": -5.71,
    "sector_change_pct": -10.52,
+   "sector_estimated": false,
    "excess_pp": 4.81,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1818,6 +2129,7 @@
    "sector": "제약",
    "change_pct": -7.58,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": -2.38,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1829,6 +2141,7 @@
    "sector": "기계·장비",
    "change_pct": -5.22,
    "sector_change_pct": -15.76,
+   "sector_estimated": false,
    "excess_pp": 10.54,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1840,6 +2153,7 @@
    "sector": "의료·정밀기기",
    "change_pct": -11.89,
    "sector_change_pct": -8.88,
+   "sector_estimated": false,
    "excess_pp": -3.01,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1851,6 +2165,7 @@
    "sector": "제약",
    "change_pct": -4.6,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": 0.6,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1862,6 +2177,7 @@
    "sector": "기계·장비",
    "change_pct": -3.8,
    "sector_change_pct": -15.76,
+   "sector_estimated": false,
    "excess_pp": 11.96,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1873,6 +2189,7 @@
    "sector": "섬유·의류",
    "change_pct": -0.16,
    "sector_change_pct": -1.49,
+   "sector_estimated": false,
    "excess_pp": 1.33,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1884,6 +2201,7 @@
    "sector": "IT 서비스",
    "change_pct": -8.71,
    "sector_change_pct": -5.46,
+   "sector_estimated": false,
    "excess_pp": -3.25,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1895,6 +2213,7 @@
    "sector": "오락·문화",
    "change_pct": -1.39,
    "sector_change_pct": 4.12,
+   "sector_estimated": false,
    "excess_pp": -5.51,
    "kind": "solo",
    "verdict": "개별 약세"
@@ -1906,6 +2225,7 @@
    "sector": "금속",
    "change_pct": -5.69,
    "sector_change_pct": -5.64,
+   "sector_estimated": false,
    "excess_pp": -0.05,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1917,6 +2237,7 @@
    "sector": "유통",
    "change_pct": 4.43,
    "sector_change_pct": -5.93,
+   "sector_estimated": false,
    "excess_pp": 10.36,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1928,6 +2249,7 @@
    "sector": "일반서비스",
    "change_pct": -6.82,
    "sector_change_pct": -8.14,
+   "sector_estimated": false,
    "excess_pp": 1.32,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1939,6 +2261,7 @@
    "sector": "제약",
    "change_pct": -2.02,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": 3.18,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1950,6 +2273,7 @@
    "sector": "화학",
    "change_pct": -1.29,
    "sector_change_pct": -6.57,
+   "sector_estimated": false,
    "excess_pp": 5.28,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1961,6 +2285,7 @@
    "sector": "화학",
    "change_pct": -8.14,
    "sector_change_pct": -10.24,
+   "sector_estimated": false,
    "excess_pp": 2.1,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1972,6 +2297,7 @@
    "sector": "IT 서비스",
    "change_pct": -3.62,
    "sector_change_pct": -5.46,
+   "sector_estimated": false,
    "excess_pp": 1.84,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1983,6 +2309,7 @@
    "sector": "음식료·담배",
    "change_pct": -5.43,
    "sector_change_pct": -2.07,
+   "sector_estimated": false,
    "excess_pp": -3.36,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -1994,6 +2321,7 @@
    "sector": "제약",
    "change_pct": -9.19,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": -3.99,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2005,6 +2333,7 @@
    "sector": "일반서비스",
    "change_pct": -2.9,
    "sector_change_pct": -8.14,
+   "sector_estimated": false,
    "excess_pp": 5.24,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2016,6 +2345,7 @@
    "sector": "일반서비스",
    "change_pct": -10.76,
    "sector_change_pct": -8.14,
+   "sector_estimated": false,
    "excess_pp": -2.62,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2027,6 +2357,7 @@
    "sector": "제약",
    "change_pct": -3.58,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": 1.62,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2038,6 +2369,7 @@
    "sector": "전기·전자",
    "change_pct": -24.38,
    "sector_change_pct": -15.79,
+   "sector_estimated": false,
    "excess_pp": -8.59,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2049,6 +2381,7 @@
    "sector": "제약",
    "change_pct": -6.84,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": -1.64,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2060,6 +2393,7 @@
    "sector": "제약",
    "change_pct": 6.48,
    "sector_change_pct": 4.75,
+   "sector_estimated": false,
    "excess_pp": 1.73,
    "kind": "mixed",
    "verdict": "혼조"
@@ -2071,6 +2405,7 @@
    "sector": "부동산",
    "change_pct": -2.99,
    "sector_change_pct": -2.12,
+   "sector_estimated": false,
    "excess_pp": -0.87,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2082,6 +2417,7 @@
    "sector": "전기·전자",
    "change_pct": -30.01,
    "sector_change_pct": -15.79,
+   "sector_estimated": false,
    "excess_pp": -14.22,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2093,6 +2429,7 @@
    "sector": "전기·전자",
    "change_pct": -9.52,
    "sector_change_pct": -15.79,
+   "sector_estimated": false,
    "excess_pp": 6.27,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2104,6 +2441,7 @@
    "sector": "의료·정밀기기",
    "change_pct": -9.06,
    "sector_change_pct": -5.71,
+   "sector_estimated": false,
    "excess_pp": -3.35,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2115,6 +2453,7 @@
    "sector": "제약",
    "change_pct": -5.02,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": 0.18,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2126,6 +2465,7 @@
    "sector": "화학",
    "change_pct": -4.88,
    "sector_change_pct": -6.57,
+   "sector_estimated": false,
    "excess_pp": 1.69,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2137,6 +2477,7 @@
    "sector": "제약",
    "change_pct": -8.1,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": -2.9,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2148,6 +2489,7 @@
    "sector": "의료·정밀기기",
    "change_pct": -12.5,
    "sector_change_pct": -5.71,
+   "sector_estimated": false,
    "excess_pp": -6.79,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2159,6 +2501,7 @@
    "sector": "일반서비스",
    "change_pct": -7.86,
    "sector_change_pct": -8.14,
+   "sector_estimated": false,
    "excess_pp": 0.28,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2170,6 +2513,7 @@
    "sector": "일반서비스",
    "change_pct": -16.45,
    "sector_change_pct": -8.14,
+   "sector_estimated": false,
    "excess_pp": -8.31,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2181,6 +2525,7 @@
    "sector": "일반서비스",
    "change_pct": -15.9,
    "sector_change_pct": -8.14,
+   "sector_estimated": false,
    "excess_pp": -7.76,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2192,6 +2537,7 @@
    "sector": "전기·전자",
    "change_pct": -21.87,
    "sector_change_pct": -15.79,
+   "sector_estimated": false,
    "excess_pp": -6.08,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2203,6 +2549,7 @@
    "sector": "제약",
    "change_pct": -3.47,
    "sector_change_pct": 4.75,
+   "sector_estimated": false,
    "excess_pp": -8.22,
    "kind": "solo",
    "verdict": "개별 약세"
@@ -2214,6 +2561,7 @@
    "sector": "제약",
    "change_pct": -1.72,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": 3.48,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2225,6 +2573,7 @@
    "sector": "기계·장비",
    "change_pct": -4.32,
    "sector_change_pct": -15.58,
+   "sector_estimated": false,
    "excess_pp": 11.26,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2236,6 +2585,7 @@
    "sector": "제약",
    "change_pct": -5.0,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": 0.2,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2247,6 +2597,7 @@
    "sector": "비금속",
    "change_pct": -7.97,
    "sector_change_pct": -13.39,
+   "sector_estimated": false,
    "excess_pp": 5.42,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2258,6 +2609,7 @@
    "sector": "음식료·담배",
    "change_pct": -2.5,
    "sector_change_pct": 4.61,
+   "sector_estimated": false,
    "excess_pp": -7.11,
    "kind": "solo",
    "verdict": "개별 약세"
@@ -2269,6 +2621,7 @@
    "sector": "운송장비·부품",
    "change_pct": -5.96,
    "sector_change_pct": -10.52,
+   "sector_estimated": false,
    "excess_pp": 4.56,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2280,6 +2633,7 @@
    "sector": "전기·전자",
    "change_pct": -14.85,
    "sector_change_pct": -19.66,
+   "sector_estimated": false,
    "excess_pp": 4.81,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2291,6 +2645,7 @@
    "sector": "일반서비스",
    "change_pct": -14.03,
    "sector_change_pct": -8.14,
+   "sector_estimated": false,
    "excess_pp": -5.89,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2302,6 +2657,7 @@
    "sector": "의료·정밀기기",
    "change_pct": -0.08,
    "sector_change_pct": -5.71,
+   "sector_estimated": false,
    "excess_pp": 5.63,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2313,6 +2669,7 @@
    "sector": "기계·장비",
    "change_pct": -12.63,
    "sector_change_pct": -15.76,
+   "sector_estimated": false,
    "excess_pp": 3.13,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2324,6 +2681,7 @@
    "sector": "제약",
    "change_pct": -9.69,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": -4.49,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2335,6 +2693,7 @@
    "sector": "의료·정밀기기",
    "change_pct": -9.64,
    "sector_change_pct": -5.71,
+   "sector_estimated": false,
    "excess_pp": -3.93,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2346,6 +2705,7 @@
    "sector": "의료·정밀기기",
    "change_pct": -6.13,
    "sector_change_pct": -5.71,
+   "sector_estimated": false,
    "excess_pp": -0.42,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2357,6 +2717,7 @@
    "sector": "일반서비스",
    "change_pct": 0.83,
    "sector_change_pct": -2.71,
+   "sector_estimated": false,
    "excess_pp": 3.54,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2368,6 +2729,7 @@
    "sector": "운송장비·부품",
    "change_pct": -8.46,
    "sector_change_pct": -3.55,
+   "sector_estimated": false,
    "excess_pp": -4.91,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2379,6 +2741,7 @@
    "sector": "전기·전자",
    "change_pct": -8.94,
    "sector_change_pct": -15.79,
+   "sector_estimated": false,
    "excess_pp": 6.85,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2390,6 +2753,7 @@
    "sector": "제약",
    "change_pct": -5.82,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": -0.62,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2401,6 +2765,7 @@
    "sector": "의료·정밀기기",
    "change_pct": -14.9,
    "sector_change_pct": -5.71,
+   "sector_estimated": false,
    "excess_pp": -9.19,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2412,6 +2777,7 @@
    "sector": "IT 서비스",
    "change_pct": -8.8,
    "sector_change_pct": -5.46,
+   "sector_estimated": false,
    "excess_pp": -3.34,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2423,6 +2789,7 @@
    "sector": "일반서비스",
    "change_pct": -6.03,
    "sector_change_pct": -8.14,
+   "sector_estimated": false,
    "excess_pp": 2.11,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2434,6 +2801,7 @@
    "sector": "제약",
    "change_pct": -3.1,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": 2.1,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2445,6 +2813,7 @@
    "sector": "일반서비스",
    "change_pct": -11.09,
    "sector_change_pct": -8.14,
+   "sector_estimated": false,
    "excess_pp": -2.95,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2456,6 +2825,7 @@
    "sector": "의료·정밀기기",
    "change_pct": -9.99,
    "sector_change_pct": -5.71,
+   "sector_estimated": false,
    "excess_pp": -4.28,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2467,6 +2837,7 @@
    "sector": "부동산",
    "change_pct": 0.78,
    "sector_change_pct": -2.12,
+   "sector_estimated": false,
    "excess_pp": 2.9,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2478,6 +2849,7 @@
    "sector": "음식료·담배",
    "change_pct": -3.08,
    "sector_change_pct": -2.07,
+   "sector_estimated": false,
    "excess_pp": -1.01,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2489,6 +2861,7 @@
    "sector": "화학",
    "change_pct": -9.88,
    "sector_change_pct": -10.24,
+   "sector_estimated": false,
    "excess_pp": 0.36,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2500,6 +2873,7 @@
    "sector": "IT 서비스",
    "change_pct": -11.41,
    "sector_change_pct": -5.46,
+   "sector_estimated": false,
    "excess_pp": -5.95,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2511,6 +2885,7 @@
    "sector": "전기·전자",
    "change_pct": -4.97,
    "sector_change_pct": -15.79,
+   "sector_estimated": false,
    "excess_pp": 10.82,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2522,6 +2897,7 @@
    "sector": "제약",
    "change_pct": -20.86,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": -15.66,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2533,7 +2909,20 @@
    "sector": "부동산",
    "change_pct": -3.58,
    "sector_change_pct": -2.12,
+   "sector_estimated": false,
    "excess_pp": -1.46,
+   "kind": "together",
+   "verdict": "섹터 동반 약세"
+  },
+  {
+   "code": "377300",
+   "name": "카카오페이",
+   "market": "KOSPI",
+   "sector": "기타금융",
+   "change_pct": -6.89,
+   "sector_change_pct": -9.97,
+   "sector_estimated": true,
+   "excess_pp": 3.08,
    "kind": "together",
    "verdict": "섹터 동반 약세"
   },
@@ -2544,6 +2933,7 @@
    "sector": "IT 서비스",
    "change_pct": -16.87,
    "sector_change_pct": -5.46,
+   "sector_estimated": false,
    "excess_pp": -11.41,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2555,6 +2945,7 @@
    "sector": "기계·장비",
    "change_pct": -17.76,
    "sector_change_pct": -15.76,
+   "sector_estimated": false,
    "excess_pp": -2.0,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2566,6 +2957,7 @@
    "sector": "유통",
    "change_pct": 1.59,
    "sector_change_pct": -5.93,
+   "sector_estimated": false,
    "excess_pp": 7.52,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2577,6 +2969,7 @@
    "sector": "기계·장비",
    "change_pct": -6.13,
    "sector_change_pct": -15.76,
+   "sector_estimated": false,
    "excess_pp": 9.63,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2588,6 +2981,7 @@
    "sector": "전기·전자",
    "change_pct": -20.97,
    "sector_change_pct": -15.79,
+   "sector_estimated": false,
    "excess_pp": -5.18,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2599,6 +2993,7 @@
    "sector": "일반서비스",
    "change_pct": -15.38,
    "sector_change_pct": -8.14,
+   "sector_estimated": false,
    "excess_pp": -7.24,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2610,6 +3005,7 @@
    "sector": "일반서비스",
    "change_pct": -6.95,
    "sector_change_pct": -8.14,
+   "sector_estimated": false,
    "excess_pp": 1.19,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2621,6 +3017,7 @@
    "sector": "의료·정밀기기",
    "change_pct": -11.28,
    "sector_change_pct": -5.71,
+   "sector_estimated": false,
    "excess_pp": -5.57,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2632,6 +3029,7 @@
    "sector": "부동산",
    "change_pct": -2.02,
    "sector_change_pct": -2.12,
+   "sector_estimated": false,
    "excess_pp": 0.1,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2643,6 +3041,7 @@
    "sector": "일반서비스",
    "change_pct": -11.81,
    "sector_change_pct": -8.14,
+   "sector_estimated": false,
    "excess_pp": -3.67,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2654,6 +3053,7 @@
    "sector": "전기·전자",
    "change_pct": -22.0,
    "sector_change_pct": -15.79,
+   "sector_estimated": false,
    "excess_pp": -6.21,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2665,6 +3065,7 @@
    "sector": "부동산",
    "change_pct": -3.57,
    "sector_change_pct": -2.12,
+   "sector_estimated": false,
    "excess_pp": -1.45,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2676,6 +3077,7 @@
    "sector": "IT 서비스",
    "change_pct": -5.68,
    "sector_change_pct": -5.46,
+   "sector_estimated": false,
    "excess_pp": -0.22,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2687,6 +3089,7 @@
    "sector": "운송장비·부품",
    "change_pct": -8.54,
    "sector_change_pct": -3.55,
+   "sector_estimated": false,
    "excess_pp": -4.99,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2698,6 +3101,7 @@
    "sector": "일반서비스",
    "change_pct": -10.58,
    "sector_change_pct": -8.14,
+   "sector_estimated": false,
    "excess_pp": -2.44,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2709,6 +3113,7 @@
    "sector": "일반서비스",
    "change_pct": -21.23,
    "sector_change_pct": -8.14,
+   "sector_estimated": false,
    "excess_pp": -13.09,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2720,6 +3125,7 @@
    "sector": "비금속",
    "change_pct": -8.18,
    "sector_change_pct": -0.1,
+   "sector_estimated": false,
    "excess_pp": -8.08,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2731,6 +3137,7 @@
    "sector": "IT 서비스",
    "change_pct": -14.85,
    "sector_change_pct": -5.46,
+   "sector_estimated": false,
    "excess_pp": -9.39,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2742,6 +3149,7 @@
    "sector": "제약",
    "change_pct": -12.82,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": -7.62,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2753,6 +3161,7 @@
    "sector": "IT 서비스",
    "change_pct": -17.41,
    "sector_change_pct": -5.46,
+   "sector_estimated": false,
    "excess_pp": -11.95,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2764,6 +3173,7 @@
    "sector": "의료·정밀기기",
    "change_pct": -21.87,
    "sector_change_pct": -5.71,
+   "sector_estimated": false,
    "excess_pp": -16.16,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2775,6 +3185,7 @@
    "sector": "유통",
    "change_pct": -7.42,
    "sector_change_pct": -5.93,
+   "sector_estimated": false,
    "excess_pp": -1.49,
    "kind": "together",
    "verdict": "섹터 동반 약세"
@@ -2786,6 +3197,7 @@
    "sector": "제약",
    "change_pct": -10.49,
    "sector_change_pct": -5.2,
+   "sector_estimated": false,
    "excess_pp": -5.29,
    "kind": "leader",
    "verdict": "섹터 약세 + 낙폭 과대"
@@ -2797,6 +3209,7 @@
    "sector": "화학",
    "change_pct": -4.15,
    "sector_change_pct": -10.24,
+   "sector_estimated": false,
    "excess_pp": 6.09,
    "kind": "together",
    "verdict": "섹터 동반 약세"
