@@ -51,14 +51,17 @@ jobs:
 
       - name: 리포트 만들기
         run: |
+          mkdir -p logs
           ARGS="--mode ${{ inputs.mode }}"
           if [ -n "${{ inputs.date }}" ]; then ARGS="$ARGS --date ${{ inputs.date }}"; fi
-          python run.py $ARGS
+          set -o pipefail
+          python run.py $ARGS 2>&1 | tee logs/last-run.log
 
-      - name: 결과 저장 (site 폴더)
+      - name: 결과 저장 (site 폴더 + 실행 기록)
+        if: always()
         run: |
           git config user.name "market-briefing-bot"
           git config user.email "market-briefing-bot@users.noreply.github.com"
-          git add site
+          git add site logs
           git diff --cached --quiet || git commit -m "briefing: ${{ inputs.mode }} $(date +%F)"
           git push
