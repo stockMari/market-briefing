@@ -40,6 +40,11 @@ top_buyers:
 credit:
   top_n_by_market_cap: 20     # KOSPI 시가총액 상위 몇 종목
 
+# 7. AI 시장 요약 (Claude)
+ai:
+  model: "claude-opus-5-5"    # 요약을 쓰는 Claude 모델
+  effort: "medium"            # 생각하는 깊이: low / medium / high (높을수록 비용↑)
+
 # 8. 뉴스 (4단계에서 사용, 지금은 보류)
 telegram_channels: []
 blogs_rss: []

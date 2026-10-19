@@ -1,16 +1,21 @@
 # 마켓 브리핑 만들기 (GitHub에서 실행)
-# 지금은 'Run workflow' 버튼으로 직접 실행만 됩니다. 자동 시간 실행은 6단계에서 추가합니다.
+# - 자동: 평일 아침 Daily, 토요일 아침 Weekly
+# - 수동: Actions → Market Briefing → Run workflow
 name: Market Briefing
 
 on:
+  schedule:
+    # GitHub 시간은 UTC(한국-9시간). 실제 시작이 10~20분 늦어질 수 있어 조금 일찍 잡음
+    - cron: "10 22 * * 0-4"   # 월~금 07:10 KST → Daily (7:30 전후 완성)
+    - cron: "40 23 * * 5"     # 토 08:40 KST → Weekly (9:00 전후 완성)
   workflow_dispatch:
     inputs:
       mode:
         description: "daily 또는 weekly"
         required: true
-        default: weekly
+        default: daily
         type: choice
-        options: [weekly, daily]
+        options: [daily, weekly]
       date:
         description: "실행일로 볼 날짜 (YYYY-MM-DD, 비우면 오늘)"
         required: false
@@ -31,7 +36,17 @@ jobs:
       TZ: Asia/Seoul
       KRX_ID: ${{ secrets.KRX_ID }}
       KRX_PW: ${{ secrets.KRX_PW }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
     steps:
+      - name: 실행 종류 정하기
+        run: |
+          MODE="${{ inputs.mode }}"
+          if [ -z "$MODE" ]; then
+            if [ "${{ github.event.schedule }}" = "40 23 * * 5" ]; then MODE=weekly; else MODE=daily; fi
+          fi
+          echo "MODE=$MODE" >> "$GITHUB_ENV"
+          echo "이번 실행: $MODE"
+
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
@@ -52,7 +67,7 @@ jobs:
       - name: 리포트 만들기
         run: |
           mkdir -p logs
-          ARGS="--mode ${{ inputs.mode }}"
+          ARGS="--mode $MODE"
           if [ -n "${{ inputs.date }}" ]; then ARGS="$ARGS --date ${{ inputs.date }}"; fi
           set -o pipefail
           # pykrx 가 출력하는 로그인 아이디는 기록에서 지움
@@ -76,7 +91,28 @@ jobs:
             python run.py --rebuild
             git add site logs
             git diff --cached --quiet && break
-            git commit -q -m "briefing: ${{ inputs.mode }} $(date +%F)"
+            git commit -q -m "briefing: $MODE $(date +%F)"
             git push -q origin HEAD:main && break
             sleep $((i * 5))
           done
+
+  # 웹사이트 올리기 (저장소가 공개 상태일 때만)
+  deploy:
+    needs: build
+    if: ${{ always() && !github.event.repository.private }}
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4

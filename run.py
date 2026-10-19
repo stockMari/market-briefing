@@ -40,7 +40,10 @@ def main():
         report = build_sample(args.mode, run_date, cfg)
     else:
         from briefing.collect import build_report
+        from briefing.ai import summarize
         report = build_report(args.mode, run_date, cfg)
+        print("[7] AI 시장 요약")
+        report["summary"] = summarize(report, cfg)
 
     save_report(report, site_dir)
     pages = build_site(site_dir, preview_path=args.preview and ROOT / args.preview)
