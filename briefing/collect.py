@@ -91,7 +91,7 @@ def collect_sectors(per, members, log):
             sector_pct[(m, sector)] = _r(pct)
         sectors[m] = sorted(rows, key=lambda r: r["change_pct"], reverse=True)
     if unmatched:
-        log(f"  ! 업종지수를 찾지 못한 업종 {len(unmatched)}개: {', '.join(unmatched[:8])}")
+        log(f"  · 업종지수가 없는 업종 {len(unmatched)}개는 소속 종목으로 계산: {', '.join(unmatched[:8])}")
     return sectors, sector_pct
 
 

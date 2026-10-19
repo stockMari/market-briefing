@@ -2879,10 +2879,13 @@ tr.both td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
     };
   }
   // 막대 끝 숫자 라벨이 들어갈 여유를 양쪽에 둡니다
-  function paddedAxis(T, rows) {
+  function paddedAxis(T, rows, c) {
     var vals = rows.map(function (r) { return r.change_pct; });
     var lo = Math.min(0, Math.min.apply(null, vals)), hi = Math.max(0, Math.max.apply(null, vals));
-    var pad = (hi - lo) * 0.22 || 1;
+    // 숫자 라벨(약 56px)이 들어갈 만큼, 그래프 실제 폭에 맞춰 여백 계산
+    var plotW = Math.max(c.getWidth() - 110, 120), label = 56;
+    var sides = (lo < 0 ? 1 : 0) + (hi > 0 ? 1 : 0);
+    var pad = (hi - lo) * label / Math.max(plotW - sides * label, 40) || 1;
     return Object.assign(valueAxis(T, function (v) { return v + "%"; }), {
       min: lo < 0 ? +(lo - pad).toFixed(1) : 0, max: hi > 0 ? +(hi + pad).toFixed(1) : 0,
       axisLabel: { show: false }, splitLine: { show: false },
@@ -2916,7 +2919,7 @@ tr.both td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
     var rows = D.indices;
     c.setOption(Object.assign(base(T), {
       grid: { left: 8, right: 8, top: 8, bottom: 8, containLabel: true },
-      xAxis: paddedAxis(T, rows),
+      xAxis: paddedAxis(T, rows, c),
       yAxis: catAxis(T, rows.map(function (r) { return r.name; }), { inverse: true, axisLine: { show: false } }),
       tooltip: Object.assign(base(T).tooltip, {
         trigger: "item",
@@ -3033,7 +3036,7 @@ tr.both td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
     var rows = D.sectors[state.market];
     c.setOption(Object.assign(base(T), {
       grid: { left: 8, right: 8, top: 4, bottom: 4, containLabel: true },
-      xAxis: paddedAxis(T, rows),
+      xAxis: paddedAxis(T, rows, c),
       yAxis: catAxis(T, rows.map(function (r) { return r.name; }), { inverse: true, axisLine: { show: false }, axisLabel: { color: T.ink2, fontSize: 11.5, interval: 0 } }),
       tooltip: Object.assign(base(T).tooltip, {
         trigger: "item",
