@@ -2812,7 +2812,11 @@ tr.both td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
       legend: { top: 0, left: 0, icon: "roundRect", itemWidth: 10, itemHeight: 10, textStyle: { color: T.ink2 } },
       grid: { left: 8, right: 8, top: 34, bottom: 4, containLabel: true },
       xAxis: catAxis(T, mk),
-      yAxis: valueAxis(T, function (v) { return v.toLocaleString("ko-KR"); }),
+      // 막대 끝 숫자가 축 글씨와 겹치지 않게 위아래로 여유
+      yAxis: Object.assign(valueAxis(T, function (v) { return v.toLocaleString("ko-KR"); }), {
+        min: function (v) { return v.min < 0 ? Math.round(v.min * 1.25) : 0; },
+        max: function (v) { return v.max > 0 ? Math.round(v.max * 1.25) : 0; },
+      }),
       tooltip: Object.assign(base(T).tooltip, {
         trigger: "axis", axisPointer: { type: "shadow", shadowStyle: { color: "rgba(127,127,127,.08)" } },
         formatter: function (ps) {
