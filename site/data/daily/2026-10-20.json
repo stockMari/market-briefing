@@ -14,7 +14,7 @@
   "notes": []
  },
  "sample": false,
- "generated_at": "2026-10-21T07:34+09:00",
+ "generated_at": "2026-10-21T14:22+09:00",
  "judgment": {
   "individual_excess_pp": 5.0,
   "sector_weak_pct": 0.0,
@@ -22,7 +22,7 @@
   "min_market_cap_eok": 500
  },
  "summary": [
-  "KOSPI 3.73% 급락(5,553), KOSDAQ 3.33% 급락 · 해외 다우 +1.02%, 닛케이225 -0.62%",
+  "KOSPI 3.73% 급락(5,553), KOSDAQ 3.33% 급락 · 해외 다우 +1.02%, 닛케이225 -1.30%",
   "KOSPI 외국인 5,221억 순매도, 기관 9,565억 순매도",
   "업종 전반 약세, 선방 음식료·담배 -0.20% · 최약 운송장비·부품 -6.61% · 52주 신고가 5개, 신저가 58개"
  ],
@@ -75,29 +75,29 @@
   {
    "name": "닛케이225",
    "region": "아시아",
-   "close": 64916.7,
-   "change": -407.59,
-   "change_pct": -0.62,
-   "base_date": "2026-10-16",
-   "end_date": "2026-10-19"
+   "close": 64075.42,
+   "change": -841.28,
+   "change_pct": -1.3,
+   "base_date": "2026-10-19",
+   "end_date": "2026-10-20"
   },
   {
    "name": "상해종합",
    "region": "아시아",
-   "close": 3730.92,
-   "change": 14.64,
-   "change_pct": 0.39,
-   "base_date": "2026-10-16",
-   "end_date": "2026-10-19"
+   "close": 3735.37,
+   "change": 4.45,
+   "change_pct": 0.12,
+   "base_date": "2026-10-19",
+   "end_date": "2026-10-20"
   },
   {
    "name": "대만가권",
    "region": "아시아",
-   "close": 46822.08,
-   "change": -289.18,
-   "change_pct": -0.61,
-   "base_date": "2026-10-16",
-   "end_date": "2026-10-19"
+   "close": 46292.93,
+   "change": -529.15,
+   "change_pct": -1.13,
+   "base_date": "2026-10-19",
+   "end_date": "2026-10-20"
   }
  ],
  "flows": {
