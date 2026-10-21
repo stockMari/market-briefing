@@ -201,6 +201,30 @@ tr.both td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
 .both-line { font-size: 13.5px; margin: 0 0 14px; padding: 10px 12px; border-radius: 8px; background: var(--accent-soft); border: 1px solid var(--accent-line); }
 .both-line b { color: var(--accent); }
 
+/* upcoming events */
+.cal-days { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.cal-day { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.cal-day:last-child { border-bottom: 0; }
+.cal-date { display: flex; flex-direction: column; line-height: 1.25; }
+.cal-date b { font-size: 15px; }
+.cal-date span { font-size: 12px; color: var(--muted); }
+.cal-events { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; min-width: 0; }
+.cal-events li { display: grid; grid-template-columns: 10px 42px 30px minmax(0, 1fr); align-items: baseline; gap: 2px 8px; font-size: 14px; }
+.cal-time { font-size: 12.5px; color: var(--ink-2); }
+.ctry { font-family: var(--font-mono); font-size: 10.5px; font-weight: 500; color: var(--ink-2); border: 1px solid var(--line); border-radius: 4px; text-align: center; padding: 0 2px; }
+.cal-title { min-width: 0; }
+.cal-cat { grid-column: 4; font-size: 11.5px; color: var(--muted); margin-top: -2px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; align-self: center; box-sizing: border-box; }
+.imp-3 .dot, .dot.d3 { background: var(--accent); }
+.imp-2 .dot, .dot.d2 { border: 2px solid var(--accent); }
+.imp-1 .dot, .dot.d1 { border: 1px solid var(--muted); }
+.imp-3 .cal-title { font-weight: 700; }
+.imp-1 .cal-title { color: var(--ink-2); }
+.cal-legend { margin: 12px 0 0; align-items: center; }
+.cal-legend i.dot { width: 8px; height: 8px; border-radius: 50%; }
+.cal-legend span.note { display: block; flex-basis: 100%; }
+.cal-legend code { font-family: var(--font-mono); font-size: 12px; color: var(--ink); }
+
 /* archive */
 .archive { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 @media (max-width: 760px) { .archive { grid-template-columns: 1fr; } }

@@ -3393,5 +3393,79 @@
   "source_pending": true
  },
  "news": null,
- "summary_source": "rule"
+ "summary_source": "rule",
+ "events": {
+  "start": "2026-10-19",
+  "end": "2026-11-01",
+  "weeks": [
+   {
+    "label": "다음 주",
+    "start": "2026-10-19",
+    "end": "2026-10-25",
+    "days": [
+     {
+      "date": "2026-10-22",
+      "dow": "목",
+      "events": [
+       {
+        "date": "2026-10-22",
+        "time": "",
+        "country": "KR",
+        "category": "통화정책",
+        "importance": 3,
+        "title": "한국은행 금통위 기준금리 결정",
+        "source": "calendar"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "label": "그다음 주",
+    "start": "2026-10-26",
+    "end": "2026-11-01",
+    "days": [
+     {
+      "date": "2026-10-29",
+      "dow": "목",
+      "events": [
+       {
+        "date": "2026-10-29",
+        "time": "03:00",
+        "country": "US",
+        "category": "통화정책",
+        "importance": 3,
+        "title": "FOMC 금리 결정 · 연준 의장 기자회견",
+        "source": "calendar"
+       },
+       {
+        "date": "2026-10-29",
+        "time": "22:15",
+        "country": "EU",
+        "category": "통화정책",
+        "importance": 2,
+        "title": "ECB 통화정책회의 금리 결정",
+        "source": "calendar"
+       }
+      ]
+     },
+     {
+      "date": "2026-10-30",
+      "dow": "금",
+      "events": [
+       {
+        "date": "2026-10-30",
+        "time": "",
+        "country": "JP",
+        "category": "통화정책",
+        "importance": 2,
+        "title": "일본은행 금리 결정 · 경제전망 보고서",
+        "source": "calendar"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
 }

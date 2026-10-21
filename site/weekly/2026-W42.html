@@ -212,6 +212,30 @@ tr.both td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
 .both-line { font-size: 13.5px; margin: 0 0 14px; padding: 10px 12px; border-radius: 8px; background: var(--accent-soft); border: 1px solid var(--accent-line); }
 .both-line b { color: var(--accent); }
 
+/* upcoming events */
+.cal-days { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.cal-day { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.cal-day:last-child { border-bottom: 0; }
+.cal-date { display: flex; flex-direction: column; line-height: 1.25; }
+.cal-date b { font-size: 15px; }
+.cal-date span { font-size: 12px; color: var(--muted); }
+.cal-events { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; min-width: 0; }
+.cal-events li { display: grid; grid-template-columns: 10px 42px 30px minmax(0, 1fr); align-items: baseline; gap: 2px 8px; font-size: 14px; }
+.cal-time { font-size: 12.5px; color: var(--ink-2); }
+.ctry { font-family: var(--font-mono); font-size: 10.5px; font-weight: 500; color: var(--ink-2); border: 1px solid var(--line); border-radius: 4px; text-align: center; padding: 0 2px; }
+.cal-title { min-width: 0; }
+.cal-cat { grid-column: 4; font-size: 11.5px; color: var(--muted); margin-top: -2px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; align-self: center; box-sizing: border-box; }
+.imp-3 .dot, .dot.d3 { background: var(--accent); }
+.imp-2 .dot, .dot.d2 { border: 2px solid var(--accent); }
+.imp-1 .dot, .dot.d1 { border: 1px solid var(--muted); }
+.imp-3 .cal-title { font-weight: 700; }
+.imp-1 .cal-title { color: var(--ink-2); }
+.cal-legend { margin: 12px 0 0; align-items: center; }
+.cal-legend i.dot { width: 8px; height: 8px; border-radius: 50%; }
+.cal-legend span.note { display: block; flex-basis: 100%; }
+.cal-legend code { font-family: var(--font-mono); font-size: 12px; color: var(--ink); }
+
 /* archive */
 .archive { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 @media (max-width: 760px) { .archive { grid-template-columns: 1fr; } }
@@ -260,7 +284,7 @@ tr.both td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
     </div>
     <nav class="toc" aria-label="목차">
       <a href="#indices">주요 지수</a><a href="#flows">투자자 수급</a><a href="#sectors">업종</a>
-      <a href="#highs">52주 신고가·신저가</a><a href="#buyers">순매수 상위</a><a href="#credit">신용잔고</a>
+      <a href="#highs">52주 신고가·신저가</a><a href="#buyers">순매수 상위</a><a href="#credit">신용잔고</a><a href="#events">앞으로 2주 일정</a>
     </nav>
   </div>
 </section>
@@ -2785,6 +2809,72 @@ tr.both td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
       <span class="note">KOSPI 시가총액 상위 20 · 10/16 기준</span>
     </div>
     <p class="placeholder">데이터 출처를 확정하는 중입니다. 종목별 신용잔고를 받을 곳이 정해지면 이 자리에 표와 추이 그래프가 들어갑니다.</p>
+  </section>
+  <!-- Weekly: 앞으로 2주 일정 -->
+  <section class="panel" id="events" aria-labelledby="h-events">
+    <div class="panel-head">
+      <div><span class="kicker">Calendar</span><h2 id="h-events">앞으로 2주 주요 일정</h2></div>
+      <span class="note">10/19~11/1 · 시간은 한국 시간</span>
+    </div>
+    <div class="grid-2">
+      <div>
+        <h3 class="sub">다음 주 <span class="note">10/19~10/25</span></h3>
+        <ol class="cal-days">
+          <li class="cal-day">
+            <div class="cal-date"><b class="num">10/22</b><span>목</span></div>
+            <ul class="cal-events">
+              <li class="imp-3">
+                <i class="dot" aria-hidden="true"></i>
+                <span class="cal-time num"></span>
+                <span class="ctry">KR</span>
+                <span class="cal-title">한국은행 금통위 기준금리 결정</span>
+                <span class="cal-cat">통화정책</span>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+      <div>
+        <h3 class="sub">그다음 주 <span class="note">10/26~11/1</span></h3>
+        <ol class="cal-days">
+          <li class="cal-day">
+            <div class="cal-date"><b class="num">10/29</b><span>목</span></div>
+            <ul class="cal-events">
+              <li class="imp-3">
+                <i class="dot" aria-hidden="true"></i>
+                <span class="cal-time num">03:00</span>
+                <span class="ctry">US</span>
+                <span class="cal-title">FOMC 금리 결정 · 연준 의장 기자회견</span>
+                <span class="cal-cat">통화정책</span>
+              </li>
+              <li class="imp-2">
+                <i class="dot" aria-hidden="true"></i>
+                <span class="cal-time num">22:15</span>
+                <span class="ctry">EU</span>
+                <span class="cal-title">ECB 통화정책회의 금리 결정</span>
+                <span class="cal-cat">통화정책</span>
+              </li>
+            </ul>
+          </li>
+          <li class="cal-day">
+            <div class="cal-date"><b class="num">10/30</b><span>금</span></div>
+            <ul class="cal-events">
+              <li class="imp-2">
+                <i class="dot" aria-hidden="true"></i>
+                <span class="cal-time num"></span>
+                <span class="ctry">JP</span>
+                <span class="cal-title">일본은행 금리 결정 · 경제전망 보고서</span>
+                <span class="cal-cat">통화정책</span>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="legend cal-legend">
+      <span><i class="dot d3"></i>핵심</span><span><i class="dot d2"></i>중요</span><span><i class="dot d1"></i>참고</span>
+      <span class="note">금리 결정·지표·휴장일은 <code>calendar.yaml</code>에서 직접 고칠 수 있습니다. 실적 발표일은 야후 파이낸스 기준(현지 날짜).</span>
+    </div>
   </section>
 
   <section class="panel summary" aria-labelledby="h-news">

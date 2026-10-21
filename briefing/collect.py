@@ -195,6 +195,11 @@ def build_report(mode: str, run_date: date, cfg: dict, log=print) -> dict:
     highs, lows, panel = collect_highs_lows(cfg, per, cal, members, sector_pct, log)
     log("[6/6] 외국인·기관 순매수 상위")
     top = collect_top_buyers(cfg, per, cal, members, panel)
+    events = None
+    if mode == "weekly":
+        from .events import upcoming
+        log("[+] 앞으로 2주 일정")
+        events = upcoming(per.target_end, cfg, log)
 
     return {
         "mode": mode,
@@ -214,5 +219,6 @@ def build_report(mode: str, run_date: date, cfg: dict, log=print) -> dict:
         # 9번 신용잔고: 종목별 출처를 확정하면 채웁니다
         "credit": {"unit": "억원", "as_of": per.end.isoformat(), "stocks": [],
                    "market_trend": None, "source_pending": True},
+        "events": events,
         "news": None,
     }

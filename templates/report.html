@@ -59,7 +59,7 @@
     </div>
     <nav class="toc" aria-label="목차">
       <a href="#indices">주요 지수</a><a href="#flows">투자자 수급</a><a href="#sectors">업종</a>
-      <a href="#highs">52주 신고가·신저가</a><a href="#buyers">순매수 상위</a><a href="#credit">신용잔고</a>
+      <a href="#highs">52주 신고가·신저가</a><a href="#buyers">순매수 상위</a><a href="#credit">신용잔고</a>{% if r.events %}<a href="#events">앞으로 2주 일정</a>{% endif %}
     </nav>
   </div>
 </section>
@@ -295,6 +295,49 @@
     </div>
     {%- endif %}
   </section>
+
+  {%- if r.events %}
+  <!-- Weekly: 앞으로 2주 일정 -->
+  <section class="panel" id="events" aria-labelledby="h-events">
+    <div class="panel-head">
+      <div><span class="kicker">Calendar</span><h2 id="h-events">앞으로 2주 주요 일정</h2></div>
+      <span class="note">{{ r.events.start | md }}~{{ r.events.end | md }} · 시간은 한국 시간</span>
+    </div>
+    <div class="grid-2">
+      {%- for w in r.events.weeks %}
+      <div>
+        <h3 class="sub">{{ w.label }} <span class="note">{{ w.start | md }}~{{ w.end | md }}</span></h3>
+        {%- if w.days %}
+        <ol class="cal-days">
+          {%- for d in w.days %}
+          <li class="cal-day">
+            <div class="cal-date"><b class="num">{{ d.date | md }}</b><span>{{ d.dow }}</span></div>
+            <ul class="cal-events">
+              {%- for e in d.events %}
+              <li class="imp-{{ e.importance }}">
+                <i class="dot" aria-hidden="true"></i>
+                <span class="cal-time num">{{ e.time or '' }}</span>
+                <span class="ctry">{{ e.country }}</span>
+                <span class="cal-title">{{ e.title }}</span>
+                <span class="cal-cat">{{ e.category }}</span>
+              </li>
+              {%- endfor %}
+            </ul>
+          </li>
+          {%- endfor %}
+        </ol>
+        {%- else %}
+        <p class="empty">눈에 띄는 일정이 없습니다.</p>
+        {%- endif %}
+      </div>
+      {%- endfor %}
+    </div>
+    <div class="legend cal-legend">
+      <span><i class="dot d3"></i>핵심</span><span><i class="dot d2"></i>중요</span><span><i class="dot d1"></i>참고</span>
+      <span class="note">금리 결정·지표·휴장일은 <code>calendar.yaml</code>에서 직접 고칠 수 있습니다. 실적 발표일은 야후 파이낸스 기준(현지 날짜).</span>
+    </div>
+  </section>
+  {%- endif %}
 
   <section class="panel summary" aria-labelledby="h-news">
     <div class="panel-head"><h2 id="h-news">{{ '이번 주' if weekly else '오늘' }}의 중요 뉴스</h2><span class="note">텔레그램 · 블로그</span></div>

@@ -40,6 +40,22 @@ top_buyers:
 credit:
   top_n_by_market_cap: 20     # KOSPI 시가총액 상위 몇 종목
 
+# Weekly: 앞으로 2주 일정 (금리 결정·지표·휴장일은 calendar.yaml 에서 고칩니다)
+events:
+  weeks: 2                    # 몇 주 앞까지 보여줄지
+  show_us_monthly_opex: true  # 미국 월물 옵션 만기도 표시
+  earnings:                   # 실적 발표일을 자동으로 찾을 미국 종목 (야후 코드: 이름)
+    NVDA: 엔비디아
+    AAPL: 애플
+    MSFT: 마이크로소프트
+    GOOGL: 알파벳(구글)
+    AMZN: 아마존
+    META: 메타
+    TSLA: 테슬라
+    AVGO: 브로드컴
+    MU: 마이크론
+    TSM: TSMC
+
 # 7. 시장 요약 3줄
 summary:
   engine: rule                # rule = 무료 자동 문장 / claude = Claude API (ANTHROPIC_API_KEY 필요, 유료)
