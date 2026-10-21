@@ -16,7 +16,7 @@
   ]
  },
  "sample": false,
- "generated_at": "2026-10-19T19:52+09:00",
+ "generated_at": "2026-10-21T14:54+09:00",
  "judgment": {
   "individual_excess_pp": 5.0,
   "sector_weak_pct": 0.0,
@@ -3392,8 +3392,6 @@
   "market_trend": null,
   "source_pending": true
  },
- "news": null,
- "summary_source": "rule",
  "events": {
   "start": "2026-10-19",
   "end": "2026-11-01",
@@ -3415,6 +3413,24 @@
         "importance": 3,
         "title": "한국은행 금통위 기준금리 결정",
         "source": "calendar"
+       },
+       {
+        "date": "2026-10-22",
+        "time": "",
+        "country": "US",
+        "category": "실적",
+        "importance": 2,
+        "source": "yfinance",
+        "title": "메타 실적 발표 (현지 날짜)"
+       },
+       {
+        "date": "2026-10-22",
+        "time": "",
+        "country": "US",
+        "category": "실적",
+        "importance": 2,
+        "source": "yfinance",
+        "title": "테슬라 실적 발표 (현지 날짜)"
        }
       ]
      }
@@ -3446,6 +3462,24 @@
         "importance": 2,
         "title": "ECB 통화정책회의 금리 결정",
         "source": "calendar"
+       },
+       {
+        "date": "2026-10-29",
+        "time": "",
+        "country": "US",
+        "category": "실적",
+        "importance": 2,
+        "source": "yfinance",
+        "title": "마이크로소프트 실적 발표 (현지 날짜)"
+       },
+       {
+        "date": "2026-10-29",
+        "time": "",
+        "country": "US",
+        "category": "실적",
+        "importance": 2,
+        "source": "yfinance",
+        "title": "알파벳(구글) 실적 발표 (현지 날짜)"
        }
       ]
      },
@@ -3461,11 +3495,22 @@
         "importance": 2,
         "title": "일본은행 금리 결정 · 경제전망 보고서",
         "source": "calendar"
+       },
+       {
+        "date": "2026-10-30",
+        "time": "",
+        "country": "US",
+        "category": "실적",
+        "importance": 2,
+        "source": "yfinance",
+        "title": "아마존 실적 발표 (현지 날짜)"
        }
       ]
      }
     ]
    }
   ]
- }
+ },
+ "news": null,
+ "summary_source": "rule"
 }
