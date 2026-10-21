@@ -74,12 +74,14 @@ def _earnings(start: date, end: date, tickers: dict, log) -> list[dict]:
             dates = cal.get("Earnings Date") if isinstance(cal, dict) else None
             if dates is None and hasattr(cal, "loc"):  # 예전 yfinance 는 표 형태
                 dates = list(cal.loc["Earnings Date"])
-            for d in dates or []:
-                d = d if isinstance(d, date) else d.date()
+            dates = [d if isinstance(d, date) else d.date() for d in dates or []]
+            # 날짜가 두 개(범위)로 오면 회사가 아직 확정하지 않은 '예상' 일정
+            estimated = len(set(dates)) > 1
+            for d in dates:
                 if start <= d <= end:
                     out.append({"date": d, "time": "", "country": "US", "category": "실적",
                                 "importance": 2, "source": "yfinance",
-                                "title": f"{name} 실적 발표 (현지 날짜)"})
+                                "title": f"{name} 실적 발표 {'예상' if estimated else ''} (현지 날짜)".replace("  ", " ")})
                     break
         except Exception as e:  # noqa: BLE001  한 종목 실패는 건너뜀
             log(f"  · {sym} 실적 일정 조회 실패: {e}")
