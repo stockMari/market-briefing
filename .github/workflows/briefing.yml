@@ -6,8 +6,8 @@ name: Market Briefing
 on:
   schedule:
     # GitHub 시간은 UTC(한국-9시간). 실제 시작이 10~20분 늦어질 수 있어 조금 일찍 잡음
-    - cron: "10 22 * * 0-4"   # 월~금 07:10 KST → Daily (7:30 전후 완성)
-    - cron: "40 23 * * 5"     # 토 08:40 KST → Weekly (9:00 전후 완성)
+    - cron: "50 21 * * 0-4"   # 월~금 06:50 KST → Daily (실제 시작이 20분쯤 늦어 7:15 전후 완성)
+    - cron: "20 23 * * 5"     # 토 08:20 KST → Weekly (8:45 전후 완성)
   workflow_dispatch:
     inputs:
       mode:
@@ -42,7 +42,7 @@ jobs:
         run: |
           MODE="${{ inputs.mode }}"
           if [ -z "$MODE" ]; then
-            if [ "${{ github.event.schedule }}" = "40 23 * * 5" ]; then MODE=weekly; else MODE=daily; fi
+            if [ "${{ github.event.schedule }}" = "20 23 * * 5" ]; then MODE=weekly; else MODE=daily; fi
           fi
           echo "MODE=$MODE" >> "$GITHUB_ENV"
           echo "이번 실행: $MODE"
