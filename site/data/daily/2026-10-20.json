@@ -21,7 +21,11 @@
   "high_basis": "close",
   "min_market_cap_eok": 500
  },
- "summary": null,
+ "summary": [
+  "KOSPI 3.73% 급락(5,553), KOSDAQ 3.33% 급락 · 해외 다우 +1.02%, 닛케이225 -0.62%",
+  "KOSPI 외국인 5,221억 순매도, 기관 9,565억 순매도",
+  "업종 전반 약세, 선방 음식료·담배 -0.20% · 최약 운송장비·부품 -6.61% · 52주 신고가 5개, 신저가 58개"
+ ],
  "indices": [
   {
    "name": "KOSPI",
@@ -1338,5 +1342,6 @@
   "market_trend": null,
   "source_pending": true
  },
- "news": null
+ "news": null,
+ "summary_source": "rule"
 }

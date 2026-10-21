@@ -21,7 +21,11 @@
   "high_basis": "close",
   "min_market_cap_eok": 500
  },
- "summary": null,
+ "summary": [
+  "KOSPI 2.05% 급등(5,668), KOSDAQ 4.46% 급등 · 해외 나스닥 -2.15%, 닛케이225 +1.39%",
+  "KOSPI 외국인 3,204억 순매수, 기관 6,403억 순매도 · 동반 순매수 셀트리온",
+  "업종 강세 의료·정밀기기 +6.05%, 약세 운송·창고 -0.45% · 52주 신고가 9개"
+ ],
  "indices": [
   {
    "name": "KOSPI",
@@ -858,5 +862,6 @@
   "market_trend": null,
   "source_pending": true
  },
- "news": null
+ "news": null,
+ "summary_source": "rule"
 }

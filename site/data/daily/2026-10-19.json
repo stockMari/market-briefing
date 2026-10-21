@@ -21,7 +21,11 @@
   "high_basis": "close",
   "min_market_cap_eok": 500
  },
- "summary": null,
+ "summary": [
+  "KOSPI 1.76% 상승(5,768), KOSDAQ 1.78% 상승 · 해외 나스닥 +1.11%, 닛케이225 +1.39%",
+  "KOSPI 외국인 947억 순매수, 기관 1.0조 순매수 · 동반 순매수 삼성SDI",
+  "업종 강세 제약 +5.77%, 약세 의료·정밀기기 -2.83% · 52주 신고가 11개"
+ ],
  "indices": [
   {
    "name": "KOSPI",
@@ -810,5 +814,6 @@
   "market_trend": null,
   "source_pending": true
  },
- "news": null
+ "news": null,
+ "summary_source": "rule"
 }

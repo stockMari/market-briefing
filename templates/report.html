@@ -68,11 +68,11 @@
 <div class="wrap">
 
   <section class="panel summary" aria-labelledby="h-summary">
-    <div class="panel-head"><h2 id="h-summary">{{ '이번 주' if weekly else '당일' }} 시장 요약</h2><span class="note">Claude 작성</span></div>
+    <div class="panel-head"><h2 id="h-summary">{{ '이번 주' if weekly else '당일' }} 시장 요약</h2><span class="note">{{ 'Claude 작성' if r.summary_source == 'claude' else '데이터 자동 작성' }}</span></div>
     {%- if r.summary %}
     <ol>{% for line in r.summary %}<li>{{ line }}</li>{% endfor %}</ol>
     {%- else %}
-    <p class="placeholder">5단계에서 연결합니다. 아래 데이터를 읽고 Claude가 핵심 3줄을 이 자리에 씁니다.</p>
+    <p class="placeholder">요약이 없는 리포트입니다.</p>
     {%- endif %}
   </section>
 

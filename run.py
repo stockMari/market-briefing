@@ -40,14 +40,25 @@ def main():
         report = build_sample(args.mode, run_date, cfg)
     else:
         from briefing.collect import build_report
-        from briefing.ai import summarize
         report = build_report(args.mode, run_date, cfg)
-        print("[7] AI 시장 요약")
-        report["summary"] = summarize(report, cfg)
+        print("[7] 시장 요약 3줄")
+        report["summary"], report["summary_source"] = make_summary(report, cfg)
 
     save_report(report, site_dir)
     pages = build_site(site_dir, preview_path=args.preview and ROOT / args.preview)
     print(f"[완료] {report['mode']} {report['label']} ({report['title']}) · 페이지 {len(pages)}개 생성")
+
+
+def make_summary(report: dict, cfg: dict):
+    """config.yaml 의 summary.engine: rule(무료 자동 문장) / claude(Claude API)"""
+    from briefing.summary import write_summary
+    if cfg.get("summary", {}).get("engine") == "claude":
+        from briefing.ai import summarize
+        lines = summarize(report, cfg)
+        if lines:
+            return lines, "claude"
+        print("  · Claude 요약 대신 자동 문장으로 작성합니다")
+    return write_summary(report), "rule"
 
 
 if __name__ == "__main__":

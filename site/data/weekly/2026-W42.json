@@ -23,7 +23,11 @@
   "high_basis": "close",
   "min_market_cap_eok": 500
  },
- "summary": null,
+ "summary": [
+  "KOSPI 14.46% 급락(5,668), KOSDAQ 10.93% 급락 · 해외 나스닥 -4.48%, 닛케이225 -5.37%",
+  "KOSPI 외국인 11.2조 순매도, 기관 3.4조 순매수 · 외국인 9주 연속 순매도 · 동반 순매수 셀트리온",
+  "업종 강세 제약 +4.75%, 약세 전기·전자 -19.66% · 52주 신고가 27개(기계·장비 6개 최다), 신저가 210개"
+ ],
  "indices": [
   {
    "name": "KOSPI",
@@ -3388,5 +3392,6 @@
   "market_trend": null,
   "source_pending": true
  },
- "news": null
+ "news": null,
+ "summary_source": "rule"
 }

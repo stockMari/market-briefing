@@ -40,7 +40,11 @@ top_buyers:
 credit:
   top_n_by_market_cap: 20     # KOSPI 시가총액 상위 몇 종목
 
-# 7. AI 시장 요약 (Claude)
+# 7. 시장 요약 3줄
+summary:
+  engine: rule                # rule = 무료 자동 문장 / claude = Claude API (ANTHROPIC_API_KEY 필요, 유료)
+
+# summary.engine 이 claude 일 때만 사용
 ai:
   model: "claude-opus-5-5"    # 요약을 쓰는 Claude 모델
   effort: "medium"            # 생각하는 깊이: low / medium / high (높을수록 비용↑)
