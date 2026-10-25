@@ -38,6 +38,28 @@ ECON = [
     ("Durable Goods Orders", "내구재 주문", 1, "내구재"),
 ]
 TIMING = {"BMO": "bmo", "AMC": "amc"}
+LISTED_URLS = ("https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
+               "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt")
+_listed: set[str] | None = None
+
+
+def listed_symbols(log) -> set[str]:
+    """나스닥·뉴욕거래소 등 미국 정규 거래소 상장 종목 (장외 OTC 제외용)."""
+    global _listed
+    if _listed is None:
+        import requests
+        syms = set()
+        for url in LISTED_URLS:
+            try:
+                text = requests.get(url, timeout=30, headers={"User-Agent": "Mozilla/5.0"}).text
+                for line in text.splitlines()[1:]:
+                    sym = line.split("|")[0].strip()
+                    if sym and not sym.startswith("File Creation"):
+                        syms.add(sym.replace(".", "-"))
+            except Exception as e:  # noqa: BLE001
+                log(f"  ! 상장 종목 목록 실패 ({url.rsplit('/', 1)[-1]}): {e}")
+        _listed = syms
+    return _listed
 
 
 def week_start_for(run_date: date) -> date:
@@ -77,17 +99,21 @@ def fetch_earnings(start: date, end: date, log, market_cap=None) -> list[dict]:
     df = _pages(lambda off: cal.get_earnings_calendar(
         market_cap=market_cap, filter_most_active=False, start=start.isoformat(),
         end=(end + timedelta(days=1)).isoformat(), limit=100, offset=off, force=True), log)
+    listed = listed_symbols(log)
     rows, seen = [], set()
     for sym, r in df.iterrows():
         d = _et_date(r.get("Event Start Date"))
-        if not (start <= d <= end) or (sym, d) in seen:
+        company = str(r.get("Company") or sym)
+        # 장외(OTC) 종목 제외, 같은 날 같은 회사(예: GOOGL/GOOG)는 하나만
+        if not (start <= d <= end) or (listed and str(sym) not in listed) \
+                or (sym, d) in seen or (company, d) in seen:
             continue
-        seen.add((sym, d))
+        seen.update({(sym, d), (company, d)})
 
         def num(k):
             v = r.get(k)
             return None if v is None or pd.isna(v) else float(v)
-        rows.append({"ticker": str(sym), "company": str(r.get("Company") or sym), "date": d.isoformat(),
+        rows.append({"ticker": str(sym), "company": company, "date": d.isoformat(),
                      "slot": TIMING.get(str(r.get("Timing") or "").upper(), "tns"),
                      "mcap_b": round(num("Marketcap") / 1e9, 1) if num("Marketcap") else None,
                      "eps_est": num("EPS Estimate"), "eps_act": num("Reported EPS"), "surprise": num("Surprise(%)")})
@@ -101,6 +127,8 @@ def fetch_econ(start: date, end: date, log) -> list[dict]:
         start=start.isoformat(), end=(end + timedelta(days=1)).isoformat(), limit=100, offset=off, force=True),
         log, max_rows=1000)
     out, seen = [], set()
+    us_names = sorted({str(n) for n, r in df.iterrows() if str(r.get("Region", "")).upper() in ("US", "UNITED STATES")})
+    log(f"  · (참고) 야후 미국 지표 이름 {len(us_names)}개: {' | '.join(us_names[:60])}")
     for name, r in df.iterrows():
         if str(r.get("Region", "")).upper() not in ("US", "UNITED STATES"):
             continue
