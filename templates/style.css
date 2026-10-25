@@ -205,6 +205,9 @@ tr.both td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
 .tk { font-family: var(--font-mono); font-weight: 600; font-size: 13.5px; }
 .co { font-size: 12px; color: var(--muted); }
 .badge-high { font-size: 10.5px; font-weight: 700; color: var(--up); border: 1px solid currentColor; border-radius: 4px; padding: 0 4px; margin-left: 6px; vertical-align: 1px; }
+.badge-small { font-size: 10.5px; font-weight: 600; color: var(--ink-2); background: var(--surface-2); border: 1px dashed var(--muted); border-radius: 4px; padding: 0 4px; margin-left: 6px; vertical-align: 1px; }
+.legend .k-big { background: var(--up-fill); }
+.legend .k-small { background: transparent; border: 1.5px dashed var(--up-fill); box-sizing: border-box; }
 .us-table td { vertical-align: middle; }
 .us-table td:nth-child(2) { white-space: normal; min-width: 170px; }
 .spark { display: block; }

@@ -306,6 +306,10 @@
     </div>
 
     <h3 class="sub">{{ '이번 주' if weekly else '전일' }} 급등 상위 {{ us.gainers | length }}</h3>
+    <div class="legend">
+      <span><i class="k-big"></i>시가총액 ${{ small_cap_limit(us) | int }}B 이상</span>
+      <span><i class="k-small"></i>중소형 (${{ small_cap_limit(us) | int }}B 미만)</span>
+    </div>
     <div class="chart tall" id="c-us-gainers" style="--h: {{ us.gainers | length * 22 + 16 }}px" role="img" aria-label="나스닥 급등 상위 종목 등락률 막대그래프"></div>
     <div class="tbl-wrap">
       <table class="us-table">
@@ -314,7 +318,7 @@
         {%- for g in us.gainers %}
           <tr>
             <td class="num note">{{ loop.index }}</td>
-            <td><span class="tk">{{ g.ticker }}</span>{% if g.is_high %}<span class="badge-high">신고가</span>{% endif %} <span class="co">{{ g.name }} · {{ g.sector }}</span></td>
+            <td><span class="tk">{{ g.ticker }}</span>{% if g.is_high %}<span class="badge-high">신고가</span>{% endif %}{% if is_small_cap(g, us) %}<span class="badge-small">중소형</span>{% endif %} <span class="co">{{ g.name }} · {{ g.sector }}</span></td>
             <td class="r num {{ g.change_pct | sign }}"><b>{{ g.change_pct | pct }}</b></td>
             <td class="r num">${{ g.close | num(2) }}</td>
             <td class="r num note hide-sm">{{ '%.1fB' | format(g.mcap_b) if g.mcap_b else '–' }}</td>
@@ -340,7 +344,7 @@
             <tbody>
             {%- for s in g.stocks %}
               <tr>
-                <td><span class="tk">{{ s.ticker }}</span> <span class="co">{{ s.name }}</span>{% if s.industry %}<br><span class="co">{{ s.industry }}</span>{% endif %}</td>
+                <td><span class="tk">{{ s.ticker }}</span>{% if is_small_cap(s, us) %}<span class="badge-small">중소형</span>{% endif %} <span class="co">{{ s.name }}</span>{% if s.industry %}<br><span class="co">{{ s.industry }}</span>{% endif %}</td>
                 <td class="r num {{ s.change_pct | sign }}"><b>{{ s.change_pct | pct }}</b></td>
                 <td class="r num">${{ s.close | num(2) }}</td>
                 <td class="r num note">{{ '%.1fB' | format(s.mcap_b) if s.mcap_b else '–' }}</td>

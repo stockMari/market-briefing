@@ -300,12 +300,20 @@
         trigger: "item",
         formatter: function (p) {
           var r = rows[p.dataIndex];
-          return "<b>" + r.ticker + "</b> " + r.name + (r.high ? " · 52주 신고가" : "") + "<br>" + row(p.color, "등락률", pct(r.pct));
+          return "<b>" + r.ticker + "</b> " + r.name + (r.high ? " · 52주 신고가" : "") + "<br>" +
+            row(signColor(r.pct, T), "등락률", pct(r.pct)) +
+            row(T.line, "시가총액", r.mcap != null ? "$" + r.mcap.toFixed(1) + "B" + (r.small ? " (중소형)" : "") : "–");
         },
       }),
       series: [{
         type: "bar", barWidth: 12,
-        data: rows.map(function (r) { return { value: r.pct, itemStyle: { color: signColor(r.pct, T), borderRadius: endRadius(r.pct, true) } }; }),
+        // 중소형주(시총 기준 미만)는 속이 빈 점선 막대로 구분
+        data: rows.map(function (r) {
+          var col = signColor(r.pct, T);
+          return { value: r.pct, itemStyle: r.small
+            ? { color: "transparent", borderColor: col, borderWidth: 1.5, borderType: "dashed", borderRadius: endRadius(r.pct, true) }
+            : { color: col, borderRadius: endRadius(r.pct, true) } };
+        }),
         label: { show: true, position: "right", fontFamily: T.mono, fontSize: 11, color: T.ink2, formatter: function (p) { return pct(p.value); } },
       }],
     }));

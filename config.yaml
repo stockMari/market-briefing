@@ -48,6 +48,7 @@ us:
   min_dollar_volume_m: 10     # 최근 20일 평균 거래대금 1천만 달러 미만 제외
   top_gainers: 15             # 급등 상위 몇 종목
   max_highs: 60               # 신고가가 많을 때 거래대금 큰 순으로 최대 몇 종목까지
+  small_cap_b: 20             # 시가총액이 이 값(십억 달러, B) 미만이면 '중소형' 표시
   spark_days: 60              # 미니 그래프 기간 (거래일)
 
 # Weekly: 앞으로 2주 일정 (금리 결정·지표·휴장일은 calendar.yaml 에서 고칩니다)

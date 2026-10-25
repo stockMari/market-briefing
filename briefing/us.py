@@ -161,7 +161,8 @@ def collect_us(per, run_date: date, cfg: dict, log=print) -> dict | None:
     log(f"  · 거래 활발 {len(liquid)}종목 → 신고가 {len(highs_all)}, 급등 상위 {len(gainers)}")
     return {
         "as_of": end.isoformat(), "base": base.isoformat(), "universe": len(liquid),
-        "filters": {"min_price": u.get("min_price", 5), "min_dollar_volume_m": u.get("min_dollar_volume_m", 10)},
+        "filters": {"min_price": u.get("min_price", 5), "min_dollar_volume_m": u.get("min_dollar_volume_m", 10),
+                    "small_cap_b": u.get("small_cap_b", 20)},
         "gainers": [row(t) for t in gainers],
         "highs": high_rows, "highs_total": len(highs_all),
         "high_sectors": sorted(sectors.items(), key=lambda kv: -kv[1]),

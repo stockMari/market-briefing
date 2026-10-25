@@ -69,6 +69,7 @@ def _env() -> Environment:
     env = Environment(loader=FileSystemLoader(ROOT / "templates"),
                       autoescape=select_autoescape(["html"]))
     env.filters.update(num=f_num, signed=f_signed, pct=f_pct, pp=f_pp, sign=f_sign, md=f_md, spark=f_spark)
+    env.globals.update(is_small_cap=is_small_cap, small_cap_limit=small_cap_limit)
     return env
 
 
@@ -103,6 +104,15 @@ def build_view(report: dict) -> dict:
         "indices_by_region": _by_region(report["indices"]),
         "us_high_groups": _us_groups(report.get("us")),
     }
+
+
+def small_cap_limit(us) -> float:
+    return ((us or {}).get("filters") or {}).get("small_cap_b", 20)
+
+
+def is_small_cap(row: dict, us: dict) -> bool:
+    """시가총액이 기준(기본 $20B) 미만인 종목. 시가총액을 모르면 표시하지 않음."""
+    return row.get("mcap_b") is not None and row["mcap_b"] < small_cap_limit(us)
 
 
 def _us_groups(us):
@@ -175,8 +185,10 @@ def _chart_payload(report: dict) -> dict:
         "highVerdicts": HIGH_VERDICTS,
         "lowVerdicts": LOW_VERDICTS,
         "creditTrend": report["credit"]["market_trend"],
-        "usGainers": [{"ticker": g["ticker"], "name": g["name"], "pct": g["change_pct"], "high": g["is_high"]}
+        "usGainers": [{"ticker": g["ticker"], "name": g["name"], "pct": g["change_pct"], "high": g["is_high"],
+                       "mcap": g["mcap_b"], "small": is_small_cap(g, report["us"])}
                       for g in (report.get("us") or {}).get("gainers", [])],
+        "usSmallCapB": small_cap_limit(report.get("us")),
         "usHighSectors": (report.get("us") or {}).get("high_sectors", []),
     }
 
