@@ -149,8 +149,25 @@ def load_reports(site_dir: Path) -> dict[str, list[dict]]:
     return reports
 
 
-def manifest(reports: dict[str, list[dict]]) -> dict[str, list[dict]]:
-    out = {}
+def save_earnings(week: dict, site_dir: Path) -> Path:
+    path = site_dir / "data" / "earnings" / f"{week['label']}.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(week, ensure_ascii=False, indent=1), encoding="utf-8")
+    return path
+
+
+def load_earnings(site_dir: Path) -> list[dict]:
+    return [json.loads(p.read_text(encoding="utf-8"))
+            for p in sorted((site_dir / "data" / "earnings").glob("*.json"), reverse=True)]
+
+
+def render_earnings(week: dict, man: dict, root: str, standalone: bool = True) -> str:
+    return _env().get_template("earnings.html").render(w=week, manifest=man, root=root, standalone=standalone)
+
+
+def manifest(reports: dict[str, list[dict]], earnings: list[dict] | None = None) -> dict[str, list[dict]]:
+    out = {"earnings": [{"label": w["label"], "start": w["start"], "end": w["end"], "total": w["total"]}
+                        for w in earnings or []]}
     for m, items in reports.items():
         out[m] = []
         for r in items:
@@ -197,8 +214,14 @@ def _chart_payload(report: dict) -> dict:
 def build_site(site_dir: Path, preview_path: Path | None = None) -> list[Path]:
     """data/ 에 쌓인 모든 리포트로 페이지를 다시 만듭니다 (지난 리포트 목록이 항상 최신이 되도록)."""
     reports = load_reports(site_dir)
-    man = manifest(reports)
+    weeks = load_earnings(site_dir)
+    man = manifest(reports, weeks)
     written = []
+    for w in weeks:
+        out = site_dir / "earnings" / f"{w['label']}.html"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(render_earnings(w, man, root="../"), encoding="utf-8")
+        written.append(out)
     for m, items in reports.items():
         for r in items:
             out = site_dir / m / f"{r['label']}.html"

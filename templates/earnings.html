@@ -1,0 +1,130 @@
+{%- set current = 'earnings' %}{%- set page_title = 'Earnings Calendar ' ~ w.label %}
+{% include "_top.html" %}
+{%- set maxn = w.days | map(attribute='total') | max %}
+{%- set logo_url = w.filters.logo_url or '' %}
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><b>Earnings Weekly Calendar</b> · {{ w.label }}</div>
+    <h1>주간 실적 캘린더</h1>
+    <div class="period">
+      <span><b class="mono">{{ w.start | md }} ~ {{ w.end | md }}</b> · 전체 <b class="mono">{{ w.total | num }}</b>건 · 미국 동부시간(ET) 기준</span>
+    </div>
+  </div>
+</section>
+
+<main>
+<div class="wrap">
+  <p class="headline-bar">{{ w.headline }}</p>
+
+  <div class="ecal">
+    {%- for d in w.days %}
+    <div class="eday" style="--col: {{ loop.index }}">
+      <div class="eday-head">
+        <b>{{ d.dow }}요일</b>
+        <span class="mono">{{ d.date }}</span>
+        <span>전체 {{ d.total }}건</span>
+        <i class="ebar" aria-hidden="true"><i style="width: {{ (100 * d.total / maxn) | round(1) if maxn else 0 }}%"></i></i>
+      </div>
+      {%- for key, label in (('bmo', '장전 발표'), ('amc', '장후 발표')) %}
+      {%- set s = d[key] %}
+      <div class="eslot eday-{{ key }}">
+        <div class="eslot-head">
+          <h3>{% if key == 'bmo' %}<svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.2" fill="currentColor"/><g stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></g></svg>
+            {%- else %}<svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M10.5 1.8a6.5 6.5 0 1 0 3.7 10.6A5.5 5.5 0 0 1 10.5 1.8z" fill="currentColor"/></svg>{% endif %} {{ label }}</h3>
+          <span class="note">전체 {{ s.total }} · 표시 {{ s.shown | length }}</span>
+        </div>
+        {%- if s.shown %}
+        <ul class="tiles">
+          {%- for c in s.shown %}
+          <li class="tile{% if c.watch %} watch{% endif %}" title="{{ c.company }}{% if c.mcap_b %} · 시총 ${{ c.mcap_b }}B{% endif %}{% if c.eps_est is not none %} · EPS 예상 {{ c.eps_est }}{% endif %}{% if c.eps_act is not none %} · 실제 {{ c.eps_act }}{% endif %}">
+            <span class="logo{% if not logo_url %} nologo{% endif %}" data-l="{{ c.ticker[0] }}">{% if logo_url %}<img src="{{ logo_url | replace('{ticker}', c.ticker) }}" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()">{% endif %}</span>
+            <b class="tk">{{ c.ticker }}</b>
+            {%- if c.surprise is not none %}<span class="sur {{ c.surprise | sign }}">{{ c.surprise | pct(1) }}</span>{% endif %}
+          </li>
+          {%- endfor %}
+        </ul>
+        {%- else %}
+        <p class="empty-s">발표 없음</p>
+        {%- endif %}
+        {%- if s.more %}
+        <details class="emore"><summary>+{{ s.more | length }} 더 보기</summary><p>{{ s.more | map(attribute='ticker') | join(', ') }}</p></details>
+        {%- endif %}
+        {%- if s.small %}<p class="note esmall">시총 ${{ w.filters.min_mcap_b }}B 미만 {{ s.small }}건</p>{% endif %}
+      </div>
+      {%- endfor %}
+      <div class="eslot eday-ev">
+        <h3>일정 · 체크포인트</h3>
+        <ul class="echecks">
+          {%- for e in d.events %}
+          <li class="ev imp-{{ e.importance }}">{% if e.time %}<span class="mono">{{ e.time }}</span> {% endif %}{{ e.title }}{% if e.tz == 'KST' %} <span class="note">(한국시간)</span>{% endif %}</li>
+          {%- endfor %}
+          {%- for c in d.checks[:10] %}
+          <li class="ck"><b class="tk">{{ c.split(' ')[0] }}</b> {{ c.split(' ', 1)[1] }}</li>
+          {%- endfor %}
+          {%- if d.checks | length > 10 %}<li class="note">관심기업 {{ d.checks | length - 10 }}곳 더: {% for c in d.checks[10:] %}{{ c.split(' ')[0] }}{% if not loop.last %}, {% endif %}{% endfor %}</li>{% endif %}
+          {%- if d.tns.total %}
+          <li class="note">시간 미정 {{ d.tns.total }}건{% if d.tns.shown %}: {{ (d.tns.shown + d.tns.more) | map(attribute='ticker') | join(', ') }}{% endif %}</li>
+          {%- endif %}
+          {%- if not d.events and not d.checks and not d.tns.total %}<li class="note">–</li>{% endif %}
+        </ul>
+      </div>
+    </div>
+    {%- endfor %}
+  </div>
+
+  <div class="legend ecal-legend">
+    <span><i class="k-watch"></i>관심기업 (항상 표시)</span>
+    <span>카드 = 관심기업 {{ w.filters.watchlist }}곳 + 시총 ${{ w.filters.min_mcap_b }}B 이상</span>
+    <span>숫자 = 발표 후 EPS 서프라이즈</span>
+    <span class="note">발표 일정은 바뀔 수 있습니다 · 출처: 야후 파이낸스 · 관심기업과 체크포인트 문구는 <code>config.yaml</code>에서 고칠 수 있습니다</span>
+  </div>
+
+  <section class="panel" id="later" aria-labelledby="h-later">
+    <div class="panel-head">
+      <div><span class="kicker">Next 2 weeks</span><h2 id="h-later">이후 2주 굵직한 일정</h2></div>
+      <span class="note">{{ w.later.start | md }} ~ {{ w.later.end | md }} · 실적은 관심기업과 시총 ${{ w.later.min_mcap_b }}B 이상</span>
+    </div>
+    {%- if w.later.days %}
+    <ul class="later">
+      {%- for d in w.later.days %}
+      <li>
+        <b class="mono">{{ d.date | md }}({{ d.dow }})</b>
+        <span>{{ (d.events + (['실적: ' ~ (d.earnings | join(', '))] if d.earnings else [])) | join(' · ') }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+    {%- else %}
+    <p class="empty">아직 잡힌 굵직한 일정이 없습니다.</p>
+    {%- endif %}
+  </section>
+
+  <section class="panel" id="archive" aria-labelledby="h-archive">
+    <div class="panel-head"><div><span class="kicker">Archive</span><h2 id="h-archive">지난 실적 캘린더</h2></div></div>
+    <div class="archive">
+      <div>
+        <ul>
+          {%- for it in manifest.earnings %}
+          <li>
+            {%- set inner %}<span class="lbl">{{ it.label }}</span><span class="ttl">{{ it.start | md }}~{{ it.end | md }}</span><span class="num note">{{ it.total | num }}건</span>{% endset %}
+            {%- if it.label == w.label %}<span class="cur" aria-current="page">{{ inner }}</span>
+            {%- else %}<a href="{{ root }}earnings/{{ it.label }}.html">{{ inner }}</a>{% endif %}
+          </li>
+          {%- endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>데이터: Yahoo Finance 실적·경제 캘린더, calendar.yaml</span>
+    <span>생성: {{ w.generated_at[:16] | replace('T', ' ') }} KST</span>
+  </div>
+</footer>
+{%- if standalone %}
+</body>
+</html>
+{%- endif %}

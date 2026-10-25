@@ -72,6 +72,50 @@ events:
     MU: 마이크론
     TSM: TSMC
 
+# 실적 캘린더 페이지 (미국 동부시간 기준)
+earnings_calendar:
+  enabled: true
+  min_mcap_b: 8               # 로고 카드로 보여줄 기준: 관심기업 + 시가총액 80억 달러 이상
+  per_slot: 6                 # 장전/장후 칸마다 카드 몇 개까지 (나머지는 '+N 더 보기')
+  later_weeks: 2              # 맨 아래 '이후 일정' 기간 (주)
+  later_min_mcap_b: 100       # 이후 일정에 넣을 실적: 관심기업 + 시가총액 1,000억 달러 이상
+  logo_url: "https://financialmodelingprep.com/image-stock/{ticker}.png"   # 로고 이미지 주소 (안 뜨면 첫 글자로 표시)
+  headlines: {}               # 주별 한 줄 제목을 직접 쓰고 싶을 때. 예) "2026-W44": "빅테크 실적과 FOMC가 겹치는 주"
+  watchlist:                  # 관심기업: 항상 카드로 표시 + 체크포인트 문구 (자유롭게 추가·수정)
+    NVDA: "데이터센터 매출·가이던스"
+    AAPL: "아이폰·서비스 매출"
+    MSFT: "애저 성장·Capex"
+    GOOGL: "클라우드·Capex"
+    AMZN: "AWS 성장·Capex"
+    META: "광고 매출·Capex"
+    TSLA: "인도량·마진"
+    AVGO: "AI 반도체 매출"
+    AMD: "데이터센터 GPU"
+    MU: "HBM·메모리 가격"
+    TSM: "선단공정 수요"
+    INTC: "파운드리·마진"
+    QCOM: "스마트폰 칩 수요"
+    ASML: "수주잔고"
+    LRCX: "장비 수주"
+    KLAC: "공정제어 수요"
+    AMAT: "장비 수주"
+    ORCL: "클라우드 수주잔고"
+    CRM: "AI 에이전트 매출"
+    NFLX: "가입자·광고"
+    PLTR: "정부·상업 매출"
+    COST: "동일점포 매출"
+    JPM: "순이자이익"
+    V: "결제액 증가율"
+    MA: "결제액 증가율"
+    LLY: "비만치료제 매출"
+    UNH: "의료비율"
+    XOM: "생산량·정제마진"
+    CVX: "생산량·현금흐름"
+    BA: "737 인도·현금흐름"
+    CAT: "건설장비 수요"
+    GEV: "가스터빈 수주잔고"
+    VRT: "냉각·전력 수주"
+
 # 7. 시장 요약 3줄
 summary:
   engine: rule                # rule = 무료 자동 문장 / claude = Claude API (ANTHROPIC_API_KEY 필요, 유료)

@@ -1,0 +1,41 @@
+{%- if standalone %}<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+{%- endif %}
+<title>{{ page_title }}</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<style>
+{% include "style.css" %}
+</style>
+{%- if standalone %}
+</head>
+<body>
+{%- endif %}
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="{{ root }}index.html" aria-label="Market Briefing 첫 화면">
+      <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true">
+        <rect x="0.5" y="0.5" width="25" height="25" rx="6" fill="var(--ink)"/>
+        <line x1="8" y1="6" x2="8" y2="20" stroke="var(--surface)" stroke-width="1.5"/>
+        <rect x="5.5" y="9" width="5" height="7" rx="1" fill="var(--up-fill)"/>
+        <line x1="18" y1="5" x2="18" y2="19" stroke="var(--surface)" stroke-width="1.5"/>
+        <rect x="15.5" y="8" width="5" height="8" rx="1" fill="var(--down-fill)"/>
+      </svg>
+      <span><b>Market Briefing</b> <small>마켓 브리핑</small></span>
+    </a>
+    <nav class="tabs" aria-label="리포트 종류">
+      {%- for m, name in (('daily', 'Daily'), ('weekly', 'Weekly'), ('earnings', '실적 캘린더')) %}
+        {%- if m == current %}<span class="on" aria-current="page">{{ name }}</span>
+        {%- elif manifest[m] %}<a href="{{ root }}{{ m }}/{{ manifest[m][0].label }}.html">{{ name }}</a>
+        {%- else %}<span class="off" title="아직 리포트가 없습니다">{{ name }}</span>{% endif %}
+      {%- endfor %}
+    </nav>
+    <a class="head-link" href="#archive">지난 리포트</a>
+  </div>
+</header>
