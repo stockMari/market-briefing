@@ -92,7 +92,7 @@
             <tr class="group"><td colspan="5">{{ region }}</td></tr>
             {%- for ix in rows %}
             <tr>
-              <td><b>{{ ix.name }}</b></td>
+              <td>{% if r.intraday and r.intraday[ix.name] %}<button type="button" class="ix-btn" data-ix="{{ ix.name }}" aria-controls="intraday">{{ ix.name }}</button>{% else %}<b>{{ ix.name }}</b>{% endif %}</td>
               <td class="r num">{{ ix.close | num(2) }}</td>
               <td class="r num hide-sm {{ ix.change | sign }}">{{ ix.change | signed(2) }}</td>
               <td class="r num {{ ix.change_pct | sign }}"><b>{{ ix.change_pct | pct }}</b></td>
@@ -104,6 +104,21 @@
         </table>
       </div>
     </div>
+  {%- if r.intraday %}
+  {%- set first = (r.intraday.keys() | list)[0] %}
+  {%- set iv = r.intraday[first].interval %}
+    <div class="intraday" id="intraday">
+      <div class="intraday-head">
+        <h3 class="sub"><span id="intra-name">{{ first }}</span> {{ '30분봉' if iv == '30m' else ('1시간봉' if iv == '60m' else iv) }}
+          <span class="note" id="intra-tz">{{ r.intraday[first].tz }}</span></h3>
+        <div class="ix-chips" role="group" aria-label="장중 차트 지수 선택">
+          {%- for name in r.intraday %}<button type="button" data-ix="{{ name }}" aria-pressed="{{ 'true' if loop.first else 'false' }}">{{ name }}</button>{% endfor %}
+        </div>
+      </div>
+      <div class="chart" id="c-intraday" role="img" aria-label="지수 장중 캔들 차트"></div>
+      <p class="note">표의 지수 이름이나 막대를 눌러도 바뀝니다. 점선은 {{ '지난주 금요일' if weekly else '전일' }} 종가, 시간은 각 시장 현지 시간입니다.</p>
+    </div>
+  {%- endif %}
   </section>
 
   <!-- 2. 투자자별 수급 -->

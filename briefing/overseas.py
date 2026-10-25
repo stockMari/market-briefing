@@ -37,3 +37,36 @@ def closes(ticker: str, start: date, end: date) -> pd.Series:
     except Exception:  # noqa: BLE001  1시간봉은 보조용이라 실패해도 일봉으로 진행
         pass
     return s
+
+
+TZ_LABEL = {"Asia/Seoul": "한국 시간", "America/New_York": "뉴욕 시간", "Asia/Tokyo": "도쿄 시간",
+            "Asia/Shanghai": "상하이 시간", "Asia/Taipei": "타이베이 시간"}
+
+
+def intraday(ticker: str, days: list[date], interval: str) -> dict | None:
+    """그 기간의 장중 봉 (현지 시간). 반환: {interval, tz, bars: [['10/23 09:00', 시, 고, 저, 종], ...]}"""
+    # 시간대 차이로 첫날·마지막날이 잘리지 않게 앞뒤로 넉넉히 받고, 현지 날짜로 걸러냄
+    df = yf.download(ticker, start=(min(days) - timedelta(days=1)).isoformat(),
+                     end=(max(days) + timedelta(days=2)).isoformat(),
+                     interval=interval, auto_adjust=False, prepost=False, progress=False, threads=False)
+    if df.empty:
+        return None
+    cols = {k: _col(df, k) for k in ("Open", "High", "Low", "Close")}
+    idx = pd.to_datetime(df.index)
+    tz = str(idx.tz) if idx.tz is not None else ""
+    keep = set(days)
+    bars = []
+    for i, t in enumerate(idx):
+        if t.date() not in keep:
+            continue
+        o, h, l, c = (cols[k].iloc[i] for k in ("Open", "High", "Low", "Close"))
+        if pd.isna(c):
+            continue
+        bars.append([f"{t.month}/{t.day} {t:%H:%M}",
+                     round(float(o), 2), round(float(h), 2), round(float(l), 2), round(float(c), 2)])
+    return {"interval": interval, "tz": TZ_LABEL.get(tz, tz), "bars": bars} if bars else None
+
+
+def _col(df: pd.DataFrame, name: str) -> pd.Series:
+    s = df[name]
+    return s.iloc[:, 0] if isinstance(s, pd.DataFrame) else s

@@ -47,6 +47,28 @@ def collect_indices(cfg, per, run_date, log):
     return rows
 
 
+# ── 1-1. 지수 장중 차트 (Daily 30분봉 / Weekly 1시간봉) ───
+def collect_intraday(cfg, per, indices, log):
+    icfg = cfg.get("intraday", {})
+    interval = icfg.get("weekly_interval", "60m") if per.mode == "weekly" else icfg.get("daily_interval", "30m")
+    out = {}
+    for ix, row in zip(cfg["indices"], indices):
+        if not ix.get("ticker") or row["change_pct"] is None:
+            continue
+        base, end = date.fromisoformat(row["base_date"]), date.fromisoformat(row["end_date"])
+        days = [base + timedelta(days=i) for i in range(1, (end - base).days + 1)]
+        try:
+            data = overseas.intraday(ix["ticker"], days, interval)
+        except Exception as e:  # noqa: BLE001
+            log(f"  · {ix['name']} 장중 차트 실패: {e}")
+            continue
+        if data:
+            data["prev_close"] = _r(row["close"] - row["change"])
+            out[ix["name"]] = data
+    log(f"  · 장중 차트 {len(out)}/{len(indices)}개 지수 ({interval})")
+    return out
+
+
 # ── 2. 투자자별 수급 ───────────────────────────────────
 def collect_flows(cfg, per, cal, log):
     start = next(d for d in cal if d > per.base)
@@ -186,6 +208,7 @@ def build_report(mode: str, run_date: date, cfg: dict, log=print) -> dict:
 
     log("[2/6] 주요 지수")
     indices = collect_indices(cfg, per, run_date, log)
+    intraday = collect_intraday(cfg, per, indices, log)
     log("[3/6] 투자자별 수급")
     flows = collect_flows(cfg, per, cal, log)
     log("[4/6] 업종")
@@ -218,6 +241,7 @@ def build_report(mode: str, run_date: date, cfg: dict, log=print) -> dict:
         "judgment": cfg["judgment"],
         "summary": None,
         "indices": indices,
+        "intraday": intraday,
         "flows": flows,
         "sectors": sectors,
         "highs": highs,

@@ -120,6 +120,7 @@
         },
       }],
     }));
+    c.on("click", function (p) { showIntraday(rows[p.dataIndex].name, true); });
   }
 
   // 2-a. 순매수 막대 (시장 × 투자자)
@@ -339,10 +340,65 @@
     }));
   }
 
+  // 1-1. 지수 장중 캔들 (한국식: 상승 빨강 / 하락 파랑)
+  var intraName = Object.keys(D.intraday || {})[0];
+  function drawIntraday(T) {
+    var c = mount("c-intraday"); if (!c || !intraName) return;
+    var d = D.intraday[intraName], bars = d.bars, prev = d.prev_close;
+    var weekly = D.mode === "weekly";
+    var labels = bars.map(function (b) { return b[0]; });
+    function day(i) { return labels[i].split(" ")[0]; }
+    c.setOption(Object.assign(base(T), {
+      grid: { left: 8, right: 64, top: 12, bottom: 4, containLabel: true },
+      xAxis: catAxis(T, labels, {
+        boundaryGap: true,
+        axisLabel: {
+          color: T.muted, fontSize: 11, fontFamily: T.mono, hideOverlap: true,
+          // 주간: 날짜가 바뀌는 첫 봉에만 날짜 / 일간: 시각
+          interval: weekly ? function (i) { return i === 0 || day(i) !== day(i - 1); } : "auto",
+          formatter: function (v) { return weekly ? v.split(" ")[0] : v.split(" ")[1]; },
+        },
+      }),
+      yAxis: Object.assign(valueAxis(T, function (v) { return v.toLocaleString("ko-KR"); }), { scale: true }),
+      tooltip: Object.assign(base(T).tooltip, {
+        trigger: "axis", axisPointer: { type: "cross", lineStyle: { color: T.muted }, label: { backgroundColor: T.ink2 } },
+        formatter: function (ps) {
+          var b = bars[ps[0].dataIndex], ch = (b[4] / prev - 1) * 100;
+          function f(v) { return v.toLocaleString("ko-KR", { minimumFractionDigits: 2 }); }
+          return "<b>" + intraName + "</b> · " + b[0] + " (" + d.tz + ")<br>" +
+            row(T.line, "시가", f(b[1])) + row(T.line, "고가", f(b[2])) + row(T.line, "저가", f(b[3])) +
+            row(ch >= 0 ? T.upFill : T.downFill, "종가", f(b[4])) +
+            row(T.line, weekly ? "지난주 대비" : "전일 대비", pct(ch));
+        },
+      }),
+      series: [{
+        type: "candlestick", name: intraName, barMaxWidth: 12,
+        data: bars.map(function (b) { return [b[1], b[4], b[3], b[2]]; }),   // [시, 종, 저, 고]
+        itemStyle: { color: T.upFill, color0: T.downFill, borderColor: T.upFill, borderColor0: T.downFill },
+        markLine: prev ? {
+          silent: true, symbol: "none",
+          lineStyle: { color: T.muted, type: "dashed", width: 1 },
+          label: { color: T.ink2, fontFamily: T.mono, fontSize: 11, formatter: function () { return prev.toLocaleString("ko-KR"); } },
+          data: [{ yAxis: prev }],
+        } : undefined,
+      }],
+    }), true);
+  }
+  function showIntraday(name, scroll) {
+    if (!D.intraday || !D.intraday[name]) return;
+    intraName = name;
+    document.getElementById("intra-name").textContent = name;
+    document.getElementById("intra-tz").textContent = D.intraday[name].tz;
+    document.querySelectorAll(".ix-chips button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.ix === name)); });
+    drawIntraday(theme());
+    if (scroll) document.getElementById("intraday").scrollIntoView({ block: "nearest", behavior: "smooth" });
+  }
+
   function drawAll() {
     if (typeof echarts === "undefined") return;
     var T = theme();
     drawIndices(T);
+    drawIntraday(T);
     drawFlows(T);
     drawFlowTrend(T, "c-flow-kospi", "KOSPI");
     drawFlowTrend(T, "c-flow-kosdaq", "KOSDAQ");
@@ -355,6 +411,10 @@
   }
 
   // ── 버튼 ──
+  document.querySelectorAll(".ix-chips button, .ix-btn").forEach(function (b) {
+    b.addEventListener("click", function () { showIntraday(b.dataset.ix, b.classList.contains("ix-btn")); });
+  });
+
   function press(group, btn) {
     group.querySelectorAll("button").forEach(function (b) { b.setAttribute("aria-pressed", String(b === btn)); });
   }

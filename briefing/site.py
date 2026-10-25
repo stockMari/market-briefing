@@ -176,6 +176,7 @@ def _chart_payload(report: dict) -> dict:
         "mode": report["mode"],
         "unit": "주" if report["mode"] == "weekly" else "일",
         "indices": [i for i in report["indices"] if i["change_pct"] is not None],
+        "intraday": report.get("intraday") or {},
         "flows": report["flows"],
         "sectors": report["sectors"],
         "highGroups": [{"sector": g["sector"], "counts": g["counts"]}

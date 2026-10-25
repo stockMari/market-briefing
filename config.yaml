@@ -9,16 +9,21 @@ site:
 
 # 1. 주요 지수 (순서대로 표시)
 #    source: krx  → 한국거래소(pykrx)에서 가져옴
-#    ticker: ...  → 야후 파이낸스(yfinance) 코드
+#    ticker: ...  → 야후 파이낸스(yfinance) 코드 (장중 차트도 이 코드로 가져옴)
 indices:
-  - { name: "KOSPI",    region: "한국", source: krx, code: "1001" }
-  - { name: "KOSDAQ",   region: "한국", source: krx, code: "2001" }
+  - { name: "KOSPI",    region: "한국", source: krx, code: "1001", ticker: "^KS11" }
+  - { name: "KOSDAQ",   region: "한국", source: krx, code: "2001", ticker: "^KQ11" }
   - { name: "다우",      region: "미국", ticker: "^DJI" }
   - { name: "나스닥",    region: "미국", ticker: "^IXIC" }
   - { name: "S&P500",   region: "미국", ticker: "^GSPC" }
   - { name: "닛케이225", region: "아시아", ticker: "^N225" }
   - { name: "상해종합",  region: "아시아", ticker: "000001.SS" }
   - { name: "대만가권",  region: "아시아", ticker: "^TWII" }
+
+# 1-1. 지수 장중 차트 (지수를 누르면 보이는 캔들 차트)
+intraday:
+  daily_interval: "30m"       # Daily: 30분봉
+  weekly_interval: "60m"      # Weekly: 1시간봉 (30분봉이면 한 주 65개라 휴대폰에서 너무 촘촘)
 
 # 2. 투자자별 수급
 flows:
