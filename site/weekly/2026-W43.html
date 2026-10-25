@@ -212,6 +212,17 @@ tr.both td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
 .both-line { font-size: 13.5px; margin: 0 0 14px; padding: 10px 12px; border-radius: 8px; background: var(--accent-soft); border: 1px solid var(--accent-line); }
 .both-line b { color: var(--accent); }
 
+/* nasdaq */
+.tk { font-family: var(--font-mono); font-weight: 600; font-size: 13.5px; }
+.co { font-size: 12px; color: var(--muted); }
+.badge-high { font-size: 10.5px; font-weight: 700; color: var(--up); border: 1px solid currentColor; border-radius: 4px; padding: 0 4px; margin-left: 6px; vertical-align: 1px; }
+.us-table td { vertical-align: middle; }
+.us-table td:nth-child(2) { white-space: normal; min-width: 170px; }
+.spark { display: block; }
+table.fixed col.c-spark { width: 110px; }
+table.us-fixed col.c-name { width: 40%; }
+.us-highs-title { margin-top: 22px; }
+
 /* upcoming events */
 .cal-days { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
 .cal-day { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
@@ -2663,7 +2674,7 @@ tr.both td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.1/echarts.min.js"></script>
-<script id="chart-data" type="application/json">{"mode": "weekly", "unit": "주", "indices": [{"name": "KOSPI", "region": "한국", "close": 5550.3, "change": -117.75, "change_pct": -2.08, "base_date": "2026-10-16", "end_date": "2026-10-23"}, {"name": "KOSDAQ", "region": "한국", "close": 751.69, "change": -43.09, "change_pct": -5.42, "base_date": "2026-10-16", "end_date": "2026-10-23"}, {"name": "다우", "region": "미국", "close": 52215.16, "change": 212.75, "change_pct": 0.41, "base_date": "2026-10-16", "end_date": "2026-10-23"}, {"name": "나스닥", "region": "미국", "close": 25955.34, "change": -184.69, "change_pct": -0.71, "base_date": "2026-10-16", "end_date": "2026-10-23"}, {"name": "S&P500", "region": "미국", "close": 7623.68, "change": -35.76, "change_pct": -0.47, "base_date": "2026-10-16", "end_date": "2026-10-23"}, {"name": "닛케이225", "region": "아시아", "close": 62726.83, "change": -2597.46, "change_pct": -3.98, "base_date": "2026-10-16", "end_date": "2026-10-23"}, {"name": "상해종합", "region": "아시아", "close": 3685.65, "change": -30.63, "change_pct": -0.82, "base_date": "2026-10-16", "end_date": "2026-10-23"}, {"name": "대만가권", "region": "아시아", "close": 46041.43, "change": -1069.83, "change_pct": -2.27, "base_date": "2026-10-16", "end_date": "2026-10-22"}], "flows": {"unit": "억원", "current": {"KOSPI": {"외국인": -7193, "기관": 4190, "개인": -11021}, "KOSDAQ": {"외국인": -6671, "기관": -520, "개인": 6855}}, "trend": {"KOSPI": {"외국인": [-59016, 65470, -18503, -83171, -25365, -21701, -87576, -4437, -83150, -64531, -112068, -7193], "기관": [-23099, 7719, -23755, -3615, -8701, 35900, 8799, 17128, -9718, -23887, 34183, 4190]}, "KOSDAQ": {"외국인": [-12849, -6178, -3651, 4839, 52, -10865, -935, -2037, -958, -568, 373, -6671], "기관": [6576, -403, -5944, -1871, -7342, 8220, 1933, -1131, 6429, -2091, -3425, -520]}, "labels": ["8/7", "8/14", "8/21", "8/28", "9/4", "9/11", "9/18", "9/23", "10/2", "10/8", "10/16", "10/23"]}}, "sectors": {"KOSPI": [{"name": "제약", "change_pct": 5.42}, {"name": "일반서비스", "change_pct": 3.92}, {"name": "보험", "change_pct": 1.34}, {"name": "부동산", "change_pct": 0.33}, {"name": "전기·가스", "change_pct": -0.37}, {"name": "건설", "change_pct": -0.5}, {"name": "오락·문화", "change_pct": -0.55}, {"name": "전기·전자", "change_pct": -0.91}, {"name": "IT 서비스", "change_pct": -0.95}, {"name": "음식료·담배", "change_pct": -1.19}, {"name": "유통", "change_pct": -1.89}, {"name": "비금속", "change_pct": -2.36}, {"name": "증권", "change_pct": -4.03}, {"name": "운송·창고", "change_pct": -4.43}, {"name": "종이·목재", "change_pct": -4.48}, {"name": "통신", "change_pct": -6.39}, {"name": "의료·정밀기기", "change_pct": -6.4}, {"name": "기계·장비", "change_pct": -7.43}, {"name": "섬유·의류", "change_pct": -7.95}, {"name": "운송장비·부품", "change_pct": -8.05}, {"name": "금속", "change_pct": -9.39}, {"name": "화학", "change_pct": -9.4}], "KOSDAQ": [{"name": "출판·매체복제", "change_pct": 1.81}, {"name": "기타제조", "change_pct": -0.15}, {"name": "IT 서비스", "change_pct": -0.66}, {"name": "운송장비·부품", "change_pct": -1.8}, {"name": "운송·창고", "change_pct": -1.96}, {"name": "음식료·담배", "change_pct": -2.04}, {"name": "오락·문화", "change_pct": -2.4}, {"name": "일반서비스", "change_pct": -2.61}, {"name": "건설", "change_pct": -2.77}, {"name": "금속", "change_pct": -2.81}, {"name": "제약", "change_pct": -3.27}, {"name": "섬유·의류", "change_pct": -3.88}, {"name": "종이·목재", "change_pct": -4.24}, {"name": "통신", "change_pct": -4.98}, {"name": "화학", "change_pct": -5.93}, {"name": "유통", "change_pct": -6.64}, {"name": "의료·정밀기기", "change_pct": -6.93}, {"name": "전기·전자", "change_pct": -7.16}, {"name": "기계·장비", "change_pct": -7.9}, {"name": "금융", "change_pct": -7.91}, {"name": "비금속", "change_pct": -9.25}]}, "highGroups": [{"sector": "IT 서비스", "counts": {"together": 0, "leader": 0, "solo": 1, "mixed": 3}}, {"sector": "기계·장비", "counts": {"together": 0, "leader": 0, "solo": 3, "mixed": 0}}, {"sector": "운송장비·부품", "counts": {"together": 0, "leader": 0, "solo": 2, "mixed": 0}}, {"sector": "유통", "counts": {"together": 0, "leader": 0, "solo": 1, "mixed": 1}}, {"sector": "일반서비스", "counts": {"together": 1, "leader": 0, "solo": 1, "mixed": 0}}, {"sector": "금속", "counts": {"together": 0, "leader": 0, "solo": 1, "mixed": 0}}, {"sector": "음식료·담배", "counts": {"together": 0, "leader": 0, "solo": 0, "mixed": 1}}, {"sector": "전기·전자", "counts": {"together": 0, "leader": 0, "solo": 1, "mixed": 0}}, {"sector": "화학", "counts": {"together": 0, "leader": 0, "solo": 0, "mixed": 1}}], "lowGroups": [{"sector": "제약", "counts": {"together": 12, "leader": 4, "solo": 7, "mixed": 0}}, {"sector": "운송장비·부품", "counts": {"together": 12, "leader": 5, "solo": 0, "mixed": 0}}, {"sector": "화학", "counts": {"together": 15, "leader": 2, "solo": 0, "mixed": 0}}, {"sector": "IT 서비스", "counts": {"together": 5, "leader": 9, "solo": 0, "mixed": 0}}, {"sector": "기계·장비", "counts": {"together": 11, "leader": 2, "solo": 0, "mixed": 0}}, {"sector": "전기·전자", "counts": {"together": 9, "leader": 3, "solo": 0, "mixed": 0}}, {"sector": "기타금융", "counts": {"together": 9, "leader": 2, "solo": 0, "mixed": 0}}, {"sector": "유통", "counts": {"together": 10, "leader": 1, "solo": 0, "mixed": 0}}, {"sector": "음식료·담배", "counts": {"together": 7, "leader": 3, "solo": 0, "mixed": 0}}, {"sector": "일반서비스", "counts": {"together": 4, "leader": 3, "solo": 2, "mixed": 1}}, {"sector": "금속", "counts": {"together": 7, "leader": 1, "solo": 0, "mixed": 0}}, {"sector": "의료·정밀기기", "counts": {"together": 6, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "건설", "counts": {"together": 4, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "금융", "counts": {"together": 3, "leader": 1, "solo": 0, "mixed": 0}}, {"sector": "오락·문화", "counts": {"together": 3, "leader": 1, "solo": 0, "mixed": 0}}, {"sector": "운송·창고", "counts": {"together": 4, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "증권", "counts": {"together": 4, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "부동산", "counts": {"together": 0, "leader": 0, "solo": 1, "mixed": 2}}, {"sector": "비금속", "counts": {"together": 3, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "기타제조", "counts": {"together": 2, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "전기·가스", "counts": {"together": 2, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "종이·목재", "counts": {"together": 1, "leader": 1, "solo": 0, "mixed": 0}}, {"sector": "섬유·의류", "counts": {"together": 1, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "통신", "counts": {"together": 1, "leader": 0, "solo": 0, "mixed": 0}}], "highVerdicts": {"together": "섹터 동반", "leader": "섹터 동반 + 주도주", "solo": "개별 강세(개인기)", "mixed": "혼조"}, "lowVerdicts": {"together": "섹터 동반 약세", "leader": "섹터 약세 + 낙폭 과대", "solo": "개별 약세", "mixed": "혼조"}, "creditTrend": null}</script>
+<script id="chart-data" type="application/json">{"mode": "weekly", "unit": "주", "indices": [{"name": "KOSPI", "region": "한국", "close": 5550.3, "change": -117.75, "change_pct": -2.08, "base_date": "2026-10-16", "end_date": "2026-10-23"}, {"name": "KOSDAQ", "region": "한국", "close": 751.69, "change": -43.09, "change_pct": -5.42, "base_date": "2026-10-16", "end_date": "2026-10-23"}, {"name": "다우", "region": "미국", "close": 52215.16, "change": 212.75, "change_pct": 0.41, "base_date": "2026-10-16", "end_date": "2026-10-23"}, {"name": "나스닥", "region": "미국", "close": 25955.34, "change": -184.69, "change_pct": -0.71, "base_date": "2026-10-16", "end_date": "2026-10-23"}, {"name": "S&P500", "region": "미국", "close": 7623.68, "change": -35.76, "change_pct": -0.47, "base_date": "2026-10-16", "end_date": "2026-10-23"}, {"name": "닛케이225", "region": "아시아", "close": 62726.83, "change": -2597.46, "change_pct": -3.98, "base_date": "2026-10-16", "end_date": "2026-10-23"}, {"name": "상해종합", "region": "아시아", "close": 3685.65, "change": -30.63, "change_pct": -0.82, "base_date": "2026-10-16", "end_date": "2026-10-23"}, {"name": "대만가권", "region": "아시아", "close": 46041.43, "change": -1069.83, "change_pct": -2.27, "base_date": "2026-10-16", "end_date": "2026-10-22"}], "flows": {"unit": "억원", "current": {"KOSPI": {"외국인": -7193, "기관": 4190, "개인": -11021}, "KOSDAQ": {"외국인": -6671, "기관": -520, "개인": 6855}}, "trend": {"KOSPI": {"외국인": [-59016, 65470, -18503, -83171, -25365, -21701, -87576, -4437, -83150, -64531, -112068, -7193], "기관": [-23099, 7719, -23755, -3615, -8701, 35900, 8799, 17128, -9718, -23887, 34183, 4190]}, "KOSDAQ": {"외국인": [-12849, -6178, -3651, 4839, 52, -10865, -935, -2037, -958, -568, 373, -6671], "기관": [6576, -403, -5944, -1871, -7342, 8220, 1933, -1131, 6429, -2091, -3425, -520]}, "labels": ["8/7", "8/14", "8/21", "8/28", "9/4", "9/11", "9/18", "9/23", "10/2", "10/8", "10/16", "10/23"]}}, "sectors": {"KOSPI": [{"name": "제약", "change_pct": 5.42}, {"name": "일반서비스", "change_pct": 3.92}, {"name": "보험", "change_pct": 1.34}, {"name": "부동산", "change_pct": 0.33}, {"name": "전기·가스", "change_pct": -0.37}, {"name": "건설", "change_pct": -0.5}, {"name": "오락·문화", "change_pct": -0.55}, {"name": "전기·전자", "change_pct": -0.91}, {"name": "IT 서비스", "change_pct": -0.95}, {"name": "음식료·담배", "change_pct": -1.19}, {"name": "유통", "change_pct": -1.89}, {"name": "비금속", "change_pct": -2.36}, {"name": "증권", "change_pct": -4.03}, {"name": "운송·창고", "change_pct": -4.43}, {"name": "종이·목재", "change_pct": -4.48}, {"name": "통신", "change_pct": -6.39}, {"name": "의료·정밀기기", "change_pct": -6.4}, {"name": "기계·장비", "change_pct": -7.43}, {"name": "섬유·의류", "change_pct": -7.95}, {"name": "운송장비·부품", "change_pct": -8.05}, {"name": "금속", "change_pct": -9.39}, {"name": "화학", "change_pct": -9.4}], "KOSDAQ": [{"name": "출판·매체복제", "change_pct": 1.81}, {"name": "기타제조", "change_pct": -0.15}, {"name": "IT 서비스", "change_pct": -0.66}, {"name": "운송장비·부품", "change_pct": -1.8}, {"name": "운송·창고", "change_pct": -1.96}, {"name": "음식료·담배", "change_pct": -2.04}, {"name": "오락·문화", "change_pct": -2.4}, {"name": "일반서비스", "change_pct": -2.61}, {"name": "건설", "change_pct": -2.77}, {"name": "금속", "change_pct": -2.81}, {"name": "제약", "change_pct": -3.27}, {"name": "섬유·의류", "change_pct": -3.88}, {"name": "종이·목재", "change_pct": -4.24}, {"name": "통신", "change_pct": -4.98}, {"name": "화학", "change_pct": -5.93}, {"name": "유통", "change_pct": -6.64}, {"name": "의료·정밀기기", "change_pct": -6.93}, {"name": "전기·전자", "change_pct": -7.16}, {"name": "기계·장비", "change_pct": -7.9}, {"name": "금융", "change_pct": -7.91}, {"name": "비금속", "change_pct": -9.25}]}, "highGroups": [{"sector": "IT 서비스", "counts": {"together": 0, "leader": 0, "solo": 1, "mixed": 3}}, {"sector": "기계·장비", "counts": {"together": 0, "leader": 0, "solo": 3, "mixed": 0}}, {"sector": "운송장비·부품", "counts": {"together": 0, "leader": 0, "solo": 2, "mixed": 0}}, {"sector": "유통", "counts": {"together": 0, "leader": 0, "solo": 1, "mixed": 1}}, {"sector": "일반서비스", "counts": {"together": 1, "leader": 0, "solo": 1, "mixed": 0}}, {"sector": "금속", "counts": {"together": 0, "leader": 0, "solo": 1, "mixed": 0}}, {"sector": "음식료·담배", "counts": {"together": 0, "leader": 0, "solo": 0, "mixed": 1}}, {"sector": "전기·전자", "counts": {"together": 0, "leader": 0, "solo": 1, "mixed": 0}}, {"sector": "화학", "counts": {"together": 0, "leader": 0, "solo": 0, "mixed": 1}}], "lowGroups": [{"sector": "제약", "counts": {"together": 12, "leader": 4, "solo": 7, "mixed": 0}}, {"sector": "운송장비·부품", "counts": {"together": 12, "leader": 5, "solo": 0, "mixed": 0}}, {"sector": "화학", "counts": {"together": 15, "leader": 2, "solo": 0, "mixed": 0}}, {"sector": "IT 서비스", "counts": {"together": 5, "leader": 9, "solo": 0, "mixed": 0}}, {"sector": "기계·장비", "counts": {"together": 11, "leader": 2, "solo": 0, "mixed": 0}}, {"sector": "전기·전자", "counts": {"together": 9, "leader": 3, "solo": 0, "mixed": 0}}, {"sector": "기타금융", "counts": {"together": 9, "leader": 2, "solo": 0, "mixed": 0}}, {"sector": "유통", "counts": {"together": 10, "leader": 1, "solo": 0, "mixed": 0}}, {"sector": "음식료·담배", "counts": {"together": 7, "leader": 3, "solo": 0, "mixed": 0}}, {"sector": "일반서비스", "counts": {"together": 4, "leader": 3, "solo": 2, "mixed": 1}}, {"sector": "금속", "counts": {"together": 7, "leader": 1, "solo": 0, "mixed": 0}}, {"sector": "의료·정밀기기", "counts": {"together": 6, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "건설", "counts": {"together": 4, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "금융", "counts": {"together": 3, "leader": 1, "solo": 0, "mixed": 0}}, {"sector": "오락·문화", "counts": {"together": 3, "leader": 1, "solo": 0, "mixed": 0}}, {"sector": "운송·창고", "counts": {"together": 4, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "증권", "counts": {"together": 4, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "부동산", "counts": {"together": 0, "leader": 0, "solo": 1, "mixed": 2}}, {"sector": "비금속", "counts": {"together": 3, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "기타제조", "counts": {"together": 2, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "전기·가스", "counts": {"together": 2, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "종이·목재", "counts": {"together": 1, "leader": 1, "solo": 0, "mixed": 0}}, {"sector": "섬유·의류", "counts": {"together": 1, "leader": 0, "solo": 0, "mixed": 0}}, {"sector": "통신", "counts": {"together": 1, "leader": 0, "solo": 0, "mixed": 0}}], "highVerdicts": {"together": "섹터 동반", "leader": "섹터 동반 + 주도주", "solo": "개별 강세(개인기)", "mixed": "혼조"}, "lowVerdicts": {"together": "섹터 동반 약세", "leader": "섹터 약세 + 낙폭 과대", "solo": "개별 약세", "mixed": "혼조"}, "creditTrend": null, "usGainers": [], "usHighSectors": []}</script>
 <script>
 (function () {
   "use strict";
@@ -2954,6 +2965,50 @@ tr.both td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
     }));
   }
 
+  // 나스닥 급등 상위 — 가로 막대
+  function drawUsGainers(T) {
+    var c = mount("c-us-gainers"); if (!c) return;
+    var rows = D.usGainers;
+    c.setOption(Object.assign(base(T), {
+      grid: { left: 8, right: 8, top: 4, bottom: 4, containLabel: true },
+      xAxis: paddedAxis(T, rows.map(function (r) { return { change_pct: r.pct }; }), c),
+      yAxis: catAxis(T, rows.map(function (r) { return r.ticker; }), { inverse: true, axisLine: { show: false },
+                     axisLabel: { color: T.ink, fontSize: 11.5, fontFamily: T.mono, interval: 0 } }),
+      tooltip: Object.assign(base(T).tooltip, {
+        trigger: "item",
+        formatter: function (p) {
+          var r = rows[p.dataIndex];
+          return "<b>" + r.ticker + "</b> " + r.name + (r.high ? " · 52주 신고가" : "") + "<br>" + row(p.color, "등락률", pct(r.pct));
+        },
+      }),
+      series: [{
+        type: "bar", barWidth: 12,
+        data: rows.map(function (r) { return { value: r.pct, itemStyle: { color: signColor(r.pct, T), borderRadius: endRadius(r.pct, true) } }; }),
+        label: { show: true, position: "right", fontFamily: T.mono, fontSize: 11, color: T.ink2, formatter: function (p) { return pct(p.value); } },
+      }],
+    }));
+  }
+
+  // 나스닥 신고가 — 섹터별 종목 수
+  function drawUsHighs(T) {
+    var c = mount("c-us-highs"); if (!c) return;
+    var rows = D.usHighSectors;
+    c.setOption(Object.assign(base(T), {
+      grid: { left: 8, right: 30, top: 4, bottom: 4, containLabel: true },
+      xAxis: Object.assign(valueAxis(T), { minInterval: 1 }),
+      yAxis: catAxis(T, rows.map(function (r) { return r[0]; }), { inverse: true, axisLine: { show: false }, axisLabel: { color: T.ink2, fontSize: 12, interval: 0 } }),
+      tooltip: Object.assign(base(T).tooltip, {
+        trigger: "item", formatter: function (p) { return "<b>" + p.name + "</b><br>" + row(p.color, "신고가", p.value + "종목"); },
+      }),
+      series: [{
+        type: "bar", barWidth: 12, color: T.upFill,
+        itemStyle: { borderRadius: [0, 4, 4, 0] },
+        data: rows.map(function (r) { return r[1]; }),
+        label: { show: true, position: "right", fontFamily: T.mono, fontSize: 11.5, color: T.ink },
+      }],
+    }));
+  }
+
   function drawAll() {
     if (typeof echarts === "undefined") return;
     var T = theme();
@@ -2965,6 +3020,8 @@ tr.both td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
     drawHL(T, "c-highs", D.highGroups, D.highVerdicts);
     drawHL(T, "c-lows", D.lowGroups, D.lowVerdicts);
     drawCredit(T);
+    drawUsGainers(T);
+    drawUsHighs(T);
   }
 
   // ── 버튼 ──
