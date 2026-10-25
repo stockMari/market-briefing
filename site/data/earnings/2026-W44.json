@@ -24,17 +24,6 @@
       "watch": false
      },
      {
-      "ticker": "KOF",
-      "company": "Coca-Cola FEMSA, S.A.B. de C.V.",
-      "date": "2026-10-26",
-      "slot": "bmo",
-      "mcap_b": 24.8,
-      "eps_est": 1.89,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
       "ticker": "CX",
       "company": "CEMEX, S.A.B. de C.V.",
       "date": "2026-10-26",
@@ -47,7 +36,7 @@
      }
     ],
     "more": [],
-    "small": 13
+    "small": 14
    },
    "amc": {
     "total": 57,
@@ -68,7 +57,7 @@
       "company": "Cadence Design Systems, Inc.",
       "date": "2026-10-26",
       "slot": "amc",
-      "mcap_b": 87.3,
+      "mcap_b": 87.2,
       "eps_est": 2.05,
       "eps_act": null,
       "surprise": null,
@@ -148,7 +137,7 @@
       "date": "2026-10-26",
       "slot": "amc",
       "mcap_b": 23.2,
-      "eps_est": 2.43,
+      "eps_est": 2.42,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -158,7 +147,7 @@
       "company": "Sun Communities, Inc.",
       "date": "2026-10-26",
       "slot": "amc",
-      "mcap_b": 14.8,
+      "mcap_b": 14.6,
       "eps_est": 0.97,
       "eps_act": null,
       "surprise": null,
@@ -180,7 +169,7 @@
       "company": "Amkor Technology, Inc.",
       "date": "2026-10-26",
       "slot": "amc",
-      "mcap_b": 9.7,
+      "mcap_b": 9.8,
       "eps_est": 0.78,
       "eps_act": null,
       "surprise": null,
@@ -244,7 +233,7 @@
       "company": "The Boeing Company",
       "date": "2026-10-27",
       "slot": "bmo",
-      "mcap_b": 148.8,
+      "mcap_b": 148.9,
       "eps_est": -0.2,
       "eps_act": null,
       "surprise": null,
@@ -299,7 +288,7 @@
       "company": "Corning Incorporated",
       "date": "2026-10-27",
       "slot": "bmo",
-      "mcap_b": 106.3,
+      "mcap_b": 106.5,
       "eps_est": 0.88,
       "eps_act": null,
       "surprise": null,
@@ -312,7 +301,7 @@
       "company": "HCA Healthcare, Inc.",
       "date": "2026-10-27",
       "slot": "bmo",
-      "mcap_b": 104.0,
+      "mcap_b": 101.5,
       "eps_est": 6.63,
       "eps_act": null,
       "surprise": null,
@@ -433,7 +422,7 @@
       "company": "PayPal Holdings, Inc.",
       "date": "2026-10-27",
       "slot": "bmo",
-      "mcap_b": 49.2,
+      "mcap_b": 48.8,
       "eps_est": 1.31,
       "eps_act": null,
       "surprise": null,
@@ -510,7 +499,7 @@
       "company": "CMS Energy Corporation",
       "date": "2026-10-27",
       "slot": "bmo",
-      "mcap_b": 21.5,
+      "mcap_b": 21.8,
       "eps_est": 1.35,
       "eps_act": null,
       "surprise": null,
@@ -620,7 +609,7 @@
       "company": "Pentair plc",
       "date": "2026-10-27",
       "slot": "bmo",
-      "mcap_b": 8.9,
+      "mcap_b": 8.8,
       "eps_est": 1.07,
       "eps_act": null,
       "surprise": null,
@@ -826,7 +815,7 @@
       "company": "Expand Energy Corporation",
       "date": "2026-10-27",
       "slot": "amc",
-      "mcap_b": 22.3,
+      "mcap_b": 21.6,
       "eps_est": 1.32,
       "eps_act": null,
       "surprise": null,
@@ -932,23 +921,23 @@
       "watch": false
      },
      {
-      "ticker": "RRC",
-      "company": "Range Resources Corporation",
-      "date": "2026-10-27",
-      "slot": "amc",
-      "mcap_b": 10.6,
-      "eps_est": 0.76,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
       "ticker": "CR",
       "company": "Crane Company",
       "date": "2026-10-27",
       "slot": "amc",
       "mcap_b": 10.6,
       "eps_est": 1.82,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "RRC",
+      "company": "Range Resources Corporation",
+      "date": "2026-10-27",
+      "slot": "amc",
+      "mcap_b": 10.6,
+      "eps_est": 0.76,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -1145,7 +1134,7 @@
       "company": "Phillips 66",
       "date": "2026-10-28",
       "slot": "bmo",
-      "mcap_b": 113.0,
+      "mcap_b": 113.5,
       "eps_est": 11.79,
       "eps_act": null,
       "surprise": null,
@@ -1200,7 +1189,7 @@
       "company": "TE Connectivity plc",
       "date": "2026-10-28",
       "slot": "bmo",
-      "mcap_b": 60.3,
+      "mcap_b": 60.2,
       "eps_est": 3.07,
       "eps_act": null,
       "surprise": null,
@@ -1255,7 +1244,7 @@
       "company": "Old Dominion Freight Line, Inc.",
       "date": "2026-10-28",
       "slot": "bmo",
-      "mcap_b": 37.9,
+      "mcap_b": 38.0,
       "eps_est": 1.61,
       "eps_act": null,
       "surprise": null,
@@ -1277,7 +1266,7 @@
       "company": "GE HealthCare Technologies Inc.",
       "date": "2026-10-28",
       "slot": "bmo",
-      "mcap_b": 32.5,
+      "mcap_b": 32.3,
       "eps_est": 1.2,
       "eps_act": null,
       "surprise": null,
@@ -1361,17 +1350,6 @@
       "watch": false
      },
      {
-      "ticker": "NI",
-      "company": "NiSource Inc.",
-      "date": "2026-10-28",
-      "slot": "bmo",
-      "mcap_b": 20.8,
-      "eps_est": 0.23,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
       "ticker": "BSBR",
       "company": "Banco Santander (Brasil) S.A.",
       "date": "2026-10-28",
@@ -1383,11 +1361,22 @@
       "watch": false
      },
      {
+      "ticker": "NI",
+      "company": "NiSource Inc.",
+      "date": "2026-10-28",
+      "slot": "bmo",
+      "mcap_b": 20.8,
+      "eps_est": 0.23,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
       "ticker": "FTV",
       "company": "Fortive Corporation",
       "date": "2026-10-28",
       "slot": "bmo",
-      "mcap_b": 18.4,
+      "mcap_b": 18.2,
       "eps_est": 0.7,
       "eps_act": null,
       "surprise": null,
@@ -2157,7 +2146,7 @@
       "company": "Eli Lilly and Company",
       "date": "2026-10-29",
       "slot": "bmo",
-      "mcap_b": 1135.1,
+      "mcap_b": 1135.6,
       "eps_est": 6.67,
       "eps_act": null,
       "surprise": null,
@@ -2201,8 +2190,8 @@
       "company": "Shell plc",
       "date": "2026-10-29",
       "slot": "bmo",
-      "mcap_b": 307.4,
-      "eps_est": 3.7,
+      "mcap_b": 307.3,
+      "eps_est": 3.67,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -2213,7 +2202,7 @@
       "date": "2026-10-29",
       "slot": "bmo",
       "mcap_b": 234.6,
-      "eps_est": 4.61,
+      "eps_est": 2.63,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -2434,7 +2423,7 @@
       "company": "Carrier Global Corporation",
       "date": "2026-10-29",
       "slot": "bmo",
-      "mcap_b": 46.7,
+      "mcap_b": 46.4,
       "eps_est": 0.77,
       "eps_act": null,
       "surprise": null,
@@ -2518,23 +2507,23 @@
       "watch": false
      },
      {
-      "ticker": "CTSH",
-      "company": "Cognizant Technology Solutions Corporation",
-      "date": "2026-10-29",
-      "slot": "bmo",
-      "mcap_b": 33.4,
-      "eps_est": 1.46,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
       "ticker": "CQP",
       "company": "Cheniere Energy Partners, L.P.",
       "date": "2026-10-29",
       "slot": "bmo",
       "mcap_b": 32.0,
       "eps_est": 1.17,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CTSH",
+      "company": "Cognizant Technology Solutions Corporation",
+      "date": "2026-10-29",
+      "slot": "bmo",
+      "mcap_b": 31.8,
+      "eps_est": 1.46,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -2632,7 +2621,7 @@
       "company": "Tradeweb Markets Inc.",
       "date": "2026-10-29",
       "slot": "bmo",
-      "mcap_b": 26.1,
+      "mcap_b": 25.9,
       "eps_est": 1.01,
       "eps_act": null,
       "surprise": null,
@@ -2644,7 +2633,7 @@
       "date": "2026-10-29",
       "slot": "bmo",
       "mcap_b": 23.5,
-      "eps_est": -3.84,
+      "eps_est": -3.85,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -2698,7 +2687,7 @@
       "company": "Entegris, Inc.",
       "date": "2026-10-29",
       "slot": "bmo",
-      "mcap_b": 20.5,
+      "mcap_b": 20.6,
       "eps_est": 1.02,
       "eps_act": null,
       "surprise": null,
@@ -2786,7 +2775,7 @@
       "company": "Avery Dennison Corporation",
       "date": "2026-10-29",
       "slot": "bmo",
-      "mcap_b": 13.9,
+      "mcap_b": 13.8,
       "eps_est": 2.32,
       "eps_act": null,
       "surprise": null,
@@ -2797,7 +2786,7 @@
       "company": "Textron Inc.",
       "date": "2026-10-29",
       "slot": "bmo",
-      "mcap_b": 13.4,
+      "mcap_b": 13.2,
       "eps_est": 1.44,
       "eps_act": null,
       "surprise": null,
@@ -2896,7 +2885,7 @@
       "company": "Kymera Therapeutics, Inc.",
       "date": "2026-10-29",
       "slot": "bmo",
-      "mcap_b": 9.2,
+      "mcap_b": 9.1,
       "eps_est": -1.27,
       "eps_act": null,
       "surprise": null,
@@ -2962,7 +2951,7 @@
       "company": "Oshkosh Corporation",
       "date": "2026-10-29",
       "slot": "bmo",
-      "mcap_b": 8.2,
+      "mcap_b": 8.1,
       "eps_est": 3.06,
       "eps_act": null,
       "surprise": null,
@@ -3024,7 +3013,7 @@
       "date": "2026-10-29",
       "slot": "amc",
       "mcap_b": 178.9,
-      "eps_est": 46.27,
+      "eps_est": 46.41,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -3058,7 +3047,7 @@
       "company": "Mondelez International, Inc.",
       "date": "2026-10-29",
       "slot": "amc",
-      "mcap_b": 81.9,
+      "mcap_b": 81.4,
       "eps_est": 0.71,
       "eps_act": null,
       "surprise": null,
@@ -3366,7 +3355,7 @@
       "company": "Pinterest, Inc.",
       "date": "2026-10-29",
       "slot": "amc",
-      "mcap_b": 12.5,
+      "mcap_b": 12.6,
       "eps_est": 0.49,
       "eps_act": null,
       "surprise": null,
@@ -3377,7 +3366,7 @@
       "company": "DaVita Inc.",
       "date": "2026-10-29",
       "slot": "amc",
-      "mcap_b": 11.8,
+      "mcap_b": 11.7,
       "eps_est": 3.57,
       "eps_act": null,
       "surprise": null,
@@ -3410,7 +3399,7 @@
       "company": "CubeSmart",
       "date": "2026-10-29",
       "slot": "amc",
-      "mcap_b": 9.1,
+      "mcap_b": 9.0,
       "eps_est": 0.42,
       "eps_act": null,
       "surprise": null,
@@ -3428,23 +3417,23 @@
       "watch": false
      },
      {
-      "ticker": "SPXC",
-      "company": "SPX Technologies, Inc.",
-      "date": "2026-10-29",
-      "slot": "amc",
-      "mcap_b": 8.0,
-      "eps_est": 2.13,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
       "ticker": "ATR",
       "company": "AptarGroup, Inc.",
       "date": "2026-10-29",
       "slot": "amc",
       "mcap_b": 8.0,
       "eps_est": 1.47,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SPXC",
+      "company": "SPX Technologies, Inc.",
+      "date": "2026-10-29",
+      "slot": "amc",
+      "mcap_b": 8.0,
+      "eps_est": 2.13,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -3628,17 +3617,6 @@
       "watch": false
      },
      {
-      "ticker": "IMO",
-      "company": "Imperial Oil Limited",
-      "date": "2026-10-30",
-      "slot": "bmo",
-      "mcap_b": 67.0,
-      "eps_est": 4.75,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
       "ticker": "NWG",
       "company": "NatWest Group plc",
       "date": "2026-10-30",
@@ -3666,7 +3644,7 @@
       "date": "2026-10-30",
       "slot": "bmo",
       "mcap_b": 45.8,
-      "eps_est": 0.8,
+      "eps_est": 0.79,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -3782,17 +3760,6 @@
       "watch": false
      },
      {
-      "ticker": "FRT",
-      "company": "Federal Realty Investment Trust",
-      "date": "2026-10-30",
-      "slot": "bmo",
-      "mcap_b": 9.4,
-      "eps_est": 0.69,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
       "ticker": "MSGS",
       "company": "Madison Square Garden Sports Corp.",
       "date": "2026-10-30",
@@ -3802,9 +3769,20 @@
       "eps_act": null,
       "surprise": null,
       "watch": false
+     },
+     {
+      "ticker": "FRT",
+      "company": "Federal Realty Investment Trust",
+      "date": "2026-10-30",
+      "slot": "bmo",
+      "mcap_b": 9.4,
+      "eps_est": 0.69,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
      }
     ],
-    "small": 29
+    "small": 30
    },
    "amc": {
     "total": 1,
@@ -3821,7 +3799,7 @@
       "date": "2026-10-30",
       "slot": "tns",
       "mcap_b": 266.0,
-      "eps_est": 2.6,
+      "eps_est": 2.59,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -3914,8 +3892,8 @@
     "earnings": [
      "AMD(장후)",
      "AMGN(장후)",
-     "ANET(장후)",
      "SHOP(장전)",
+     "ANET(장후)",
      "PFE(장전)",
      "ETN(장전)",
      "MPC(장전)",
@@ -4005,5 +3983,5 @@
   "watchlist": 33,
   "logo_url": "https://financialmodelingprep.com/image-stock/{ticker}.png"
  },
- "generated_at": "2026-10-25T15:09+09:00"
+ "generated_at": "2026-10-26T07:09+09:00"
 }
