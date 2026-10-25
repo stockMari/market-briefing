@@ -286,9 +286,10 @@ table.us-fixed col.c-name { width: 40%; }
 .tile { display: grid; justify-items: center; gap: 3px; padding: 8px 4px 6px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); min-width: 0; }
 .tile.watch { border: 2px solid var(--accent); padding: 7px 3px 5px; }
 .tile .tk { font-size: 12.5px; }
-.logo { width: 28px; height: 28px; display: grid; place-items: center; border-radius: 6px; overflow: hidden; background: var(--surface-2); }
-.logo img { width: 28px; height: 28px; object-fit: contain; background: #fff; }
-.logo.nologo::before { content: attr(data-l); font-family: var(--font-mono); font-weight: 600; font-size: 13px; color: var(--ink-2); }
+/* 로고가 오기 전·실패했을 때는 첫 글자가 보이고, 로고가 오면 그 위를 덮음 */
+.logo { position: relative; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 6px; overflow: hidden; background: var(--surface-2); }
+.logo::before { content: attr(data-l); font-family: var(--font-mono); font-weight: 600; font-size: 13px; color: var(--ink-2); }
+.logo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #fff; }
 .sur { font-family: var(--font-mono); font-size: 10.5px; }
 .empty-s { margin: 0; font-size: 13px; color: var(--muted); }
 .emore summary { cursor: pointer; font-size: 12.5px; color: var(--ink-2); }
