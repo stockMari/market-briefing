@@ -16,26 +16,30 @@ from .events import _load_yaml
 ET, KST = ZoneInfo("America/New_York"), ZoneInfo("Asia/Seoul")
 WEEKDAYS = "월화수목금토일"
 
-# 야후 경제지표 이름 → (한글 이름, 중요도, 같은 일정으로 볼 calendar.yaml 키워드)
+# 야후 경제지표 이름(앞부분이 같으면 매칭) → (한글 이름, 중요도, 같은 일정으로 볼 calendar.yaml 키워드)
 ECON = [
-    ("Fed Interest Rate Decision", "FOMC 금리 결정", 3, "FOMC"),
-    ("Nonfarm Payrolls", "비농업 고용", 3, "고용"),
+    ("Fed Funds Tgt Rate", "FOMC 금리 결정", 3, "FOMC"),
+    ("Non-Farm Payrolls", "비농업 고용", 3, "고용"),
     ("Unemployment Rate", "실업률", 2, "고용"),
-    ("Core PCE", "PCE 물가", 3, "PCE"),
-    ("PCE Price", "PCE 물가", 3, "PCE"),
-    ("Core CPI", "소비자물가(CPI)", 3, "CPI"),
-    ("CPI", "소비자물가(CPI)", 3, "CPI"),
-    ("GDP", "GDP", 3, "GDP"),
-    ("PPI", "생산자물가(PPI)", 2, "PPI"),
-    ("Retail Sales", "소매판매", 2, "소매판매"),
+    ("ADP National Employment", "ADP 민간고용", 2, "ADP"),
+    ("Core PCE Price Index MM", "PCE 물가", 3, "PCE"),
+    ("PCE Price Index MM", "PCE 물가", 3, "PCE"),
+    ("Core CPI MM", "소비자물가(CPI)", 3, "CPI"),
+    ("CPI MM", "소비자물가(CPI)", 3, "CPI"),
+    ("GDP Advance", "GDP 속보치", 3, "GDP"),
+    ("GDP Prelim", "GDP 잠정치", 3, "GDP"),
+    ("GDP Second", "GDP 잠정치", 3, "GDP"),
+    ("GDP Final", "GDP 확정치", 3, "GDP"),
+    ("GDP Third", "GDP 확정치", 3, "GDP"),
+    ("PPI Final Demand MM", "생산자물가(PPI)", 2, "PPI"),
+    ("Retail Sales MM", "소매판매", 2, "소매판매"),
     ("ISM Manufacturing PMI", "ISM 제조업", 2, "ISM 제조업"),
-    ("ISM Non-Manufacturing PMI", "ISM 서비스업", 2, "ISM 서비스업"),
-    ("ISM Services PMI", "ISM 서비스업", 2, "ISM 서비스업"),
-    ("CB Consumer Confidence", "컨퍼런스보드 소비자신뢰", 2, "소비자신뢰"),
-    ("Michigan Consumer Sentiment", "미시간대 소비심리", 1, "소비심리"),
-    ("JOLTS", "JOLTS 구인", 2, "JOLTS"),
-    ("Employment Cost Index", "고용비용지수(ECI)", 2, "ECI"),
-    ("Durable Goods Orders", "내구재 주문", 1, "내구재"),
+    ("ISM N-Mfg PMI", "ISM 서비스업", 2, "ISM 서비스업"),
+    ("Consumer Confidence", "컨퍼런스보드 소비자신뢰", 2, "소비자신뢰"),
+    ("U Mich Sentiment", "미시간대 소비심리", 1, "소비심리"),
+    ("JOLTS Job Openings", "JOLTS 구인", 2, "JOLTS"),
+    ("Employment Costs", "고용비용지수(ECI)", 2, "ECI"),
+    ("Durable Goods", "내구재 주문", 1, "내구재"),
 ]
 TIMING = {"BMO": "bmo", "AMC": "amc"}
 LISTED_URLS = ("https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
@@ -127,12 +131,10 @@ def fetch_econ(start: date, end: date, log) -> list[dict]:
         start=start.isoformat(), end=(end + timedelta(days=1)).isoformat(), limit=100, offset=off, force=True),
         log, max_rows=1000)
     out, seen = [], set()
-    us_names = sorted({str(n) for n, r in df.iterrows() if str(r.get("Region", "")).upper() in ("US", "UNITED STATES")})
-    log(f"  · (참고) 야후 미국 지표 이름 {len(us_names)}개: {' | '.join(us_names[:60])}")
     for name, r in df.iterrows():
         if str(r.get("Region", "")).upper() not in ("US", "UNITED STATES"):
             continue
-        hit = next((e for e in ECON if e[0].lower() in str(name).lower()), None)
+        hit = next((e for e in ECON if str(name).lower().startswith(e[0].lower())), None)
         if not hit:
             continue
         ts = pd.Timestamp(r.get("Event Time"))
