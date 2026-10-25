@@ -11,6 +11,7 @@ from collections import defaultdict
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from markupsafe import Markup
 
 from .config import ROOT
 from .judge import HIGH_VERDICTS, LOW_VERDICTS
@@ -46,10 +47,28 @@ def f_md(iso):
     return f"{int(m)}/{int(d)}"
 
 
+def f_spark(vals, w=96, h=26):
+    """최근 주가 흐름 미니 그래프 (SVG)."""
+    v = [x for x in vals or [] if x is not None]
+    if len(v) < 2:
+        return ""
+    lo, hi = min(v), max(v)
+    span = hi - lo or 1
+    pts = [(2 + i * (w - 4) / (len(v) - 1), h - 2 - (x - lo) / span * (h - 4)) for i, x in enumerate(v)]
+    color = "var(--up-fill)" if v[-1] >= v[0] else "var(--down-fill)"
+    line = " ".join(f"{x:.1f},{y:.1f}" for x, y in pts)
+    pct = (v[-1] / v[0] - 1) * 100
+    return Markup(
+        f'<svg class="spark" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" '
+        f'aria-label="최근 {len(v)}거래일 {pct:+.1f}%"><title>최근 {len(v)}거래일 {pct:+.1f}%</title>'
+        f'<polyline points="{line}" fill="none" stroke="{color}" stroke-width="1.5" stroke-linejoin="round"/>'
+        f'<circle cx="{pts[-1][0]:.1f}" cy="{pts[-1][1]:.1f}" r="2.2" fill="{color}"/></svg>')
+
+
 def _env() -> Environment:
     env = Environment(loader=FileSystemLoader(ROOT / "templates"),
                       autoescape=select_autoescape(["html"]))
-    env.filters.update(num=f_num, signed=f_signed, pct=f_pct, pp=f_pp, sign=f_sign, md=f_md)
+    env.filters.update(num=f_num, signed=f_signed, pct=f_pct, pp=f_pp, sign=f_sign, md=f_md, spark=f_spark)
     return env
 
 
@@ -82,7 +101,17 @@ def build_view(report: dict) -> dict:
         "both_codes": both,
         "both_names": [r["name"] for r in tb["외국인"] if r["code"] in both],
         "indices_by_region": _by_region(report["indices"]),
+        "us_high_groups": _us_groups(report.get("us")),
     }
+
+
+def _us_groups(us):
+    if not us:
+        return []
+    groups = {name: [] for name, _ in us["high_sectors"]}
+    for r in us["highs"]:
+        groups.setdefault(r["sector"], []).append(r)
+    return [{"sector": k, "stocks": v} for k, v in groups.items() if v]
 
 
 def _by_region(indices):
@@ -146,6 +175,9 @@ def _chart_payload(report: dict) -> dict:
         "highVerdicts": HIGH_VERDICTS,
         "lowVerdicts": LOW_VERDICTS,
         "creditTrend": report["credit"]["market_trend"],
+        "usGainers": [{"ticker": g["ticker"], "name": g["name"], "pct": g["change_pct"], "high": g["is_high"]}
+                      for g in (report.get("us") or {}).get("gainers", [])],
+        "usHighSectors": (report.get("us") or {}).get("high_sectors", []),
     }
 
 

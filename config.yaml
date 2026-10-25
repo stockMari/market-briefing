@@ -40,6 +40,16 @@ top_buyers:
 credit:
   top_n_by_market_cap: 20     # KOSPI 시가총액 상위 몇 종목
 
+# 나스닥 52주 신고가 · 급등주
+us:
+  enabled: true
+  markets: [Q]                # 나스닥 시장 구분: Q 대형(Global Select) / G 중형 / S 소형
+  min_price: 5                # 주가 5달러 미만 제외
+  min_dollar_volume_m: 10     # 최근 20일 평균 거래대금 1천만 달러 미만 제외
+  top_gainers: 15             # 급등 상위 몇 종목
+  max_highs: 60               # 신고가가 많을 때 거래대금 큰 순으로 최대 몇 종목까지
+  spark_days: 60              # 미니 그래프 기간 (거래일)
+
 # Weekly: 앞으로 2주 일정 (금리 결정·지표·휴장일은 calendar.yaml 에서 고칩니다)
 events:
   weeks: 2                    # 몇 주 앞까지 보여줄지

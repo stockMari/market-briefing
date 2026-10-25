@@ -59,7 +59,7 @@
     </div>
     <nav class="toc" aria-label="목차">
       <a href="#indices">주요 지수</a><a href="#flows">투자자 수급</a><a href="#sectors">업종</a>
-      <a href="#highs">52주 신고가·신저가</a><a href="#buyers">순매수 상위</a><a href="#credit">신용잔고</a>{% if r.events %}<a href="#events">앞으로 2주 일정</a>{% endif %}
+      <a href="#highs">52주 신고가·신저가</a><a href="#buyers">순매수 상위</a><a href="#credit">신용잔고</a>{% if r.us %}<a href="#nasdaq">나스닥 신고가·급등</a>{% endif %}{% if r.events %}<a href="#events">앞으로 2주 일정</a>{% endif %}
     </nav>
   </div>
 </section>
@@ -295,6 +295,69 @@
     </div>
     {%- endif %}
   </section>
+
+  {%- if r.us %}
+  {%- set us = r.us %}
+  <!-- 나스닥 52주 신고가 · 급등주 -->
+  <section class="panel" id="nasdaq" aria-labelledby="h-nasdaq">
+    <div class="panel-head">
+      <div><span class="kicker">Nasdaq</span><h2 id="h-nasdaq">나스닥 52주 신고가 · 급등주</h2></div>
+      <span class="note">미국 {{ us.base | md }} → {{ us.as_of | md }} 종가 · 대상 {{ us.universe | num }}종목 (주가 ${{ us.filters.min_price }}↑, 거래대금 ${{ us.filters.min_dollar_volume_m }}M↑)</span>
+    </div>
+
+    <h3 class="sub">{{ '이번 주' if weekly else '전일' }} 급등 상위 {{ us.gainers | length }}</h3>
+    <div class="chart tall" id="c-us-gainers" style="--h: {{ us.gainers | length * 22 + 16 }}px" role="img" aria-label="나스닥 급등 상위 종목 등락률 막대그래프"></div>
+    <div class="tbl-wrap">
+      <table class="us-table">
+        <thead><tr><th>#</th><th>종목</th><th class="r">등락률</th><th class="r">종가</th><th class="r hide-sm">시총</th><th>3개월</th></tr></thead>
+        <tbody>
+        {%- for g in us.gainers %}
+          <tr>
+            <td class="num note">{{ loop.index }}</td>
+            <td><span class="tk">{{ g.ticker }}</span>{% if g.is_high %}<span class="badge-high">신고가</span>{% endif %} <span class="co">{{ g.name }} · {{ g.sector }}</span></td>
+            <td class="r num {{ g.change_pct | sign }}"><b>{{ g.change_pct | pct }}</b></td>
+            <td class="r num">${{ g.close | num(2) }}</td>
+            <td class="r num note hide-sm">{{ '%.1fB' | format(g.mcap_b) if g.mcap_b else '–' }}</td>
+            <td>{{ g.spark | spark }}</td>
+          </tr>
+        {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="sub us-highs-title">52주 신고가 {{ us.highs_total }}종목
+      <span class="note">{% if us.highs_total > us.highs | length %}거래대금 상위 {{ us.highs | length }}종목 표시 · {% endif %}섹터별</span></h3>
+    {%- if us.highs %}
+    <div class="chart tall" id="c-us-highs" style="--h: {{ us.high_sectors | length * 28 + 24 }}px" role="img" aria-label="섹터별 나스닥 신고가 종목 수"></div>
+    <div class="sector-groups">
+      {%- for g in v.us_high_groups %}
+      <details class="sgroup" {% if loop.index <= 3 %}open{% endif %}>
+        <summary><b>{{ g.sector }}</b><span class="cnt">{{ g.stocks | length }}종목</span></summary>
+        <div class="tbl-wrap">
+          <table class="fixed us-fixed">
+            <colgroup><col class="c-name"><col class="c-v"><col class="c-v"><col class="c-v"><col class="c-spark"></colgroup>
+            <thead><tr><th>종목</th><th class="r">등락률</th><th class="r">종가</th><th class="r">시총</th><th>3개월</th></tr></thead>
+            <tbody>
+            {%- for s in g.stocks %}
+              <tr>
+                <td><span class="tk">{{ s.ticker }}</span> <span class="co">{{ s.name }}</span>{% if s.industry %}<br><span class="co">{{ s.industry }}</span>{% endif %}</td>
+                <td class="r num {{ s.change_pct | sign }}"><b>{{ s.change_pct | pct }}</b></td>
+                <td class="r num">${{ s.close | num(2) }}</td>
+                <td class="r num note">{{ '%.1fB' | format(s.mcap_b) if s.mcap_b else '–' }}</td>
+                <td>{{ s.spark | spark }}</td>
+              </tr>
+            {%- endfor %}
+            </tbody>
+          </table>
+        </div>
+      </details>
+      {%- endfor %}
+    </div>
+    {%- else %}
+    <p class="empty">이 기간에는 52주 신고가 종목이 없습니다.</p>
+    {%- endif %}
+  </section>
+  {%- endif %}
 
   {%- if r.events %}
   <!-- Weekly: 앞으로 2주 일정 -->

@@ -287,6 +287,50 @@
     }));
   }
 
+  // 나스닥 급등 상위 — 가로 막대
+  function drawUsGainers(T) {
+    var c = mount("c-us-gainers"); if (!c) return;
+    var rows = D.usGainers;
+    c.setOption(Object.assign(base(T), {
+      grid: { left: 8, right: 8, top: 4, bottom: 4, containLabel: true },
+      xAxis: paddedAxis(T, rows.map(function (r) { return { change_pct: r.pct }; }), c),
+      yAxis: catAxis(T, rows.map(function (r) { return r.ticker; }), { inverse: true, axisLine: { show: false },
+                     axisLabel: { color: T.ink, fontSize: 11.5, fontFamily: T.mono, interval: 0 } }),
+      tooltip: Object.assign(base(T).tooltip, {
+        trigger: "item",
+        formatter: function (p) {
+          var r = rows[p.dataIndex];
+          return "<b>" + r.ticker + "</b> " + r.name + (r.high ? " · 52주 신고가" : "") + "<br>" + row(p.color, "등락률", pct(r.pct));
+        },
+      }),
+      series: [{
+        type: "bar", barWidth: 12,
+        data: rows.map(function (r) { return { value: r.pct, itemStyle: { color: signColor(r.pct, T), borderRadius: endRadius(r.pct, true) } }; }),
+        label: { show: true, position: "right", fontFamily: T.mono, fontSize: 11, color: T.ink2, formatter: function (p) { return pct(p.value); } },
+      }],
+    }));
+  }
+
+  // 나스닥 신고가 — 섹터별 종목 수
+  function drawUsHighs(T) {
+    var c = mount("c-us-highs"); if (!c) return;
+    var rows = D.usHighSectors;
+    c.setOption(Object.assign(base(T), {
+      grid: { left: 8, right: 30, top: 4, bottom: 4, containLabel: true },
+      xAxis: Object.assign(valueAxis(T), { minInterval: 1 }),
+      yAxis: catAxis(T, rows.map(function (r) { return r[0]; }), { inverse: true, axisLine: { show: false }, axisLabel: { color: T.ink2, fontSize: 12, interval: 0 } }),
+      tooltip: Object.assign(base(T).tooltip, {
+        trigger: "item", formatter: function (p) { return "<b>" + p.name + "</b><br>" + row(p.color, "신고가", p.value + "종목"); },
+      }),
+      series: [{
+        type: "bar", barWidth: 12, color: T.upFill,
+        itemStyle: { borderRadius: [0, 4, 4, 0] },
+        data: rows.map(function (r) { return r[1]; }),
+        label: { show: true, position: "right", fontFamily: T.mono, fontSize: 11.5, color: T.ink },
+      }],
+    }));
+  }
+
   function drawAll() {
     if (typeof echarts === "undefined") return;
     var T = theme();
@@ -298,6 +342,8 @@
     drawHL(T, "c-highs", D.highGroups, D.highVerdicts);
     drawHL(T, "c-lows", D.lowGroups, D.lowVerdicts);
     drawCredit(T);
+    drawUsGainers(T);
+    drawUsHighs(T);
   }
 
   // ── 버튼 ──

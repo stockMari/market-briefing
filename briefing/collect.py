@@ -195,6 +195,13 @@ def build_report(mode: str, run_date: date, cfg: dict, log=print) -> dict:
     highs, lows, panel = collect_highs_lows(cfg, per, cal, members, sector_pct, log)
     log("[6/6] 외국인·기관 순매수 상위")
     top = collect_top_buyers(cfg, per, cal, members, panel)
+    log("[+] 나스닥 신고가·급등주")
+    us = None
+    try:
+        from .us import collect_us
+        us = collect_us(per, run_date, cfg, log)
+    except Exception as e:  # noqa: BLE001  미국 쪽이 실패해도 한국 리포트는 만듦
+        log(f"  ! 나스닥 수집 실패: {e}")
     events = None
     if mode == "weekly":
         from .events import upcoming
@@ -219,6 +226,7 @@ def build_report(mode: str, run_date: date, cfg: dict, log=print) -> dict:
         # 9번 신용잔고: 종목별 출처를 확정하면 채웁니다
         "credit": {"unit": "억원", "as_of": per.end.isoformat(), "stocks": [],
                    "market_trend": None, "source_pending": True},
+        "us": us,
         "events": events,
         "news": None,
     }
