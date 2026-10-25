@@ -1478,7 +1478,8 @@ table.us-fixed col.c-name { width: 40%; }
         formatter: function (ps) {
           var b = bars[ps[0].dataIndex], ch = (b[4] / prev - 1) * 100;
           function f(v) { return v.toLocaleString("ko-KR", { minimumFractionDigits: 2 }); }
-          return "<b>" + intraName + "</b> · " + b[0] + " (" + d.tz + ")<br>" +
+          var when = b[0].indexOf("종가") > 0 ? b[0] + " (장 마감 동시호가 포함)" : b[0] + " (" + d.tz + ")";
+          return "<b>" + intraName + "</b> · " + when + "<br>" +
             row(T.line, "시가", f(b[1])) + row(T.line, "고가", f(b[2])) + row(T.line, "저가", f(b[3])) +
             row(ch >= 0 ? T.upFill : T.downFill, "종가", f(b[4])) +
             row(T.line, weekly ? "지난주 대비" : "전일 대비", pct(ch));
