@@ -20,7 +20,8 @@ def _r(x, n=2):
 
 
 # ── 1. 주요 지수 ───────────────────────────────────────
-def collect_indices(cfg, per, run_date, log):
+def collect_indices(cfg, per, run_date, log, daily_closes=None):
+    """daily_closes 를 넘기면 지수별 일별 종가를 담아 둡니다 (장중 차트의 종가 맞추기용)."""
     rows = []
     for ix in cfg["indices"]:
         row = {"name": ix["name"], "region": ix["region"], "close": None, "change": None,
@@ -37,6 +38,8 @@ def collect_indices(cfg, per, run_date, log):
                 else:  # 실행 전날까지 마감된 장
                     end_d = max(d for d in s.index if d < run_date)
                     base_d = max(d for d in s.index if d < end_d)
+            if daily_closes is not None:
+                daily_closes[ix["name"]] = s
             close, prev = float(s[end_d]), float(s[base_d])
             row.update(close=_r(close), change=_r(close - prev), change_pct=_r((close / prev - 1) * 100),
                        base_date=base_d.isoformat(), end_date=end_d.isoformat())
@@ -48,7 +51,21 @@ def collect_indices(cfg, per, run_date, log):
 
 
 # ── 1-1. 지수 장중 차트 (Daily 30분봉 / Weekly 1시간봉) ───
-def collect_intraday(cfg, per, indices, log):
+def _add_closing_bars(bars, closes, days):
+    """야후 장중 봉에는 장 마감 동시호가가 빠져 있어, 날마다 공식 종가와 다르면 '종가' 봉을 붙입니다."""
+    out = []
+    for d in days:
+        label = f"{d.month}/{d.day}"
+        today = [b for b in bars if b[0].split(" ")[0] == label]
+        out += today
+        if today and d in closes.index:
+            last, official = today[-1][4], round(float(closes[d]), 2)
+            if abs(official / last - 1) > 0.0002:
+                out.append([f"{label} 종가", last, max(last, official), min(last, official), official])
+    return out
+
+
+def collect_intraday(cfg, per, indices, log, daily_closes):
     icfg = cfg.get("intraday", {})
     interval = icfg.get("weekly_interval", "60m") if per.mode == "weekly" else icfg.get("daily_interval", "30m")
     out = {}
@@ -63,6 +80,8 @@ def collect_intraday(cfg, per, indices, log):
             log(f"  · {ix['name']} 장중 차트 실패: {e}")
             continue
         if data:
+            if ix["name"] in daily_closes:
+                data["bars"] = _add_closing_bars(data["bars"], daily_closes[ix["name"]], days)
             data["prev_close"] = _r(row["close"] - row["change"])
             out[ix["name"]] = data
     log(f"  · 장중 차트 {len(out)}/{len(indices)}개 지수 ({interval})")
@@ -207,8 +226,9 @@ def build_report(mode: str, run_date: date, cfg: dict, log=print) -> dict:
     log(f"      {per.label} ({per.title}) : {per.base} 종가 → {per.end} 종가")
 
     log("[2/6] 주요 지수")
-    indices = collect_indices(cfg, per, run_date, log)
-    intraday = collect_intraday(cfg, per, indices, log)
+    daily_closes = {}
+    indices = collect_indices(cfg, per, run_date, log, daily_closes)
+    intraday = collect_intraday(cfg, per, indices, log, daily_closes)
     log("[3/6] 투자자별 수급")
     flows = collect_flows(cfg, per, cal, log)
     log("[4/6] 업종")
