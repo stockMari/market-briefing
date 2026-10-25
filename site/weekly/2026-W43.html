@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="ko">
 <head>
@@ -263,6 +264,47 @@ table.us-fixed col.c-name { width: 40%; }
 .cal-legend span.note { display: block; flex-basis: 100%; }
 .cal-legend code { font-family: var(--font-mono); font-size: 12px; color: var(--ink); }
 
+/* earnings calendar */
+.headline-bar { margin: 0; padding: 12px 16px; border-radius: var(--radius); background: var(--ink); color: var(--surface); font-weight: 700; font-size: 15.5px; text-wrap: balance; }
+.ecal { display: grid; gap: 12px; }
+.eday { display: grid; gap: 8px; }
+@media (min-width: 1000px) {
+  .ecal { grid-template-columns: repeat(5, minmax(0, 1fr)); column-gap: 10px; row-gap: 10px; }
+  .eday { display: contents; }
+  .eday > * { grid-column: var(--col); min-width: 0; }
+  .eday-head { grid-row: 1; } .eday-bmo { grid-row: 2; } .eday-amc { grid-row: 3; } .eday-ev { grid-row: 4; }
+}
+.eday-head { background: var(--ink); color: var(--surface); border-radius: var(--radius); padding: 12px 14px; display: grid; gap: 2px; }
+.eday-head b { font-size: 18px; }
+.eday-head span { font-size: 13px; opacity: .85; }
+.ebar { display: block; height: 4px; border-radius: 2px; background: color-mix(in srgb, var(--surface) 25%, transparent); margin-top: 6px; overflow: hidden; }
+.ebar i { display: block; height: 100%; background: var(--accent); border-radius: 2px; }
+.eslot { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px; display: grid; gap: 8px; align-content: start; }
+.eslot h3 { margin: 0; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; }
+.eslot-head { display: flex; justify-content: space-between; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.tiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 6px; }
+.tile { display: grid; justify-items: center; gap: 3px; padding: 8px 4px 6px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); min-width: 0; }
+.tile.watch { border: 2px solid var(--accent); padding: 7px 3px 5px; }
+.tile .tk { font-size: 12.5px; }
+.logo { width: 28px; height: 28px; display: grid; place-items: center; border-radius: 6px; overflow: hidden; background: var(--surface-2); }
+.logo img { width: 28px; height: 28px; object-fit: contain; background: #fff; }
+.logo.nologo::before { content: attr(data-l); font-family: var(--font-mono); font-weight: 600; font-size: 13px; color: var(--ink-2); }
+.sur { font-family: var(--font-mono); font-size: 10.5px; }
+.empty-s { margin: 0; font-size: 13px; color: var(--muted); }
+.emore summary { cursor: pointer; font-size: 12.5px; color: var(--ink-2); }
+.emore p { margin: 6px 0 0; font-family: var(--font-mono); font-size: 12px; color: var(--ink-2); line-height: 1.7; word-break: break-word; }
+.esmall { margin: 0; }
+.echecks { list-style: none; margin: 0; padding: 0; display: grid; gap: 5px; font-size: 13px; }
+.echecks .ev { font-weight: 600; }
+.echecks .ev.imp-3 { color: var(--accent); }
+.echecks .ck .tk { font-size: 12px; }
+.legend .k-watch { background: transparent; border: 2px solid var(--accent); box-sizing: border-box; }
+.ecal-legend { margin: 12px 0 0; }
+.ecal-legend code { font-family: var(--font-mono); font-size: 12px; }
+.later { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.later li { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+.later li:last-child { border-bottom: 0; }
+
 /* archive */
 .archive { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 @media (max-width: 760px) { .archive { grid-template-columns: 1fr; } }
@@ -296,7 +338,7 @@ table.us-fixed col.c-name { width: 40%; }
       </svg>
       <span><b>Market Briefing</b> <small>마켓 브리핑</small></span>
     </a>
-    <nav class="tabs" aria-label="리포트 종류"><a href="../daily/2026-10-23.html">Daily</a><span class="on" aria-current="page">Weekly</span>
+    <nav class="tabs" aria-label="리포트 종류"><a href="../daily/2026-10-23.html">Daily</a><span class="on" aria-current="page">Weekly</span><a href="../earnings/2026-W44.html">실적 캘린더</a>
     </nav>
     <a class="head-link" href="#archive">지난 리포트</a>
   </div>
@@ -3324,6 +3366,7 @@ table.us-fixed col.c-name { width: 40%; }
         </ol>
       </div>
     </div>
+    <p class="note"><a href="../earnings/2026-W44.html">→ 요일별 장전·장후 실적 캘린더 보기 (10/26~10/30)</a></p>
     <div class="legend cal-legend">
       <span><i class="dot d3"></i>핵심</span><span><i class="dot d2"></i>중요</span><span><i class="dot d1"></i>참고</span>
       <span class="note">금리 결정·지표·휴장일은 <code>calendar.yaml</code>에서 직접 고칠 수 있습니다. 실적 발표일은 야후 파이낸스 기준(현지 날짜).</span>
