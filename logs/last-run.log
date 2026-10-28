@@ -1,85 +1,37 @@
 KRX 로그인 시도...
-⚠️ KRX 비밀번호 변경이 필요합니다.
-   오류 메시지: 패스워드 변경 필요
-   https://www.krx.co.kr 에서 비밀번호를 변경한 후 다시 시도하세요.
-KRX 로그인 실패: 자격 증명을 확인하세요.
+KRX 로그인 완료.
+  로그인 시간: 2026-10-29 07:22:00
+  만료 시간: 2026-10-29 08:22:00
 [1/6] 거래일 달력 확인
-KRX 로그인 시도...
-⚠️ KRX 비밀번호 변경이 필요합니다.
-   오류 메시지: 패스워드 변경 필요
-   https://www.krx.co.kr 에서 비밀번호를 변경한 후 다시 시도하세요.
-KRX 로그인 실패: 자격 증명을 확인하세요.
-Error occurred in get_index_ohlcv_by_date: Expecting value: line 1 column 1 (char 0)
-KRX 로그인 시도...
-⚠️ KRX 비밀번호 변경이 필요합니다.
-   오류 메시지: 패스워드 변경 필요
-   https://www.krx.co.kr 에서 비밀번호를 변경한 후 다시 시도하세요.
-KRX 로그인 실패: 자격 증명을 확인하세요.
-Error occurred in __fetch: Expecting value: line 1 column 1 (char 0)
-KRX 로그인 시도...
-⚠️ KRX 비밀번호 변경이 필요합니다.
-   오류 메시지: 패스워드 변경 필요
-   https://www.krx.co.kr 에서 비밀번호를 변경한 후 다시 시도하세요.
-KRX 로그인 실패: 자격 증명을 확인하세요.
-Error occurred in get_index_ohlcv_by_date: Expecting value: line 1 column 1 (char 0)
-KRX 로그인 시도...
-⚠️ KRX 비밀번호 변경이 필요합니다.
-   오류 메시지: 패스워드 변경 필요
-   https://www.krx.co.kr 에서 비밀번호를 변경한 후 다시 시도하세요.
-KRX 로그인 실패: 자격 증명을 확인하세요.
-Error occurred in get_index_ohlcv_by_date: Expecting value: line 1 column 1 (char 0)
-KRX 로그인 시도...
-⚠️ KRX 비밀번호 변경이 필요합니다.
-   오류 메시지: 패스워드 변경 필요
-   https://www.krx.co.kr 에서 비밀번호를 변경한 후 다시 시도하세요.
-KRX 로그인 실패: 자격 증명을 확인하세요.
-Error occurred in get_index_ohlcv_by_date: Expecting value: line 1 column 1 (char 0)
-Traceback (most recent call last):
-  File "/home/runner/work/market-briefing/market-briefing/briefing/krx.py", line 29, in call
-    return fn(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pykrx/stock/stock_api.py", line 1369, in get_index_ohlcv
-    return get_index_ohlcv_by_date(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pykrx/stock/stock_api.py", line 1469, in get_index_ohlcv_by_date
-    df.columns.name = get_index_ticker_name(ticker)
-                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pykrx/stock/stock_api.py", line 1278, in get_index_ticker_name
-    return krx.IndexTicker().get_name(ticker)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pykrx/website/krx/market/ticker.py", line 110, in get_name
-    return self.df.loc[ticker, "지수명"]
-           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pandas/core/indexing.py", line 1184, in __getitem__
-    return self.obj._get_value(*key, takeable=self._takeable)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pandas/core/frame.py", line 4225, in _get_value
-    series = self._get_item_cache(col)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pandas/core/frame.py", line 4649, in _get_item_cache
-    loc = self.columns.get_loc(item)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pandas/core/indexes/range.py", line 417, in get_loc
-    raise KeyError(key)
-KeyError: '지수명'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/runner/work/market-briefing/market-briefing/run.py", line 86, in <module>
-    main()
-  File "/home/runner/work/market-briefing/market-briefing/run.py", line 48, in main
-    report = build_report(args.mode, run_date, cfg)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/market-briefing/market-briefing/briefing/collect.py", line 223, in build_report
-    cal = krx.trading_days(run_date - timedelta(days=420), run_date - timedelta(days=1))
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/market-briefing/market-briefing/briefing/krx.py", line 51, in trading_days
-    return list(index_daily(INDEX_CODE["KOSPI"], start, end).index)
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/market-briefing/market-briefing/briefing/krx.py", line 45, in index_daily
-    df = call(stock.get_index_ohlcv, ymd(start), ymd(end), code)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/market-briefing/market-briefing/briefing/krx.py", line 32, in call
-    raise RuntimeError(f"KRX 조회 실패: {fn.__name__}{args} → {e}") from e
-RuntimeError: KRX 조회 실패: get_index_ohlcv('20250903', '20261027', '1001') → '지수명'
+      2026-10-28 (10월 28일(수)) : 2026-10-27 종가 → 2026-10-28 종가
+[2/6] 주요 지수
+  · 장중 차트 8/8개 지수 (30m)
+[3/6] 투자자별 수급
+[4/6] 업종
+  · 업종지수가 없는 업종 7개는 소속 종목으로 계산: KOSPI 기타금융, KOSPI 기타제조, KOSPI 농업 임업 및 어업, KOSPI 은행, KOSDAQ 농업 임업 및 어업, KOSDAQ 부동산, KOSDAQ 전기·가스·수도
+[5/6] 52주 신고가·신저가
+  · 전 종목 시세 2일치 새로 받는 중 (처음 한 번은 몇 분 걸립니다)
+    50/250
+    100/250
+    150/250
+    200/250
+    250/250
+  · 비교 대상 1796종목 → 신고가 14, 신저가 47
+[6/6] 외국인·기관 순매수 상위
+[+] 나스닥 신고가·급등주
+  · 나스닥 대상 1289종목 1년치 시세 받는 중
+    200/1289
+    400/1289
+    600/1289
+    800/1289
+    1000/1289
+    1200/1289
+    1289/1289
+  · 거래 활발 781종목 → 신고가 30, 급등 상위 15
+[7] 시장 요약 3줄
+[8] 실적 캘린더
+  · 실적 일정 2026-10-26~2026-10-30: 799건
+  · 경제지표 2026-10-26~2026-10-30: 5건
+  · 실적 일정 2026-11-02~2026-11-13: 388건
+  · 경제지표 2026-11-02~2026-11-13: 9건
+[완료] daily 2026-10-28 (10월 28일(수)) · 페이지 12개 생성
