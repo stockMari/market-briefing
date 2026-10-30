@@ -1,0 +1,812 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Earnings Calendar 2026-W45</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: one 1120px reading column; sticky header with Daily/Weekly tabs;
+   each data block is a white panel on a cool-grey page, numbers set in mono. */
+:root {
+  --bg: #f2f4f7;
+  --surface: #ffffff;
+  --surface-2: #f6f7f9;
+  --ink: #111722;
+  --ink-2: #465063;
+  --muted: #737d8f;
+  --line: #e0e4ea;
+  --accent: #9a5b00;
+  --accent-soft: #fff1d6;
+  --accent-line: #f0c77a;
+  --up: #c92a35;
+  --down: #1d5bbf;
+  --up-fill: #e34948;
+  --down-fill: #2a78d6;
+  --s-foreign: #0f9d9a;
+  --s-inst: #6250d6;
+  --s-kospi: #465063;
+  --s-kosdaq: #c98500;
+  --v-together: #1baf7a;
+  --v-leader: #6250d6;
+  --v-solo: #e87ba4;
+  --v-mixed: #b3bac6;
+  --font-sans: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --radius: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1116; --surface: #161a21; --surface-2: #1c2129; --ink: #e8ecf2; --ink-2: #b3bbc7;
+    --muted: #8a93a3; --line: #2a303a; --accent: #e3a43c; --accent-soft: #33270f; --accent-line: #6b4f1c;
+    --up: #f27474; --down: #6aa3f5; --up-fill: #e66767; --down-fill: #3987e5;
+    --s-foreign: #16a19c; --s-inst: #9085e9; --s-kospi: #b3bbc7; --s-kosdaq: #e3a43c;
+    --v-together: #199e70; --v-leader: #9085e9; --v-solo: #d55181; --v-mixed: #5d6574;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1116; --surface: #161a21; --surface-2: #1c2129; --ink: #e8ecf2; --ink-2: #b3bbc7;
+  --muted: #8a93a3; --line: #2a303a; --accent: #e3a43c; --accent-soft: #33270f; --accent-line: #6b4f1c;
+  --up: #f27474; --down: #6aa3f5; --up-fill: #e66767; --down-fill: #3987e5;
+  --s-foreign: #16a19c; --s-inst: #9085e9; --s-kospi: #b3bbc7; --s-kosdaq: #e3a43c;
+  --v-together: #199e70; --v-leader: #9085e9; --v-solo: #d55181; --v-mixed: #5d6574;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-sans); font-size: 15px; line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.mono, .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.up { color: var(--up); } .down { color: var(--down); } .flat { color: var(--muted); }
+
+.wrap {
+  max-width: 1120px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+
+/* ── header ── */
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 10; background: var(--surface);
+}
+.site-head {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9;
+  background: var(--surface); border-bottom: 1px solid var(--line);
+}
+.site-head .wrap { display: flex; align-items: center; gap: 16px; padding-block: 10px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; margin-right: auto; }
+.brand svg { flex: none; }
+.brand b { font-weight: 700; font-size: 16px; letter-spacing: -0.01em; }
+.brand small { color: var(--muted); font-size: 12px; }
+.tabs { display: inline-flex; background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 3px; }
+.tabs a, .tabs span {
+  font-size: 13px; font-weight: 600; padding: 5px 14px; border-radius: 6px; text-decoration: none; color: var(--ink-2);
+}
+.tabs a:hover { color: var(--ink); }
+.tabs .on { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,.08), inset 0 -2px 0 var(--accent); }
+.tabs .off { color: var(--muted); opacity: .6; cursor: not-allowed; }
+.head-link { font-size: 13px; color: var(--ink-2); text-decoration: none; }
+.head-link:hover { color: var(--ink); text-decoration: underline; }
+
+.sample-bar { background: var(--accent-soft); border-bottom: 1px solid var(--accent-line); color: var(--ink); font-size: 13px; }
+.sample-bar .wrap { padding-block: 8px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.sample-bar b { color: var(--accent); }
+
+/* ── hero ── */
+.hero .wrap { padding-block: 28px 8px; display: grid; gap: 10px; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.eyebrow b { color: var(--accent); font-weight: 500; }
+.hero h1 { margin: 0; font-size: clamp(28px, 5vw, 40px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; text-wrap: balance; }
+.period { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; color: var(--ink-2); font-size: 14px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 3px 9px;
+  border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); white-space: nowrap;
+}
+.chip.warn { border-color: var(--accent-line); background: var(--accent-soft); color: var(--ink); }
+.toc { display: flex; gap: 6px; overflow-x: auto; padding-block: 6px 2px; scrollbar-width: none; }
+.toc::-webkit-scrollbar { display: none; }
+.toc a { font-size: 13px; text-decoration: none; padding: 5px 11px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); color: var(--ink-2); white-space: nowrap; }
+.toc a:hover { color: var(--ink); border-color: var(--muted); }
+
+/* ── panels ── */
+main .wrap { display: grid; gap: 16px; padding-block: 16px 40px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; min-width: 0; }
+.panel-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 8px 16px; margin-bottom: 14px; }
+.panel-head h2 { margin: 0; font-size: 19px; font-weight: 700; letter-spacing: -0.01em; text-wrap: balance; }
+.panel-head .kicker { display: block; font-family: var(--font-mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+.note { font-size: 12.5px; color: var(--muted); }
+.grid-2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; }
+.grid-2 > * { min-width: 0; }
+@media (max-width: 760px) { .grid-2 { grid-template-columns: minmax(0, 1fr); } .panel { padding: 16px; } }
+.sub { font-size: 14px; font-weight: 700; margin: 0 0 8px; display: flex; gap: 8px; align-items: baseline; }
+.sub .note { font-weight: 400; }
+
+.chart { width: 100%; height: 300px; }
+.chart.tall { height: var(--h, 520px); }
+.chart.short { height: 240px; }
+
+/* segmented control */
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; padding: 2px; background: var(--surface-2); }
+.seg button {
+  font: inherit; font-size: 12.5px; font-weight: 600; border: 0; background: transparent; color: var(--ink-2);
+  padding: 4px 12px; border-radius: 6px; cursor: pointer;
+}
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,.08); }
+
+/* summary */
+.summary { border-style: dashed; background: transparent; }
+.summary ol { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+.placeholder { color: var(--muted); font-size: 14px; margin: 0; }
+
+/* tables */
+.tbl-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { font-size: 12px; font-weight: 600; color: var(--muted); text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+td { padding: 9px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+th.r, td.r { text-align: right; }
+td.num { font-size: 13.5px; }
+tr.group td { background: var(--surface-2); font-size: 12px; font-weight: 600; color: var(--ink-2); padding-block: 5px; }
+.code { font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); }
+.mkt { font-size: 10.5px; font-weight: 600; letter-spacing: .02em; padding: 1px 5px; border-radius: 4px; border: 1px solid var(--line); color: var(--ink-2); vertical-align: 1px; }
+.stock { display: inline-flex; align-items: baseline; gap: 6px; }
+.stock b { font-weight: 600; }
+
+/* top/bottom 5 */
+.rank5 { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; }
+@media (max-width: 420px) { .rank5 { grid-template-columns: 1fr; } }
+.rank5 ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.rank5 li { display: flex; justify-content: space-between; gap: 8px; font-size: 14px; padding: 6px 0; border-bottom: 1px solid var(--line); }
+.rank5 li:last-child { border-bottom: 0; }
+.rank5 li span:first-child { color: var(--ink-2); }
+.rank5 h3 { margin: 0 0 4px; font-size: 12px; color: var(--muted); font-weight: 600; letter-spacing: .02em; }
+
+/* verdict chips & legend */
+.vchip { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: var(--ink); }
+.vchip i, .legend i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; flex: none; }
+.k-together { background: var(--v-together); } .k-leader { background: var(--v-leader); }
+.k-solo { background: var(--v-solo); } .k-mixed { background: var(--v-mixed); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12.5px; color: var(--ink-2); margin-bottom: 8px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.criteria { font-size: 12.5px; color: var(--ink-2); background: var(--surface-2); border-radius: 8px; padding: 10px 12px; margin-top: 12px; line-height: 1.6; }
+.criteria code { font-family: var(--font-mono); font-size: 12px; color: var(--ink); }
+
+.sector-groups { display: grid; gap: 14px; margin-top: 16px; }
+.sgroup { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.sgroup summary {
+  list-style: none; cursor: pointer; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px;
+  padding: 10px 12px; background: var(--surface-2);
+}
+.sgroup summary::-webkit-details-marker { display: none; }
+.sgroup summary::before { content: "▸"; color: var(--muted); font-size: 12px; transition: transform .15s; }
+.sgroup[open] summary::before { transform: rotate(90deg); }
+.sgroup summary b { font-size: 15px; }
+.sgroup summary .cnt { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+.sgroup summary .rates { margin-left: auto; font-size: 12.5px; color: var(--ink-2); display: flex; gap: 10px; }
+
+table.fixed { table-layout: fixed; min-width: 600px; }
+table.fixed col.c-name { width: 34%; }
+table.fixed col.c-v { width: 15%; }
+table.fixed col.c-verdict { width: 21%; }
+table.fixed td:first-child { white-space: normal; }
+
+@media (max-width: 480px) { .hide-sm { display: none; } }
+
+/* top buyers */
+tr.both td { background: var(--accent-soft); }
+tr.both td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
+.badge-both { font-size: 10.5px; font-weight: 700; color: var(--accent); border: 1px solid var(--accent-line); border-radius: 4px; padding: 0 4px; margin-left: 4px; }
+.both-line { font-size: 13.5px; margin: 0 0 14px; padding: 10px 12px; border-radius: 8px; background: var(--accent-soft); border: 1px solid var(--accent-line); }
+.both-line b { color: var(--accent); }
+
+/* intraday */
+.intraday { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
+.intraday-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 16px; }
+.ix-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.ix-chips button, .ix-btn {
+  font: inherit; font-size: 12.5px; font-weight: 600; cursor: pointer; color: var(--ink-2);
+  background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px;
+}
+.ix-chips button:hover, .ix-btn:hover { color: var(--ink); border-color: var(--muted); }
+.ix-chips button[aria-pressed="true"] { color: var(--ink); border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+.ix-btn { font-size: 14px; font-weight: 700; color: var(--ink); padding: 2px 10px; }
+#c-intraday { height: 320px; }
+
+/* nasdaq */
+.tk { font-family: var(--font-mono); font-weight: 600; font-size: 13.5px; }
+.co { font-size: 12px; color: var(--muted); }
+.badge-high { font-size: 10.5px; font-weight: 700; color: var(--up); border: 1px solid currentColor; border-radius: 4px; padding: 0 4px; margin-left: 6px; vertical-align: 1px; }
+.badge-small { font-size: 10.5px; font-weight: 600; color: var(--ink-2); background: var(--surface-2); border: 1px dashed var(--muted); border-radius: 4px; padding: 0 4px; margin-left: 6px; vertical-align: 1px; }
+.legend .k-big { background: var(--up-fill); }
+.legend .k-small { background: transparent; border: 1.5px dashed var(--up-fill); box-sizing: border-box; }
+.us-table td { vertical-align: middle; }
+.us-table td:nth-child(2) { white-space: normal; min-width: 170px; }
+.spark { display: block; }
+table.fixed col.c-spark { width: 110px; }
+table.us-fixed col.c-name { width: 40%; }
+.us-highs-title { margin-top: 22px; }
+
+/* upcoming events */
+.cal-days { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.cal-day { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.cal-day:last-child { border-bottom: 0; }
+.cal-date { display: flex; flex-direction: column; line-height: 1.25; }
+.cal-date b { font-size: 15px; }
+.cal-date span { font-size: 12px; color: var(--muted); }
+.cal-events { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; min-width: 0; }
+.cal-events li { display: grid; grid-template-columns: 10px 42px 30px minmax(0, 1fr); align-items: baseline; gap: 2px 8px; font-size: 14px; }
+.cal-time { font-size: 12.5px; color: var(--ink-2); }
+.ctry { font-family: var(--font-mono); font-size: 10.5px; font-weight: 500; color: var(--ink-2); border: 1px solid var(--line); border-radius: 4px; text-align: center; padding: 0 2px; }
+.cal-title { min-width: 0; }
+.cal-cat { grid-column: 4; font-size: 11.5px; color: var(--muted); margin-top: -2px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; align-self: center; box-sizing: border-box; }
+.imp-3 .dot, .dot.d3 { background: var(--accent); }
+.imp-2 .dot, .dot.d2 { border: 2px solid var(--accent); }
+.imp-1 .dot, .dot.d1 { border: 1px solid var(--muted); }
+.imp-3 .cal-title { font-weight: 700; }
+.imp-1 .cal-title { color: var(--ink-2); }
+.cal-legend { margin: 12px 0 0; align-items: center; }
+.cal-legend i.dot { width: 8px; height: 8px; border-radius: 50%; }
+.cal-legend span.note { display: block; flex-basis: 100%; }
+.cal-legend code { font-family: var(--font-mono); font-size: 12px; color: var(--ink); }
+
+/* earnings calendar */
+.headline-bar { margin: 0; padding: 12px 16px; border-radius: var(--radius); background: var(--ink); color: var(--surface); font-weight: 700; font-size: 15.5px; text-wrap: balance; }
+.ecal { display: grid; gap: 12px; }
+.eday { display: grid; gap: 8px; }
+@media (min-width: 1000px) {
+  .ecal { grid-template-columns: repeat(5, minmax(0, 1fr)); column-gap: 10px; row-gap: 10px; }
+  .eday { display: contents; }
+  .eday > * { grid-column: var(--col); min-width: 0; }
+  .eday-head { grid-row: 1; } .eday-bmo { grid-row: 2; } .eday-amc { grid-row: 3; } .eday-ev { grid-row: 4; }
+}
+.eday-head { background: var(--ink); color: var(--surface); border-radius: var(--radius); padding: 12px 14px; display: grid; gap: 2px; }
+.eday-head b { font-size: 18px; }
+.eday-head span { font-size: 13px; opacity: .85; }
+.ebar { display: block; height: 4px; border-radius: 2px; background: color-mix(in srgb, var(--surface) 25%, transparent); margin-top: 6px; overflow: hidden; }
+.ebar i { display: block; height: 100%; background: var(--accent); border-radius: 2px; }
+.eslot { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px; display: grid; gap: 8px; align-content: start; }
+.eslot h3 { margin: 0; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; }
+.eslot-head { display: flex; justify-content: space-between; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.tiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 6px; }
+.tile { display: grid; justify-items: center; gap: 3px; padding: 8px 4px 6px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); min-width: 0; }
+.tile.watch { border: 2px solid var(--accent); padding: 7px 3px 5px; }
+.tile .tk { font-size: 12.5px; }
+/* 로고가 오기 전·실패했을 때는 첫 글자가 보이고, 로고가 오면 그 위를 덮음 */
+.logo { position: relative; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 6px; overflow: hidden; background: var(--surface-2); }
+.logo::before { content: attr(data-l); font-family: var(--font-mono); font-weight: 600; font-size: 13px; color: var(--ink-2); }
+.logo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #fff; }
+.sur { font-family: var(--font-mono); font-size: 10.5px; }
+.empty-s { margin: 0; font-size: 13px; color: var(--muted); }
+.emore summary { cursor: pointer; font-size: 12.5px; color: var(--ink-2); }
+.emore p { margin: 6px 0 0; font-family: var(--font-mono); font-size: 12px; color: var(--ink-2); line-height: 1.7; word-break: break-word; }
+.esmall { margin: 0; }
+.echecks { list-style: none; margin: 0; padding: 0; display: grid; gap: 5px; font-size: 13px; }
+.echecks .ev { font-weight: 600; }
+.echecks .ev.imp-3 { color: var(--accent); }
+.echecks .ck .tk { font-size: 12px; }
+.legend .k-watch { background: transparent; border: 2px solid var(--accent); box-sizing: border-box; }
+.ecal-legend { margin: 12px 0 0; }
+.ecal-legend code { font-family: var(--font-mono); font-size: 12px; }
+.later { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.later li { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+.later li:last-child { border-bottom: 0; }
+
+/* archive */
+.archive { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 760px) { .archive { grid-template-columns: 1fr; } }
+.archive ul { list-style: none; margin: 0; padding: 0; }
+.archive li a, .archive li .cur {
+  display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: baseline;
+  padding: 10px 6px; border-bottom: 1px solid var(--line); text-decoration: none;
+}
+.archive li a:hover { background: var(--surface-2); }
+.archive li .cur { background: var(--accent-soft); border-radius: 6px; }
+.archive .lbl { font-family: var(--font-mono); font-size: 12.5px; color: var(--muted); }
+.archive .ttl { font-weight: 600; font-size: 14px; }
+.archive .ttl small { font-weight: 400; color: var(--muted); margin-left: 6px; }
+.empty { color: var(--muted); font-size: 13.5px; padding: 12px 6px; border: 1px dashed var(--line); border-radius: 8px; }
+
+.site-foot { color: var(--muted); font-size: 12.5px; }
+.site-foot .wrap { padding-block: 0 32px; display: flex; flex-wrap: wrap; gap: 6px 18px; }
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Market Briefing 첫 화면">
+      <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true">
+        <rect x="0.5" y="0.5" width="25" height="25" rx="6" fill="var(--ink)"/>
+        <line x1="8" y1="6" x2="8" y2="20" stroke="var(--surface)" stroke-width="1.5"/>
+        <rect x="5.5" y="9" width="5" height="7" rx="1" fill="var(--up-fill)"/>
+        <line x1="18" y1="5" x2="18" y2="19" stroke="var(--surface)" stroke-width="1.5"/>
+        <rect x="15.5" y="8" width="5" height="8" rx="1" fill="var(--down-fill)"/>
+      </svg>
+      <span><b>Market Briefing</b> <small>마켓 브리핑</small></span>
+    </a>
+    <nav class="tabs" aria-label="리포트 종류"><a href="../daily/2026-10-29.html">Daily</a><a href="../weekly/2026-W44.html">Weekly</a><span class="on" aria-current="page">실적 캘린더</span>
+    </nav>
+    <a class="head-link" href="#archive">지난 리포트</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><b>Earnings Weekly Calendar</b> · 2026-W45</div>
+    <h1>주간 실적 캘린더</h1>
+    <div class="period">
+      <span><b class="mono">11/2 ~ 11/6</b> · 전체 <b class="mono">1,537</b>건 · 미국 동부시간(ET) 기준</span>
+    </div>
+  </div>
+</section>
+
+<main>
+<div class="wrap">
+  <p class="headline-bar">실적 발표 1537건 · 목요일 578건으로 최다 · 미국 10월 고용보고서</p>
+
+  <div class="ecal">
+    <div class="eday" style="--col: 1">
+      <div class="eday-head">
+        <b>월요일</b>
+        <span class="mono">2026-11-02</span>
+        <span>전체 149건</span>
+        <i class="ebar" aria-hidden="true"><i style="width: 25.8%"></i></i>
+      </div>
+      <div class="eslot eday-bmo">
+        <div class="eslot-head">
+          <h3><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.2" fill="currentColor"/><g stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></g></svg> 장전 발표</h3>
+          <span class="note">전체 34 · 표시 6</span>
+        </div>
+        <ul class="tiles">
+          <li class="tile" title="Marriott International, Inc. · 시총 $104.1B · EPS 예상 2.85">
+            <span class="logo" data-l="M"><img src="https://financialmodelingprep.com/image-stock/MAR.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">MAR</b>
+          </li>
+          <li class="tile" title="Entergy Corporation · 시총 $52.6B · EPS 예상 1.7">
+            <span class="logo" data-l="E"><img src="https://financialmodelingprep.com/image-stock/ETR.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">ETR</b>
+          </li>
+          <li class="tile" title="IDEXX Laboratories, Inc. · 시총 $43.4B · EPS 예상 3.71">
+            <span class="logo" data-l="I"><img src="https://financialmodelingprep.com/image-stock/IDXX.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">IDXX</b>
+          </li>
+          <li class="tile" title="The Estée Lauder Companies Inc. · 시총 $39.6B · EPS 예상 0.5">
+            <span class="logo" data-l="E"><img src="https://financialmodelingprep.com/image-stock/EL.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">EL</b>
+          </li>
+          <li class="tile" title="Public Service Enterprise Group Incorporated · 시총 $37.0B · EPS 예상 1.19">
+            <span class="logo" data-l="P"><img src="https://financialmodelingprep.com/image-stock/PEG.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">PEG</b>
+          </li>
+          <li class="tile" title="Ryanair Holdings plc · 시총 $27.8B · EPS 예상 3.55">
+            <span class="logo" data-l="R"><img src="https://financialmodelingprep.com/image-stock/RYAAY.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">RYAAY</b>
+          </li>
+        </ul>
+        <details class="emore"><summary>+10 더 보기</summary><p>FOX, L, TSEM, CHKP, PKX, CNA, TEM, AMG, KRYS, TGTX</p></details><p class="note esmall">시총 $8B 미만 18건</p>
+      </div>
+      <div class="eslot eday-amc">
+        <div class="eslot-head">
+          <h3><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M10.5 1.8a6.5 6.5 0 1 0 3.7 10.6A5.5 5.5 0 0 1 10.5 1.8z" fill="currentColor"/></svg> 장후 발표</h3>
+          <span class="note">전체 113 · 표시 6</span>
+        </div>
+        <ul class="tiles">
+          <li class="tile watch" title="Apple Inc. · 시총 $5029.6B · EPS 예상 1.98">
+            <span class="logo" data-l="A"><img src="https://financialmodelingprep.com/image-stock/AAPL.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">AAPL</b>
+          </li>
+          <li class="tile watch" title="Palantir Technologies Inc. · 시총 $442.4B · EPS 예상 0.41">
+            <span class="logo" data-l="P"><img src="https://financialmodelingprep.com/image-stock/PLTR.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">PLTR</b>
+          </li>
+          <li class="tile" title="Vertex Pharmaceuticals Incorporated · 시총 $141.7B · EPS 예상 4.75">
+            <span class="logo" data-l="V"><img src="https://financialmodelingprep.com/image-stock/VRTX.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">VRTX</b>
+          </li>
+          <li class="tile" title="The Williams Companies, Inc. · 시총 $90.9B · EPS 예상 0.54">
+            <span class="logo" data-l="W"><img src="https://financialmodelingprep.com/image-stock/WMB.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">WMB</b>
+          </li>
+          <li class="tile" title="Diamondback Energy, Inc. · 시총 $59.4B · EPS 예상 5.6">
+            <span class="logo" data-l="F"><img src="https://financialmodelingprep.com/image-stock/FANG.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">FANG</b>
+          </li>
+          <li class="tile" title="Realty Income Corporation · 시총 $53.9B · EPS 예상 0.43">
+            <span class="logo" data-l="O"><img src="https://financialmodelingprep.com/image-stock/O.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">O</b>
+          </li>
+        </ul>
+        <details class="emore"><summary>+22 더 보기</summary><p>ON, ROKU, SBAC, CRBG, NBIX, EQH, JAZZ, LSCC, DOC, BWXT, FN, UDR, BMRN, GRAB, CLX, MTCH, VNOM, RHP, HNGE, ALSN, VOYA, AEIS</p></details><p class="note esmall">시총 $8B 미만 85건</p>
+      </div>
+      <div class="eslot eday-ev">
+        <h3>일정 · 체크포인트</h3>
+        <ul class="echecks">
+          <li class="ev imp-2"><span class="mono">10:00</span> ISM 제조업 (Oct)</li>
+          <li class="ck"><b class="tk">AAPL</b> 아이폰·서비스 매출</li>
+          <li class="ck"><b class="tk">PLTR</b> 정부·상업 매출</li>
+          <li class="note">시간 미정 2건</li>
+        </ul>
+      </div>
+    </div>
+    <div class="eday" style="--col: 2">
+      <div class="eday-head">
+        <b>화요일</b>
+        <span class="mono">2026-11-03</span>
+        <span>전체 275건</span>
+        <i class="ebar" aria-hidden="true"><i style="width: 47.6%"></i></i>
+      </div>
+      <div class="eslot eday-bmo">
+        <div class="eslot-head">
+          <h3><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.2" fill="currentColor"/><g stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></g></svg> 장전 발표</h3>
+          <span class="note">전체 111 · 표시 6</span>
+        </div>
+        <ul class="tiles">
+          <li class="tile" title="Shopify Inc. · 시총 $204.4B · EPS 예상 0.46">
+            <span class="logo" data-l="S"><img src="https://financialmodelingprep.com/image-stock/SHOP.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">SHOP</b>
+          </li>
+          <li class="tile" title="Pfizer Inc. · 시총 $174.0B · EPS 예상 0.73">
+            <span class="logo" data-l="P"><img src="https://financialmodelingprep.com/image-stock/PFE.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">PFE</b>
+          </li>
+          <li class="tile" title="Eaton Corporation plc · 시총 $143.7B · EPS 예상 3.55">
+            <span class="logo" data-l="E"><img src="https://financialmodelingprep.com/image-stock/ETN.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">ETN</b>
+          </li>
+          <li class="tile" title="Marathon Petroleum Corporation · 시총 $124.9B · EPS 예상 26.0">
+            <span class="logo" data-l="M"><img src="https://financialmodelingprep.com/image-stock/MPC.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">MPC</b>
+          </li>
+          <li class="tile" title="Energy Transfer LP · 시총 $72.0B · EPS 예상 0.41">
+            <span class="logo" data-l="E"><img src="https://financialmodelingprep.com/image-stock/ET.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">ET</b>
+          </li>
+          <li class="tile" title="Ferrari N.V. · 시총 $69.4B · EPS 예상 2.32">
+            <span class="logo" data-l="R"><img src="https://financialmodelingprep.com/image-stock/RACE.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">RACE</b>
+          </li>
+        </ul>
+        <details class="emore"><summary>+34 더 보기</summary><p>APO, MPLX, AME, TRI, KDP, WAT, YUM, SYY, ADM, FTS, FISV, PHG, EXPD, BNTX, BR, DD, LDOS, BALL, RVTY, ZBRA, DT, TLN, YUMC, ULS, IT, SUN, PNW, DOCN, RRX, MDGL, HSIC, ENLT, APTV, IBRX</p></details><p class="note esmall">시총 $8B 미만 71건</p>
+      </div>
+      <div class="eslot eday-amc">
+        <div class="eslot-head">
+          <h3><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M10.5 1.8a6.5 6.5 0 1 0 3.7 10.6A5.5 5.5 0 0 1 10.5 1.8z" fill="currentColor"/></svg> 장후 발표</h3>
+          <span class="note">전체 158 · 표시 6</span>
+        </div>
+        <ul class="tiles">
+          <li class="tile watch" title="Advanced Micro Devices, Inc. · 시총 $824.1B · EPS 예상 1.94">
+            <span class="logo" data-l="A"><img src="https://financialmodelingprep.com/image-stock/AMD.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">AMD</b>
+          </li>
+          <li class="tile" title="Amgen Inc. · 시총 $251.9B · EPS 예상 5.79">
+            <span class="logo" data-l="A"><img src="https://financialmodelingprep.com/image-stock/AMGN.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">AMGN</b>
+          </li>
+          <li class="tile" title="Arista Networks, Inc. · 시총 $213.0B · EPS 예상 1.08">
+            <span class="logo" data-l="A"><img src="https://financialmodelingprep.com/image-stock/ANET.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">ANET</b>
+          </li>
+          <li class="tile" title="Booking Holdings Inc. · 시총 $111.3B · EPS 예상 4.5">
+            <span class="logo" data-l="B"><img src="https://financialmodelingprep.com/image-stock/BKNG.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">BKNG</b>
+          </li>
+          <li class="tile" title="Suncor Energy Inc. · 시총 $93.8B · EPS 예상 3.44">
+            <span class="logo" data-l="S"><img src="https://financialmodelingprep.com/image-stock/SU.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">SU</b>
+          </li>
+          <li class="tile" title="Block, Inc. · 시총 $45.8B · EPS 예상 1.03">
+            <span class="logo" data-l="X"><img src="https://financialmodelingprep.com/image-stock/XYZ.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">XYZ</b>
+          </li>
+        </ul>
+        <details class="emore"><summary>+23 더 보기</summary><p>ALAB, AIG, PRU, CPNG, IFF, SMCI, SWKS, OVV, TOST, AIZ, UNM, OHI, SMMT, AFG, WTRG, JKHY, PCVX, SM, PCOR, HL, JXN, SYRE, CORT</p></details><p class="note esmall">시총 $8B 미만 129건</p>
+      </div>
+      <div class="eslot eday-ev">
+        <h3>일정 · 체크포인트</h3>
+        <ul class="echecks">
+          <li class="ev imp-1"><span class="mono">10:00</span> 내구재 주문 (Sep)</li>
+          <li class="ck"><b class="tk">AMD</b> 데이터센터 GPU</li>
+          <li class="note">시간 미정 6건: ITUB, TEVA, FMS</li>
+        </ul>
+      </div>
+    </div>
+    <div class="eday" style="--col: 3">
+      <div class="eday-head">
+        <b>수요일</b>
+        <span class="mono">2026-11-04</span>
+        <span>전체 457건</span>
+        <i class="ebar" aria-hidden="true"><i style="width: 79.1%"></i></i>
+      </div>
+      <div class="eslot eday-bmo">
+        <div class="eslot-head">
+          <h3><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.2" fill="currentColor"/><g stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></g></svg> 장전 발표</h3>
+          <span class="note">전체 144 · 표시 6</span>
+        </div>
+        <ul class="tiles">
+          <li class="tile" title="McDonald&#39;s Corporation · 시총 $182.7B · EPS 예상 3.38">
+            <span class="logo" data-l="M"><img src="https://financialmodelingprep.com/image-stock/MCD.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">MCD</b>
+          </li>
+          <li class="tile" title="Novo Nordisk A/S · 시총 $176.4B · EPS 예상 4.62">
+            <span class="logo" data-l="N"><img src="https://financialmodelingprep.com/image-stock/NVO.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">NVO</b>
+          </li>
+          <li class="tile" title="Uber Technologies, Inc. · 시총 $133.3B · EPS 예상 0.9">
+            <span class="logo" data-l="U"><img src="https://financialmodelingprep.com/image-stock/UBER.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">UBER</b>
+          </li>
+          <li class="tile" title="CVS Health Corporation · 시총 $115.4B · EPS 예상 1.65">
+            <span class="logo" data-l="C"><img src="https://financialmodelingprep.com/image-stock/CVS.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">CVS</b>
+          </li>
+          <li class="tile" title="Emerson Electric Co. · 시총 $92.0B · EPS 예상 1.85">
+            <span class="logo" data-l="E"><img src="https://financialmodelingprep.com/image-stock/EMR.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">EMR</b>
+          </li>
+          <li class="tile" title="Datadog, Inc. · 시총 $84.5B · EPS 예상 0.64">
+            <span class="logo" data-l="D"><img src="https://financialmodelingprep.com/image-stock/DDOG.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">DDOG</b>
+          </li>
+        </ul>
+        <details class="emore"><summary>+30 더 보기</summary><p>GWW, COR, CVE, MLM, CHT, RPRX, SN, KHC, MDLN, UTHR, Q, GFS, FIS, CDW, CRCL, ZBH, CRL, W, PFGC, SWK, TRMB, FLUT, NYT, PODD, OC, SOLS, PAYP, WLK, BRKR, BEP</p></details><p class="note esmall">시총 $8B 미만 108건</p>
+      </div>
+      <div class="eslot eday-amc">
+        <div class="eslot-head">
+          <h3><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M10.5 1.8a6.5 6.5 0 1 0 3.7 10.6A5.5 5.5 0 0 1 10.5 1.8z" fill="currentColor"/></svg> 장후 발표</h3>
+          <span class="note">전체 308 · 표시 6</span>
+        </div>
+        <ul class="tiles">
+          <li class="tile watch" title="QUALCOMM Incorporated · 시총 $176.0B · EPS 예상 2.16">
+            <span class="logo" data-l="Q"><img src="https://financialmodelingprep.com/image-stock/QCOM.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">QCOM</b>
+          </li>
+          <li class="tile" title="Arm Holdings plc · 시총 $220.0B · EPS 예상 0.48">
+            <span class="logo" data-l="A"><img src="https://financialmodelingprep.com/image-stock/ARM.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">ARM</b>
+          </li>
+          <li class="tile" title="McKesson Corporation · 시총 $116.0B · EPS 예상 10.75">
+            <span class="logo" data-l="M"><img src="https://financialmodelingprep.com/image-stock/MCK.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">MCK</b>
+          </li>
+          <li class="tile" title="MercadoLibre, Inc. · 시총 $82.4B · EPS 예상 9.27">
+            <span class="logo" data-l="M"><img src="https://financialmodelingprep.com/image-stock/MELI.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">MELI</b>
+          </li>
+          <li class="tile" title="Motorola Solutions, Inc. · 시총 $81.3B · EPS 예상 4.44">
+            <span class="logo" data-l="M"><img src="https://financialmodelingprep.com/image-stock/MSI.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">MSI</b>
+          </li>
+          <li class="tile" title="AppLovin Corporation · 시총 $76.8B · EPS 예상 4.03">
+            <span class="logo" data-l="A"><img src="https://financialmodelingprep.com/image-stock/APP.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">APP</b>
+          </li>
+        </ul>
+        <details class="emore"><summary>+52 더 보기</summary><p>MFC, ALL, MET, AFL, EW, VMRK, SLF, COHR, RVMD, EXPE, NTR, TS, ATO, CPAY, ES, TPL, STE, AMCR, PR, PTC, RGLD, WES, CF, APA, CW, HST, NWSA, PAAS, FICO, CG, COKE, MKSI, CDE, SITM, TKO, HUBS, PAYC, WTS, FIG, AMH, UHAL, ALB, CHYM, AES, QGEN, BIO, CAI, CGNX, SNAP, CYTK, PRI, CHRD</p></details><p class="note esmall">시총 $8B 미만 250건</p>
+      </div>
+      <div class="eslot eday-ev">
+        <h3>일정 · 체크포인트</h3>
+        <ul class="echecks">
+          <li class="ev imp-2"><span class="mono">08:15</span> ADP 민간고용 (Oct)</li>
+          <li class="ev imp-2"><span class="mono">10:00</span> ISM 서비스업 (Oct)</li>
+          <li class="ck"><b class="tk">QCOM</b> 스마트폰 칩 수요</li>
+          <li class="note">시간 미정 5건: SKM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="eday" style="--col: 4">
+      <div class="eday-head">
+        <b>목요일</b>
+        <span class="mono">2026-11-05</span>
+        <span>전체 578건</span>
+        <i class="ebar" aria-hidden="true"><i style="width: 100.0%"></i></i>
+      </div>
+      <div class="eslot eday-bmo">
+        <div class="eslot-head">
+          <h3><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.2" fill="currentColor"/><g stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></g></svg> 장전 발표</h3>
+          <span class="note">전체 258 · 표시 6</span>
+        </div>
+        <ul class="tiles">
+          <li class="tile" title="Toyota Motor Corporation · 시총 $230.5B · EPS 예상 2.74">
+            <span class="logo" data-l="T"><img src="https://financialmodelingprep.com/image-stock/TM.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">TM</b>
+          </li>
+          <li class="tile" title="ConocoPhillips · 시총 $185.0B · EPS 예상 3.04">
+            <span class="logo" data-l="C"><img src="https://financialmodelingprep.com/image-stock/COP.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">COP</b>
+          </li>
+          <li class="tile" title="Sony Group Corporation · 시총 $147.7B · EPS 예상 0.34">
+            <span class="logo" data-l="S"><img src="https://financialmodelingprep.com/image-stock/SONY.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">SONY</b>
+          </li>
+          <li class="tile" title="Canadian Natural Resources Limited · 시총 $115.7B · EPS 예상 1.49">
+            <span class="logo" data-l="C"><img src="https://financialmodelingprep.com/image-stock/CNQ.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">CNQ</b>
+          </li>
+          <li class="tile" title="Parker-Hannifin Corporation · 시총 $113.5B · EPS 예상 8.17">
+            <span class="logo" data-l="P"><img src="https://financialmodelingprep.com/image-stock/PH.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">PH</b>
+          </li>
+          <li class="tile" title="The Southern Company · 시총 $107.8B · EPS 예상 1.71">
+            <span class="logo" data-l="S"><img src="https://financialmodelingprep.com/image-stock/SO.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">SO</b>
+          </li>
+        </ul>
+        <details class="emore"><summary>+40 더 보기</summary><p>DUK, CI, APD, CMI, TRGP, TRP, TDG, CAH, SRE, BDX, ROK, MT, ONC, AU, KMB, IRM, ZTS, DTE, ECHO, GPN, VRSK, RL, FWONK, TPR, USFD, VTRS, EVRG, BCE, MTSI, U, LAMR, TIGO, BSY, MAIR, GSAT, ARW, WMS, NVMI, OSCR, LLYVA</p></details><p class="note esmall">시총 $8B 미만 212건</p>
+      </div>
+      <div class="eslot eday-amc">
+        <div class="eslot-head">
+          <h3><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M10.5 1.8a6.5 6.5 0 1 0 3.7 10.6A5.5 5.5 0 0 1 10.5 1.8z" fill="currentColor"/></svg> 장후 발표</h3>
+          <span class="note">전체 313 · 표시 6</span>
+        </div>
+        <ul class="tiles">
+          <li class="tile" title="Cloudflare, Inc. · 시총 $100.0B · EPS 예상 0.34">
+            <span class="logo" data-l="N"><img src="https://financialmodelingprep.com/image-stock/NET.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">NET</b>
+          </li>
+          <li class="tile" title="Airbnb, Inc. · 시총 $96.9B · EPS 예상 2.85">
+            <span class="logo" data-l="A"><img src="https://financialmodelingprep.com/image-stock/ABNB.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">ABNB</b>
+          </li>
+          <li class="tile" title="Monster Beverage Corporation · 시총 $92.7B · EPS 예상 0.3">
+            <span class="logo" data-l="M"><img src="https://financialmodelingprep.com/image-stock/MNST.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">MNST</b>
+          </li>
+          <li class="tile" title="EOG Resources, Inc. · 시총 $86.8B · EPS 예상 4.44">
+            <span class="logo" data-l="E"><img src="https://financialmodelingprep.com/image-stock/EOG.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">EOG</b>
+          </li>
+          <li class="tile" title="Lumentum Holdings Inc. · 시총 $76.2B · EPS 예상 4.22">
+            <span class="logo" data-l="L"><img src="https://financialmodelingprep.com/image-stock/LITE.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">LITE</b>
+          </li>
+          <li class="tile" title="Simon Property Group, Inc. · 시총 $70.5B · EPS 예상 1.62">
+            <span class="logo" data-l="S"><img src="https://financialmodelingprep.com/image-stock/SPG.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">SPG</b>
+          </li>
+        </ul>
+        <details class="emore"><summary>+36 더 보기</summary><p>NTRA, DVN, WPM, TEAM, ED, MCHP, LYV, AXON, MTD, AEE, PBA, AFRM, GH, RGA, JHX, HALO, SOLV, REG, AKAM, IONQ, TXRH, AHR, CPT, FROG, QXO, SUZ, FNF, VSAT, GMED, DKNG, IREN, PTGX, TXG, PCTY, IAG, CTRE</p></details><p class="note esmall">시총 $8B 미만 271건</p>
+      </div>
+      <div class="eslot eday-ev">
+        <h3>일정 · 체크포인트</h3>
+        <ul class="echecks">
+          <li class="note">시간 미정 7건: NGG, GMAB, SBS, KT</li>
+        </ul>
+      </div>
+    </div>
+    <div class="eday" style="--col: 5">
+      <div class="eday-head">
+        <b>금요일</b>
+        <span class="mono">2026-11-06</span>
+        <span>전체 78건</span>
+        <i class="ebar" aria-hidden="true"><i style="width: 13.5%"></i></i>
+      </div>
+      <div class="eslot eday-bmo">
+        <div class="eslot-head">
+          <h3><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.2" fill="currentColor"/><g stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 1.5v2M8 12.5v2M1.5 8h2M12.5 8h2M3.4 3.4l1.4 1.4M11.2 11.2l1.4 1.4M3.4 12.6l1.4-1.4M11.2 4.8l1.4-1.4"/></g></svg> 장전 발표</h3>
+          <span class="note">전체 63 · 표시 6</span>
+        </div>
+        <ul class="tiles">
+          <li class="tile" title="Enbridge Inc. · 시총 $110.2B · EPS 예상 0.49">
+            <span class="logo" data-l="E"><img src="https://financialmodelingprep.com/image-stock/ENB.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">ENB</b>
+          </li>
+          <li class="tile" title="Moderna, Inc. · 시총 $88.5B · EPS 예상 -1.28">
+            <span class="logo" data-l="M"><img src="https://financialmodelingprep.com/image-stock/MRNA.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">MRNA</b>
+          </li>
+          <li class="tile" title="Brookfield Asset Management Ltd. · 시총 $77.1B · EPS 예상 0.46">
+            <span class="logo" data-l="B"><img src="https://financialmodelingprep.com/image-stock/BAM.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">BAM</b>
+          </li>
+          <li class="tile" title="Humana Inc. · 시총 $49.8B · EPS 예상 -1.0">
+            <span class="logo" data-l="H"><img src="https://financialmodelingprep.com/image-stock/HUM.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">HUM</b>
+          </li>
+          <li class="tile" title="Vistra Corp. · 시총 $46.4B · EPS 예상 2.67">
+            <span class="logo" data-l="V"><img src="https://financialmodelingprep.com/image-stock/VST.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">VST</b>
+          </li>
+          <li class="tile" title="Ubiquiti Inc. · 시총 $34.1B · EPS 예상 4.25">
+            <span class="logo" data-l="U"><img src="https://financialmodelingprep.com/image-stock/UI.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('nologo');this.remove()"></span>
+            <b class="tk">UI</b>
+          </li>
+        </ul>
+        <details class="emore"><summary>+9 더 보기</summary><p>PPL, PAA, BIP, BEN, EMA, TU, CHTR, FRHC, ELAN</p></details><p class="note esmall">시총 $8B 미만 48건</p>
+      </div>
+      <div class="eslot eday-amc">
+        <div class="eslot-head">
+          <h3><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path d="M10.5 1.8a6.5 6.5 0 1 0 3.7 10.6A5.5 5.5 0 0 1 10.5 1.8z" fill="currentColor"/></svg> 장후 발표</h3>
+          <span class="note">전체 13 · 표시 0</span>
+        </div>
+        <p class="empty-s">발표 없음</p><p class="note esmall">시총 $8B 미만 13건</p>
+      </div>
+      <div class="eslot eday-ev">
+        <h3>일정 · 체크포인트</h3>
+        <ul class="echecks">
+          <li class="ev imp-3"><span class="mono">08:30</span> 미국 10월 고용보고서 (비농업 고용·실업률)</li>
+          <li class="ev imp-1"><span class="mono">10:00</span> 미시간대 소비심리 (Nov)</li>
+          <li class="note">시간 미정 2건</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend ecal-legend">
+    <span><i class="k-watch"></i>관심기업 (항상 표시)</span>
+    <span>카드 = 관심기업 33곳 + 시총 $8B 이상</span>
+    <span>숫자 = 발표 후 EPS 서프라이즈</span>
+    <span class="note">발표 일정은 바뀔 수 있습니다 · 출처: 야후 파이낸스 · 관심기업과 체크포인트 문구는 <code>config.yaml</code>에서 고칠 수 있습니다</span>
+  </div>
+
+  <section class="panel" id="later" aria-labelledby="h-later">
+    <div class="panel-head">
+      <div><span class="kicker">Next 2 weeks</span><h2 id="h-later">이후 2주 굵직한 일정</h2></div>
+      <span class="note">11/9 ~ 11/20 · 실적은 관심기업과 시총 $100B 이상</span>
+    </div>
+    <ul class="later">
+      <li>
+        <b class="mono">11/10(화)</b>
+        <span>08:30 미국 10월 소비자물가(CPI) · 실적: PBR(장후)</span>
+      </li>
+      <li>
+        <b class="mono">11/12(목)</b>
+        <span>실적: CSCO(장후), AMAT(장후)</span>
+      </li>
+      <li>
+        <b class="mono">11/13(금)</b>
+        <span>08:30 생산자물가(PPI) (Oct) · 실적: MUFG, SMFG, MFG</span>
+      </li>
+      <li>
+        <b class="mono">11/17(화)</b>
+        <span>08:30 소매판매 (Oct) · 실적: NVDA(장후), HD(장전), DIS(장전), MDT(장전)</span>
+      </li>
+      <li>
+        <b class="mono">11/18(수)</b>
+        <span>실적: TJX(장전), LOW(장전), PDD(장전)</span>
+      </li>
+      <li>
+        <b class="mono">11/19(목)</b>
+        <span>실적: WMT(장전), PANW(장후)</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="panel" id="archive" aria-labelledby="h-archive">
+    <div class="panel-head"><div><span class="kicker">Archive</span><h2 id="h-archive">지난 실적 캘린더</h2></div></div>
+    <div class="archive">
+      <div>
+        <ul>
+          <li><span class="cur" aria-current="page"><span class="lbl">2026-W45</span><span class="ttl">11/2~11/6</span><span class="num note">1,537건</span></span>
+          </li>
+          <li><a href="../earnings/2026-W44.html"><span class="lbl">2026-W44</span><span class="ttl">10/26~10/30</span><span class="num note">758건</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>데이터: Yahoo Finance 실적·경제 캘린더, calendar.yaml</span>
+    <span>생성: 2026-10-31 08:53 KST</span>
+  </div>
+</footer>
+</body>
+</html>

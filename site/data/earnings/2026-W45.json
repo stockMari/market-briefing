@@ -1,0 +1,3796 @@
+{
+ "label": "2026-W45",
+ "start": "2026-11-02",
+ "end": "2026-11-06",
+ "total": 1537,
+ "headline": "실적 발표 1537건 · 목요일 578건으로 최다 · 미국 10월 고용보고서",
+ "days": [
+  {
+   "date": "2026-11-02",
+   "dow": "월",
+   "total": 149,
+   "bmo": {
+    "total": 34,
+    "shown": [
+     {
+      "ticker": "MAR",
+      "company": "Marriott International, Inc.",
+      "date": "2026-11-02",
+      "slot": "bmo",
+      "mcap_b": 104.1,
+      "eps_est": 2.85,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ETR",
+      "company": "Entergy Corporation",
+      "date": "2026-11-02",
+      "slot": "bmo",
+      "mcap_b": 52.6,
+      "eps_est": 1.7,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "IDXX",
+      "company": "IDEXX Laboratories, Inc.",
+      "date": "2026-11-02",
+      "slot": "bmo",
+      "mcap_b": 43.4,
+      "eps_est": 3.71,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "EL",
+      "company": "The Estée Lauder Companies Inc.",
+      "date": "2026-11-02",
+      "slot": "bmo",
+      "mcap_b": 39.6,
+      "eps_est": 0.5,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PEG",
+      "company": "Public Service Enterprise Group Incorporated",
+      "date": "2026-11-02",
+      "slot": "bmo",
+      "mcap_b": 37.0,
+      "eps_est": 1.19,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "RYAAY",
+      "company": "Ryanair Holdings plc",
+      "date": "2026-11-02",
+      "slot": "bmo",
+      "mcap_b": 27.8,
+      "eps_est": 3.55,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "more": [
+     {
+      "ticker": "FOX",
+      "company": "Fox Corporation",
+      "date": "2026-11-02",
+      "slot": "bmo",
+      "mcap_b": 23.7,
+      "eps_est": 2.13,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "L",
+      "company": "Loews Corporation",
+      "date": "2026-11-02",
+      "slot": "bmo",
+      "mcap_b": 22.8,
+      "eps_est": null,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TSEM",
+      "company": "Tower Semiconductor Ltd.",
+      "date": "2026-11-02",
+      "slot": "bmo",
+      "mcap_b": 18.9,
+      "eps_est": 1.07,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CHKP",
+      "company": "Check Point Software Technologies Ltd.",
+      "date": "2026-11-02",
+      "slot": "bmo",
+      "mcap_b": 15.5,
+      "eps_est": 2.49,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PKX",
+      "company": "POSCO Holdings Inc.",
+      "date": "2026-11-02",
+      "slot": "bmo",
+      "mcap_b": 15.0,
+      "eps_est": null,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CNA",
+      "company": "CNA Financial Corporation",
+      "date": "2026-11-02",
+      "slot": "bmo",
+      "mcap_b": 13.2,
+      "eps_est": 1.13,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TEM",
+      "company": "Tempus AI, Inc.",
+      "date": "2026-11-02",
+      "slot": "bmo",
+      "mcap_b": 13.2,
+      "eps_est": -0.08,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "AMG",
+      "company": "Affiliated Managers Group, Inc.",
+      "date": "2026-11-02",
+      "slot": "bmo",
+      "mcap_b": 9.9,
+      "eps_est": 8.79,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "KRYS",
+      "company": "Krystal Biotech, Inc.",
+      "date": "2026-11-02",
+      "slot": "bmo",
+      "mcap_b": 9.8,
+      "eps_est": 1.92,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TGTX",
+      "company": "TG Therapeutics, Inc.",
+      "date": "2026-11-02",
+      "slot": "bmo",
+      "mcap_b": 9.4,
+      "eps_est": 0.26,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "small": 18
+   },
+   "amc": {
+    "total": 113,
+    "shown": [
+     {
+      "ticker": "AAPL",
+      "company": "Apple Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 5029.6,
+      "eps_est": 1.98,
+      "eps_act": null,
+      "surprise": null,
+      "watch": true
+     },
+     {
+      "ticker": "PLTR",
+      "company": "Palantir Technologies Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 442.4,
+      "eps_est": 0.41,
+      "eps_act": null,
+      "surprise": null,
+      "watch": true
+     },
+     {
+      "ticker": "VRTX",
+      "company": "Vertex Pharmaceuticals Incorporated",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 141.7,
+      "eps_est": 4.75,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "WMB",
+      "company": "The Williams Companies, Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 90.9,
+      "eps_est": 0.54,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "FANG",
+      "company": "Diamondback Energy, Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 59.4,
+      "eps_est": 5.6,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "O",
+      "company": "Realty Income Corporation",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 53.9,
+      "eps_est": 0.43,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "more": [
+     {
+      "ticker": "ON",
+      "company": "ON Semiconductor Corporation",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 27.9,
+      "eps_est": 0.88,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ROKU",
+      "company": "Roku, Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 23.0,
+      "eps_est": 0.55,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SBAC",
+      "company": "SBA Communications Corporation",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 19.9,
+      "eps_est": 2.1,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CRBG",
+      "company": "Corebridge Financial, Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 15.5,
+      "eps_est": 1.24,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "NBIX",
+      "company": "Neurocrine Biosciences, Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 14.9,
+      "eps_est": 2.76,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "EQH",
+      "company": "Equitable Holdings, Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 14.7,
+      "eps_est": 1.86,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "JAZZ",
+      "company": "Jazz Pharmaceuticals plc",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 14.0,
+      "eps_est": -2.21,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "LSCC",
+      "company": "Lattice Semiconductor Corporation",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 13.2,
+      "eps_est": 0.55,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "DOC",
+      "company": "Healthpeak Properties, Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 13.1,
+      "eps_est": 0.03,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "BWXT",
+      "company": "BWX Technologies, Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 12.0,
+      "eps_est": 1.19,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "FN",
+      "company": "Fabrinet",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 11.7,
+      "eps_est": 4.19,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "UDR",
+      "company": "UDR, Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 11.4,
+      "eps_est": 0.14,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "BMRN",
+      "company": "BioMarin Pharmaceutical Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 11.3,
+      "eps_est": -0.11,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "GRAB",
+      "company": "Grab Holdings Limited",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 11.1,
+      "eps_est": 0.02,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CLX",
+      "company": "The Clorox Company",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 10.6,
+      "eps_est": 1.07,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "MTCH",
+      "company": "Match Group, Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 9.7,
+      "eps_est": 1.02,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "VNOM",
+      "company": "Viper Energy, Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 9.3,
+      "eps_est": 0.66,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "RHP",
+      "company": "Ryman Hospitality Properties, Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 9.2,
+      "eps_est": 0.32,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "HNGE",
+      "company": "Hinge Health, Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 9.2,
+      "eps_est": 0.6,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ALSN",
+      "company": "Allison Transmission Holdings, Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 8.9,
+      "eps_est": 2.48,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "VOYA",
+      "company": "Voya Financial, Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 8.9,
+      "eps_est": 2.58,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "AEIS",
+      "company": "Advanced Energy Industries, Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 8.9,
+      "eps_est": 3.04,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "small": 85
+   },
+   "tns": {
+    "total": 2,
+    "shown": [],
+    "more": [],
+    "small": 2
+   },
+   "events": [
+    {
+     "date": "2026-11-02",
+     "time": "10:00",
+     "title": "ISM 제조업 (Oct)",
+     "importance": 2,
+     "key": "ISM 제조업",
+     "country": "US",
+     "tz": "ET"
+    }
+   ],
+   "checks": [
+    "AAPL 아이폰·서비스 매출",
+    "PLTR 정부·상업 매출"
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "dow": "화",
+   "total": 275,
+   "bmo": {
+    "total": 111,
+    "shown": [
+     {
+      "ticker": "SHOP",
+      "company": "Shopify Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 204.4,
+      "eps_est": 0.46,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PFE",
+      "company": "Pfizer Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 174.0,
+      "eps_est": 0.73,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ETN",
+      "company": "Eaton Corporation plc",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 143.7,
+      "eps_est": 3.55,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "MPC",
+      "company": "Marathon Petroleum Corporation",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 124.9,
+      "eps_est": 26.0,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ET",
+      "company": "Energy Transfer LP",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 72.0,
+      "eps_est": 0.41,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "RACE",
+      "company": "Ferrari N.V.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 69.4,
+      "eps_est": 2.32,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "more": [
+     {
+      "ticker": "APO",
+      "company": "Apollo Global Management, Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 68.4,
+      "eps_est": 2.2,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "MPLX",
+      "company": "MPLX LP",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 61.0,
+      "eps_est": 1.12,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "AME",
+      "company": "AMETEK, Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 55.3,
+      "eps_est": 2.11,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TRI",
+      "company": "Thomson Reuters Corporation",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 51.2,
+      "eps_est": 0.87,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "KDP",
+      "company": "Keurig Dr Pepper Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 48.8,
+      "eps_est": 0.62,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "WAT",
+      "company": "Waters Corporation",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 45.4,
+      "eps_est": 4.0,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "YUM",
+      "company": "Yum! Brands, Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 42.4,
+      "eps_est": 1.46,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SYY",
+      "company": "Sysco Corporation",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 40.8,
+      "eps_est": 1.19,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ADM",
+      "company": "Archer-Daniels-Midland Company",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 37.1,
+      "eps_est": 1.6,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "FTS",
+      "company": "Fortis Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 30.0,
+      "eps_est": 0.88,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "FISV",
+      "company": "Fiserv, Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 26.6,
+      "eps_est": 1.71,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PHG",
+      "company": "Koninklijke Philips N.V.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 26.3,
+      "eps_est": 0.36,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "EXPD",
+      "company": "Expeditors International of Washington, Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 25.8,
+      "eps_est": 2.23,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "BNTX",
+      "company": "BioNTech SE",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 22.1,
+      "eps_est": 0.76,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "BR",
+      "company": "Broadridge Financial Solutions, Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 20.2,
+      "eps_est": 1.37,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "DD",
+      "company": "DuPont de Nemours, Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 18.9,
+      "eps_est": 1.88,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "LDOS",
+      "company": "Leidos Holdings, Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 17.9,
+      "eps_est": 3.04,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "BALL",
+      "company": "Ball Corporation",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 17.6,
+      "eps_est": 1.07,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "RVTY",
+      "company": "Revvity, Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 17.5,
+      "eps_est": 1.3,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ZBRA",
+      "company": "Zebra Technologies Corporation",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 17.1,
+      "eps_est": 4.91,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "DT",
+      "company": "Dynatrace, Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 16.7,
+      "eps_est": 0.49,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TLN",
+      "company": "Talen Energy Corporation",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 16.2,
+      "eps_est": 7.46,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "YUMC",
+      "company": "Yum China Holdings, Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 15.4,
+      "eps_est": 0.9,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ULS",
+      "company": "UL Solutions Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 15.1,
+      "eps_est": 0.62,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "IT",
+      "company": "Gartner, Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 14.4,
+      "eps_est": 2.84,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SUN",
+      "company": "Sunoco LP",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 13.3,
+      "eps_est": 2.83,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PNW",
+      "company": "Pinnacle West Capital Corporation",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 12.9,
+      "eps_est": 3.36,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings, Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 10.5,
+      "eps_est": 0.32,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "RRX",
+      "company": "Regal Rexnord Corporation",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 10.5,
+      "eps_est": 2.67,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "MDGL",
+      "company": "Madrigal Pharmaceuticals, Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 9.9,
+      "eps_est": -1.09,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "HSIC",
+      "company": "Henry Schein, Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 9.5,
+      "eps_est": 1.36,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ENLT",
+      "company": "Enlight Renewable Energy Ltd",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 9.3,
+      "eps_est": 0.41,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "APTV",
+      "company": "Aptiv PLC",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 9.1,
+      "eps_est": 1.32,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "IBRX",
+      "company": "ImmunityBio, Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 8.8,
+      "eps_est": -0.05,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "small": 71
+   },
+   "amc": {
+    "total": 158,
+    "shown": [
+     {
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices, Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 824.1,
+      "eps_est": 1.94,
+      "eps_act": null,
+      "surprise": null,
+      "watch": true
+     },
+     {
+      "ticker": "AMGN",
+      "company": "Amgen Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 251.9,
+      "eps_est": 5.79,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ANET",
+      "company": "Arista Networks, Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 213.0,
+      "eps_est": 1.08,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "BKNG",
+      "company": "Booking Holdings Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 111.3,
+      "eps_est": 4.5,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SU",
+      "company": "Suncor Energy Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 93.8,
+      "eps_est": 3.44,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "XYZ",
+      "company": "Block, Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 45.8,
+      "eps_est": 1.03,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "more": [
+     {
+      "ticker": "ALAB",
+      "company": "Astera Labs, Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 44.9,
+      "eps_est": 1.19,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "AIG",
+      "company": "American International Group, Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 42.8,
+      "eps_est": 1.87,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PRU",
+      "company": "Prudential Financial, Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 40.2,
+      "eps_est": 3.33,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CPNG",
+      "company": "Coupang, Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 25.8,
+      "eps_est": -0.01,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "IFF",
+      "company": "International Flavors & Fragrances Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 23.7,
+      "eps_est": 0.82,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SMCI",
+      "company": "Super Micro Computer, Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 21.6,
+      "eps_est": 1.2,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SWKS",
+      "company": "Skyworks Solutions, Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 20.6,
+      "eps_est": 1.27,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "OVV",
+      "company": "Ovintiv Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 20.1,
+      "eps_est": 2.0,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TOST",
+      "company": "Toast, Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 18.3,
+      "eps_est": 0.37,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "AIZ",
+      "company": "Assurant, Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 14.4,
+      "eps_est": 4.71,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "UNM",
+      "company": "Unum Group",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 14.4,
+      "eps_est": 2.17,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "OHI",
+      "company": "Omega Healthcare Investors, Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 14.2,
+      "eps_est": 0.48,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SMMT",
+      "company": "Summit Therapeutics Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 12.8,
+      "eps_est": -0.21,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "AFG",
+      "company": "American Financial Group, Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 12.8,
+      "eps_est": 3.82,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "WTRG",
+      "company": "Essential Utilities, Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 12.3,
+      "eps_est": 0.34,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "JKHY",
+      "company": "Jack Henry & Associates, Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 11.3,
+      "eps_est": 2.01,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PCVX",
+      "company": "Vaxcyte, Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 9.8,
+      "eps_est": -2.11,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SM",
+      "company": "SM Energy Company",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 9.6,
+      "eps_est": 1.98,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PCOR",
+      "company": "Procore Technologies, Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 9.3,
+      "eps_est": 0.45,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "HL",
+      "company": "Hecla Mining Company",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 9.1,
+      "eps_est": 0.15,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "JXN",
+      "company": "Jackson Financial Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 9.1,
+      "eps_est": 7.24,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SYRE",
+      "company": "Spyre Therapeutics, Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 9.0,
+      "eps_est": -0.84,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CORT",
+      "company": "Corcept Therapeutics Incorporated",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 8.8,
+      "eps_est": 0.84,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "small": 129
+   },
+   "tns": {
+    "total": 6,
+    "shown": [
+     {
+      "ticker": "ITUB",
+      "company": "Itaú Unibanco Holding S.A.",
+      "date": "2026-11-03",
+      "slot": "tns",
+      "mcap_b": 78.6,
+      "eps_est": 0.22,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TEVA",
+      "company": "Teva Pharmaceutical Industries Limited",
+      "date": "2026-11-03",
+      "slot": "tns",
+      "mcap_b": 49.1,
+      "eps_est": 0.73,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "FMS",
+      "company": "Fresenius Medical Care AG",
+      "date": "2026-11-03",
+      "slot": "tns",
+      "mcap_b": 12.0,
+      "eps_est": 0.53,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "more": [],
+    "small": 3
+   },
+   "events": [
+    {
+     "date": "2026-11-03",
+     "time": "10:00",
+     "title": "내구재 주문 (Sep)",
+     "importance": 1,
+     "key": "내구재",
+     "country": "US",
+     "tz": "ET"
+    }
+   ],
+   "checks": [
+    "AMD 데이터센터 GPU"
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "dow": "수",
+   "total": 457,
+   "bmo": {
+    "total": 144,
+    "shown": [
+     {
+      "ticker": "MCD",
+      "company": "McDonald's Corporation",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 182.7,
+      "eps_est": 3.38,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "NVO",
+      "company": "Novo Nordisk A/S",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 176.4,
+      "eps_est": 4.62,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "UBER",
+      "company": "Uber Technologies, Inc.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 133.3,
+      "eps_est": 0.9,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CVS",
+      "company": "CVS Health Corporation",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 115.4,
+      "eps_est": 1.65,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "EMR",
+      "company": "Emerson Electric Co.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 92.0,
+      "eps_est": 1.85,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "DDOG",
+      "company": "Datadog, Inc.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 84.5,
+      "eps_est": 0.64,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "more": [
+     {
+      "ticker": "GWW",
+      "company": "W.W. Grainger, Inc.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 64.0,
+      "eps_est": 11.66,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "COR",
+      "company": "Cencora, Inc.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 63.1,
+      "eps_est": 4.57,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CVE",
+      "company": "Cenovus Energy Inc.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 60.4,
+      "eps_est": 1.53,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "MLM",
+      "company": "Martin Marietta Materials, Inc.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 38.4,
+      "eps_est": 5.71,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CHT",
+      "company": "Chunghwa Telecom Co., Ltd.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 38.0,
+      "eps_est": null,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "RPRX",
+      "company": "Royalty Pharma plc",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 29.9,
+      "eps_est": 1.18,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SN",
+      "company": "SharkNinja, Inc.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 29.4,
+      "eps_est": 1.87,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "KHC",
+      "company": "The Kraft Heinz Company",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 28.9,
+      "eps_est": 0.42,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "MDLN",
+      "company": "Medline Inc.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 28.2,
+      "eps_est": 0.35,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "UTHR",
+      "company": "United Therapeutics Corporation",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 25.7,
+      "eps_est": 6.04,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "Q",
+      "company": "Qnity Electronics, Inc.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 24.4,
+      "eps_est": 1.21,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "GFS",
+      "company": "GLOBALFOUNDRIES Inc.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 23.4,
+      "eps_est": 0.51,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "FIS",
+      "company": "Fidelity National Information Services, Inc.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 19.9,
+      "eps_est": 1.6,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CDW",
+      "company": "CDW Corporation",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 19.2,
+      "eps_est": 2.98,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CRCL",
+      "company": "Circle Internet Group",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 18.4,
+      "eps_est": 0.38,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ZBH",
+      "company": "Zimmer Biomet Holdings, Inc.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 18.0,
+      "eps_est": 1.88,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CRL",
+      "company": "Charles River Laboratories International, Inc.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 17.3,
+      "eps_est": 2.97,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "W",
+      "company": "Wayfair Inc.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 15.9,
+      "eps_est": 0.81,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PFGC",
+      "company": "Performance Food Group Company",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 15.6,
+      "eps_est": 1.27,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SWK",
+      "company": "Stanley Black & Decker, Inc.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 15.6,
+      "eps_est": 1.56,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TRMB",
+      "company": "Trimble Inc.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 15.1,
+      "eps_est": 0.86,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "FLUT",
+      "company": "Flutter Entertainment plc",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 14.3,
+      "eps_est": 0.25,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "NYT",
+      "company": "The New York Times Company",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 11.3,
+      "eps_est": 0.65,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PODD",
+      "company": "Insulet Corporation",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 10.4,
+      "eps_est": 1.59,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "OC",
+      "company": "Owens Corning",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 9.6,
+      "eps_est": 3.05,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SOLS",
+      "company": "Solstice Advanced Materials, Inc.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 9.6,
+      "eps_est": 0.69,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PAYP",
+      "company": "PayPay Corporation",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 9.5,
+      "eps_est": null,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "WLK",
+      "company": "Westlake Corporation",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 8.7,
+      "eps_est": 0.5,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "BRKR",
+      "company": "Bruker Corporation",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 8.7,
+      "eps_est": 0.42,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "BEP",
+      "company": "Brookfield Renewable Partners L.P.",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 8.6,
+      "eps_est": -0.51,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "small": 108
+   },
+   "amc": {
+    "total": 308,
+    "shown": [
+     {
+      "ticker": "QCOM",
+      "company": "QUALCOMM Incorporated",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 176.0,
+      "eps_est": 2.16,
+      "eps_act": null,
+      "surprise": null,
+      "watch": true
+     },
+     {
+      "ticker": "ARM",
+      "company": "Arm Holdings plc",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 220.0,
+      "eps_est": 0.48,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "MCK",
+      "company": "McKesson Corporation",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 116.0,
+      "eps_est": 10.75,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "MELI",
+      "company": "MercadoLibre, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 82.4,
+      "eps_est": 9.27,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "MSI",
+      "company": "Motorola Solutions, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 81.3,
+      "eps_est": 4.44,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "APP",
+      "company": "AppLovin Corporation",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 76.8,
+      "eps_est": 4.03,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "more": [
+     {
+      "ticker": "MFC",
+      "company": "Manulife Financial Corporation",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 73.8,
+      "eps_est": 1.18,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ALL",
+      "company": "The Allstate Corporation",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 65.7,
+      "eps_est": 6.96,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "MET",
+      "company": "MetLife, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 63.6,
+      "eps_est": 2.77,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "AFL",
+      "company": "Aflac Incorporated",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 62.1,
+      "eps_est": 1.8,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "EW",
+      "company": "Edwards Lifesciences Corporation",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 53.0,
+      "eps_est": 0.74,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "VMRK",
+      "company": "Vivmark Residential",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 47.9,
+      "eps_est": 0.2,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SLF",
+      "company": "Sun Life Financial Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 45.0,
+      "eps_est": 2.01,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "COHR",
+      "company": "Coherent Corp.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 41.4,
+      "eps_est": 1.97,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "RVMD",
+      "company": "Revolution Medicines, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 41.0,
+      "eps_est": -2.38,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "EXPE",
+      "company": "Expedia Group, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 34.3,
+      "eps_est": 8.89,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "NTR",
+      "company": "Nutrien Ltd.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 33.1,
+      "eps_est": 0.77,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TS",
+      "company": "Tenaris S.A.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 30.4,
+      "eps_est": 0.83,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ATO",
+      "company": "Atmos Energy Corporation",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 29.1,
+      "eps_est": 1.14,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CPAY",
+      "company": "Corpay, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 26.3,
+      "eps_est": 7.2,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ES",
+      "company": "Eversource Energy",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 25.8,
+      "eps_est": 0.92,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TPL",
+      "company": "Texas Pacific Land Corporation",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 22.9,
+      "eps_est": 2.1,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "STE",
+      "company": "STERIS plc",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 22.1,
+      "eps_est": 2.68,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "AMCR",
+      "company": "Amcor plc",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 21.9,
+      "eps_est": 1.03,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PR",
+      "company": "Permian Resources Corporation",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 21.8,
+      "eps_est": 0.61,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PTC",
+      "company": "PTC Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 21.2,
+      "eps_est": 1.96,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "RGLD",
+      "company": "Royal Gold, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 19.4,
+      "eps_est": 2.75,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "WES",
+      "company": "Western Midstream Partners, LP",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 19.2,
+      "eps_est": 0.92,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CF",
+      "company": "CF Industries Holdings, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 18.7,
+      "eps_est": 3.05,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "APA",
+      "company": "APA Corporation",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 18.5,
+      "eps_est": 1.59,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CW",
+      "company": "Curtiss-Wright Corporation",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 17.6,
+      "eps_est": 3.76,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "HST",
+      "company": "Host Hotels & Resorts, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 17.3,
+      "eps_est": 0.09,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "NWSA",
+      "company": "News Corporation",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 15.7,
+      "eps_est": 0.26,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PAAS",
+      "company": "Pan American Silver Corp.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 15.7,
+      "eps_est": 0.66,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "FICO",
+      "company": "Fair Isaac Corporation",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 15.4,
+      "eps_est": 10.77,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CG",
+      "company": "The Carlyle Group Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 14.3,
+      "eps_est": 0.97,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "COKE",
+      "company": "Coca-Cola Consolidated, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 14.0,
+      "eps_est": null,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "MKSI",
+      "company": "MKS Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 13.7,
+      "eps_est": 3.63,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CDE",
+      "company": "Coeur Mining, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 13.5,
+      "eps_est": 0.16,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SITM",
+      "company": "SiTime Corporation",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 13.4,
+      "eps_est": 3.56,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TKO",
+      "company": "TKO Group Holdings, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 13.2,
+      "eps_est": 1.09,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "HUBS",
+      "company": "HubSpot, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 12.0,
+      "eps_est": 3.27,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PAYC",
+      "company": "Paycom Software, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 11.9,
+      "eps_est": 2.8,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "WTS",
+      "company": "Watts Water Technologies, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 11.6,
+      "eps_est": 3.14,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "FIG",
+      "company": "Figma, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 11.5,
+      "eps_est": 0.05,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "AMH",
+      "company": "American Homes 4 Rent",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 11.4,
+      "eps_est": 0.16,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "UHAL",
+      "company": "U-Haul Holding Company",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 11.2,
+      "eps_est": 0.77,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ALB",
+      "company": "Albemarle Corporation",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 10.7,
+      "eps_est": 2.53,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CHYM",
+      "company": "Chime Financial, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 10.6,
+      "eps_est": 0.24,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "AES",
+      "company": "The AES Corporation",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 10.6,
+      "eps_est": 0.73,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "QGEN",
+      "company": "Qiagen N.V.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 10.4,
+      "eps_est": 0.63,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "BIO",
+      "company": "Bio-Rad Laboratories, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 10.0,
+      "eps_est": 2.23,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CAI",
+      "company": "Caris Life Sciences, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 9.7,
+      "eps_est": 0.02,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CGNX",
+      "company": "Cognex Corporation",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 9.4,
+      "eps_est": 0.52,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SNAP",
+      "company": "Snap Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 9.0,
+      "eps_est": null,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CYTK",
+      "company": "Cytokinetics, Incorporated",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 8.8,
+      "eps_est": -1.41,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PRI",
+      "company": "Primerica, Inc.",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 8.7,
+      "eps_est": 6.38,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CHRD",
+      "company": "Chord Energy Corporation",
+      "date": "2026-11-04",
+      "slot": "amc",
+      "mcap_b": 8.6,
+      "eps_est": 5.75,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "small": 250
+   },
+   "tns": {
+    "total": 5,
+    "shown": [
+     {
+      "ticker": "SKM",
+      "company": "SK Telecom Co., Ltd.",
+      "date": "2026-11-04",
+      "slot": "tns",
+      "mcap_b": 11.6,
+      "eps_est": null,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "more": [],
+    "small": 4
+   },
+   "events": [
+    {
+     "date": "2026-11-04",
+     "time": "08:15",
+     "title": "ADP 민간고용 (Oct)",
+     "importance": 2,
+     "key": "ADP",
+     "country": "US",
+     "tz": "ET"
+    },
+    {
+     "date": "2026-11-04",
+     "time": "10:00",
+     "title": "ISM 서비스업 (Oct)",
+     "importance": 2,
+     "key": "ISM 서비스업",
+     "country": "US",
+     "tz": "ET"
+    }
+   ],
+   "checks": [
+    "QCOM 스마트폰 칩 수요"
+   ]
+  },
+  {
+   "date": "2026-11-05",
+   "dow": "목",
+   "total": 578,
+   "bmo": {
+    "total": 258,
+    "shown": [
+     {
+      "ticker": "TM",
+      "company": "Toyota Motor Corporation",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 230.5,
+      "eps_est": 2.74,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "COP",
+      "company": "ConocoPhillips",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 185.0,
+      "eps_est": 3.04,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SONY",
+      "company": "Sony Group Corporation",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 147.7,
+      "eps_est": 0.34,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CNQ",
+      "company": "Canadian Natural Resources Limited",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 115.7,
+      "eps_est": 1.49,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PH",
+      "company": "Parker-Hannifin Corporation",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 113.5,
+      "eps_est": 8.17,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SO",
+      "company": "The Southern Company",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 107.8,
+      "eps_est": 1.71,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "more": [
+     {
+      "ticker": "DUK",
+      "company": "Duke Energy Corporation",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 99.3,
+      "eps_est": 1.86,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CI",
+      "company": "The Cigna Group",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 78.8,
+      "eps_est": 7.51,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "APD",
+      "company": "Air Products and Chemicals, Inc.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 70.5,
+      "eps_est": 3.61,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CMI",
+      "company": "Cummins Inc.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 68.8,
+      "eps_est": 8.28,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TRGP",
+      "company": "Targa Resources Corp.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 67.5,
+      "eps_est": 2.86,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TRP",
+      "company": "TC Energy Corporation",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 67.2,
+      "eps_est": 0.88,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TDG",
+      "company": "TransDigm Group Incorporated",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 63.4,
+      "eps_est": 12.21,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CAH",
+      "company": "Cardinal Health, Inc.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 58.0,
+      "eps_est": 2.94,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SRE",
+      "company": "Sempra",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 56.3,
+      "eps_est": 1.21,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "BDX",
+      "company": "Becton, Dickinson and Company",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 53.9,
+      "eps_est": 4.07,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ROK",
+      "company": "Rockwell Automation, Inc.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 48.5,
+      "eps_est": 3.69,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "MT",
+      "company": "ArcelorMittal S.A.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 45.0,
+      "eps_est": 0.94,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ONC",
+      "company": "BeOne Medicines AG",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 42.1,
+      "eps_est": 1.88,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "AU",
+      "company": "AngloGold Ashanti plc",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 40.4,
+      "eps_est": 28.88,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "KMB",
+      "company": "Kimberly-Clark Corporation",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 35.9,
+      "eps_est": 1.65,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "IRM",
+      "company": "Iron Mountain Incorporated",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 34.7,
+      "eps_est": 0.61,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ZTS",
+      "company": "Zoetis Inc.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 32.9,
+      "eps_est": 1.51,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "DTE",
+      "company": "DTE Energy Company",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 28.2,
+      "eps_est": 2.15,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ECHO",
+      "company": "EchoStar Corporation",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 28.2,
+      "eps_est": 0.24,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "GPN",
+      "company": "Global Payments Inc.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 25.6,
+      "eps_est": 3.58,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "VRSK",
+      "company": "Verisk Analytics, Inc.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 25.5,
+      "eps_est": 1.92,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "RL",
+      "company": "Ralph Lauren Corporation",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 23.4,
+      "eps_est": 4.25,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "FWONK",
+      "company": "Formula One Group",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 23.2,
+      "eps_est": 0.52,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TPR",
+      "company": "Tapestry, Inc.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 23.1,
+      "eps_est": 1.56,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "USFD",
+      "company": "US Foods Holding Corp.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 22.4,
+      "eps_est": 1.25,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "VTRS",
+      "company": "Viatris Inc.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 21.9,
+      "eps_est": 0.64,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "EVRG",
+      "company": "Evergy, Inc.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 19.8,
+      "eps_est": 2.32,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "BCE",
+      "company": "BCE Inc.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 19.0,
+      "eps_est": 0.7,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "MTSI",
+      "company": "MACOM Technology Solutions Holdings, Inc.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 17.9,
+      "eps_est": 2.0,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "U",
+      "company": "Unity Software Inc.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 16.6,
+      "eps_est": 0.35,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "LAMR",
+      "company": "Lamar Advertising Company",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 16.0,
+      "eps_est": 1.65,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TIGO",
+      "company": "Millicom International Cellular S.A.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 13.3,
+      "eps_est": 0.83,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "BSY",
+      "company": "Bentley Systems, Incorporated",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 12.4,
+      "eps_est": 0.33,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "MAIR",
+      "company": "Madison Air Solutions Corporation",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 11.6,
+      "eps_est": 0.29,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "GSAT",
+      "company": "Globalstar, Inc.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 10.7,
+      "eps_est": 0.1,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ARW",
+      "company": "Arrow Electronics, Inc.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 10.6,
+      "eps_est": 4.97,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "WMS",
+      "company": "Advanced Drainage Systems, Inc.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 10.2,
+      "eps_est": 1.79,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "NVMI",
+      "company": "Nova Ltd.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 9.9,
+      "eps_est": 2.77,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "OSCR",
+      "company": "Oscar Health, Inc.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 9.4,
+      "eps_est": -0.17,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "LLYVA",
+      "company": "Liberty Live Holdings, Inc.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 9.3,
+      "eps_est": 1.37,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "small": 212
+   },
+   "amc": {
+    "total": 313,
+    "shown": [
+     {
+      "ticker": "NET",
+      "company": "Cloudflare, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 100.0,
+      "eps_est": 0.34,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ABNB",
+      "company": "Airbnb, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 96.9,
+      "eps_est": 2.85,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "MNST",
+      "company": "Monster Beverage Corporation",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 92.7,
+      "eps_est": 0.3,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "EOG",
+      "company": "EOG Resources, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 86.8,
+      "eps_est": 4.44,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "LITE",
+      "company": "Lumentum Holdings Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 76.2,
+      "eps_est": 4.22,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SPG",
+      "company": "Simon Property Group, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 70.5,
+      "eps_est": 1.62,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "more": [
+     {
+      "ticker": "NTRA",
+      "company": "Natera, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 59.7,
+      "eps_est": -0.28,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "DVN",
+      "company": "Devon Energy Corporation",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 57.4,
+      "eps_est": 1.31,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "WPM",
+      "company": "Wheaton Precious Metals Corp.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 52.9,
+      "eps_est": 0.9,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TEAM",
+      "company": "Atlassian Corporation",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 48.5,
+      "eps_est": 1.43,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ED",
+      "company": "Consolidated Edison, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 43.1,
+      "eps_est": 2.03,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "MCHP",
+      "company": "Microchip Technology Incorporated",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 42.0,
+      "eps_est": 0.94,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "LYV",
+      "company": "Live Nation Entertainment, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 41.4,
+      "eps_est": 1.5,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "AXON",
+      "company": "Axon Enterprise, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 34.8,
+      "eps_est": 1.89,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "MTD",
+      "company": "Mettler-Toledo International Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 33.6,
+      "eps_est": 12.09,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "AEE",
+      "company": "Ameren Corporation",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 30.6,
+      "eps_est": 2.29,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PBA",
+      "company": "Pembina Pipeline Corporation",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 29.9,
+      "eps_est": 0.68,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "AFRM",
+      "company": "Affirm Holdings, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 24.8,
+      "eps_est": 0.86,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "GH",
+      "company": "Guardant Health, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 24.0,
+      "eps_est": -0.31,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "RGA",
+      "company": "Reinsurance Group of America, Incorporated",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 17.3,
+      "eps_est": 6.95,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "JHX",
+      "company": "James Hardie Industries plc",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 15.8,
+      "eps_est": 0.37,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "HALO",
+      "company": "Halozyme Therapeutics, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 14.9,
+      "eps_est": 2.35,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SOLV",
+      "company": "Solventum Corporation",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 13.8,
+      "eps_est": 1.34,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "REG",
+      "company": "Regency Centers Corporation",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 13.7,
+      "eps_est": 0.6,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "AKAM",
+      "company": "Akamai Technologies, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 13.3,
+      "eps_est": 1.67,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "IONQ",
+      "company": "IonQ, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 12.9,
+      "eps_est": -0.8,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TXRH",
+      "company": "Texas Roadhouse, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 12.0,
+      "eps_est": 1.46,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "AHR",
+      "company": "American Healthcare REIT, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 11.7,
+      "eps_est": 0.16,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CPT",
+      "company": "Camden Property Trust",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 11.7,
+      "eps_est": 0.21,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "FROG",
+      "company": "JFrog Ltd.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 11.6,
+      "eps_est": 0.23,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "QXO",
+      "company": "QXO, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 11.5,
+      "eps_est": 0.14,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SUZ",
+      "company": "Suzano S.A.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 11.4,
+      "eps_est": null,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "FNF",
+      "company": "Fidelity National Financial, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 10.9,
+      "eps_est": 1.32,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "VSAT",
+      "company": "Viasat, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 10.6,
+      "eps_est": -0.01,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "GMED",
+      "company": "Globus Medical, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 10.5,
+      "eps_est": 1.2,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "DKNG",
+      "company": "DraftKings Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 10.4,
+      "eps_est": -0.19,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "IREN",
+      "company": "IREN Limited",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 9.7,
+      "eps_est": -0.66,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PTGX",
+      "company": "Protagonist Therapeutics, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 9.4,
+      "eps_est": 2.66,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TXG",
+      "company": "10x Genomics, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 9.1,
+      "eps_est": -0.02,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PCTY",
+      "company": "Paylocity Holding Corporation",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 8.9,
+      "eps_est": 1.89,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "IAG",
+      "company": "IAMGOLD Corporation",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 8.8,
+      "eps_est": 0.39,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CTRE",
+      "company": "CareTrust REIT, Inc.",
+      "date": "2026-11-05",
+      "slot": "amc",
+      "mcap_b": 8.6,
+      "eps_est": 0.43,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "small": 271
+   },
+   "tns": {
+    "total": 7,
+    "shown": [
+     {
+      "ticker": "NGG",
+      "company": "National Grid plc",
+      "date": "2026-11-05",
+      "slot": "tns",
+      "mcap_b": 84.4,
+      "eps_est": null,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "GMAB",
+      "company": "Genmab A/S",
+      "date": "2026-11-05",
+      "slot": "tns",
+      "mcap_b": 35.1,
+      "eps_est": 0.34,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SBS",
+      "company": "Companhia de Saneamento Básico do Estado de São Paulo - SABESP",
+      "date": "2026-11-05",
+      "slot": "tns",
+      "mcap_b": 16.0,
+      "eps_est": 0.06,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "KT",
+      "company": "KT Corporation",
+      "date": "2026-11-05",
+      "slot": "tns",
+      "mcap_b": 8.2,
+      "eps_est": null,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "more": [],
+    "small": 3
+   },
+   "events": [],
+   "checks": []
+  },
+  {
+   "date": "2026-11-06",
+   "dow": "금",
+   "total": 78,
+   "bmo": {
+    "total": 63,
+    "shown": [
+     {
+      "ticker": "ENB",
+      "company": "Enbridge Inc.",
+      "date": "2026-11-06",
+      "slot": "bmo",
+      "mcap_b": 110.2,
+      "eps_est": 0.49,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "MRNA",
+      "company": "Moderna, Inc.",
+      "date": "2026-11-06",
+      "slot": "bmo",
+      "mcap_b": 88.5,
+      "eps_est": -1.28,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "BAM",
+      "company": "Brookfield Asset Management Ltd.",
+      "date": "2026-11-06",
+      "slot": "bmo",
+      "mcap_b": 77.1,
+      "eps_est": 0.46,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "HUM",
+      "company": "Humana Inc.",
+      "date": "2026-11-06",
+      "slot": "bmo",
+      "mcap_b": 49.8,
+      "eps_est": -1.0,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "VST",
+      "company": "Vistra Corp.",
+      "date": "2026-11-06",
+      "slot": "bmo",
+      "mcap_b": 46.4,
+      "eps_est": 2.67,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "UI",
+      "company": "Ubiquiti Inc.",
+      "date": "2026-11-06",
+      "slot": "bmo",
+      "mcap_b": 34.1,
+      "eps_est": 4.25,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "more": [
+     {
+      "ticker": "PPL",
+      "company": "PPL Corporation",
+      "date": "2026-11-06",
+      "slot": "bmo",
+      "mcap_b": 26.8,
+      "eps_est": 0.53,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "PAA",
+      "company": "Plains All American Pipeline, L.P.",
+      "date": "2026-11-06",
+      "slot": "bmo",
+      "mcap_b": 18.7,
+      "eps_est": 0.46,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "BIP",
+      "company": "Brookfield Infrastructure Partners L.P.",
+      "date": "2026-11-06",
+      "slot": "bmo",
+      "mcap_b": 17.2,
+      "eps_est": 0.13,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "BEN",
+      "company": "Franklin Templeton Inc.",
+      "date": "2026-11-06",
+      "slot": "bmo",
+      "mcap_b": 16.1,
+      "eps_est": 0.77,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "EMA",
+      "company": "Emera Incorporated",
+      "date": "2026-11-06",
+      "slot": "bmo",
+      "mcap_b": 15.1,
+      "eps_est": 0.64,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "TU",
+      "company": "TELUS Corporation",
+      "date": "2026-11-06",
+      "slot": "bmo",
+      "mcap_b": 14.0,
+      "eps_est": 0.12,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CHTR",
+      "company": "Charter Communications, Inc.",
+      "date": "2026-11-06",
+      "slot": "bmo",
+      "mcap_b": 12.8,
+      "eps_est": 8.94,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "FRHC",
+      "company": "Freedom Holdings Corp.",
+      "date": "2026-11-06",
+      "slot": "bmo",
+      "mcap_b": 11.9,
+      "eps_est": null,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ELAN",
+      "company": "Elanco Animal Health Incorporated",
+      "date": "2026-11-06",
+      "slot": "bmo",
+      "mcap_b": 11.5,
+      "eps_est": 0.2,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "small": 48
+   },
+   "amc": {
+    "total": 13,
+    "shown": [],
+    "more": [],
+    "small": 13
+   },
+   "tns": {
+    "total": 2,
+    "shown": [],
+    "more": [],
+    "small": 2
+   },
+   "events": [
+    {
+     "date": "2026-11-06",
+     "time": "08:30",
+     "title": "미국 10월 고용보고서 (비농업 고용·실업률)",
+     "importance": 3,
+     "country": "US",
+     "tz": "ET",
+     "category": "경제지표",
+     "key": ""
+    },
+    {
+     "date": "2026-11-06",
+     "time": "10:00",
+     "title": "미시간대 소비심리 (Nov)",
+     "importance": 1,
+     "key": "소비심리",
+     "country": "US",
+     "tz": "ET"
+    }
+   ],
+   "checks": []
+  }
+ ],
+ "later": {
+  "start": "2026-11-09",
+  "end": "2026-11-20",
+  "days": [
+   {
+    "date": "2026-11-10",
+    "dow": "화",
+    "events": [
+     "08:30 미국 10월 소비자물가(CPI)"
+    ],
+    "earnings": [
+     "PBR(장후)"
+    ]
+   },
+   {
+    "date": "2026-11-12",
+    "dow": "목",
+    "events": [],
+    "earnings": [
+     "CSCO(장후)",
+     "AMAT(장후)"
+    ]
+   },
+   {
+    "date": "2026-11-13",
+    "dow": "금",
+    "events": [
+     "08:30 생산자물가(PPI) (Oct)"
+    ],
+    "earnings": [
+     "MUFG",
+     "SMFG",
+     "MFG"
+    ]
+   },
+   {
+    "date": "2026-11-17",
+    "dow": "화",
+    "events": [
+     "08:30 소매판매 (Oct)"
+    ],
+    "earnings": [
+     "NVDA(장후)",
+     "HD(장전)",
+     "DIS(장전)",
+     "MDT(장전)"
+    ]
+   },
+   {
+    "date": "2026-11-18",
+    "dow": "수",
+    "events": [],
+    "earnings": [
+     "TJX(장전)",
+     "LOW(장전)",
+     "PDD(장전)"
+    ]
+   },
+   {
+    "date": "2026-11-19",
+    "dow": "목",
+    "events": [],
+    "earnings": [
+     "WMT(장전)",
+     "PANW(장후)"
+    ]
+   }
+  ],
+  "min_mcap_b": 100
+ },
+ "filters": {
+  "min_mcap_b": 8,
+  "per_slot": 6,
+  "watchlist": 33,
+  "logo_url": "https://financialmodelingprep.com/image-stock/{ticker}.png"
+ },
+ "generated_at": "2026-10-31T08:53+09:00"
+}
