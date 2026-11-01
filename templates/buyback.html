@@ -1,0 +1,100 @@
+{%- set current = 'buyback' %}{%- set page_title = 'Buyback Screener ' ~ b.as_of %}
+{% include "_top.html" %}
+{%- set st = b.stats %}
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><b>Buyback Screener</b> · {{ b.as_of }}</div>
+    <h1>자사주 매입 스크리닝</h1>
+    <div class="period"><span>최근 {{ b.lookback_days }}일 DART 공시 기준 · 진행률은 KRX 기타법인 순매수로 추정</span></div>
+  </div>
+</section>
+
+<main>
+<div class="wrap">
+  <div class="bb-stats">
+    <div><span class="note">매입 진행 중</span><b class="num">{{ st.active }}건</b></div>
+    <div><span class="note">진행 중 매입 규모</span><b class="num">{% if st.active_amount >= 1e12 %}{{ '%.1f' | format(st.active_amount / 1e12) }}조원{% else %}{{ (st.active_amount / 1e8) | num }}억원{% endif %}</b></div>
+    <div><span class="note">최근 2주 새 결정</span><b class="num">{{ st.new_2w }}건</b></div>
+    <div><span class="note">최근 2주 소각 결정</span><b class="num">{{ st.cancels_2w }}건</b></div>
+  </div>
+
+  <section class="panel" id="plans" aria-labelledby="h-plans">
+    <div class="panel-head">
+      <div><span class="kicker">Buyback plans</span><h2 id="h-plans">자사주 매입 현황</h2></div>
+      <span class="seg" role="group" aria-label="보기 선택">
+        <button type="button" data-bf="active" aria-pressed="true">진행 중</button>
+        <button type="button" data-bf="all" aria-pressed="false">전체</button>
+      </span>
+    </div>
+    <div class="tbl-wrap">
+      <table class="bb-table">
+        <thead><tr>
+          <th>회사</th><th>방식</th><th class="r">규모</th><th class="r">시총 대비</th>
+          <th>기간 경과</th><th>추정 진행률 <span class="note">(기타법인)</span></th><th class="r">주가<br><span class="note">시작 후</span></th><th>상태</th>
+        </tr></thead>
+        <tbody>
+        {%- for p in b.plans %}
+          <tr data-status="{{ p.status }}" {% if p.status != '진행 중' %}hidden{% endif %}>
+            <td><a href="{{ p.url }}" target="_blank" rel="noopener"><b>{{ p.name }}</b></a> <span class="code">{{ p.code }}</span>{% if p.market == 'KOSDAQ' %} <span class="mkt">KQ</span>{% endif %}
+              <br><span class="co">{{ p.decided | md }} 결정 · {{ p.why | truncate(28, True, '…') }}</span></td>
+            <td>{{ '직접' if p.kind == 'direct' else '신탁' }}</td>
+            <td class="r num">{{ ((p.amount or 0) / 1e8) | num }}억<br><span class="co">{% if p.shares %}{{ p.shares | num }}주{% elif p.shares_est %}≈{{ p.shares_est | num }}주{% endif %}</span></td>
+            <td class="r num">{{ '%.2f%%' | format(p.cap_pct) if p.cap_pct is not none else '–' }}</td>
+            <td><div class="pbar"><i style="width: {{ p.time_pct or 0 }}%"></i></div><span class="co">{{ p.start | md }}~{{ p.end | md }} · {{ p.time_pct if p.time_pct is not none else '–' }}%</span></td>
+            <td>{%- if p.progress_pct is not none %}
+              <div class="pbar acc"><i style="width: {{ [p.progress_pct, 100] | min }}%"></i></div>
+              <span class="co num">{{ p.progress_pct }}% · 누적 {{ p.other_corp_net | signed }}주</span>
+              {%- else %}<span class="co">–</span>{% endif %}</td>
+            <td class="r num {{ p.price_chg | sign }}">{{ p.price_chg | pct if p.price_chg is not none else '–' }}</td>
+            <td><span class="bst st-{{ p.status | replace(' ', '') }}">{{ p.status }}</span></td>
+          </tr>
+        {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+    <p class="note bb-note">
+      <b>추정 진행률</b> = 매입 기간 동안 그 종목의 <b>기타법인 누적 순매수</b> ÷ 매입 예정 주식 수. 회사가 장내에서 직접 사면 거래소 통계상 '기타법인'으로 잡히는 점을 이용한 <b>추정치</b>예요.
+      다른 법인의 매매도 섞이고, <b>신탁</b> 매입은 증권사(금융투자) 쪽으로 잡힐 수 있어 신탁은 특히 참고용입니다. 신탁의 예정 주식 수는 계약금액 ÷ 현재가로 계산했어요.
+      회사 이름을 누르면 DART 공시 원문으로 이동합니다.
+    </p>
+  </section>
+
+  <div class="grid-2">
+    <section class="panel" aria-labelledby="h-cancel">
+      <div class="panel-head"><div><span class="kicker">Cancellation</span><h2 id="h-cancel">자사주 소각 결정</h2></div><span class="note">주주가치에 긍정적</span></div>
+      <ul class="bb-list">
+        {%- for c in b.cancels %}<li><span class="num note">{{ c.date | md }}</span> <a href="{{ c.url }}" target="_blank" rel="noopener">{{ c.name }}</a>{% if c.market == 'KOSDAQ' %} <span class="mkt">KQ</span>{% endif %}</li>
+        {%- else %}<li class="note">없음</li>{% endfor %}
+      </ul>
+    </section>
+    <section class="panel" aria-labelledby="h-disp">
+      <div class="panel-head"><div><span class="kicker">Disposal</span><h2 id="h-disp">자사주 처분 결정</h2></div><span class="note">시장에 물량이 나올 수 있음</span></div>
+      <ul class="bb-list">
+        {%- for c in b.disposals %}<li><span class="num note">{{ c.date | md }}</span> <a href="{{ c.url }}" target="_blank" rel="noopener">{{ c.name }}</a>{% if c.market == 'KOSDAQ' %} <span class="mkt">KQ</span>{% endif %}</li>
+        {%- else %}<li class="note">없음</li>{% endfor %}
+      </ul>
+    </section>
+  </div>
+</div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>데이터: 금융감독원 OpenDART, KRX(pykrx)</span>
+    <span>생성: {{ b.generated_at[:16] | replace('T', ' ') }} KST</span>
+  </div>
+</footer>
+<script>
+document.querySelectorAll("[data-bf]").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    document.querySelectorAll("[data-bf]").forEach(function (x) { x.setAttribute("aria-pressed", String(x === btn)); });
+    var all = btn.dataset.bf === "all";
+    document.querySelectorAll(".bb-table tbody tr").forEach(function (tr) { tr.hidden = !all && tr.dataset.status !== "진행 중"; });
+  });
+});
+</script>
+{%- if standalone %}
+</body>
+</html>
+{%- endif %}

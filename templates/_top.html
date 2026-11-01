@@ -30,7 +30,7 @@
       <span><b>Market Briefing</b> <small>마켓 브리핑</small></span>
     </a>
     <nav class="tabs" aria-label="리포트 종류">
-      {%- for m, name in (('daily', 'Daily'), ('weekly', 'Weekly'), ('earnings', '실적 캘린더')) %}
+      {%- for m, name in (('daily', 'Daily'), ('weekly', 'Weekly'), ('earnings', '실적 캘린더'), ('buyback', '자사주')) %}
         {%- if m == current %}<span class="on" aria-current="page">{{ name }}</span>
         {%- elif manifest[m] %}<a href="{{ root }}{{ m }}/{{ manifest[m][0].label }}.html">{{ name }}</a>
         {%- else %}<span class="off" title="아직 리포트가 없습니다">{{ name }}</span>{% endif %}

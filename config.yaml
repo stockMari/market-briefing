@@ -116,6 +116,13 @@ earnings_calendar:
     GEV: "가스터빈 수주잔고"
     VRT: "냉각·전력 수주"
 
+# 자사주 스크리닝 페이지 (DART_API_KEY 필요, 평일 Daily 때 갱신)
+buyback:
+  enabled: true
+  lookback_days: 180          # 최근 며칠 동안의 자기주식 취득·신탁 결정을 볼지
+  cancel_days: 60             # 소각 결정 목록 기간
+  max_list: 40                # 소각·처분 목록 최대 개수
+
 # 7. 시장 요약 3줄
 summary:
   engine: rule                # rule = 무료 자동 문장 / claude = Claude API (ANTHROPIC_API_KEY 필요, 유료)

@@ -17,6 +17,7 @@ from .config import ROOT
 from .judge import HIGH_VERDICTS, LOW_VERDICTS
 
 MODES = ("daily", "weekly")
+HAS_BUYBACK = False
 
 
 # ── 숫자 표시 형식 ─────────────────────────────────────────
@@ -161,13 +162,24 @@ def load_earnings(site_dir: Path) -> list[dict]:
             for p in sorted((site_dir / "data" / "earnings").glob("*.json"), reverse=True)]
 
 
+BUYBACK_FILE = Path("data") / "buyback" / "latest.json"
+
+
+def save_buyback(data: dict, site_dir: Path) -> Path:
+    path = site_dir / BUYBACK_FILE
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    return path
+
+
 def render_earnings(week: dict, man: dict, root: str, standalone: bool = True) -> str:
     return _env().get_template("earnings.html").render(w=week, manifest=man, root=root, standalone=standalone)
 
 
 def manifest(reports: dict[str, list[dict]], earnings: list[dict] | None = None) -> dict[str, list[dict]]:
     out = {"earnings": [{"label": w["label"], "start": w["start"], "end": w["end"], "total": w["total"]}
-                        for w in earnings or []]}
+                        for w in earnings or []],
+           "buyback": [{"label": "index"}] if HAS_BUYBACK else []}
     for m, items in reports.items():
         out[m] = []
         for r in items:
@@ -213,10 +225,20 @@ def _chart_payload(report: dict) -> dict:
 
 def build_site(site_dir: Path, preview_path: Path | None = None) -> list[Path]:
     """data/ 에 쌓인 모든 리포트로 페이지를 다시 만듭니다 (지난 리포트 목록이 항상 최신이 되도록)."""
+    global HAS_BUYBACK
+    bb_path = site_dir / BUYBACK_FILE
+    HAS_BUYBACK = bb_path.exists()
     reports = load_reports(site_dir)
     weeks = load_earnings(site_dir)
     man = manifest(reports, weeks)
     written = []
+    if HAS_BUYBACK:
+        out = site_dir / "buyback" / "index.html"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        bb = json.loads(bb_path.read_text(encoding="utf-8"))
+        out.write_text(_env().get_template("buyback.html").render(b=bb, manifest=man, root="../", standalone=True),
+                       encoding="utf-8")
+        written.append(out)
     for w in weeks:
         out = site_dir / "earnings" / f"{w['label']}.html"
         out.parent.mkdir(parents=True, exist_ok=True)

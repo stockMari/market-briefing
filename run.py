@@ -18,7 +18,7 @@ KST = timezone(timedelta(hours=9))
 
 def main():
     ap = argparse.ArgumentParser(description="마켓 브리핑 만들기")
-    ap.add_argument("--mode", choices=["daily", "weekly", "earnings"])
+    ap.add_argument("--mode", choices=["daily", "weekly", "earnings", "buyback"])
     ap.add_argument("--date", help="실행일 (YYYY-MM-DD). 비우면 오늘")
     ap.add_argument("--sample", action="store_true", help="샘플 데이터로 만들기")
     ap.add_argument("--preview", help="미리보기용 HTML 저장 경로")
@@ -37,8 +37,15 @@ def main():
         return
     if args.mode == "earnings":
         update_earnings(run_date, cfg, site_dir)
+        if args.mode == "daily":
+            update_buyback(run_date, cfg, site_dir)
         pages = build_site(site_dir, preview_path=args.preview and ROOT / args.preview)
         print(f"[완료] 실적 캘린더 · 페이지 {len(pages)}개 생성")
+        return
+    if args.mode == "buyback":
+        update_buyback(run_date, cfg, site_dir)
+        pages = build_site(site_dir, preview_path=args.preview and ROOT / args.preview)
+        print(f"[완료] 자사주 스크리닝 · 페이지 {len(pages)}개 생성")
         return
     if args.sample:
         from briefing.sample import build_sample
@@ -49,6 +56,8 @@ def main():
         print("[7] 시장 요약 3줄")
         report["summary"], report["summary_source"] = make_summary(report, cfg)
         update_earnings(run_date, cfg, site_dir)
+        if args.mode == "daily":
+            update_buyback(run_date, cfg, site_dir)
 
     save_report(report, site_dir)
     pages = build_site(site_dir, preview_path=args.preview and ROOT / args.preview)
@@ -68,6 +77,21 @@ def update_earnings(run_date, cfg: dict, site_dir):
         save_earnings(week, site_dir)
     except Exception as e:  # noqa: BLE001
         print(f"  ! 실적 캘린더 실패: {e}")
+
+
+def update_buyback(run_date, cfg: dict, site_dir):
+    """자사주 스크리닝 (DART_API_KEY 필요). 실패해도 리포트는 계속 만듦."""
+    import os
+    if not cfg.get("buyback", {}).get("enabled", True) or not os.getenv("DART_API_KEY"):
+        print("[9] 자사주 스크리닝 건너뜀 (DART_API_KEY 없음)")
+        return
+    print("[9] 자사주 스크리닝")
+    try:
+        from briefing.buyback import collect_buybacks
+        from briefing.site import save_buyback
+        save_buyback(collect_buybacks(run_date, cfg), site_dir)
+    except Exception as e:  # noqa: BLE001
+        print(f"  ! 자사주 스크리닝 실패: {e}")
 
 
 def make_summary(report: dict, cfg: dict):
