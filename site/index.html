@@ -306,6 +306,25 @@ table.us-fixed col.c-name { width: 40%; }
 .later li { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
 .later li:last-child { border-bottom: 0; }
 
+/* buyback */
+.bb-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+@media (max-width: 700px) { .bb-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.bb-stats > div { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px 14px; display: grid; gap: 2px; }
+.bb-stats b { font-size: 22px; }
+.bb-table td { vertical-align: middle; }
+.bb-table td:first-child { white-space: normal; min-width: 180px; }
+.bb-table a { text-decoration: none; }
+.bb-table a:hover { text-decoration: underline; }
+.pbar { width: 120px; height: 6px; border-radius: 3px; background: var(--surface-2); border: 1px solid var(--line); overflow: hidden; }
+.pbar i { display: block; height: 100%; background: var(--muted); }
+.pbar.acc i { background: var(--accent); }
+.bst { font-size: 12px; font-weight: 600; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--line); white-space: nowrap; }
+.st-진행중 { color: var(--accent); border-color: var(--accent-line); background: var(--accent-soft); }
+.st-완료, .st-기간종료, .st-해지 { color: var(--muted); }
+.bb-note { margin: 12px 0 0; line-height: 1.7; }
+.bb-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-size: 14px; }
+.bb-list a { text-decoration: none; } .bb-list a:hover { text-decoration: underline; }
+
 /* archive */
 .archive { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 @media (max-width: 760px) { .archive { grid-template-columns: 1fr; } }
@@ -339,7 +358,7 @@ table.us-fixed col.c-name { width: 40%; }
       </svg>
       <span><b>Market Briefing</b> <small>마켓 브리핑</small></span>
     </a>
-    <nav class="tabs" aria-label="리포트 종류"><span class="on" aria-current="page">Daily</span><a href="weekly/2026-W44.html">Weekly</a><a href="earnings/2026-W45.html">실적 캘린더</a>
+    <nav class="tabs" aria-label="리포트 종류"><span class="on" aria-current="page">Daily</span><a href="weekly/2026-W44.html">Weekly</a><a href="earnings/2026-W45.html">실적 캘린더</a><span class="off" title="아직 리포트가 없습니다">자사주</span>
     </nav>
     <a class="head-link" href="#archive">지난 리포트</a>
   </div>
