@@ -72,7 +72,12 @@ jobs:
           set -o pipefail
           if [ "$MODE" = "rebuild" ]; then python run.py --rebuild; exit 0; fi
           # pykrx 가 출력하는 로그인 아이디는 기록에서 지움
-          python run.py $ARGS 2>&1 | sed -u '/로그인 ID/d' | tee logs/last-run.log
+          # 거래소 서버가 일시적으로 응답을 못 할 때가 있어, 실패하면 3분 쉬고 최대 3번까지 다시 시도
+          for i in 1 2 3; do
+            if python run.py $ARGS 2>&1 | sed -u '/로그인 ID/d' | tee logs/last-run.log; then exit 0; fi
+            echo "실패 ($i/3) — 3분 뒤 다시 시도"; [ $i -lt 3 ] && sleep 180
+          done
+          exit 1
 
       - name: 결과 저장 (site 폴더 + 실행 기록)
         if: always()
