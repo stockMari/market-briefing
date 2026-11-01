@@ -51,7 +51,7 @@
       "date": "2026-11-02",
       "slot": "bmo",
       "mcap_b": 39.6,
-      "eps_est": 0.5,
+      "eps_est": 0.51,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -81,12 +81,12 @@
     ],
     "more": [
      {
-      "ticker": "FOX",
+      "ticker": "FOXA",
       "company": "Fox Corporation",
       "date": "2026-11-02",
       "slot": "bmo",
-      "mcap_b": 23.7,
-      "eps_est": 2.13,
+      "mcap_b": 26.7,
+      "eps_est": 2.02,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -136,23 +136,23 @@
       "watch": false
      },
      {
-      "ticker": "CNA",
-      "company": "CNA Financial Corporation",
-      "date": "2026-11-02",
-      "slot": "bmo",
-      "mcap_b": 13.2,
-      "eps_est": 1.13,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
       "ticker": "TEM",
       "company": "Tempus AI, Inc.",
       "date": "2026-11-02",
       "slot": "bmo",
       "mcap_b": 13.2,
       "eps_est": -0.08,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "CNA",
+      "company": "CNA Financial Corporation",
+      "date": "2026-11-02",
+      "slot": "bmo",
+      "mcap_b": 13.2,
+      "eps_est": 1.13,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -194,7 +194,7 @@
     "small": 18
    },
    "amc": {
-    "total": 113,
+    "total": 112,
     "shown": [
      {
       "ticker": "AAPL",
@@ -224,7 +224,7 @@
       "date": "2026-11-02",
       "slot": "amc",
       "mcap_b": 141.7,
-      "eps_est": 4.75,
+      "eps_est": 4.78,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -314,7 +314,7 @@
       "date": "2026-11-02",
       "slot": "amc",
       "mcap_b": 14.9,
-      "eps_est": 2.76,
+      "eps_est": 2.75,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -325,7 +325,7 @@
       "date": "2026-11-02",
       "slot": "amc",
       "mcap_b": 14.7,
-      "eps_est": 1.86,
+      "eps_est": 1.87,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -336,7 +336,7 @@
       "date": "2026-11-02",
       "slot": "amc",
       "mcap_b": 14.0,
-      "eps_est": -2.21,
+      "eps_est": -2.38,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -446,7 +446,7 @@
       "date": "2026-11-02",
       "slot": "amc",
       "mcap_b": 9.3,
-      "eps_est": 0.66,
+      "eps_est": 0.68,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -474,17 +474,6 @@
       "watch": false
      },
      {
-      "ticker": "ALSN",
-      "company": "Allison Transmission Holdings, Inc.",
-      "date": "2026-11-02",
-      "slot": "amc",
-      "mcap_b": 8.9,
-      "eps_est": 2.48,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
       "ticker": "VOYA",
       "company": "Voya Financial, Inc.",
       "date": "2026-11-02",
@@ -505,15 +494,26 @@
       "eps_act": null,
       "surprise": null,
       "watch": false
+     },
+     {
+      "ticker": "ALSN",
+      "company": "Allison Transmission Holdings, Inc.",
+      "date": "2026-11-02",
+      "slot": "amc",
+      "mcap_b": 8.9,
+      "eps_est": 2.48,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
      }
     ],
-    "small": 85
+    "small": 84
    },
    "tns": {
-    "total": 2,
+    "total": 3,
     "shown": [],
     "more": [],
-    "small": 2
+    "small": 3
    },
    "events": [
     {
@@ -599,7 +599,7 @@
       "date": "2026-11-03",
       "slot": "bmo",
       "mcap_b": 69.4,
-      "eps_est": 2.32,
+      "eps_est": 2.38,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -623,7 +623,7 @@
       "date": "2026-11-03",
       "slot": "bmo",
       "mcap_b": 61.0,
-      "eps_est": 1.12,
+      "eps_est": 1.13,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -645,7 +645,7 @@
       "date": "2026-11-03",
       "slot": "bmo",
       "mcap_b": 51.2,
-      "eps_est": 0.87,
+      "eps_est": 0.85,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -904,23 +904,23 @@
       "watch": false
      },
      {
-      "ticker": "DOCN",
-      "company": "DigitalOcean Holdings, Inc.",
-      "date": "2026-11-03",
-      "slot": "bmo",
-      "mcap_b": 10.5,
-      "eps_est": 0.32,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
       "ticker": "RRX",
       "company": "Regal Rexnord Corporation",
       "date": "2026-11-03",
       "slot": "bmo",
       "mcap_b": 10.5,
       "eps_est": 2.67,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "DOCN",
+      "company": "DigitalOcean Holdings, Inc.",
+      "date": "2026-11-03",
+      "slot": "bmo",
+      "mcap_b": 10.5,
+      "eps_est": 0.32,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -1003,7 +1003,7 @@
       "date": "2026-11-03",
       "slot": "amc",
       "mcap_b": 251.9,
-      "eps_est": 5.79,
+      "eps_est": 5.78,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -1036,7 +1036,7 @@
       "date": "2026-11-03",
       "slot": "amc",
       "mcap_b": 93.8,
-      "eps_est": 3.44,
+      "eps_est": 3.53,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -1115,7 +1115,7 @@
       "date": "2026-11-03",
       "slot": "amc",
       "mcap_b": 21.6,
-      "eps_est": 1.2,
+      "eps_est": 1.23,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -1154,23 +1154,23 @@
       "watch": false
      },
      {
-      "ticker": "AIZ",
-      "company": "Assurant, Inc.",
-      "date": "2026-11-03",
-      "slot": "amc",
-      "mcap_b": 14.4,
-      "eps_est": 4.71,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
       "ticker": "UNM",
       "company": "Unum Group",
       "date": "2026-11-03",
       "slot": "amc",
       "mcap_b": 14.4,
       "eps_est": 2.17,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "AIZ",
+      "company": "Assurant, Inc.",
+      "date": "2026-11-03",
+      "slot": "amc",
+      "mcap_b": 14.4,
+      "eps_est": 4.71,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -1368,7 +1368,7 @@
   {
    "date": "2026-11-04",
    "dow": "수",
-   "total": 457,
+   "total": 458,
    "bmo": {
     "total": 144,
     "shown": [
@@ -1705,23 +1705,23 @@
       "watch": false
      },
      {
-      "ticker": "OC",
-      "company": "Owens Corning",
-      "date": "2026-11-04",
-      "slot": "bmo",
-      "mcap_b": 9.6,
-      "eps_est": 3.05,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
       "ticker": "SOLS",
       "company": "Solstice Advanced Materials, Inc.",
       "date": "2026-11-04",
       "slot": "bmo",
       "mcap_b": 9.6,
       "eps_est": 0.69,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "OC",
+      "company": "Owens Corning",
+      "date": "2026-11-04",
+      "slot": "bmo",
+      "mcap_b": 9.6,
+      "eps_est": 3.05,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -1774,7 +1774,7 @@
     "small": 108
    },
    "amc": {
-    "total": 308,
+    "total": 309,
     "shown": [
      {
       "ticker": "QCOM",
@@ -2131,11 +2131,11 @@
       "watch": false
      },
      {
-      "ticker": "NWSA",
+      "ticker": "NWS",
       "company": "News Corporation",
       "date": "2026-11-04",
       "slot": "amc",
-      "mcap_b": 15.7,
+      "mcap_b": 17.1,
       "eps_est": 0.26,
       "eps_act": null,
       "surprise": null,
@@ -2417,7 +2417,7 @@
       "watch": false
      }
     ],
-    "small": 250
+    "small": 251
    },
    "tns": {
     "total": 5,
@@ -2685,7 +2685,7 @@
       "date": "2026-11-05",
       "slot": "bmo",
       "mcap_b": 40.4,
-      "eps_est": 28.88,
+      "eps_est": 29.06,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -2955,23 +2955,23 @@
       "watch": false
      },
      {
+      "ticker": "LLYVK",
+      "company": "Liberty Live Holdings, Inc.",
+      "date": "2026-11-05",
+      "slot": "bmo",
+      "mcap_b": 9.6,
+      "eps_est": 1.06,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
       "ticker": "OSCR",
       "company": "Oscar Health, Inc.",
       "date": "2026-11-05",
       "slot": "bmo",
       "mcap_b": 9.4,
       "eps_est": -0.17,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "LLYVA",
-      "company": "Liberty Live Holdings, Inc.",
-      "date": "2026-11-05",
-      "slot": "bmo",
-      "mcap_b": 9.3,
-      "eps_est": 1.37,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -3021,7 +3021,7 @@
       "date": "2026-11-05",
       "slot": "amc",
       "mcap_b": 86.8,
-      "eps_est": 4.44,
+      "eps_est": 4.45,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -3089,7 +3089,7 @@
       "date": "2026-11-05",
       "slot": "amc",
       "mcap_b": 48.5,
-      "eps_est": 1.43,
+      "eps_est": 1.06,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -3480,7 +3480,7 @@
       "date": "2026-11-05",
       "slot": "tns",
       "mcap_b": 16.0,
-      "eps_est": 0.06,
+      "eps_est": 0.07,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -3506,9 +3506,9 @@
   {
    "date": "2026-11-06",
    "dow": "금",
-   "total": 78,
+   "total": 77,
    "bmo": {
-    "total": 63,
+    "total": 62,
     "shown": [
      {
       "ticker": "ENB",
@@ -3527,7 +3527,7 @@
       "date": "2026-11-06",
       "slot": "bmo",
       "mcap_b": 88.5,
-      "eps_est": -1.28,
+      "eps_est": -1.25,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -3560,7 +3560,7 @@
       "date": "2026-11-06",
       "slot": "bmo",
       "mcap_b": 46.4,
-      "eps_est": 2.67,
+      "eps_est": 2.43,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -3595,7 +3595,7 @@
       "date": "2026-11-06",
       "slot": "bmo",
       "mcap_b": 18.7,
-      "eps_est": 0.46,
+      "eps_est": 0.45,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -3628,7 +3628,7 @@
       "date": "2026-11-06",
       "slot": "bmo",
       "mcap_b": 15.1,
-      "eps_est": 0.64,
+      "eps_est": 0.63,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -3678,7 +3678,7 @@
       "watch": false
      }
     ],
-    "small": 48
+    "small": 47
    },
    "amc": {
     "total": 13,
@@ -3792,5 +3792,5 @@
   "watchlist": 33,
   "logo_url": "https://financialmodelingprep.com/image-stock/{ticker}.png"
  },
- "generated_at": "2026-10-31T08:53+09:00"
+ "generated_at": "2026-11-02T07:20+09:00"
 }
