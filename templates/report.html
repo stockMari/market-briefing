@@ -430,6 +430,7 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.1/echarts.min.js"></script>
+<script>window.echarts || document.write('<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"><\/script>');</script>
 <script id="chart-data" type="application/json">{{ chart_data | safe }}</script>
 <script>
 {% include "charts.js" %}

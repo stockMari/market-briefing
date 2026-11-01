@@ -392,11 +392,19 @@
     document.getElementById("intra-tz").textContent = D.intraday[name].tz;
     document.querySelectorAll(".ix-chips button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.ix === name)); });
     drawIntraday(theme());
+    // 차트 칸 크기가 늦게 정해지는 경우에 대비해 한 번 더 맞춤
+    setTimeout(function () { if (charts["c-intraday"]) charts["c-intraday"].resize(); }, 50);
     if (scroll) document.getElementById("intraday").scrollIntoView({ block: "nearest", behavior: "smooth" });
   }
 
   function drawAll() {
-    if (typeof echarts === "undefined") return;
+    if (typeof echarts === "undefined") {
+      // 그래프 프로그램을 못 불러온 경우 (네트워크·광고 차단 등) 빈 칸 대신 안내
+      document.querySelectorAll(".chart").forEach(function (el) {
+        el.innerHTML = '<p class="note" style="padding:12px">그래프를 불러오지 못했습니다. 새로고침하거나 광고 차단을 잠시 꺼 주세요.</p>';
+      });
+      return;
+    }
     var T = theme();
     drawIndices(T);
     drawIntraday(T);
@@ -454,4 +462,11 @@
   new MutationObserver(drawAll).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
 
   drawAll();
+  // 글꼴·화면 배치가 늦게 끝나도 그래프가 비지 않도록, 페이지가 다 뜬 뒤 크기를 다시 맞춤
+  window.addEventListener("load", function () {
+    Object.keys(charts).forEach(function (id) { charts[id].resize(); });
+  });
+  window.addEventListener("resize", function () {
+    Object.keys(charts).forEach(function (id) { charts[id].resize(); });
+  });
 })();
