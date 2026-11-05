@@ -7,7 +7,7 @@
 
 ```bash
 git pull -q origin main
-# mode: daily / weekly / earnings / buyback / rebuild,  date: 비우면 오늘 (YYYY-MM-DD)
+# mode: daily / weekly / earnings / reactions / buyback / rebuild,  date: 비우면 오늘 (YYYY-MM-DD)
 gh api -X POST repos/stockMari/market-briefing/actions/workflows/briefing.yml/dispatches \
   -f ref=main -f 'inputs[mode]=daily' -f 'inputs[date]='
 # 최신 실행이 끝날 때까지 기다린 뒤 결과 확인
@@ -20,6 +20,7 @@ git pull -q origin main && tail -20 logs/last-run.log     # 실행 기록 (Actio
 
 ## 구조
 - `run.py` 실행 파일, `config.yaml` 설정, `calendar.yaml` 일정, `briefing/` 코드, `templates/` 화면
+- 실적 반응 대시보드: `briefing/reactions.py` → `site/data/reactions/<주>.json` → `templates/reactions.html` (daily·weekly 때 자동 갱신)
 - `site/` 결과물 (GitHub Pages 로 배포), `cache/` 는 Actions 캐시
 - 비밀값은 GitHub Secrets: KRX_ID, KRX_PW, (DART_API_KEY), (ANTHROPIC_API_KEY)
 - 자동 실행: 평일 06:50 KST Daily, 토 08:20 KST Weekly

@@ -5,6 +5,7 @@
   python run.py --mode daily             오늘 리포트 만들기
   python run.py --mode weekly --sample   샘플 숫자로 디자인만 확인
   python run.py --mode weekly --date 2026-10-17   특정 날짜에 실행한 것처럼 만들기
+  python run.py --mode reactions         실적 발표 후 주가 반응만 다시 계산
   python run.py --rebuild                저장된 숫자로 페이지만 다시 만들기
 """
 import argparse
@@ -18,7 +19,7 @@ KST = timezone(timedelta(hours=9))
 
 def main():
     ap = argparse.ArgumentParser(description="마켓 브리핑 만들기")
-    ap.add_argument("--mode", choices=["daily", "weekly", "earnings", "buyback"])
+    ap.add_argument("--mode", choices=["daily", "weekly", "earnings", "reactions", "buyback"])
     ap.add_argument("--date", help="실행일 (YYYY-MM-DD). 비우면 오늘")
     ap.add_argument("--sample", action="store_true", help="샘플 데이터로 만들기")
     ap.add_argument("--preview", help="미리보기용 HTML 저장 경로")
@@ -35,8 +36,14 @@ def main():
         pages = build_site(site_dir, preview_path=args.preview and ROOT / args.preview)
         print(f"[완료] 페이지 {len(pages)}개 다시 생성")
         return
+    if args.mode == "reactions":
+        update_reactions(run_date, cfg, site_dir)
+        pages = build_site(site_dir, preview_path=args.preview and ROOT / args.preview)
+        print(f"[완료] 실적 반응 · 페이지 {len(pages)}개 생성")
+        return
     if args.mode == "earnings":
         update_earnings(run_date, cfg, site_dir)
+        update_reactions(run_date, cfg, site_dir)
         if args.mode == "daily":
             update_buyback(run_date, cfg, site_dir)
         pages = build_site(site_dir, preview_path=args.preview and ROOT / args.preview)
@@ -56,12 +63,30 @@ def main():
         print("[7] 시장 요약 3줄")
         report["summary"], report["summary_source"] = make_summary(report, cfg)
         update_earnings(run_date, cfg, site_dir)
+        update_reactions(run_date, cfg, site_dir)
         if args.mode == "daily":
             update_buyback(run_date, cfg, site_dir)
 
     save_report(report, site_dir)
     pages = build_site(site_dir, preview_path=args.preview and ROOT / args.preview)
     print(f"[완료] {report['mode']} {report['label']} ({report['title']}) · 페이지 {len(pages)}개 생성")
+
+
+def update_reactions(run_date, cfg: dict, site_dir):
+    """실적 발표 후 주가 반응: 이번 주(+ 반응이 덜 찬 지난주). 실패해도 리포트는 계속 만듦."""
+    if not cfg.get("earnings_reactions", {}).get("enabled", True):
+        return
+    print("[9] 실적 반응")
+    try:
+        from briefing.reactions import build_reactions, target_weeks
+        from briefing.site import load_reaction, save_reactions
+        for mon in target_weeks(run_date):
+            old = load_reaction(site_dir, mon)
+            if old and old["pending"] == 0 and mon < target_weeks(run_date)[-1]:
+                continue  # 지난주는 이미 다 채워졌으면 건너뜀
+            save_reactions(build_reactions(mon, cfg), site_dir)
+    except Exception as e:  # noqa: BLE001
+        print(f"  ! 실적 반응 실패: {e}")
 
 
 def update_earnings(run_date, cfg: dict, site_dir):

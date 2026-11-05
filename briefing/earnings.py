@@ -45,6 +45,7 @@ TIMING = {"BMO": "bmo", "AMC": "amc"}
 LISTED_URLS = ("https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt",
                "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt")
 _listed: set[str] | None = None
+_nasdaq: set[str] = set()
 
 
 def listed_symbols(log) -> set[str]:
@@ -60,10 +61,19 @@ def listed_symbols(log) -> set[str]:
                     sym = line.split("|")[0].strip()
                     if sym and not sym.startswith("File Creation"):
                         syms.add(sym.replace(".", "-"))
+                        if "nasdaqlisted" in url:
+                            _nasdaq.add(sym.replace(".", "-"))
             except Exception as e:  # noqa: BLE001
                 log(f"  ! 상장 종목 목록 실패 ({url.rsplit('/', 1)[-1]}): {e}")
         _listed = syms
     return _listed
+
+
+def listed_exchange(ticker: str) -> str | None:
+    """'nasdaq' / 'other'(뉴욕거래소 등) / None(목록을 못 받았을 때)."""
+    if not _listed:
+        return None
+    return "nasdaq" if ticker in _nasdaq else "other"
 
 
 def week_start_for(run_date: date) -> date:

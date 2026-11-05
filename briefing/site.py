@@ -162,6 +162,24 @@ def load_earnings(site_dir: Path) -> list[dict]:
             for p in sorted((site_dir / "data" / "earnings").glob("*.json"), reverse=True)]
 
 
+def save_reactions(data: dict, site_dir: Path) -> Path:
+    path = site_dir / "data" / "reactions" / f"{data['label']}.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    return path
+
+
+def load_reaction(site_dir: Path, monday) -> dict | None:
+    iso = monday.isocalendar()
+    path = site_dir / "data" / "reactions" / f"{iso.year}-W{iso.week:02d}.json"
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
+
+
+def load_reactions(site_dir: Path) -> list[dict]:
+    return [json.loads(p.read_text(encoding="utf-8"))
+            for p in sorted((site_dir / "data" / "reactions").glob("*.json"), reverse=True)]
+
+
 BUYBACK_FILE = Path("data") / "buyback" / "latest.json"
 
 
@@ -176,9 +194,12 @@ def render_earnings(week: dict, man: dict, root: str, standalone: bool = True) -
     return _env().get_template("earnings.html").render(w=week, manifest=man, root=root, standalone=standalone)
 
 
-def manifest(reports: dict[str, list[dict]], earnings: list[dict] | None = None) -> dict[str, list[dict]]:
+def manifest(reports: dict[str, list[dict]], earnings: list[dict] | None = None,
+             reactions: list[dict] | None = None) -> dict[str, list[dict]]:
     out = {"earnings": [{"label": w["label"], "start": w["start"], "end": w["end"], "total": w["total"]}
                         for w in earnings or []],
+           "reactions": [{"label": w["label"], "start": w["start"], "end": w["end"], "total": w["total"]}
+                         for w in reactions or []],
            "buyback": [{"label": "index"}] if HAS_BUYBACK else []}
     for m, items in reports.items():
         out[m] = []
@@ -230,7 +251,8 @@ def build_site(site_dir: Path, preview_path: Path | None = None) -> list[Path]:
     HAS_BUYBACK = bb_path.exists()
     reports = load_reports(site_dir)
     weeks = load_earnings(site_dir)
-    man = manifest(reports, weeks)
+    rweeks = load_reactions(site_dir)
+    man = manifest(reports, weeks, rweeks)
     written = []
     if HAS_BUYBACK:
         out = site_dir / "buyback" / "index.html"
@@ -243,6 +265,13 @@ def build_site(site_dir: Path, preview_path: Path | None = None) -> list[Path]:
         out = site_dir / "earnings" / f"{w['label']}.html"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(render_earnings(w, man, root="../"), encoding="utf-8")
+        written.append(out)
+    for w in rweeks:
+        out = site_dir / "reactions" / f"{w['label']}.html"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        payload = json.dumps(w, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+        out.write_text(_env().get_template("reactions.html").render(w=w, data=payload, manifest=man, root="../",
+                                                                    standalone=True), encoding="utf-8")
         written.append(out)
     for m, items in reports.items():
         for r in items:

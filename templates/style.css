@@ -80,10 +80,14 @@ body::before {
 .brand svg { flex: none; }
 .brand b { font-weight: 700; font-size: 16px; letter-spacing: -0.01em; }
 .brand small { color: var(--muted); font-size: 12px; }
-.tabs { display: inline-flex; background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 3px; }
+.tabs { display: inline-flex; background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px; padding: 3px;
+  max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+.tabs::-webkit-scrollbar { display: none; }
 .tabs a, .tabs span {
   font-size: 13px; font-weight: 600; padding: 5px 14px; border-radius: 6px; text-decoration: none; color: var(--ink-2);
+  white-space: nowrap;
 }
+@media (max-width: 480px) { .tabs a, .tabs span { padding: 5px 10px; } }
 .tabs a:hover { color: var(--ink); }
 .tabs .on { background: var(--surface); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,.08), inset 0 -2px 0 var(--accent); }
 .tabs .off { color: var(--muted); opacity: .6; cursor: not-allowed; }
