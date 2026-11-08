@@ -2,15 +2,15 @@
  "label": "2026-W46",
  "start": "2026-11-09",
  "end": "2026-11-13",
- "total": 864,
- "headline": "실적 발표 864건 · 목요일 301건으로 최다 · 미국 10월 소비자물가(CPI)",
+ "total": 878,
+ "headline": "실적 발표 878건 · 목요일 302건으로 최다 · 미국 10월 소비자물가(CPI)",
  "days": [
   {
    "date": "2026-11-09",
    "dow": "월",
-   "total": 243,
+   "total": 257,
    "bmo": {
-    "total": 86,
+    "total": 85,
     "shown": [
      {
       "ticker": "CEG",
@@ -18,7 +18,7 @@
       "date": "2026-11-09",
       "slot": "bmo",
       "mcap_b": 88.6,
-      "eps_est": 3.88,
+      "eps_est": 3.89,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -169,10 +169,10 @@
       "watch": false
      }
     ],
-    "small": 72
+    "small": 71
    },
    "amc": {
-    "total": 148,
+    "total": 159,
     "shown": [
      {
       "ticker": "OXY",
@@ -298,10 +298,10 @@
       "watch": false
      }
     ],
-    "small": 137
+    "small": 148
    },
    "tns": {
-    "total": 9,
+    "total": 13,
     "shown": [
      {
       "ticker": "IX",
@@ -338,7 +338,7 @@
      }
     ],
     "more": [],
-    "small": 6
+    "small": 10
    },
    "events": [],
    "checks": []
@@ -346,7 +346,7 @@
   {
    "date": "2026-11-10",
    "dow": "화",
-   "total": 166,
+   "total": 165,
    "bmo": {
     "total": 65,
     "shown": [
@@ -406,19 +406,6 @@
       "watch": false
      },
      {
-      "ticker": "HSAI",
-      "company": "Hesai Group",
-      "date": "2026-11-10",
-      "slot": "bmo",
-      "mcap_b": 18.0,
-      "eps_est": 1.24,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     }
-    ],
-    "more": [
-     {
       "ticker": "EMBJ",
       "company": "Embraer S.A.",
       "date": "2026-11-10",
@@ -428,7 +415,9 @@
       "eps_act": null,
       "surprise": null,
       "watch": false
-     },
+     }
+    ],
+    "more": [
      {
       "ticker": "ONON",
       "company": "On Holding AG",
@@ -441,10 +430,10 @@
       "watch": false
      }
     ],
-    "small": 57
+    "small": 58
    },
    "amc": {
-    "total": 96,
+    "total": 95,
     "shown": [
      {
       "ticker": "PBR",
@@ -452,7 +441,7 @@
       "date": "2026-11-10",
       "slot": "amc",
       "mcap_b": 119.4,
-      "eps_est": 1.32,
+      "eps_est": 1.41,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -492,7 +481,7 @@
      }
     ],
     "more": [],
-    "small": 92
+    "small": 91
    },
    "tns": {
     "total": 5,
@@ -540,9 +529,9 @@
   {
    "date": "2026-11-11",
    "dow": "수",
-   "total": 112,
+   "total": 111,
    "bmo": {
-    "total": 36,
+    "total": 35,
     "shown": [
      {
       "ticker": "GIB",
@@ -557,7 +546,7 @@
      }
     ],
     "more": [],
-    "small": 35
+    "small": 34
    },
    "amc": {
     "total": 71,
@@ -622,7 +611,7 @@
   {
    "date": "2026-11-12",
    "dow": "목",
-   "total": 301,
+   "total": 302,
    "bmo": {
     "total": 114,
     "shown": [
@@ -709,7 +698,7 @@
     "small": 107
    },
    "amc": {
-    "total": 179,
+    "total": 180,
     "shown": [
      {
       "ticker": "AMAT",
@@ -791,7 +780,7 @@
       "watch": false
      }
     ],
-    "small": 172
+    "small": 173
    },
    "tns": {
     "total": 8,
@@ -807,12 +796,12 @@
   {
    "date": "2026-11-13",
    "dow": "금",
-   "total": 42,
+   "total": 43,
    "bmo": {
-    "total": 28,
+    "total": 29,
     "shown": [],
     "more": [],
-    "small": 28
+    "small": 29
    },
    "amc": {
     "total": 11,
@@ -949,5 +938,5 @@
   "watchlist": 33,
   "logo_url": "https://financialmodelingprep.com/image-stock/{ticker}.png"
  },
- "generated_at": "2026-11-07T08:54+09:00"
+ "generated_at": "2026-11-09T07:22+09:00"
 }
