@@ -25,7 +25,7 @@ def _document_text(rcept_no: str) -> str:
 
     def fetch():
         r = requests.get("https://opendart.fss.or.kr/api/document.xml",
-                         params={"crtfc_key": os.environ["DART_API_KEY"], "rcept_no": rcept_no}, timeout=60)
+                         params={"crtfc_key": os.environ["DART_API_KEY"].strip(), "rcept_no": rcept_no}, timeout=60)
         z = zipfile.ZipFile(io.BytesIO(r.content))
         raw = z.read(z.namelist()[0]).decode("utf-8", errors="ignore")
         t = html.unescape(re.sub(r"<[^>]+>", " ", raw))

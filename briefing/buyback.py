@@ -23,7 +23,7 @@ MARKET = {"Y": "KOSPI", "K": "KOSDAQ"}
 
 
 def dart(path: str, **params) -> dict:
-    params["crtfc_key"] = os.environ["DART_API_KEY"]
+    params["crtfc_key"] = os.environ["DART_API_KEY"].strip()
     for i in range(3):
         try:
             d = requests.get(API + path, params=params, timeout=30).json()
