@@ -1,0 +1,107 @@
+{%- set current = 'kr_earnings' %}{%- set page_title = 'Korea Earnings ' ~ k.as_of %}
+{% include "_top.html" %}
+{%- set st = k.stats %}
+{%- macro eok(v) %}{% if v is none %}–{% elif v|abs >= 10000 %}{{ '%.1f' | format(v / 10000) }}조{% else %}{{ v | num }}억{% endif %}{% endmacro %}
+{%- macro chg(x) %}
+  {%- if x.yflag %}<span class="flag {{ 'up' if x.yflag == '흑자전환' else 'down' }}">{{ x.yflag }}</span>
+  {%- elif x.yoy is not none %}<span class="num {{ x.yoy | sign }}">{{ x.yoy | pct(1) }}</span>
+  {%- else %}<span class="note">–</span>{% endif %}
+{%- endmacro %}
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><b>Korea Earnings</b> · {{ k.as_of }}</div>
+    <h1>국내 실적 발표</h1>
+    <div class="period"><span>DART 잠정실적 공시 · 최근 {{ k.lookback_days }}일 · 증감률은 전년 같은 분기 대비</span></div>
+  </div>
+</section>
+
+<main>
+<div class="wrap">
+  <div class="bb-stats">
+    <div><span class="note">최근 1주 잠정실적</span><b class="num">{{ st.week }}건</b></div>
+    <div><span class="note">영업이익 증가 / 감소</span><b class="num"><span class="up">{{ st.op_up }}</span> / <span class="down">{{ st.op_down }}</span></b></div>
+    <div><span class="note">흑자전환</span><b class="num up">{{ st.turnaround }}건</b></div>
+    <div><span class="note">예정된 실적 IR</span><b class="num">{{ st.ir_upcoming }}건</b></div>
+  </div>
+
+  <section class="panel" id="ir" aria-labelledby="h-ir">
+    <div class="panel-head">
+      <div><span class="kicker">Upcoming</span><h2 id="h-ir">앞으로 2주 실적발표(IR) 일정</h2></div>
+      <span class="note">기업설명회 개최 공시 기준 · 실적 관련만</span>
+    </div>
+    {%- set evs = k.events | selectattr('earnings') | list %}
+    {%- if evs %}
+    <ul class="later">
+      {%- for d, items in evs | groupby('date') %}
+      <li>
+        <b class="mono">{{ d | md }}</b>
+        <span>{%- for e in items %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.name }}</a>{% if e.time %} <span class="note num">{{ e.time }}</span>{% endif %}{% if not loop.last %} · {% endif %}{% endfor %}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+    {%- else %}<p class="empty">예정된 실적 IR 공시가 없습니다.</p>{% endif %}
+  </section>
+
+  <section class="panel" id="results" aria-labelledby="h-res">
+    <div class="panel-head">
+      <div><span class="kicker">Provisional results</span><h2 id="h-res">잠정실적</h2></div>
+      <span class="seg" role="group" aria-label="보기 선택">
+        <button type="button" data-kf="all" aria-pressed="true">전체</button>
+        <button type="button" data-kf="KOSPI" aria-pressed="false">KOSPI</button>
+        <button type="button" data-kf="KOSDAQ" aria-pressed="false">KOSDAQ</button>
+        <button type="button" data-kf="up" aria-pressed="false">영업이익 증가</button>
+        <button type="button" data-kf="turn" aria-pressed="false">흑자전환</button>
+      </span>
+    </div>
+    <div class="tbl-wrap">
+      <table class="kr-table">
+        <thead><tr>
+          <th>회사</th><th>발표 · 분기</th>
+          <th class="r">매출액</th><th class="r">YoY</th>
+          <th class="r">영업이익</th><th class="r">YoY</th><th class="r">QoQ</th><th class="r">영업이익률</th>
+          <th class="r">순이익</th><th class="r">YoY</th><th class="r">시총</th>
+        </tr></thead>
+        <tbody>
+        {%- for r in k.results %}
+          {%- set op = r.op or {} %}{%- set sa = r.sales or {} %}{%- set ne = r.net or {} %}
+          <tr data-m="{{ r.market }}" data-up="{{ 1 if (op.yoy or 0) > 0 or op.yflag == '흑자전환' else 0 }}" data-turn="{{ 1 if op.yflag == '흑자전환' else 0 }}">
+            <td><a href="{{ r.url }}" target="_blank" rel="noopener"><b>{{ r.name }}</b></a>{% if r.market == 'KOSDAQ' %} <span class="mkt">KQ</span>{% endif %}{% if not r.consolidated %} <span class="note">별도</span>{% endif %}</td>
+            <td class="num note">{{ r.date | md }} · {{ r.period or '–' }}</td>
+            <td class="r num">{{ eok(sa.cur) }}</td><td class="r">{{ chg(sa) }}</td>
+            <td class="r num"><b>{{ eok(op.cur) }}</b></td><td class="r">{{ chg(op) }}</td>
+            <td class="r">{% if op.qflag %}<span class="note">{{ op.qflag }}</span>{% elif op.qoq is not none %}<span class="num {{ op.qoq | sign }}">{{ op.qoq | pct(1) }}</span>{% else %}–{% endif %}</td>
+            <td class="r num">{{ '%.1f%%' | format(r.op_margin) if r.op_margin is not none else '–' }}</td>
+            <td class="r num">{{ eok(ne.cur) }}</td><td class="r">{{ chg(ne) }}</td>
+            <td class="r num note">{{ eok(r.mcap_eok) if r.mcap_eok else '–' }}</td>
+          </tr>
+        {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+    <p class="note bb-note">잠정실적은 회사가 감사 전에 미리 알리는 숫자라 나중에 확정치와 다를 수 있어요. 연결 기준이 기본이고, 연결 공시가 없는 회사는 '별도'로 표시했어요. 회사 이름을 누르면 DART 원문으로 이동합니다. 시가총액 큰 순으로 정렬했어요.</p>
+  </section>
+</div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>데이터: 금융감독원 OpenDART</span>
+    <span>생성: {{ k.generated_at[:16] | replace('T', ' ') }} KST</span>
+  </div>
+</footer>
+<script>
+document.querySelectorAll("[data-kf]").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    document.querySelectorAll("[data-kf]").forEach(function (x) { x.setAttribute("aria-pressed", String(x === btn)); });
+    var f = btn.dataset.kf;
+    document.querySelectorAll(".kr-table tbody tr").forEach(function (tr) {
+      tr.hidden = !(f === "all" || tr.dataset.m === f || (f === "up" && tr.dataset.up === "1") || (f === "turn" && tr.dataset.turn === "1"));
+    });
+  });
+});
+</script>
+{%- if standalone %}
+</body>
+</html>
+{%- endif %}

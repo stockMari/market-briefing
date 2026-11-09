@@ -15,7 +15,7 @@ on:
         required: true
         default: daily
         type: choice
-        options: [daily, weekly, earnings, buyback, rebuild]
+        options: [daily, weekly, earnings, kr_earnings, buyback, rebuild]
       date:
         description: "실행일로 볼 날짜 (YYYY-MM-DD, 비우면 오늘)"
         required: false

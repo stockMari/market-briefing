@@ -41,4 +41,5 @@ cache/              1년치 시세 저장 (52주 신고가 계산용, GitHub에 
 - [x] 5단계 시장 요약 3줄 (무료 자동 문장. config.yaml 의 summary.engine 을 claude 로 바꾸면 Claude API 사용)
 - [x] 6단계 자동 실행 (평일 06:50, 토 08:20 KST 시작 · 저장소 공개 시 웹사이트 자동 배포)
 - [x] 자사주 스크리닝 페이지 (Secrets 에 DART_API_KEY 필요)
+- [x] 국내 실적 페이지 (잠정실적·IR 일정, DART_API_KEY 필요)
 - [ ] 9번 신용잔고 — 종목별 데이터 출처 확정 필요

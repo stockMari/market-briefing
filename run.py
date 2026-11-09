@@ -18,7 +18,7 @@ KST = timezone(timedelta(hours=9))
 
 def main():
     ap = argparse.ArgumentParser(description="마켓 브리핑 만들기")
-    ap.add_argument("--mode", choices=["daily", "weekly", "earnings", "buyback"])
+    ap.add_argument("--mode", choices=["daily", "weekly", "earnings", "buyback", "kr_earnings"])
     ap.add_argument("--date", help="실행일 (YYYY-MM-DD). 비우면 오늘")
     ap.add_argument("--sample", action="store_true", help="샘플 데이터로 만들기")
     ap.add_argument("--preview", help="미리보기용 HTML 저장 경로")
@@ -42,6 +42,11 @@ def main():
         pages = build_site(site_dir, preview_path=args.preview and ROOT / args.preview)
         print(f"[완료] 실적 캘린더 · 페이지 {len(pages)}개 생성")
         return
+    if args.mode == "kr_earnings":
+        update_kr_earnings(run_date, cfg, site_dir)
+        pages = build_site(site_dir, preview_path=args.preview and ROOT / args.preview)
+        print(f"[완료] 국내 실적 · 페이지 {len(pages)}개 생성")
+        return
     if args.mode == "buyback":
         update_buyback(run_date, cfg, site_dir)
         pages = build_site(site_dir, preview_path=args.preview and ROOT / args.preview)
@@ -57,6 +62,7 @@ def main():
         report["summary"], report["summary_source"] = make_summary(report, cfg)
         update_earnings(run_date, cfg, site_dir)
         if args.mode == "daily":
+            update_kr_earnings(run_date, cfg, site_dir)
             update_buyback(run_date, cfg, site_dir)
 
     save_report(report, site_dir)
@@ -92,6 +98,21 @@ def update_buyback(run_date, cfg: dict, site_dir):
         save_buyback(collect_buybacks(run_date, cfg), site_dir)
     except Exception as e:  # noqa: BLE001
         print(f"  ! 자사주 스크리닝 실패: {e}")
+
+
+def update_kr_earnings(run_date, cfg: dict, site_dir):
+    """국내 실적 (DART_API_KEY 필요). 실패해도 리포트는 계속 만듦."""
+    import os
+    if not cfg.get("kr_earnings", {}).get("enabled", True) or not os.getenv("DART_API_KEY"):
+        print("[10] 국내 실적 건너뜀 (DART_API_KEY 없음)")
+        return
+    print("[10] 국내 실적")
+    try:
+        from briefing.kr_earnings import collect_kr_earnings
+        from briefing.site import KR_EARN_FILE, save_latest
+        save_latest(collect_kr_earnings(run_date, cfg), site_dir, KR_EARN_FILE)
+    except Exception as e:  # noqa: BLE001
+        print(f"  ! 국내 실적 실패: {e}")
 
 
 def make_summary(report: dict, cfg: dict):

@@ -123,6 +123,12 @@ buyback:
   cancel_days: 60             # 소각 결정 목록 기간
   max_list: 40                # 소각·처분 목록 최대 개수
 
+# 국내 실적 페이지 (DART_API_KEY 필요, 평일 Daily 때 갱신)
+kr_earnings:
+  enabled: true
+  lookback_days: 14           # 최근 며칠 동안의 잠정실적 공시
+  ahead_days: 14              # 앞으로 며칠 동안의 실적 IR 일정
+
 # 7. 시장 요약 3줄
 summary:
   engine: rule                # rule = 무료 자동 문장 / claude = Claude API (ANTHROPIC_API_KEY 필요, 유료)

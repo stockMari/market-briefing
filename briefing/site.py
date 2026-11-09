@@ -18,6 +18,7 @@ from .judge import HIGH_VERDICTS, LOW_VERDICTS
 
 MODES = ("daily", "weekly")
 HAS_BUYBACK = False
+HAS_KR_EARN = False
 
 
 # ── 숫자 표시 형식 ─────────────────────────────────────────
@@ -163,6 +164,14 @@ def load_earnings(site_dir: Path) -> list[dict]:
 
 
 BUYBACK_FILE = Path("data") / "buyback" / "latest.json"
+KR_EARN_FILE = Path("data") / "kr_earnings" / "latest.json"
+
+
+def save_latest(data: dict, site_dir: Path, rel: Path) -> Path:
+    path = site_dir / rel
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    return path
 
 
 def save_buyback(data: dict, site_dir: Path) -> Path:
@@ -179,7 +188,8 @@ def render_earnings(week: dict, man: dict, root: str, standalone: bool = True) -
 def manifest(reports: dict[str, list[dict]], earnings: list[dict] | None = None) -> dict[str, list[dict]]:
     out = {"earnings": [{"label": w["label"], "start": w["start"], "end": w["end"], "total": w["total"]}
                         for w in earnings or []],
-           "buyback": [{"label": "index"}] if HAS_BUYBACK else []}
+           "buyback": [{"label": "index"}] if HAS_BUYBACK else [],
+           "kr_earnings": [{"label": "index"}] if HAS_KR_EARN else []}
     for m, items in reports.items():
         out[m] = []
         for r in items:
@@ -225,13 +235,22 @@ def _chart_payload(report: dict) -> dict:
 
 def build_site(site_dir: Path, preview_path: Path | None = None) -> list[Path]:
     """data/ 에 쌓인 모든 리포트로 페이지를 다시 만듭니다 (지난 리포트 목록이 항상 최신이 되도록)."""
-    global HAS_BUYBACK
+    global HAS_BUYBACK, HAS_KR_EARN
     bb_path = site_dir / BUYBACK_FILE
     HAS_BUYBACK = bb_path.exists()
+    ke_path = site_dir / KR_EARN_FILE
+    HAS_KR_EARN = ke_path.exists()
     reports = load_reports(site_dir)
     weeks = load_earnings(site_dir)
     man = manifest(reports, weeks)
     written = []
+    if HAS_KR_EARN:
+        out = site_dir / "kr_earnings" / "index.html"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        ke = json.loads(ke_path.read_text(encoding="utf-8"))
+        out.write_text(_env().get_template("kr_earnings.html").render(k=ke, manifest=man, root="../", standalone=True),
+                       encoding="utf-8")
+        written.append(out)
     if HAS_BUYBACK:
         out = site_dir / "buyback" / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)

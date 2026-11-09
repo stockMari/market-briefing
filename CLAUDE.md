@@ -7,7 +7,7 @@
 
 ```bash
 git pull -q origin main
-# mode: daily / weekly / earnings / buyback / rebuild,  date: 비우면 오늘 (YYYY-MM-DD)
+# mode: daily / weekly / earnings / kr_earnings / buyback / rebuild,  date: 비우면 오늘 (YYYY-MM-DD)
 gh api -X POST repos/stockMari/market-briefing/actions/workflows/briefing.yml/dispatches \
   -f ref=main -f 'inputs[mode]=daily' -f 'inputs[date]='
 # 최신 실행이 끝날 때까지 기다린 뒤 결과 확인
