@@ -1,7 +1,7 @@
 {
  "as_of": "2026-11-10",
  "lookback_days": 180,
- "generated_at": "2026-11-10T07:37+09:00",
+ "generated_at": "2026-11-10T14:32+09:00",
  "plans": [
   {
    "corp_code": "01755259",
@@ -502,7 +502,7 @@
     -25077
    ],
    "progress_pct": 0.0,
-   "price_chg": 4.77,
+   "price_chg": 4.93,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260702000271"
   },
   {
@@ -2018,7 +2018,7 @@
     291151
    ],
    "progress_pct": 13.7,
-   "price_chg": -34.13,
+   "price_chg": -34.06,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260521000710"
   },
   {
@@ -2259,7 +2259,7 @@
     54177
    ],
    "progress_pct": 7.5,
-   "price_chg": -8.18,
+   "price_chg": -8.05,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260702000181"
   },
   {
@@ -3633,7 +3633,7 @@
     -21673
    ],
    "progress_pct": 0.0,
-   "price_chg": 8.25,
+   "price_chg": 8.31,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109000095"
   },
   {
@@ -6133,7 +6133,7 @@
     128244
    ],
    "progress_pct": 38.6,
-   "price_chg": -10.66,
+   "price_chg": -10.5,
    "shares_est": null,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000035"
   },
@@ -6461,7 +6461,7 @@
     -13033
    ],
    "progress_pct": 0.0,
-   "price_chg": 12.08,
+   "price_chg": 14.06,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260909000085"
   },
   {
@@ -8034,7 +8034,7 @@
     0
    ],
    "progress_pct": 0.0,
-   "price_chg": 3.49,
+   "price_chg": 3.24,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109000182"
   },
   {
@@ -11306,6 +11306,29 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260805000450"
   },
   {
+   "corp_code": "01016479",
+   "name": "오로스테크놀로지",
+   "code": "322310",
+   "market": "KOSDAQ",
+   "kind": "trust",
+   "rcept_no": "20261110000195",
+   "decided": "2026-11-10",
+   "start": "2026-11-10",
+   "end": "2027-05-10",
+   "shares": null,
+   "amount": 1000000000.0,
+   "how": "신탁계약 (KB증권\n(KB SECURITIES CO.,LTD.))",
+   "why": "인재 확보를 위한 임직원 보상 및 주가 안정",
+   "status": "진행 중",
+   "cap_pct": 1.36,
+   "shares_est": 127226,
+   "time_pct": 0,
+   "progress_pct": null,
+   "other_corp_net": null,
+   "price_chg": null,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000195"
+  },
+  {
    "corp_code": "00347734",
    "name": "진양화학",
    "code": "051630",
@@ -13332,46 +13355,6 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106000185"
   },
   {
-   "corp_code": "00302926",
-   "name": "현대로템",
-   "code": "064350",
-   "market": "KOSPI",
-   "kind": "direct",
-   "rcept_no": "20261019000305",
-   "decided": "2026-10-19",
-   "start": "2026-10-20",
-   "end": "2026-11-20",
-   "shares": 175467.0,
-   "amount": 17002800000.0,
-   "how": "유가증권시장을 통한 장내 매수",
-   "why": "직원 성과보상과 연계한 자기주식 지급",
-   "status": "진행 중",
-   "cap_pct": 0.22,
-   "time_pct": 68,
-   "other_corp_net": 190557,
-   "other_corp_curve": [
-    84788,
-    163489,
-    182343,
-    183776,
-    184276,
-    185311,
-    185698,
-    186078,
-    184348,
-    185425,
-    186478,
-    184700,
-    186380,
-    187590,
-    190557
-   ],
-   "progress_pct": 108.6,
-   "price_chg": -30.22,
-   "shares_est": null,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000305"
-  },
-  {
    "corp_code": "00413046",
    "name": "셀트리온",
    "code": "068270",
@@ -13490,6 +13473,29 @@
    "price_chg": null,
    "shares_est": null,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000265"
+  },
+  {
+   "corp_code": "00854997",
+   "name": "에스디바이오센서",
+   "code": "137310",
+   "market": "KOSPI",
+   "kind": "direct",
+   "rcept_no": "20261110000158",
+   "decided": "2026-11-10",
+   "start": "2026-11-11",
+   "end": "2027-02-10",
+   "shares": 1954888.0,
+   "amount": 13000005200.0,
+   "how": "유가증권시장을 통한 직접취득",
+   "why": "자기주식 취득을 통한 \n주주환원정책 이행 및 주주가치 제고",
+   "status": "시작 전",
+   "cap_pct": null,
+   "time_pct": null,
+   "progress_pct": null,
+   "other_corp_net": null,
+   "price_chg": null,
+   "shares_est": null,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000158"
   },
   {
    "corp_code": "00137809",
@@ -18664,6 +18670,46 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000252"
   },
   {
+   "corp_code": "00302926",
+   "name": "현대로템",
+   "code": "064350",
+   "market": "KOSPI",
+   "kind": "direct",
+   "rcept_no": "20261019000305",
+   "decided": "2026-10-19",
+   "start": "2026-10-20",
+   "end": "2026-11-20",
+   "shares": 175467.0,
+   "amount": 17002800000.0,
+   "how": "유가증권시장을 통한 장내 매수",
+   "why": "직원 성과보상과 연계한 자기주식 지급",
+   "status": "완료",
+   "cap_pct": 0.22,
+   "time_pct": 68,
+   "other_corp_net": 190557,
+   "other_corp_curve": [
+    84788,
+    163489,
+    182343,
+    183776,
+    184276,
+    185311,
+    185698,
+    186078,
+    184348,
+    185425,
+    186478,
+    184700,
+    186380,
+    187590,
+    190557
+   ],
+   "progress_pct": 108.6,
+   "price_chg": -30.22,
+   "shares_est": null,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000305"
+  },
+  {
    "corp_code": "00157399",
    "name": "한솔테크닉스",
    "code": "004710",
@@ -22351,7 +22397,7 @@
     -13811
    ],
    "progress_pct": 0.0,
-   "price_chg": -19.16,
+   "price_chg": -18.84,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260617000116"
   },
   {
@@ -23420,7 +23466,7 @@
     -10401
    ],
    "progress_pct": 0.0,
-   "price_chg": -1.83,
+   "price_chg": -1.65,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260610000207"
   },
   {
@@ -25040,6 +25086,27 @@
  ],
  "cancels": [
   {
+   "name": "흥국",
+   "code": "010240",
+   "market": "KOSDAQ",
+   "date": "2026-11-10",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110900299"
+  },
+  {
+   "name": "한화머시너리앤서비스홀딩스",
+   "code": "0220W0",
+   "market": "KOSPI",
+   "date": "2026-11-10",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800315"
+  },
+  {
+   "name": "신세계",
+   "code": "004170",
+   "market": "KOSPI",
+   "date": "2026-11-10",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800292"
+  },
+  {
    "name": "인카금융서비스",
    "code": "211050",
    "market": "KOSDAQ",
@@ -25297,27 +25364,6 @@
    "market": "KOSDAQ",
    "date": "2026-10-28",
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028900137"
-  },
-  {
-   "name": "풍산홀딩스",
-   "code": "005810",
-   "market": "KOSPI",
-   "date": "2026-10-28",
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028800732"
-  },
-  {
-   "name": "LG화학",
-   "code": "051910",
-   "market": "KOSPI",
-   "date": "2026-10-28",
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261028800492"
-  },
-  {
-   "name": "에스앤에스텍",
-   "code": "101490",
-   "market": "KOSDAQ",
-   "date": "2026-10-27",
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027900392"
   }
  ],
  "disposals": [
@@ -25604,8 +25650,8 @@
  ],
  "stats": {
   "active": 188,
-  "active_amount": 24610912472335.0,
-  "new_2w": 33,
+  "active_amount": 24594909672335.0,
+  "new_2w": 35,
   "cancels_2w": 40
  }
 }

@@ -2,13 +2,13 @@
  "label": "2026-W46",
  "start": "2026-11-09",
  "end": "2026-11-13",
- "total": 863,
- "headline": "실적 발표 863건 · 목요일 307건으로 최다 · 미국 10월 소비자물가(CPI)",
+ "total": 769,
+ "headline": "실적 발표 769건 · 목요일 308건으로 최다 · 미국 10월 소비자물가(CPI)",
  "days": [
   {
    "date": "2026-11-09",
    "dow": "월",
-   "total": 235,
+   "total": 149,
    "bmo": {
     "total": 0,
     "shown": [],
@@ -16,147 +16,13 @@
     "small": 0
    },
    "amc": {
-    "total": 158,
-    "shown": [
-     {
-      "ticker": "OXY",
-      "company": "Occidental Petroleum Corporation",
-      "date": "2026-11-09",
-      "slot": "amc",
-      "mcap_b": 55.7,
-      "eps_est": 1.47,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "SKYD",
-      "company": "Skydance Corporation",
-      "date": "2026-11-09",
-      "slot": "amc",
-      "mcap_b": 43.9,
-      "eps_est": 0.2,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "TTWO",
-      "company": "Take-Two Interactive Software, Inc.",
-      "date": "2026-11-09",
-      "slot": "amc",
-      "mcap_b": 38.8,
-      "eps_est": -0.86,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "RKLB",
-      "company": "Rocket Lab Corporation",
-      "date": "2026-11-09",
-      "slot": "amc",
-      "mcap_b": 37.6,
-      "eps_est": -0.07,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "BAP",
-      "company": "Credicorp Ltd.",
-      "date": "2026-11-09",
-      "slot": "amc",
-      "mcap_b": 28.3,
-      "eps_est": 7.38,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "CIB",
-      "company": "Grupo Cibest S.A.",
-      "date": "2026-11-09",
-      "slot": "amc",
-      "mcap_b": 22.4,
-      "eps_est": 2.77,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     }
-    ],
-    "more": [
-     {
-      "ticker": "EQX",
-      "company": "Equinox Gold Corp.",
-      "date": "2026-11-09",
-      "slot": "amc",
-      "mcap_b": 14.1,
-      "eps_est": 0.18,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "ASTS",
-      "company": "AST SpaceMobile, Inc.",
-      "date": "2026-11-09",
-      "slot": "amc",
-      "mcap_b": 11.1,
-      "eps_est": -0.45,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "ONTO",
-      "company": "Onto Innovation Inc.",
-      "date": "2026-11-09",
-      "slot": "amc",
-      "mcap_b": 9.5,
-      "eps_est": 2.3,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "LINE",
-      "company": "Lineage, Inc.",
-      "date": "2026-11-09",
-      "slot": "amc",
-      "mcap_b": 9.0,
-      "eps_est": -0.23,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "ZETA",
-      "company": "Zeta Global Holdings Corp.",
-      "date": "2026-11-09",
-      "slot": "amc",
-      "mcap_b": 8.1,
-      "eps_est": 0.27,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "SANM",
-      "company": "Sanmina Corporation",
-      "date": "2026-11-09",
-      "slot": "amc",
-      "mcap_b": 8.0,
-      "eps_est": 3.27,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     }
-    ],
-    "small": 146
+    "total": 34,
+    "shown": [],
+    "more": [],
+    "small": 34
    },
    "tns": {
-    "total": 77,
+    "total": 115,
     "shown": [
      {
       "ticker": "CEG",
@@ -192,6 +58,17 @@
       "watch": false
      },
      {
+      "ticker": "OXY",
+      "company": "Occidental Petroleum Corporation",
+      "date": "2026-11-09",
+      "slot": "tns",
+      "mcap_b": 55.7,
+      "eps_est": 1.47,
+      "eps_act": 1.91,
+      "surprise": 29.84,
+      "watch": false
+     },
+     {
       "ticker": "FERG",
       "company": "Ferguson Enterprises Inc.",
       "date": "2026-11-09",
@@ -212,6 +89,19 @@
       "eps_act": 3.23,
       "surprise": 32.96,
       "watch": false
+     }
+    ],
+    "more": [
+     {
+      "ticker": "SKYD",
+      "company": "Skydance Corporation",
+      "date": "2026-11-09",
+      "slot": "tns",
+      "mcap_b": 43.9,
+      "eps_est": 0.2,
+      "eps_act": 0.45,
+      "surprise": 129.42,
+      "watch": false
      },
      {
       "ticker": "JBS",
@@ -220,12 +110,32 @@
       "slot": "tns",
       "mcap_b": 43.2,
       "eps_est": 1.02,
-      "eps_act": null,
-      "surprise": null,
+      "eps_act": 0.88,
+      "surprise": -13.14,
       "watch": false
-     }
-    ],
-    "more": [
+     },
+     {
+      "ticker": "TTWO",
+      "company": "Take-Two Interactive Software, Inc.",
+      "date": "2026-11-09",
+      "slot": "tns",
+      "mcap_b": 38.8,
+      "eps_est": -0.86,
+      "eps_act": -0.29,
+      "surprise": 66.38,
+      "watch": false
+     },
+     {
+      "ticker": "RKLB",
+      "company": "Rocket Lab Corporation",
+      "date": "2026-11-09",
+      "slot": "tns",
+      "mcap_b": 37.6,
+      "eps_est": -0.07,
+      "eps_act": -0.12,
+      "surprise": -80.59,
+      "watch": false
+     },
      {
       "ticker": "ROIV",
       "company": "Roivant Sciences Ltd.",
@@ -315,6 +225,17 @@
       "watch": false
      },
      {
+      "ticker": "LINE",
+      "company": "Lineage, Inc.",
+      "date": "2026-11-09",
+      "slot": "tns",
+      "mcap_b": 9.0,
+      "eps_est": -0.23,
+      "eps_act": -0.15,
+      "surprise": 34.21,
+      "watch": false
+     },
+     {
       "ticker": "TIMB",
       "company": "TIM S.A.",
       "date": "2026-11-09",
@@ -324,9 +245,31 @@
       "eps_act": null,
       "surprise": null,
       "watch": false
+     },
+     {
+      "ticker": "ZETA",
+      "company": "Zeta Global Holdings Corp.",
+      "date": "2026-11-09",
+      "slot": "tns",
+      "mcap_b": 8.1,
+      "eps_est": 0.27,
+      "eps_act": 0.38,
+      "surprise": 39.17,
+      "watch": false
+     },
+     {
+      "ticker": "SANM",
+      "company": "Sanmina Corporation",
+      "date": "2026-11-09",
+      "slot": "tns",
+      "mcap_b": 8.0,
+      "eps_est": 3.27,
+      "eps_act": 4.43,
+      "surprise": 35.51,
+      "watch": false
      }
     ],
-    "small": 62
+    "small": 93
    },
    "events": [],
    "checks": []
@@ -334,9 +277,9 @@
   {
    "date": "2026-11-10",
    "dow": "화",
-   "total": 165,
+   "total": 160,
    "bmo": {
-    "total": 66,
+    "total": 64,
     "shown": [
      {
       "ticker": "TDG",
@@ -418,10 +361,10 @@
       "watch": false
      }
     ],
-    "small": 59
+    "small": 57
    },
    "amc": {
-    "total": 94,
+    "total": 91,
     "shown": [
      {
       "ticker": "PBR",
@@ -458,7 +401,7 @@
      }
     ],
     "more": [],
-    "small": 91
+    "small": 88
    },
    "tns": {
     "total": 5,
@@ -506,9 +449,9 @@
   {
    "date": "2026-11-11",
    "dow": "수",
-   "total": 115,
+   "total": 112,
    "bmo": {
-    "total": 39,
+    "total": 37,
     "shown": [
      {
       "ticker": "GIB",
@@ -523,10 +466,10 @@
      }
     ],
     "more": [],
-    "small": 38
+    "small": 36
    },
    "amc": {
-    "total": 71,
+    "total": 69,
     "shown": [
      {
       "ticker": "FNV",
@@ -585,13 +528,13 @@
      }
     ],
     "more": [],
-    "small": 66
+    "small": 64
    },
    "tns": {
-    "total": 5,
+    "total": 6,
     "shown": [],
     "more": [],
-    "small": 5
+    "small": 6
    },
    "events": [],
    "checks": []
@@ -599,9 +542,9 @@
   {
    "date": "2026-11-12",
    "dow": "목",
-   "total": 307,
+   "total": 308,
    "bmo": {
-    "total": 121,
+    "total": 122,
     "shown": [
      {
       "ticker": "BN",
@@ -683,7 +626,7 @@
       "watch": false
      }
     ],
-    "small": 114
+    "small": 115
    },
    "amc": {
     "total": 178,
@@ -795,7 +738,7 @@
   {
    "date": "2026-11-13",
    "dow": "금",
-   "total": 41,
+   "total": 40,
    "bmo": {
     "total": 28,
     "shown": [],
@@ -803,10 +746,10 @@
     "small": 28
    },
    "amc": {
-    "total": 10,
+    "total": 9,
     "shown": [],
     "more": [],
-    "small": 10
+    "small": 9
    },
    "tns": {
     "total": 3,
@@ -937,5 +880,5 @@
   "watchlist": 33,
   "logo_url": "https://financialmodelingprep.com/image-stock/{ticker}.png"
  },
- "generated_at": "2026-11-10T07:31+09:00"
+ "generated_at": "2026-11-10T14:26+09:00"
 }
