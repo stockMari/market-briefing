@@ -2,8 +2,8 @@
  "label": "2026-W46",
  "start": "2026-11-09",
  "end": "2026-11-13",
- "total": 810,
- "headline": "실적 발표 810건 · 목요일 310건으로 최다 · 미국 10월 소비자물가(CPI)",
+ "total": 715,
+ "headline": "실적 발표 715건 · 목요일 236건으로 최다 · 미국 10월 소비자물가(CPI)",
  "days": [
   {
    "date": "2026-11-09",
@@ -29,7 +29,7 @@
       "company": "Constellation Energy Corporation",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 96.6,
+      "mcap_b": 99.3,
       "eps_est": 3.89,
       "eps_act": 5.06,
       "surprise": 30.08,
@@ -40,7 +40,7 @@
       "company": "KKR & Co. Inc.",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 89.3,
+      "mcap_b": 86.7,
       "eps_est": 1.58,
       "eps_act": 1.78,
       "surprise": 12.48,
@@ -51,7 +51,7 @@
       "company": "Barrick Mining Corporation",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 63.6,
+      "mcap_b": 61.6,
       "eps_est": 0.79,
       "eps_act": 0.82,
       "surprise": 3.85,
@@ -62,7 +62,7 @@
       "company": "Occidental Petroleum Corporation",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 57.2,
+      "mcap_b": 58.4,
       "eps_est": 1.48,
       "eps_act": 1.91,
       "surprise": 29.0,
@@ -73,7 +73,7 @@
       "company": "Ferguson Enterprises Inc.",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 51.2,
+      "mcap_b": 49.4,
       "eps_est": 3.29,
       "eps_act": 3.43,
       "surprise": 4.39,
@@ -84,7 +84,7 @@
       "company": "Vistra Corp.",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 45.3,
+      "mcap_b": 45.7,
       "eps_est": 2.43,
       "eps_act": 3.23,
       "surprise": 32.96,
@@ -97,7 +97,7 @@
       "company": "Rocket Lab Corporation",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 44.5,
+      "mcap_b": 43.1,
       "eps_est": -0.07,
       "eps_act": -0.12,
       "surprise": -80.59,
@@ -108,7 +108,7 @@
       "company": "Take-Two Interactive Software, Inc.",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 43.3,
+      "mcap_b": 42.5,
       "eps_est": -0.86,
       "eps_act": -0.29,
       "surprise": 66.38,
@@ -119,7 +119,7 @@
       "company": "Skydance Corporation",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 39.8,
+      "mcap_b": 38.3,
       "eps_est": 0.2,
       "eps_act": 0.45,
       "surprise": 129.42,
@@ -130,7 +130,7 @@
       "company": "Roivant Sciences Ltd.",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 30.3,
+      "mcap_b": 29.0,
       "eps_est": -0.45,
       "eps_act": -0.18,
       "surprise": 58.88,
@@ -141,7 +141,7 @@
       "company": "Grupo Cibest S.A.",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 21.7,
+      "mcap_b": 20.9,
       "eps_est": 2.75,
       "eps_act": 2.66,
       "surprise": -3.38,
@@ -152,7 +152,7 @@
       "company": "NRG Energy, Inc.",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 20.5,
+      "mcap_b": 20.6,
       "eps_est": 3.03,
       "eps_act": 4.68,
       "surprise": 54.53,
@@ -163,10 +163,10 @@
       "company": "CNH Industrial N.V.",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 20.1,
+      "mcap_b": 19.2,
       "eps_est": 0.1,
       "eps_act": 0.16,
-      "surprise": 63.12,
+      "surprise": 62.9,
       "watch": false
      },
      {
@@ -174,7 +174,7 @@
       "company": "RB Global, Inc.",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 17.3,
+      "mcap_b": 17.1,
       "eps_est": 1.0,
       "eps_act": 1.03,
       "surprise": 3.33,
@@ -185,7 +185,7 @@
       "company": "Somnigroup International Inc.",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 14.4,
+      "mcap_b": 14.0,
       "eps_est": 1.05,
       "eps_act": 1.04,
       "surprise": -1.08,
@@ -196,7 +196,7 @@
       "company": "JBS N.V.",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 13.3,
+      "mcap_b": 12.7,
       "eps_est": 1.02,
       "eps_act": 0.88,
       "surprise": -13.14,
@@ -207,7 +207,7 @@
       "company": "AST SpaceMobile, Inc.",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 11.0,
+      "mcap_b": 10.4,
       "eps_est": -0.45,
       "eps_act": -0.44,
       "surprise": 1.77,
@@ -218,7 +218,7 @@
       "company": "Onto Innovation Inc.",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 10.6,
+      "mcap_b": 10.3,
       "eps_est": 2.3,
       "eps_act": 2.44,
       "surprise": 5.99,
@@ -229,7 +229,7 @@
       "company": "TG Therapeutics, Inc.",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 9.9,
+      "mcap_b": 9.8,
       "eps_est": 0.26,
       "eps_act": 0.35,
       "surprise": 35.92,
@@ -240,21 +240,10 @@
       "company": "Affiliated Managers Group, Inc.",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 9.9,
+      "mcap_b": 9.7,
       "eps_est": 8.79,
       "eps_act": 9.5,
       "surprise": 8.12,
-      "watch": false
-     },
-     {
-      "ticker": "PRAX",
-      "company": "Praxis Precision Medicines, Inc.",
-      "date": "2026-11-09",
-      "slot": "tns",
-      "mcap_b": 9.7,
-      "eps_est": -3.63,
-      "eps_act": -3.23,
-      "surprise": 11.13,
       "watch": false
      },
      {
@@ -262,10 +251,21 @@
       "company": "Zeta Global Holdings Corp.",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 9.6,
+      "mcap_b": 9.5,
       "eps_est": 0.27,
       "eps_act": 0.38,
       "surprise": 39.17,
+      "watch": false
+     },
+     {
+      "ticker": "PRAX",
+      "company": "Praxis Precision Medicines, Inc.",
+      "date": "2026-11-09",
+      "slot": "tns",
+      "mcap_b": 9.1,
+      "eps_est": -3.63,
+      "eps_act": -3.23,
+      "surprise": 11.13,
       "watch": false
      },
      {
@@ -273,7 +273,7 @@
       "company": "TIM S.A.",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 9.3,
+      "mcap_b": 9.0,
       "eps_est": 0.48,
       "eps_act": 0.43,
       "surprise": -11.09,
@@ -284,7 +284,7 @@
       "company": "Sanmina Corporation",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 8.5,
+      "mcap_b": 8.8,
       "eps_est": 3.27,
       "eps_act": 4.43,
       "surprise": 35.51,
@@ -295,7 +295,7 @@
       "company": "Lineage, Inc.",
       "date": "2026-11-09",
       "slot": "tns",
-      "mcap_b": 8.1,
+      "mcap_b": 8.0,
       "eps_est": -0.23,
       "eps_act": -0.15,
       "surprise": 34.21,
@@ -327,11 +327,11 @@
     "total": 168,
     "shown": [
      {
-      "ticker": "PBR",
+      "ticker": "PBR-A",
       "company": "Petróleo Brasileiro S.A. - Petrobras",
       "date": "2026-11-10",
       "slot": "tns",
-      "mcap_b": 114.8,
+      "mcap_b": 108.4,
       "eps_est": 1.41,
       "eps_act": 1.45,
       "surprise": 2.52,
@@ -342,7 +342,7 @@
       "company": "TransDigm Group Incorporated",
       "date": "2026-11-10",
       "slot": "tns",
-      "mcap_b": 68.8,
+      "mcap_b": 65.7,
       "eps_est": 12.21,
       "eps_act": 12.44,
       "surprise": 1.89,
@@ -353,7 +353,7 @@
       "company": "Sea Limited",
       "date": "2026-11-10",
       "slot": "tns",
-      "mcap_b": 45.3,
+      "mcap_b": 45.6,
       "eps_est": 0.97,
       "eps_act": 0.92,
       "surprise": -5.95,
@@ -364,21 +364,10 @@
       "company": "Alcon Inc.",
       "date": "2026-11-10",
       "slot": "tns",
-      "mcap_b": 35.0,
+      "mcap_b": 34.5,
       "eps_est": 0.89,
       "eps_act": 0.91,
       "surprise": 2.32,
-      "watch": false
-     },
-     {
-      "ticker": "CRWV",
-      "company": "CoreWeave, Inc.",
-      "date": "2026-11-10",
-      "slot": "tns",
-      "mcap_b": 33.5,
-      "eps_est": -1.55,
-      "eps_act": -1.27,
-      "surprise": 18.18,
       "watch": false
      },
      {
@@ -386,10 +375,21 @@
       "company": "Venture Global, Inc.",
       "date": "2026-11-10",
       "slot": "tns",
-      "mcap_b": 31.9,
+      "mcap_b": 33.4,
       "eps_est": 0.53,
       "eps_act": 0.96,
       "surprise": 82.51,
+      "watch": false
+     },
+     {
+      "ticker": "CRWV",
+      "company": "CoreWeave, Inc.",
+      "date": "2026-11-10",
+      "slot": "tns",
+      "mcap_b": 31.2,
+      "eps_est": -1.55,
+      "eps_act": -1.27,
+      "surprise": 18.21,
       "watch": false
      }
     ],
@@ -399,7 +399,7 @@
       "company": "Telefônica Brasil S.A.",
       "date": "2026-11-10",
       "slot": "tns",
-      "mcap_b": 19.6,
+      "mcap_b": 19.0,
       "eps_est": 1.49,
       "eps_act": 1.54,
       "surprise": 3.49,
@@ -410,7 +410,7 @@
       "company": "Embraer S.A.",
       "date": "2026-11-10",
       "slot": "tns",
-      "mcap_b": 14.7,
+      "mcap_b": 14.1,
       "eps_est": 0.81,
       "eps_act": 0.41,
       "surprise": -48.97,
@@ -432,7 +432,7 @@
       "company": "On Holding AG",
       "date": "2026-11-10",
       "slot": "tns",
-      "mcap_b": 11.6,
+      "mcap_b": 11.1,
       "eps_est": 0.41,
       "eps_act": 0.54,
       "surprise": 32.51,
@@ -458,92 +458,69 @@
   {
    "date": "2026-11-11",
    "dow": "수",
-   "total": 85,
+   "total": 49,
    "bmo": {
+    "total": 0,
+    "shown": [],
+    "more": [],
+    "small": 0
+   },
+   "amc": {
     "total": 1,
     "shown": [],
     "more": [],
     "small": 1
    },
-   "amc": {
-    "total": 66,
+   "tns": {
+    "total": 48,
     "shown": [
      {
       "ticker": "VYLR",
       "company": "Vylor Inc.",
       "date": "2026-11-11",
-      "slot": "amc",
+      "slot": "tns",
       "mcap_b": 48.1,
       "eps_est": -0.52,
-      "eps_act": null,
-      "surprise": null,
+      "eps_act": -0.42,
+      "surprise": 19.35,
       "watch": false
      },
      {
       "ticker": "FNV",
       "company": "Franco-Nevada Corporation",
       "date": "2026-11-11",
-      "slot": "amc",
-      "mcap_b": 48.0,
+      "slot": "tns",
+      "mcap_b": 47.8,
       "eps_est": 1.73,
-      "eps_act": null,
-      "surprise": null,
+      "eps_act": 1.89,
+      "surprise": 8.94,
       "watch": false
      },
      {
-      "ticker": "TTEK",
-      "company": "Tetra Tech, Inc.",
+      "ticker": "GIB",
+      "company": "CGI Inc.",
       "date": "2026-11-11",
-      "slot": "amc",
-      "mcap_b": 9.6,
-      "eps_est": 0.47,
-      "eps_act": null,
-      "surprise": null,
+      "slot": "tns",
+      "mcap_b": 16.7,
+      "eps_est": 2.3,
+      "eps_act": 2.31,
+      "surprise": 0.35,
       "watch": false
      },
      {
       "ticker": "CAE",
       "company": "CAE Inc.",
       "date": "2026-11-11",
-      "slot": "amc",
-      "mcap_b": 8.8,
-      "eps_est": 0.26,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "CTVA",
-      "company": "Corteva, Inc.",
-      "date": "2026-11-11",
-      "slot": "amc",
-      "mcap_b": 8.1,
-      "eps_est": 0.1,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     }
-    ],
-    "more": [],
-    "small": 61
-   },
-   "tns": {
-    "total": 18,
-    "shown": [
-     {
-      "ticker": "GIB",
-      "company": "CGI Inc.",
-      "date": "2026-11-11",
       "slot": "tns",
-      "mcap_b": 16.8,
-      "eps_est": 2.3,
-      "eps_act": 2.31,
-      "surprise": 0.35,
+      "mcap_b": 9.0,
+      "eps_est": 0.26,
+      "eps_act": 0.33,
+      "surprise": 24.8,
       "watch": false
      }
     ],
     "more": [],
-    "small": 17
+    "small": 44
    },
    "events": [],
    "checks": []
@@ -551,101 +528,22 @@
   {
    "date": "2026-11-12",
    "dow": "목",
-   "total": 310,
+   "total": 236,
    "bmo": {
-    "total": 129,
-    "shown": [
-     {
-      "ticker": "BN",
-      "company": "Brookfield Corporation",
-      "date": "2026-11-12",
-      "slot": "bmo",
-      "mcap_b": 93.9,
-      "eps_est": 0.33,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "NBIS",
-      "company": "Nebius Group N.V.",
-      "date": "2026-11-12",
-      "slot": "bmo",
-      "mcap_b": 42.1,
-      "eps_est": -1.24,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "KEP",
-      "company": "Korea Electric Power Corporation",
-      "date": "2026-11-12",
-      "slot": "bmo",
-      "mcap_b": 14.6,
-      "eps_est": 1.43,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "BNT",
-      "company": "Brookfield Wealth Solutions Ltd.",
-      "date": "2026-11-12",
-      "slot": "bmo",
-      "mcap_b": 11.5,
-      "eps_est": null,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "HBM",
-      "company": "Hudbay Minerals Inc.",
-      "date": "2026-11-12",
-      "slot": "bmo",
-      "mcap_b": 9.7,
-      "eps_est": 0.34,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "DDS",
-      "company": "Dillard's, Inc.",
-      "date": "2026-11-12",
-      "slot": "bmo",
-      "mcap_b": 9.7,
-      "eps_est": 6.2,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     }
-    ],
-    "more": [
-     {
-      "ticker": "TWST",
-      "company": "Twist Bioscience Corporation",
-      "date": "2026-11-12",
-      "slot": "bmo",
-      "mcap_b": 8.1,
-      "eps_est": -0.2,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     }
-    ],
-    "small": 122
+    "total": 1,
+    "shown": [],
+    "more": [],
+    "small": 1
    },
    "amc": {
-    "total": 176,
+    "total": 189,
     "shown": [
      {
       "ticker": "AMAT",
       "company": "Applied Materials, Inc.",
       "date": "2026-11-12",
       "slot": "amc",
-      "mcap_b": 313.5,
+      "mcap_b": 302.6,
       "eps_est": 4.05,
       "eps_act": null,
       "surprise": null,
@@ -656,7 +554,7 @@
       "company": "Cisco Systems, Inc.",
       "date": "2026-11-12",
       "slot": "amc",
-      "mcap_b": 397.3,
+      "mcap_b": 402.2,
       "eps_est": 1.33,
       "eps_act": null,
       "surprise": null,
@@ -667,7 +565,7 @@
       "company": "Nu Holdings Ltd.",
       "date": "2026-11-12",
       "slot": "amc",
-      "mcap_b": 59.5,
+      "mcap_b": 57.2,
       "eps_est": 0.22,
       "eps_act": null,
       "surprise": null,
@@ -689,7 +587,7 @@
       "company": "Cerebras Systems Inc.",
       "date": "2026-11-12",
       "slot": "amc",
-      "mcap_b": 24.0,
+      "mcap_b": 23.2,
       "eps_est": -0.14,
       "eps_act": null,
       "surprise": null,
@@ -700,7 +598,7 @@
       "company": "QXO, Inc.",
       "date": "2026-11-12",
       "slot": "amc",
-      "mcap_b": 14.3,
+      "mcap_b": 13.3,
       "eps_est": 0.14,
       "eps_act": null,
       "surprise": null,
@@ -709,35 +607,69 @@
     ],
     "more": [
      {
-      "ticker": "STN",
-      "company": "Stantec Inc.",
+      "ticker": "DDS",
+      "company": "Dillard's, Inc.",
       "date": "2026-11-12",
       "slot": "amc",
-      "mcap_b": 8.5,
-      "eps_est": 1.78,
+      "mcap_b": 9.4,
+      "eps_est": 6.2,
       "eps_act": null,
       "surprise": null,
       "watch": false
      },
      {
-      "ticker": "ELPC",
-      "company": "Companhia Paranaense de Energia - COPEL",
+      "ticker": "STN",
+      "company": "Stantec Inc.",
       "date": "2026-11-12",
       "slot": "amc",
-      "mcap_b": 8.1,
-      "eps_est": 0.15,
+      "mcap_b": 8.4,
+      "eps_est": 1.78,
       "eps_act": null,
       "surprise": null,
       "watch": false
      }
     ],
-    "small": 168
+    "small": 181
    },
    "tns": {
-    "total": 5,
-    "shown": [],
+    "total": 46,
+    "shown": [
+     {
+      "ticker": "NBIS",
+      "company": "Nebius Group N.V.",
+      "date": "2026-11-12",
+      "slot": "tns",
+      "mcap_b": 34.9,
+      "eps_est": -1.24,
+      "eps_act": -0.13,
+      "surprise": 89.5,
+      "watch": false
+     },
+     {
+      "ticker": "TTEK",
+      "company": "Tetra Tech, Inc.",
+      "date": "2026-11-12",
+      "slot": "tns",
+      "mcap_b": 10.1,
+      "eps_est": 0.47,
+      "eps_act": 0.49,
+      "surprise": 4.63,
+      "watch": false
+     },
+     {
+      "ticker": "HBM",
+      "company": "Hudbay Minerals Inc.",
+      "date": "2026-11-12",
+      "slot": "tns",
+      "mcap_b": 9.6,
+      "eps_est": 0.35,
+      "eps_act": 0.34,
+      "surprise": -1.87,
+      "watch": false
+     }
+    ],
     "more": [],
-    "small": 5
+    "small": 43
    },
    "events": [],
    "checks": [
@@ -747,18 +679,18 @@
   {
    "date": "2026-11-13",
    "dow": "금",
-   "total": 45,
+   "total": 60,
    "bmo": {
-    "total": 29,
+    "total": 43,
     "shown": [],
     "more": [],
-    "small": 29
+    "small": 43
    },
    "amc": {
-    "total": 13,
+    "total": 14,
     "shown": [],
     "more": [],
-    "small": 13
+    "small": 14
    },
    "tns": {
     "total": 3,
@@ -768,7 +700,7 @@
       "company": "Mitsubishi UFJ Financial Group, Inc.",
       "date": "2026-11-13",
       "slot": "tns",
-      "mcap_b": 247.0,
+      "mcap_b": 244.8,
       "eps_est": 0.34,
       "eps_act": null,
       "surprise": null,
@@ -779,7 +711,7 @@
       "company": "Sumitomo Mitsui Financial Group, Inc.",
       "date": "2026-11-13",
       "slot": "tns",
-      "mcap_b": 155.2,
+      "mcap_b": 152.9,
       "eps_est": 0.4,
       "eps_act": null,
       "surprise": null,
@@ -790,7 +722,7 @@
       "company": "Mizuho Financial Group, Inc.",
       "date": "2026-11-13",
       "slot": "tns",
-      "mcap_b": 122.7,
+      "mcap_b": 122.2,
       "eps_est": 0.17,
       "eps_act": null,
       "surprise": null,
@@ -837,8 +769,7 @@
     "earnings": [
      "PANW(장후)",
      "TJX(장전)",
-     "LOW(장전)",
-     "PDD(장전)"
+     "LOW(장전)"
     ]
    },
    {
@@ -847,7 +778,8 @@
     "events": [],
     "earnings": [
      "WMT(장전)",
-     "BABA(장전)"
+     "BABA(장전)",
+     "PDD(장전)"
     ]
    },
    {
@@ -889,5 +821,5 @@
   "watchlist": 33,
   "logo_url": "https://financialmodelingprep.com/image-stock/{ticker}.png"
  },
- "generated_at": "2026-11-12T07:40+09:00"
+ "generated_at": "2026-11-13T07:29+09:00"
 }
