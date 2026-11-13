@@ -1,7 +1,7 @@
 {
  "as_of": "2026-11-13",
  "lookback_days": 180,
- "generated_at": "2026-11-13T07:38+09:00",
+ "generated_at": "2026-11-13T21:52+09:00",
  "plans": [
   {
    "corp_code": "01755259",
@@ -967,7 +967,7 @@
     -11001
    ],
    "progress_pct": 0.0,
-   "price_chg": 49.66,
+   "price_chg": 49.89,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260807000220"
   },
   {
@@ -1792,7 +1792,7 @@
     -23124
    ],
    "progress_pct": 0.0,
-   "price_chg": 7.77,
+   "price_chg": 7.88,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260727000177"
   },
   {
@@ -4352,91 +4352,6 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260824000155"
   },
   {
-   "corp_code": "00340272",
-   "name": "에스폴리텍",
-   "code": "050760",
-   "market": "KOSDAQ",
-   "kind": "direct",
-   "rcept_no": "20260813000189",
-   "decided": "2026-08-13",
-   "start": "2026-08-14",
-   "end": "2026-11-13",
-   "shares": 864304.0,
-   "amount": 1000000000.0,
-   "how": "코스닥 시장을 통한 장내 직접취득",
-   "why": "주식가격의 안정 및 주주가치 제고",
-   "status": "진행 중",
-   "cap_pct": 4.83,
-   "time_pct": 100,
-   "other_corp_net": 783683,
-   "other_corp_curve": [
-    1623,
-    175,
-    -1545,
-    -2245,
-    -2835,
-    -2787,
-    -1701,
-    -1715,
-    -1717,
-    -4074,
-    -3479,
-    -5318,
-    -5030,
-    -5248,
-    -4977,
-    71238,
-    71206,
-    71207,
-    71230,
-    71211,
-    151202,
-    151201,
-    150840,
-    150769,
-    150769,
-    150769,
-    150769,
-    150769,
-    159669,
-    160669,
-    162769,
-    162769,
-    162769,
-    230769,
-    230769,
-    230769,
-    230769,
-    230769,
-    294983,
-    294983,
-    294983,
-    294983,
-    294983,
-    294983,
-    294983,
-    294983,
-    294983,
-    294983,
-    294983,
-    294983,
-    294983,
-    294983,
-    298633,
-    388063,
-    449345,
-    535775,
-    622205,
-    708635,
-    783683,
-    783683
-   ],
-   "progress_pct": 90.7,
-   "price_chg": 0.64,
-   "shares_est": null,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000189"
-  },
-  {
    "corp_code": "01217795",
    "name": "엠에프씨",
    "code": "432980",
@@ -6179,7 +6094,7 @@
     308146
    ],
    "progress_pct": 88.0,
-   "price_chg": -5.57,
+   "price_chg": -6.25,
    "shares_est": null,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000116"
   },
@@ -7451,7 +7366,7 @@
     -145163
    ],
    "progress_pct": 0.0,
-   "price_chg": 15.1,
+   "price_chg": 15.47,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260930000301"
   },
   {
@@ -7867,7 +7782,7 @@
     222894
    ],
    "progress_pct": 69.1,
-   "price_chg": -13.54,
+   "price_chg": -13.74,
    "shares_est": null,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000160"
   },
@@ -12274,7 +12189,7 @@
     -1012
    ],
    "progress_pct": 0.0,
-   "price_chg": -2.86,
+   "price_chg": -2.69,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260819000226"
   },
   {
@@ -13566,7 +13481,7 @@
     12169
    ],
    "progress_pct": 30.4,
-   "price_chg": 0.88,
+   "price_chg": 1.0,
    "shares_est": null,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104000188"
   },
@@ -13779,88 +13694,6 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260806000214"
   },
   {
-   "corp_code": "00982023",
-   "name": "실리콘투",
-   "code": "257720",
-   "market": "KOSDAQ",
-   "kind": "trust",
-   "rcept_no": "20261019000068",
-   "decided": "2026-10-19",
-   "start": "2026-10-19",
-   "end": "2027-04-18",
-   "shares": null,
-   "amount": 5000000000.0,
-   "how": "신탁계약 (삼성증권\n(Samsung Securities Co.,LTD.))",
-   "why": "임직원 보상 및 주주가치 제고",
-   "status": "진행 중",
-   "cap_pct": 0.31,
-   "shares_est": 200803,
-   "time_pct": 14,
-   "other_corp_net": -29039,
-   "other_corp_curve": [
-    18548,
-    24721,
-    27727,
-    28012,
-    26331,
-    26503,
-    27295,
-    24701,
-    3777,
-    -8964,
-    -5116,
-    -13716,
-    -31584,
-    -20898,
-    -21769,
-    -22993,
-    -24736,
-    -32345,
-    -29039
-   ],
-   "progress_pct": 0.0,
-   "price_chg": -29.35,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000068"
-  },
-  {
-   "corp_code": "00413046",
-   "name": "셀트리온",
-   "code": "068270",
-   "market": "KOSPI",
-   "kind": "direct",
-   "rcept_no": "20261026000084",
-   "decided": "2026-10-26",
-   "start": "2026-10-27",
-   "end": "2027-01-26",
-   "shares": 514404.0,
-   "amount": 100000137600.0,
-   "how": "유가증권시장을 통한 장내 매수",
-   "why": "주가 안정 및 주주가치 제고",
-   "status": "진행 중",
-   "cap_pct": 0.21,
-   "time_pct": 19,
-   "other_corp_net": 489032,
-   "other_corp_curve": [
-    59042,
-    109806,
-    148997,
-    191532,
-    232666,
-    272450,
-    313011,
-    341363,
-    379471,
-    420516,
-    459474,
-    488409,
-    489032
-   ],
-   "progress_pct": 95.1,
-   "price_chg": 10.79,
-   "shares_est": null,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000084"
-  },
-  {
    "corp_code": "00337296",
    "name": "원포유",
    "code": "122830",
@@ -13993,6 +13826,29 @@
    "price_chg": null,
    "shares_est": null,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000145"
+  },
+  {
+   "corp_code": "00675594",
+   "name": "디티앤씨",
+   "code": "187220",
+   "market": "KOSDAQ",
+   "kind": "direct",
+   "rcept_no": "20261113000139",
+   "decided": "2026-11-13",
+   "start": "2026-11-16",
+   "end": "2026-12-15",
+   "shares": 119331.0,
+   "amount": 200000000.0,
+   "how": "코스닥시장을 통한 장내 매수",
+   "why": "주가안정 및 주주가치 제고",
+   "status": "시작 전",
+   "cap_pct": null,
+   "time_pct": null,
+   "progress_pct": null,
+   "other_corp_net": null,
+   "price_chg": null,
+   "shares_est": null,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113000139"
   },
   {
    "corp_code": "00137809",
@@ -15414,6 +15270,91 @@
    "price_chg": 41.32,
    "shares_est": null,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260804000111"
+  },
+  {
+   "corp_code": "00340272",
+   "name": "에스폴리텍",
+   "code": "050760",
+   "market": "KOSDAQ",
+   "kind": "direct",
+   "rcept_no": "20260813000189",
+   "decided": "2026-08-13",
+   "start": "2026-08-14",
+   "end": "2026-11-13",
+   "shares": 864304.0,
+   "amount": 1000000000.0,
+   "how": "코스닥 시장을 통한 장내 직접취득",
+   "why": "주식가격의 안정 및 주주가치 제고",
+   "status": "완료",
+   "cap_pct": 4.83,
+   "time_pct": 100,
+   "other_corp_net": 783683,
+   "other_corp_curve": [
+    1623,
+    175,
+    -1545,
+    -2245,
+    -2835,
+    -2787,
+    -1701,
+    -1715,
+    -1717,
+    -4074,
+    -3479,
+    -5318,
+    -5030,
+    -5248,
+    -4977,
+    71238,
+    71206,
+    71207,
+    71230,
+    71211,
+    151202,
+    151201,
+    150840,
+    150769,
+    150769,
+    150769,
+    150769,
+    150769,
+    159669,
+    160669,
+    162769,
+    162769,
+    162769,
+    230769,
+    230769,
+    230769,
+    230769,
+    230769,
+    294983,
+    294983,
+    294983,
+    294983,
+    294983,
+    294983,
+    294983,
+    294983,
+    294983,
+    294983,
+    294983,
+    294983,
+    294983,
+    294983,
+    298633,
+    388063,
+    449345,
+    535775,
+    622205,
+    708635,
+    783683,
+    783683
+   ],
+   "progress_pct": 90.7,
+   "price_chg": 0.64,
+   "shares_est": null,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813000189"
   },
   {
    "corp_code": "00363927",
@@ -19059,6 +19000,44 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000305"
   },
   {
+   "corp_code": "00413046",
+   "name": "셀트리온",
+   "code": "068270",
+   "market": "KOSPI",
+   "kind": "direct",
+   "rcept_no": "20261026000084",
+   "decided": "2026-10-26",
+   "start": "2026-10-27",
+   "end": "2027-01-26",
+   "shares": 514404.0,
+   "amount": 100000137600.0,
+   "how": "유가증권시장을 통한 장내 매수",
+   "why": "주가 안정 및 주주가치 제고",
+   "status": "완료",
+   "cap_pct": 0.21,
+   "time_pct": 19,
+   "other_corp_net": 489032,
+   "other_corp_curve": [
+    59042,
+    109806,
+    148997,
+    191532,
+    232666,
+    272450,
+    313011,
+    341363,
+    379471,
+    420516,
+    459474,
+    488409,
+    489032
+   ],
+   "progress_pct": 95.1,
+   "price_chg": 10.79,
+   "shares_est": null,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026000084"
+  },
+  {
    "corp_code": "00157399",
    "name": "한솔테크닉스",
    "code": "004710",
@@ -20571,7 +20550,7 @@
     -1882
    ],
    "progress_pct": 0.0,
-   "price_chg": 5.44,
+   "price_chg": 5.24,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260803000103"
   },
   {
@@ -23495,7 +23474,7 @@
     -3547
    ],
    "progress_pct": 0.0,
-   "price_chg": 4.28,
+   "price_chg": 5.3,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260630000236"
   },
   {
@@ -23861,7 +23840,7 @@
     -9031
    ],
    "progress_pct": 0.0,
-   "price_chg": -2.74,
+   "price_chg": -4.94,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260610000207"
   },
   {
@@ -25654,9 +25633,102 @@
    "progress_pct": 0.0,
    "price_chg": -29.22,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260903000301"
+  },
+  {
+   "corp_code": "00982023",
+   "name": "실리콘투",
+   "code": "257720",
+   "market": "KOSDAQ",
+   "kind": "trust",
+   "rcept_no": "20261019000068",
+   "decided": "2026-10-19",
+   "start": "2026-10-19",
+   "end": "2027-04-18",
+   "shares": null,
+   "amount": 5000000000.0,
+   "how": "신탁계약 (삼성증권\n(Samsung Securities Co.,LTD.))",
+   "why": "임직원 보상 및 주주가치 제고",
+   "status": "해지",
+   "cap_pct": 0.31,
+   "shares_est": 200803,
+   "time_pct": 14,
+   "other_corp_net": -29039,
+   "other_corp_curve": [
+    18548,
+    24721,
+    27727,
+    28012,
+    26331,
+    26503,
+    27295,
+    24701,
+    3777,
+    -8964,
+    -5116,
+    -13716,
+    -31584,
+    -20898,
+    -21769,
+    -22993,
+    -24736,
+    -32345,
+    -29039
+   ],
+   "progress_pct": 0.0,
+   "price_chg": -29.35,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261019000068"
   }
  ],
  "cancels": [
+  {
+   "name": "이지케어텍",
+   "code": "099750",
+   "market": "KOSDAQ",
+   "date": "2026-11-13",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113901784"
+  },
+  {
+   "name": "휴마시스",
+   "code": "205470",
+   "market": "KOSDAQ",
+   "date": "2026-11-13",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113900978"
+  },
+  {
+   "name": "원텍",
+   "code": "336570",
+   "market": "KOSDAQ",
+   "date": "2026-11-13",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113900639"
+  },
+  {
+   "name": "더즌",
+   "code": "462860",
+   "market": "KOSDAQ",
+   "date": "2026-11-13",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113900397"
+  },
+  {
+   "name": "디아이동일",
+   "code": "001530",
+   "market": "KOSPI",
+   "date": "2026-11-13",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113801927"
+  },
+  {
+   "name": "동성케미컬",
+   "code": "102260",
+   "market": "KOSPI",
+   "date": "2026-11-13",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113801374"
+  },
+  {
+   "name": "오뚜기",
+   "code": "007310",
+   "market": "KOSPI",
+   "date": "2026-11-13",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113800882"
+  },
   {
    "name": "다산네트웍스",
    "code": "039560",
@@ -25887,58 +25959,16 @@
    "market": "KOSPI",
    "date": "2026-11-05",
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800175"
-  },
-  {
-   "name": "카카오",
-   "code": "035720",
-   "market": "KOSPI",
-   "date": "2026-11-05",
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800084"
-  },
-  {
-   "name": "블루엠텍",
-   "code": "439580",
-   "market": "KOSDAQ",
-   "date": "2026-11-04",
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104900538"
-  },
-  {
-   "name": "디와이피엔에프",
-   "code": "104460",
-   "market": "KOSDAQ",
-   "date": "2026-11-04",
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104900318"
-  },
-  {
-   "name": "휴젤",
-   "code": "145020",
-   "market": "KOSDAQ",
-   "date": "2026-11-04",
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104900301"
-  },
-  {
-   "name": "고려아연",
-   "code": "010130",
-   "market": "KOSPI",
-   "date": "2026-11-04",
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104800484"
-  },
-  {
-   "name": "삼익악기",
-   "code": "002450",
-   "market": "KOSPI",
-   "date": "2026-11-04",
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104800386"
-  },
-  {
-   "name": "현대백화점",
-   "code": "069960",
-   "market": "KOSPI",
-   "date": "2026-11-04",
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261104800274"
   }
  ],
  "disposals": [
+  {
+   "name": "셀트리온제약",
+   "code": "068760",
+   "market": "KOSDAQ",
+   "date": "2026-11-13",
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113000892"
+  },
   {
    "name": "파크시스템스",
    "code": "140860",
@@ -26211,19 +26241,12 @@
    "market": "KOSPI",
    "date": "2026-09-04",
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260904000431"
-  },
-  {
-   "name": "티플랙스",
-   "code": "081150",
-   "market": "KOSDAQ",
-   "date": "2026-08-28",
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260828001884"
   }
  ],
  "stats": {
-  "active": 195,
-  "active_amount": 24688215628234.0,
-  "new_2w": 40,
+  "active": 192,
+  "active_amount": 24582215490634.0,
+  "new_2w": 41,
   "cancels_2w": 40
  }
 }

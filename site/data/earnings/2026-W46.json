@@ -2,8 +2,8 @@
  "label": "2026-W46",
  "start": "2026-11-09",
  "end": "2026-11-13",
- "total": 715,
- "headline": "실적 발표 715건 · 목요일 236건으로 최다 · 미국 10월 소비자물가(CPI)",
+ "total": 662,
+ "headline": "실적 발표 662건 · 월요일 201건으로 최다 · 미국 10월 소비자물가(CPI)",
  "days": [
   {
    "date": "2026-11-09",
@@ -528,7 +528,7 @@
   {
    "date": "2026-11-12",
    "dow": "목",
-   "total": 236,
+   "total": 173,
    "bmo": {
     "total": 1,
     "shown": [],
@@ -536,113 +536,91 @@
     "small": 1
    },
    "amc": {
-    "total": 189,
+    "total": 1,
+    "shown": [],
+    "more": [],
+    "small": 1
+   },
+   "tns": {
+    "total": 171,
     "shown": [
      {
       "ticker": "AMAT",
       "company": "Applied Materials, Inc.",
       "date": "2026-11-12",
-      "slot": "amc",
-      "mcap_b": 302.6,
+      "slot": "tns",
+      "mcap_b": 302.3,
       "eps_est": 4.05,
-      "eps_act": null,
-      "surprise": null,
+      "eps_act": 4.16,
+      "surprise": 2.6,
       "watch": true
      },
      {
       "ticker": "CSCO",
       "company": "Cisco Systems, Inc.",
       "date": "2026-11-12",
-      "slot": "amc",
+      "slot": "tns",
       "mcap_b": 402.2,
       "eps_est": 1.33,
-      "eps_act": null,
-      "surprise": null,
+      "eps_act": 1.4,
+      "surprise": 5.64,
+      "watch": false
+     },
+     {
+      "ticker": "SMFG",
+      "company": "Sumitomo Mitsui Financial Group, Inc.",
+      "date": "2026-11-12",
+      "slot": "tns",
+      "mcap_b": 152.9,
+      "eps_est": 0.24,
+      "eps_act": 0.25,
+      "surprise": 1.45,
       "watch": false
      },
      {
       "ticker": "NU",
       "company": "Nu Holdings Ltd.",
       "date": "2026-11-12",
-      "slot": "amc",
-      "mcap_b": 57.2,
+      "slot": "tns",
+      "mcap_b": 57.1,
       "eps_est": 0.22,
-      "eps_act": null,
-      "surprise": null,
+      "eps_act": 0.22,
+      "surprise": 0.32,
       "watch": false
      },
-     {
-      "ticker": "EC",
-      "company": "Ecopetrol S.A.",
-      "date": "2026-11-12",
-      "slot": "amc",
-      "mcap_b": 31.5,
-      "eps_est": 0.59,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "CBRS",
-      "company": "Cerebras Systems Inc.",
-      "date": "2026-11-12",
-      "slot": "amc",
-      "mcap_b": 23.2,
-      "eps_est": -0.14,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "QXO",
-      "company": "QXO, Inc.",
-      "date": "2026-11-12",
-      "slot": "amc",
-      "mcap_b": 13.3,
-      "eps_est": 0.14,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     }
-    ],
-    "more": [
-     {
-      "ticker": "DDS",
-      "company": "Dillard's, Inc.",
-      "date": "2026-11-12",
-      "slot": "amc",
-      "mcap_b": 9.4,
-      "eps_est": 6.2,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "STN",
-      "company": "Stantec Inc.",
-      "date": "2026-11-12",
-      "slot": "amc",
-      "mcap_b": 8.4,
-      "eps_est": 1.78,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     }
-    ],
-    "small": 181
-   },
-   "tns": {
-    "total": 46,
-    "shown": [
      {
       "ticker": "NBIS",
       "company": "Nebius Group N.V.",
       "date": "2026-11-12",
       "slot": "tns",
-      "mcap_b": 34.9,
+      "mcap_b": 35.0,
       "eps_est": -1.24,
       "eps_act": -0.13,
       "surprise": 89.5,
+      "watch": false
+     },
+     {
+      "ticker": "ASND",
+      "company": "Ascendis Pharma A/S",
+      "date": "2026-11-12",
+      "slot": "tns",
+      "mcap_b": 17.6,
+      "eps_est": 1.15,
+      "eps_act": 1.71,
+      "surprise": 48.7,
+      "watch": false
+     }
+    ],
+    "more": [
+     {
+      "ticker": "QXO",
+      "company": "QXO, Inc.",
+      "date": "2026-11-12",
+      "slot": "tns",
+      "mcap_b": 13.3,
+      "eps_est": 0.14,
+      "eps_act": 0.13,
+      "surprise": -4.21,
       "watch": false
      },
      {
@@ -662,14 +640,35 @@
       "date": "2026-11-12",
       "slot": "tns",
       "mcap_b": 9.6,
-      "eps_est": 0.35,
+      "eps_est": 0.34,
       "eps_act": 0.34,
-      "surprise": -1.87,
+      "surprise": -0.34,
+      "watch": false
+     },
+     {
+      "ticker": "DDS",
+      "company": "Dillard's, Inc.",
+      "date": "2026-11-12",
+      "slot": "tns",
+      "mcap_b": 9.4,
+      "eps_est": 8.05,
+      "eps_act": 8.38,
+      "surprise": 4.1,
+      "watch": false
+     },
+     {
+      "ticker": "STN",
+      "company": "Stantec Inc.",
+      "date": "2026-11-12",
+      "slot": "tns",
+      "mcap_b": 8.4,
+      "eps_est": 1.78,
+      "eps_act": 1.89,
+      "surprise": 6.15,
       "watch": false
      }
     ],
-    "more": [],
-    "small": 43
+    "small": 160
    },
    "events": [],
    "checks": [
@@ -679,18 +678,18 @@
   {
    "date": "2026-11-13",
    "dow": "금",
-   "total": 60,
+   "total": 70,
    "bmo": {
-    "total": 43,
+    "total": 36,
     "shown": [],
     "more": [],
-    "small": 43
+    "small": 36
    },
    "amc": {
-    "total": 14,
+    "total": 31,
     "shown": [],
     "more": [],
-    "small": 14
+    "small": 31
    },
    "tns": {
     "total": 3,
@@ -821,5 +820,5 @@
   "watchlist": 33,
   "logo_url": "https://financialmodelingprep.com/image-stock/{ticker}.png"
  },
- "generated_at": "2026-11-13T07:29+09:00"
+ "generated_at": "2026-11-13T21:45+09:00"
 }
