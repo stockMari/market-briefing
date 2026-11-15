@@ -2,13 +2,13 @@
  "label": "2026-W47",
  "start": "2026-11-16",
  "end": "2026-11-20",
- "total": 261,
- "headline": "실적 발표 261건 · 월요일 122건으로 최다",
+ "total": 285,
+ "headline": "실적 발표 285건 · 월요일 144건으로 최다",
  "days": [
   {
    "date": "2026-11-16",
    "dow": "월",
-   "total": 122,
+   "total": 144,
    "bmo": {
     "total": 56,
     "shown": [
@@ -95,7 +95,7 @@
     "small": 49
    },
    "amc": {
-    "total": 60,
+    "total": 81,
     "shown": [
      {
       "ticker": "ACM",
@@ -110,13 +110,13 @@
      }
     ],
     "more": [],
-    "small": 59
+    "small": 80
    },
    "tns": {
-    "total": 6,
+    "total": 7,
     "shown": [],
     "more": [],
-    "small": 6
+    "small": 7
    },
    "events": [],
    "checks": []
@@ -124,7 +124,7 @@
   {
    "date": "2026-11-17",
    "dow": "화",
-   "total": 42,
+   "total": 44,
    "bmo": {
     "total": 27,
     "shown": [
@@ -145,7 +145,7 @@
       "date": "2026-11-17",
       "slot": "bmo",
       "mcap_b": 205.4,
-      "eps_est": 1.69,
+      "eps_est": 1.68,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -211,14 +211,14 @@
     "small": 20
    },
    "amc": {
-    "total": 15,
+    "total": 17,
     "shown": [
      {
       "ticker": "NVDA",
       "company": "NVIDIA Corporation",
       "date": "2026-11-17",
       "slot": "amc",
-      "mcap_b": 3929.1,
+      "mcap_b": 3932.3,
       "eps_est": 2.47,
       "eps_act": null,
       "surprise": null,
@@ -230,7 +230,7 @@
       "date": "2026-11-17",
       "slot": "amc",
       "mcap_b": 15.3,
-      "eps_est": 2.03,
+      "eps_est": 2.08,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -248,7 +248,7 @@
      }
     ],
     "more": [],
-    "small": 12
+    "small": 14
    },
    "tns": {
     "total": 0,
@@ -283,7 +283,7 @@
       "company": "The TJX Companies, Inc.",
       "date": "2026-11-18",
       "slot": "bmo",
-      "mcap_b": 148.4,
+      "mcap_b": 147.8,
       "eps_est": 1.33,
       "eps_act": null,
       "surprise": null,
@@ -323,7 +323,7 @@
       "company": "Palo Alto Networks, Inc.",
       "date": "2026-11-18",
       "slot": "amc",
-      "mcap_b": 263.7,
+      "mcap_b": 263.8,
       "eps_est": 0.97,
       "eps_act": null,
       "surprise": null,
@@ -387,8 +387,8 @@
       "company": "Walmart Inc.",
       "date": "2026-11-19",
       "slot": "bmo",
-      "mcap_b": 1016.2,
-      "eps_est": 0.63,
+      "mcap_b": 1019.4,
+      "eps_est": 0.64,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -494,7 +494,7 @@
       "company": "Ross Stores, Inc.",
       "date": "2026-11-19",
       "slot": "amc",
-      "mcap_b": 74.0,
+      "mcap_b": 74.3,
       "eps_est": 1.42,
       "eps_act": null,
       "surprise": null,
@@ -725,5 +725,5 @@
   "watchlist": 33,
   "logo_url": "https://financialmodelingprep.com/image-stock/{ticker}.png"
  },
- "generated_at": "2026-11-14T08:56+09:00"
+ "generated_at": "2026-11-15T19:06+09:00"
 }
