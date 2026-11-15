@@ -456,7 +456,7 @@
       "date": "2026-11-19",
       "slot": "bmo",
       "mcap_b": 13.4,
-      "eps_est": 29.93,
+      "eps_est": 26.15,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -725,5 +725,5 @@
   "watchlist": 33,
   "logo_url": "https://financialmodelingprep.com/image-stock/{ticker}.png"
  },
- "generated_at": "2026-11-15T19:16+09:00"
+ "generated_at": "2026-11-16T07:24+09:00"
 }

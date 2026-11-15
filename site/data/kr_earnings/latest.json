@@ -1,7 +1,7 @@
 {
- "as_of": "2026-11-15",
+ "as_of": "2026-11-16",
  "lookback_days": 14,
- "generated_at": "2026-11-15T19:07+09:00",
+ "generated_at": "2026-11-16T07:25+09:00",
  "results": [
   {
    "period": "26년 3Q",
@@ -15415,17 +15415,6 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261026800711"
   },
   {
-   "date": "2026-11-16",
-   "time": "",
-   "name": "시프트업",
-   "code": "462870",
-   "market": "KOSPI",
-   "about": "주요 경영 현황 및 질의응답",
-   "how": "1:1 및 그룹 미팅",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800625"
-  },
-  {
    "date": "2026-11-17",
    "time": "09:00",
    "name": "세아제강",
@@ -16053,17 +16042,6 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021600232"
   },
   {
-   "date": "2026-11-23",
-   "time": "",
-   "name": "시프트업",
-   "code": "462870",
-   "market": "KOSPI",
-   "about": "주요 경영 현황 및 질의응답",
-   "how": "1:1 및 그룹 미팅",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261016800629"
-  },
-  {
    "date": "2026-11-24",
    "time": "09:00",
    "name": "현대건설",
@@ -16168,6 +16146,6 @@
   "op_up": 80,
   "op_down": 59,
   "turnaround": 15,
-  "ir_upcoming": 97
+  "ir_upcoming": 95
  }
 }

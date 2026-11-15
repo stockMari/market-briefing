@@ -1,7 +1,7 @@
 {
- "as_of": "2026-11-15",
+ "as_of": "2026-11-16",
  "lookback_days": 180,
- "generated_at": "2026-11-15T19:14+09:00",
+ "generated_at": "2026-11-16T07:31+09:00",
  "plans": [
   {
    "corp_code": "01755259",
@@ -20,7 +20,7 @@
    "status": "진행 중",
    "cap_pct": 20.22,
    "shares_est": 2865329,
-   "time_pct": 68,
+   "time_pct": 69,
    "other_corp_net": -69747,
    "other_corp_curve": [
     -629,
@@ -253,7 +253,7 @@
    "status": "진행 중",
    "cap_pct": 14.5,
    "shares_est": 1474926,
-   "time_pct": 43,
+   "time_pct": 44,
    "other_corp_net": -17262,
    "other_corp_curve": [
     -1773,
@@ -500,7 +500,7 @@
    "status": "진행 중",
    "cap_pct": 13.16,
    "shares_est": 1226993,
-   "time_pct": 13,
+   "time_pct": 14,
    "other_corp_net": 738,
    "other_corp_curve": [
     215,
@@ -811,7 +811,7 @@
    "why": "주가 안정을 통한 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 11.55,
-   "time_pct": 83,
+   "time_pct": 84,
    "other_corp_net": 316711,
    "other_corp_curve": [
     264,
@@ -906,7 +906,7 @@
    "status": "진행 중",
    "cap_pct": 9.26,
    "shares_est": 2334630,
-   "time_pct": 88,
+   "time_pct": 89,
    "other_corp_net": -199721,
    "other_corp_curve": [
     -2169,
@@ -1041,7 +1041,7 @@
    "status": "진행 중",
    "cap_pct": 9.13,
    "shares_est": 2555366,
-   "time_pct": 39,
+   "time_pct": 40,
    "other_corp_net": -3913,
    "other_corp_curve": [
     93,
@@ -1386,7 +1386,7 @@
    "status": "진행 중",
    "cap_pct": 8.91,
    "shares_est": 1066666,
-   "time_pct": 91,
+   "time_pct": 92,
    "other_corp_net": -75788,
    "other_corp_curve": [
     -198,
@@ -1523,7 +1523,7 @@
    "status": "진행 중",
    "cap_pct": 8.69,
    "shares_est": 1248439,
-   "time_pct": 67,
+   "time_pct": 68,
    "other_corp_net": 1568,
    "other_corp_curve": [
     1004,
@@ -1832,7 +1832,7 @@
    "status": "진행 중",
    "cap_pct": 7.94,
    "shares_est": 2012072,
-   "time_pct": 60,
+   "time_pct": 61,
    "other_corp_net": -23122,
    "other_corp_curve": [
     -12057,
@@ -1916,7 +1916,7 @@
    "why": "주가 안정 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 7.8,
-   "time_pct": 59,
+   "time_pct": 60,
    "other_corp_net": 1747620,
    "other_corp_curve": [
     48588,
@@ -2250,7 +2250,7 @@
    "why": "주식가격 안정 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 6.91,
-   "time_pct": 2,
+   "time_pct": 3,
    "other_corp_net": 14283,
    "other_corp_curve": [
     14283
@@ -2447,7 +2447,7 @@
    "status": "진행 중",
    "cap_pct": 6.08,
    "shares_est": 465657,
-   "time_pct": 93,
+   "time_pct": 94,
    "other_corp_net": -61910,
    "other_corp_curve": [
     174,
@@ -2588,7 +2588,7 @@
    "status": "진행 중",
    "cap_pct": 6.03,
    "shares_est": 1128668,
-   "time_pct": 67,
+   "time_pct": 68,
    "other_corp_net": 27858,
    "other_corp_curve": [
     5000,
@@ -2695,7 +2695,7 @@
    "status": "진행 중",
    "cap_pct": 5.96,
    "shares_est": 494437,
-   "time_pct": 72,
+   "time_pct": 73,
    "other_corp_net": -37500,
    "other_corp_curve": [
     0,
@@ -2809,7 +2809,7 @@
    "status": "진행 중",
    "cap_pct": 5.87,
    "shares_est": 539374,
-   "time_pct": 94,
+   "time_pct": 95,
    "other_corp_net": -612908,
    "other_corp_curve": [
     7928,
@@ -3200,7 +3200,7 @@
    "why": "주주가치 제고 및 임직원 주식 보상",
    "status": "진행 중",
    "cap_pct": 5.78,
-   "time_pct": 25,
+   "time_pct": 26,
    "other_corp_net": 3902352,
    "other_corp_curve": [
     190904,
@@ -3373,70 +3373,6 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260831000901"
   },
   {
-   "corp_code": "00104537",
-   "name": "국영지앤엠",
-   "code": "006050",
-   "market": "KOSDAQ",
-   "kind": "direct",
-   "rcept_no": "20260910000446",
-   "decided": "2026-09-10",
-   "start": "2026-09-16",
-   "end": "2026-11-15",
-   "shares": 100000.0,
-   "amount": 504000000.0,
-   "how": "코스닥 증권시장을 통한 장내매수",
-   "why": "주주가치 제고 목적으로 자기주식취득 후 소각 예정임.",
-   "status": "진행 중",
-   "cap_pct": 5.65,
-   "time_pct": 100,
-   "other_corp_net": 104083,
-   "other_corp_curve": [
-    10001,
-    20000,
-    29955,
-    39982,
-    49990,
-    54898,
-    59898,
-    59898,
-    59898,
-    60583,
-    60583,
-    60583,
-    60583,
-    60583,
-    60583,
-    63583,
-    66565,
-    68583,
-    70583,
-    72583,
-    74583,
-    74583,
-    80083,
-    82083,
-    84083,
-    86083,
-    86083,
-    88083,
-    90083,
-    92083,
-    94083,
-    94083,
-    96083,
-    98083,
-    100083,
-    100083,
-    100083,
-    102083,
-    104083
-   ],
-   "progress_pct": 104.1,
-   "price_chg": -52.77,
-   "shares_est": null,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000446"
-  },
-  {
    "corp_code": "00122348",
    "name": "방림",
    "code": "003610",
@@ -3452,7 +3388,7 @@
    "why": "자기주식 취득 후 소각을 통한 주가안정 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 5.37,
-   "time_pct": 14,
+   "time_pct": 15,
    "other_corp_net": 262704,
    "other_corp_curve": [
     31547,
@@ -3553,7 +3489,7 @@
    "why": "주가안정, 주주가치제고 및 임직원 보상",
    "status": "진행 중",
    "cap_pct": 5.11,
-   "time_pct": 36,
+   "time_pct": 37,
    "other_corp_net": 138905,
    "other_corp_curve": [
     11609,
@@ -3603,7 +3539,7 @@
    "status": "진행 중",
    "cap_pct": 5.08,
    "shares_est": 1129943,
-   "time_pct": 30,
+   "time_pct": 31,
    "other_corp_net": 33260,
    "other_corp_curve": [
     14,
@@ -3983,7 +3919,7 @@
    "status": "진행 중",
    "cap_pct": 4.93,
    "shares_est": 539568,
-   "time_pct": 45,
+   "time_pct": 46,
    "other_corp_net": -8884,
    "other_corp_curve": [
     1,
@@ -4063,7 +3999,7 @@
    "why": "주가안정 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 4.93,
-   "time_pct": 13,
+   "time_pct": 14,
    "other_corp_net": 22228,
    "other_corp_curve": [
     5709,
@@ -4195,7 +4131,7 @@
    "status": "진행 중",
    "cap_pct": 4.84,
    "shares_est": 311526,
-   "time_pct": 53,
+   "time_pct": 54,
    "other_corp_net": -11507,
    "other_corp_curve": [
     -227,
@@ -4343,7 +4279,7 @@
    "why": "주식가격 안정 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 4.62,
-   "time_pct": 20,
+   "time_pct": 21,
    "other_corp_net": 208778,
    "other_corp_curve": [
     30277,
@@ -4522,7 +4458,7 @@
    "status": "진행 중",
    "cap_pct": 4.51,
    "shares_est": 744878,
-   "time_pct": 60,
+   "time_pct": 61,
    "other_corp_net": -9533,
    "other_corp_curve": [
     2682,
@@ -4689,7 +4625,7 @@
    "status": "진행 중",
    "cap_pct": 4.44,
    "shares_est": 1183898,
-   "time_pct": 5,
+   "time_pct": 6,
    "other_corp_net": -26456,
    "other_corp_curve": [
     -142,
@@ -4720,7 +4656,7 @@
    "status": "진행 중",
    "cap_pct": 4.43,
    "shares_est": 350262,
-   "time_pct": 27,
+   "time_pct": 28,
    "other_corp_net": -79285,
    "other_corp_curve": [
     0,
@@ -4932,7 +4868,7 @@
    "status": "진행 중",
    "cap_pct": 4.05,
    "shares_est": 1898734,
-   "time_pct": 55,
+   "time_pct": 56,
    "other_corp_net": 6691,
    "other_corp_curve": [
     1500,
@@ -5051,7 +4987,7 @@
    "status": "진행 중",
    "cap_pct": 4.01,
    "shares_est": 1090909,
-   "time_pct": 41,
+   "time_pct": 42,
    "other_corp_net": 396,
    "other_corp_curve": [
     -501,
@@ -5186,7 +5122,7 @@
    "status": "진행 중",
    "cap_pct": 3.76,
    "shares_est": 513874,
-   "time_pct": 36,
+   "time_pct": 37,
    "other_corp_net": -11612,
    "other_corp_curve": [
     -5171,
@@ -5253,7 +5189,7 @@
    "status": "진행 중",
    "cap_pct": 3.75,
    "shares_est": 800640,
-   "time_pct": 26,
+   "time_pct": 27,
    "other_corp_net": 127,
    "other_corp_curve": [
     5397,
@@ -5310,7 +5246,7 @@
    "status": "진행 중",
    "cap_pct": 3.72,
    "shares_est": 363636,
-   "time_pct": 76,
+   "time_pct": 77,
    "other_corp_net": -33916,
    "other_corp_curve": [
     1027,
@@ -5429,7 +5365,7 @@
    "status": "진행 중",
    "cap_pct": 3.7,
    "shares_est": 316957,
-   "time_pct": 53,
+   "time_pct": 54,
    "other_corp_net": -3958,
    "other_corp_curve": [
     225,
@@ -5719,7 +5655,7 @@
    "why": "주가 안정 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 3.68,
-   "time_pct": 35,
+   "time_pct": 36,
    "other_corp_net": 407724,
    "other_corp_curve": [
     327,
@@ -5851,7 +5787,7 @@
    "status": "진행 중",
    "cap_pct": 3.6,
    "shares_est": 177304,
-   "time_pct": 37,
+   "time_pct": 38,
    "other_corp_net": -13233,
    "other_corp_curve": [
     -3081,
@@ -6040,7 +5976,7 @@
    "why": "주가 안정 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 3.58,
-   "time_pct": 72,
+   "time_pct": 73,
    "other_corp_net": 308083,
    "other_corp_curve": [
     139,
@@ -6107,7 +6043,7 @@
    "why": "주가안정 및 주주가치 제고 (취득 후 소각)",
    "status": "진행 중",
    "cap_pct": 3.47,
-   "time_pct": 51,
+   "time_pct": 52,
    "other_corp_net": 216548,
    "other_corp_curve": [
     9310,
@@ -6164,7 +6100,7 @@
    "status": "진행 중",
    "cap_pct": 3.4,
    "shares_est": 555555,
-   "time_pct": 72,
+   "time_pct": 73,
    "other_corp_net": -2204,
    "other_corp_curve": [
     628,
@@ -6277,7 +6213,7 @@
    "why": "주주가치 제고",
    "status": "진행 중",
    "cap_pct": 3.4,
-   "time_pct": 3,
+   "time_pct": 4,
    "other_corp_net": 20656,
    "other_corp_curve": [
     23224,
@@ -6304,7 +6240,7 @@
    "why": "주주가치 제고",
    "status": "진행 중",
    "cap_pct": 3.39,
-   "time_pct": 23,
+   "time_pct": 24,
    "other_corp_net": 291586,
    "other_corp_curve": [
     20908,
@@ -6413,7 +6349,7 @@
    "status": "진행 중",
    "cap_pct": 3.31,
    "shares_est": 175438,
-   "time_pct": 63,
+   "time_pct": 64,
    "other_corp_net": 2904,
    "other_corp_curve": [
     0,
@@ -6515,7 +6451,7 @@
    "why": "자기주식 취득 및 소각을 통한 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 3.31,
-   "time_pct": 12,
+   "time_pct": 13,
    "other_corp_net": 231912,
    "other_corp_curve": [
     32757,
@@ -6713,7 +6649,7 @@
    "why": "주가 안정 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 3.23,
-   "time_pct": 29,
+   "time_pct": 30,
    "other_corp_net": 176602,
    "other_corp_curve": [
     10230,
@@ -6757,7 +6693,7 @@
    "why": "주주가치 제고 목적으로 자기주식 취득 후 소각",
    "status": "진행 중",
    "cap_pct": 3.17,
-   "time_pct": 10,
+   "time_pct": 11,
    "other_corp_net": 143674,
    "other_corp_curve": [
     36244,
@@ -6908,7 +6844,7 @@
    "why": "주식가격안정 및 주주가치제고",
    "status": "진행 중",
    "cap_pct": 3.13,
-   "time_pct": 51,
+   "time_pct": 52,
    "other_corp_net": 1273527,
    "other_corp_curve": [
     106516,
@@ -7217,7 +7153,7 @@
    "status": "진행 중",
    "cap_pct": 3.06,
    "shares_est": 726392,
-   "time_pct": 26,
+   "time_pct": 27,
    "other_corp_net": 6481,
    "other_corp_curve": [
     699,
@@ -7329,7 +7265,7 @@
    "why": "주가안정을 통한 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 3.02,
-   "time_pct": 3,
+   "time_pct": 4,
    "other_corp_net": 10741,
    "other_corp_curve": [
     8740,
@@ -7425,7 +7361,7 @@
    "status": "진행 중",
    "cap_pct": 2.83,
    "shares_est": 297619,
-   "time_pct": 6,
+   "time_pct": 7,
    "other_corp_net": 638,
    "other_corp_curve": [
     -375,
@@ -7579,7 +7515,7 @@
    "status": "진행 중",
    "cap_pct": 2.66,
    "shares_est": 1027777,
-   "time_pct": 73,
+   "time_pct": 74,
    "other_corp_net": 1509127,
    "other_corp_curve": [
     -647,
@@ -7674,7 +7610,7 @@
    "why": "기업가치 제고를 위한 주주환원정책의 일환으로 자기주식 취득 후 소각",
    "status": "진행 중",
    "cap_pct": 2.64,
-   "time_pct": 16,
+   "time_pct": 18,
    "other_corp_net": 95706,
    "other_corp_curve": [
     36978,
@@ -7709,7 +7645,7 @@
    "why": "주식가격 안정 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 2.62,
-   "time_pct": 87,
+   "time_pct": 90,
    "other_corp_net": 222188,
    "other_corp_curve": [
     48008,
@@ -7754,7 +7690,7 @@
    "status": "진행 중",
    "cap_pct": 2.53,
    "shares_est": 244498,
-   "time_pct": 3,
+   "time_pct": 4,
    "other_corp_net": 676,
    "other_corp_curve": [
     0,
@@ -7783,7 +7719,7 @@
    "why": "주주가치 제고",
    "status": "진행 중",
    "cap_pct": 2.49,
-   "time_pct": 51,
+   "time_pct": 52,
    "other_corp_net": 127224,
    "other_corp_curve": [
     28450,
@@ -7839,7 +7775,7 @@
    "why": "주가안정 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 2.46,
-   "time_pct": 13,
+   "time_pct": 14,
    "other_corp_net": 97905,
    "other_corp_curve": [
     6384,
@@ -7874,7 +7810,7 @@
    "status": "진행 중",
    "cap_pct": 2.45,
    "shares_est": 344827,
-   "time_pct": 70,
+   "time_pct": 71,
    "other_corp_net": 54062,
    "other_corp_curve": [
     -5,
@@ -7984,7 +7920,7 @@
    "why": "주가 안정 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 2.45,
-   "time_pct": 59,
+   "time_pct": 60,
    "other_corp_net": 114444,
    "other_corp_curve": [
     2743,
@@ -8044,7 +7980,7 @@
    "status": "진행 중",
    "cap_pct": 2.4,
    "shares_est": 714285,
-   "time_pct": 47,
+   "time_pct": 48,
    "other_corp_net": 2323,
    "other_corp_curve": [
     2318,
@@ -8126,7 +8062,7 @@
    "status": "진행 중",
    "cap_pct": 2.38,
    "shares_est": 240384,
-   "time_pct": 55,
+   "time_pct": 56,
    "other_corp_net": 195862,
    "other_corp_curve": [
     -109,
@@ -8219,7 +8155,7 @@
    "status": "진행 중",
    "cap_pct": 2.38,
    "shares_est": 497512,
-   "time_pct": 5,
+   "time_pct": 6,
    "other_corp_net": 5281,
    "other_corp_curve": [
     1684,
@@ -8249,7 +8185,7 @@
    "why": "주가 안정화 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 2.36,
-   "time_pct": 31,
+   "time_pct": 34,
    "other_corp_net": 71348,
    "other_corp_curve": [
     17341,
@@ -8323,7 +8259,7 @@
    "why": "임직원 성과 보상 및 주가안정",
    "status": "진행 중",
    "cap_pct": 2.34,
-   "time_pct": 21,
+   "time_pct": 22,
    "other_corp_net": 130144,
    "other_corp_curve": [
     666,
@@ -8472,7 +8408,7 @@
    "why": "주주가치 제고 및 임직원 주식 보상",
    "status": "진행 중",
    "cap_pct": 2.25,
-   "time_pct": 19,
+   "time_pct": 20,
    "other_corp_net": 3553168,
    "other_corp_curve": [
     243149,
@@ -8510,7 +8446,7 @@
    "status": "진행 중",
    "cap_pct": 2.23,
    "shares_est": 298685,
-   "time_pct": 53,
+   "time_pct": 54,
    "other_corp_net": -11201,
    "other_corp_curve": [
     3767,
@@ -8599,7 +8535,7 @@
    "why": "기업가치 제고를 위한 주주환원 정책에 따라 자기주식 취득 후 소각",
    "status": "진행 중",
    "cap_pct": 2.23,
-   "time_pct": 33,
+   "time_pct": 34,
    "other_corp_net": 397426,
    "other_corp_curve": [
     32168,
@@ -8645,7 +8581,7 @@
    "why": "주주환원강화 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 2.22,
-   "time_pct": 73,
+   "time_pct": 74,
    "other_corp_net": 684356,
    "other_corp_curve": [
     120510,
@@ -8714,7 +8650,7 @@
    "status": "진행 중",
    "cap_pct": 2.19,
    "shares_est": 240963,
-   "time_pct": 1,
+   "time_pct": 2,
    "other_corp_net": 1422,
    "other_corp_curve": [
     1422
@@ -8789,7 +8725,7 @@
    "why": "주식 소각 또는 종업원에 대한 상여금 지급 등",
    "status": "진행 중",
    "cap_pct": 2.16,
-   "time_pct": 19,
+   "time_pct": 20,
    "other_corp_net": 1355871,
    "other_corp_curve": [
     205421,
@@ -9089,7 +9025,7 @@
    "why": "자기주식 취득 및 소각을 통한 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 2.08,
-   "time_pct": 50,
+   "time_pct": 51,
    "other_corp_net": 2038568,
    "other_corp_curve": [
     67383,
@@ -9145,7 +9081,7 @@
    "status": "진행 중",
    "cap_pct": 2.07,
    "shares_est": 79051,
-   "time_pct": 71,
+   "time_pct": 72,
    "other_corp_net": 784786,
    "other_corp_curve": [
     5133,
@@ -9243,7 +9179,7 @@
    "status": "진행 중",
    "cap_pct": 2.06,
    "shares_est": 280583,
-   "time_pct": 51,
+   "time_pct": 52,
    "other_corp_net": -2422,
    "other_corp_curve": [
     -247,
@@ -9330,7 +9266,7 @@
    "status": "진행 중",
    "cap_pct": 1.99,
    "shares_est": 3710575,
-   "time_pct": 60,
+   "time_pct": 61,
    "other_corp_net": -120506,
    "other_corp_curve": [
     49,
@@ -9430,7 +9366,7 @@
    "why": "주주가치제고 및 주식소각",
    "status": "진행 중",
    "cap_pct": 1.97,
-   "time_pct": 59,
+   "time_pct": 60,
    "other_corp_net": 1175039,
    "other_corp_curve": [
     40955,
@@ -9544,7 +9480,7 @@
    "why": "주주환원 정책 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 1.89,
-   "time_pct": 39,
+   "time_pct": 40,
    "other_corp_net": 197349,
    "other_corp_curve": [
     2716,
@@ -9595,7 +9531,7 @@
    "status": "진행 중",
    "cap_pct": 1.87,
    "shares_est": 102249,
-   "time_pct": 14,
+   "time_pct": 15,
    "other_corp_net": 682,
    "other_corp_curve": [
     -38,
@@ -9638,7 +9574,7 @@
    "why": "주가안정 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 1.87,
-   "time_pct": 3,
+   "time_pct": 4,
    "other_corp_net": 82933,
    "other_corp_curve": [
     33561,
@@ -9665,7 +9601,7 @@
    "why": "주주가치 제고를 위한 자기주식 취득",
    "status": "진행 중",
    "cap_pct": 1.85,
-   "time_pct": 10,
+   "time_pct": 11,
    "other_corp_net": 99367,
    "other_corp_curve": [
     9790,
@@ -9724,7 +9660,7 @@
    "status": "진행 중",
    "cap_pct": 1.8,
    "shares_est": 210304,
-   "time_pct": 78,
+   "time_pct": 79,
    "other_corp_net": 12677,
    "other_corp_curve": [
     -85,
@@ -9920,7 +9856,7 @@
    "status": "진행 중",
    "cap_pct": 1.72,
    "shares_est": 186915,
-   "time_pct": 33,
+   "time_pct": 34,
    "other_corp_net": -3895,
    "other_corp_curve": [
     -261,
@@ -10070,7 +10006,7 @@
    "status": "진행 중",
    "cap_pct": 1.68,
    "shares_est": 765696,
-   "time_pct": 13,
+   "time_pct": 14,
    "other_corp_net": 11946,
    "other_corp_curve": [
     -14,
@@ -10250,7 +10186,7 @@
    "status": "진행 중",
    "cap_pct": 1.62,
    "shares_est": 718390,
-   "time_pct": 22,
+   "time_pct": 23,
    "other_corp_net": 6599,
    "other_corp_curve": [
     1625,
@@ -10329,7 +10265,7 @@
    "why": "자기주식 취득 및 소각을 통한 \n주주가치제고",
    "status": "진행 중",
    "cap_pct": 1.6,
-   "time_pct": 89,
+   "time_pct": 90,
    "other_corp_net": 399852,
    "other_corp_curve": [
     8427,
@@ -10393,6 +10329,29 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260825000437"
   },
   {
+   "corp_code": "01379129",
+   "name": "매드업",
+   "code": "0039P0",
+   "market": "KOSDAQ",
+   "kind": "direct",
+   "rcept_no": "20261112000145",
+   "decided": "2026-11-12",
+   "start": "2026-11-16",
+   "end": "2027-02-05",
+   "shares": 385357.0,
+   "amount": 2000002830.0,
+   "how": "코스닥시장을 통한 장내 직접취득",
+   "why": "주주가치 제고 및 임직원 주식 보상",
+   "status": "진행 중",
+   "cap_pct": 1.59,
+   "time_pct": 0,
+   "progress_pct": null,
+   "other_corp_net": null,
+   "price_chg": null,
+   "shares_est": null,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000145"
+  },
+  {
    "corp_code": "00231707",
    "name": "비트컴퓨터",
    "code": "032850",
@@ -10408,7 +10367,7 @@
    "why": "주가안정 및 주주가치제고",
    "status": "진행 중",
    "cap_pct": 1.56,
-   "time_pct": 72,
+   "time_pct": 73,
    "other_corp_net": 247092,
    "other_corp_curve": [
     -1784,
@@ -10471,7 +10430,7 @@
    "status": "진행 중",
    "cap_pct": 1.54,
    "shares_est": 598086,
-   "time_pct": 70,
+   "time_pct": 71,
    "other_corp_net": -18488,
    "other_corp_curve": [
     47,
@@ -10581,7 +10540,7 @@
    "why": "임직원 주식보상",
    "status": "진행 중",
    "cap_pct": 1.54,
-   "time_pct": 47,
+   "time_pct": 48,
    "other_corp_net": 170413,
    "other_corp_curve": [
     13288,
@@ -10708,7 +10667,7 @@
    "why": "자기주식 취득을 통한 \n주주환원정책 이행 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 1.51,
-   "time_pct": 4,
+   "time_pct": 5,
    "other_corp_net": 12669,
    "other_corp_curve": [
     11756,
@@ -10736,7 +10695,7 @@
    "why": "주가 안정 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 1.5,
-   "time_pct": 46,
+   "time_pct": 50,
    "other_corp_net": 153195,
    "other_corp_curve": [
     3314,
@@ -10772,7 +10731,7 @@
    "status": "진행 중",
    "cap_pct": 1.49,
    "shares_est": 322580,
-   "time_pct": 24,
+   "time_pct": 25,
    "other_corp_net": 5409,
    "other_corp_curve": [
     0,
@@ -10826,7 +10785,7 @@
    "status": "진행 중",
    "cap_pct": 1.45,
    "shares_est": 190839,
-   "time_pct": 67,
+   "time_pct": 68,
    "other_corp_net": -15256,
    "other_corp_curve": [
     0,
@@ -11125,7 +11084,7 @@
    "status": "진행 중",
    "cap_pct": 1.43,
    "shares_est": 4402054,
-   "time_pct": 15,
+   "time_pct": 16,
    "other_corp_net": 133464,
    "other_corp_curve": [
     58793,
@@ -11160,7 +11119,7 @@
    "status": "진행 중",
    "cap_pct": 1.42,
    "shares_est": 166297,
-   "time_pct": 39,
+   "time_pct": 40,
    "other_corp_net": 5243,
    "other_corp_curve": [
     -345,
@@ -11368,7 +11327,7 @@
    "why": "주가 안정 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 1.39,
-   "time_pct": 25,
+   "time_pct": 26,
    "other_corp_net": 26003,
    "other_corp_curve": [
     15925,
@@ -11410,7 +11369,7 @@
    "status": "진행 중",
    "cap_pct": 1.38,
    "shares_est": 85959,
-   "time_pct": 55,
+   "time_pct": 56,
    "other_corp_net": -1212,
    "other_corp_curve": [
     78,
@@ -11502,7 +11461,7 @@
    "status": "진행 중",
    "cap_pct": 1.37,
    "shares_est": 905797,
-   "time_pct": 70,
+   "time_pct": 71,
    "other_corp_net": -29667,
    "other_corp_curve": [
     17,
@@ -11748,7 +11707,7 @@
    "status": "진행 중",
    "cap_pct": 1.34,
    "shares_est": 293685,
-   "time_pct": 56,
+   "time_pct": 57,
    "other_corp_net": -64347,
    "other_corp_curve": [
     150,
@@ -11841,7 +11800,7 @@
    "why": "주주환원정책 이행 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 1.34,
-   "time_pct": 19,
+   "time_pct": 20,
    "other_corp_net": 94360,
    "other_corp_curve": [
     1545,
@@ -11879,7 +11838,7 @@
    "status": "진행 중",
    "cap_pct": 1.3,
    "shares_est": 294612,
-   "time_pct": 14,
+   "time_pct": 15,
    "other_corp_net": -910,
    "other_corp_curve": [
     1,
@@ -11923,7 +11882,7 @@
    "status": "진행 중",
    "cap_pct": 1.3,
    "shares_est": 257069,
-   "time_pct": 3,
+   "time_pct": 4,
    "other_corp_net": -1182,
    "other_corp_curve": [
     -1092,
@@ -12034,7 +11993,7 @@
    "status": "진행 중",
    "cap_pct": 1.28,
    "shares_est": 191938,
-   "time_pct": 34,
+   "time_pct": 35,
    "other_corp_net": -6133,
    "other_corp_curve": [
     0,
@@ -12100,7 +12059,7 @@
    "status": "진행 중",
    "cap_pct": 1.26,
    "shares_est": 380952,
-   "time_pct": 56,
+   "time_pct": 57,
    "other_corp_net": 56756,
    "other_corp_curve": [
     -1100,
@@ -12295,7 +12254,7 @@
    "status": "진행 중",
    "cap_pct": 1.23,
    "shares_est": 134048,
-   "time_pct": 22,
+   "time_pct": 23,
    "other_corp_net": -106,
    "other_corp_curve": [
     35,
@@ -12347,7 +12306,7 @@
    "why": "자기주식 취득을 통한 주주환원 및 기업가치 제고",
    "status": "진행 중",
    "cap_pct": 1.07,
-   "time_pct": 20,
+   "time_pct": 21,
    "other_corp_net": -7988,
    "other_corp_curve": [
     760,
@@ -12385,7 +12344,7 @@
    "why": "자기주식 취득 및 소각을 통한 주주환원과 기업가치 제고",
    "status": "진행 중",
    "cap_pct": 1.07,
-   "time_pct": 10,
+   "time_pct": 11,
    "other_corp_net": 2212754,
    "other_corp_curve": [
     438209,
@@ -12416,7 +12375,7 @@
    "why": "주주가치 제고를 위한 자기주식 취득",
    "status": "진행 중",
    "cap_pct": 1.06,
-   "time_pct": 61,
+   "time_pct": 62,
    "other_corp_net": 33865,
    "other_corp_curve": [
     -631,
@@ -12506,7 +12465,7 @@
    "why": "주가안정 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 0.96,
-   "time_pct": 45,
+   "time_pct": 47,
    "other_corp_net": 354471,
    "other_corp_curve": [
     158,
@@ -12544,6 +12503,29 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261002000515"
   },
   {
+   "corp_code": "00675594",
+   "name": "디티앤씨",
+   "code": "187220",
+   "market": "KOSDAQ",
+   "kind": "direct",
+   "rcept_no": "20261113000139",
+   "decided": "2026-11-13",
+   "start": "2026-11-16",
+   "end": "2026-12-15",
+   "shares": 119331.0,
+   "amount": 200000000.0,
+   "how": "코스닥시장을 통한 장내 매수",
+   "why": "주가안정 및 주주가치 제고",
+   "status": "진행 중",
+   "cap_pct": 0.96,
+   "time_pct": 0,
+   "progress_pct": null,
+   "other_corp_net": null,
+   "price_chg": null,
+   "shares_est": null,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113000139"
+  },
+  {
    "corp_code": "00347734",
    "name": "진양화학",
    "code": "051630",
@@ -12559,7 +12541,7 @@
    "why": "자기주식 취득 및 소각을 통한 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 0.95,
-   "time_pct": 89,
+   "time_pct": 90,
    "other_corp_net": 879917,
    "other_corp_curve": [
     112854,
@@ -12639,7 +12621,7 @@
    "status": "진행 중",
    "cap_pct": 0.94,
    "shares_est": 367647,
-   "time_pct": 42,
+   "time_pct": 43,
    "other_corp_net": 0,
    "other_corp_curve": [
     0,
@@ -12714,7 +12696,7 @@
    "status": "진행 중",
    "cap_pct": 0.83,
    "shares_est": 376411,
-   "time_pct": 43,
+   "time_pct": 44,
    "other_corp_net": -352,
    "other_corp_curve": [
     -107,
@@ -12832,7 +12814,7 @@
    "why": "자기주식 취득 및 소각을 통한 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 0.81,
-   "time_pct": 12,
+   "time_pct": 13,
    "other_corp_net": 31896,
    "other_corp_curve": [
     3170,
@@ -12865,7 +12847,7 @@
    "why": "주가 안정을 통한 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 0.78,
-   "time_pct": 5,
+   "time_pct": 7,
    "other_corp_net": 24235,
    "other_corp_curve": [
     48,
@@ -12894,7 +12876,7 @@
    "why": "주주환원 및 기업가치 제고",
    "status": "진행 중",
    "cap_pct": 0.74,
-   "time_pct": 22,
+   "time_pct": 23,
    "other_corp_net": -5620,
    "other_corp_curve": [
     980,
@@ -12919,6 +12901,29 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261023000244"
   },
   {
+   "corp_code": "00182696",
+   "name": "대한조선",
+   "code": "439260",
+   "market": "KOSPI",
+   "kind": "trust",
+   "rcept_no": "20261110000213",
+   "decided": "2026-11-10",
+   "start": "2026-11-16",
+   "end": "2027-02-15",
+   "shares": null,
+   "amount": 10000000000.0,
+   "how": "신탁계약 (한국투자증권\n\n(Korea Investment & Securities Co., Ltd.))",
+   "why": "주주가치 제고",
+   "status": "진행 중",
+   "cap_pct": 0.74,
+   "shares_est": 281690,
+   "time_pct": 0,
+   "progress_pct": null,
+   "other_corp_net": null,
+   "price_chg": null,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000213"
+  },
+  {
    "corp_code": "01649204",
    "name": "달바글로벌",
    "code": "483650",
@@ -12935,7 +12940,7 @@
    "status": "진행 중",
    "cap_pct": 0.66,
    "shares_est": 82644,
-   "time_pct": 9,
+   "time_pct": 10,
    "other_corp_net": 683,
    "other_corp_curve": [
     -1853,
@@ -13171,7 +13176,7 @@
    "why": "주주가치 제고 계획에 따른 취득",
    "status": "진행 중",
    "cap_pct": 0.63,
-   "time_pct": 33,
+   "time_pct": 34,
    "other_corp_net": 471367,
    "other_corp_curve": [
     44573,
@@ -13210,7 +13215,7 @@
    "why": "임직원 RSU\n(양도제한조건부주식) 지급 용도",
    "status": "진행 중",
    "cap_pct": 0.62,
-   "time_pct": 2,
+   "time_pct": 3,
    "other_corp_net": 27016,
    "other_corp_curve": [
     27016
@@ -13236,7 +13241,7 @@
    "why": "임직원 주식 보상 및\n주주가치 제고",
    "status": "진행 중",
    "cap_pct": 0.61,
-   "time_pct": 38,
+   "time_pct": 39,
    "other_corp_net": 459,
    "other_corp_curve": [
     547,
@@ -13278,7 +13283,7 @@
    "status": "진행 중",
    "cap_pct": 0.59,
    "shares_est": 292682,
-   "time_pct": 5,
+   "time_pct": 6,
    "other_corp_net": -218,
    "other_corp_curve": [
     -96,
@@ -13402,7 +13407,7 @@
    "why": "임직원 보상",
    "status": "진행 중",
    "cap_pct": 0.45,
-   "time_pct": 7,
+   "time_pct": 8,
    "other_corp_net": 162429,
    "other_corp_curve": [
     34,
@@ -13432,7 +13437,7 @@
    "why": "주식가격의 안정",
    "status": "진행 중",
    "cap_pct": 0.37,
-   "time_pct": 19,
+   "time_pct": 20,
    "other_corp_net": 3731,
    "other_corp_curve": [
     0,
@@ -13469,7 +13474,7 @@
    "why": "주식가격의 안정 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 0.33,
-   "time_pct": 34,
+   "time_pct": 35,
    "other_corp_net": 2890,
    "other_corp_curve": [
     0,
@@ -13516,7 +13521,7 @@
    "why": "주가 안정 및 주주가치 제고",
    "status": "진행 중",
    "cap_pct": 0.33,
-   "time_pct": 11,
+   "time_pct": 12,
    "other_corp_net": 14568,
    "other_corp_curve": [
     2000,
@@ -13667,7 +13672,7 @@
    "status": "진행 중",
    "cap_pct": 0.29,
    "shares_est": 68965,
-   "time_pct": 55,
+   "time_pct": 56,
    "other_corp_net": 29210,
    "other_corp_curve": [
     12151,
@@ -13830,75 +13835,6 @@
    "price_chg": null,
    "shares_est": null,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261102000265"
-  },
-  {
-   "corp_code": "00182696",
-   "name": "대한조선",
-   "code": "439260",
-   "market": "KOSPI",
-   "kind": "trust",
-   "rcept_no": "20261110000213",
-   "decided": "2026-11-10",
-   "start": "2026-11-16",
-   "end": "2027-02-15",
-   "shares": null,
-   "amount": 10000000000.0,
-   "how": "신탁계약 (한국투자증권\n\n(Korea Investment & Securities Co., Ltd.))",
-   "why": "주주가치 제고",
-   "status": "시작 전",
-   "cap_pct": null,
-   "time_pct": null,
-   "progress_pct": null,
-   "other_corp_net": null,
-   "price_chg": null,
-   "shares_est": null,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110000213"
-  },
-  {
-   "corp_code": "01379129",
-   "name": "매드업",
-   "code": "0039P0",
-   "market": "KOSDAQ",
-   "kind": "direct",
-   "rcept_no": "20261112000145",
-   "decided": "2026-11-12",
-   "start": "2026-11-16",
-   "end": "2027-02-05",
-   "shares": 385357.0,
-   "amount": 2000002830.0,
-   "how": "코스닥시장을 통한 장내 직접취득",
-   "why": "주주가치 제고 및 임직원 주식 보상",
-   "status": "시작 전",
-   "cap_pct": null,
-   "time_pct": null,
-   "progress_pct": null,
-   "other_corp_net": null,
-   "price_chg": null,
-   "shares_est": null,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112000145"
-  },
-  {
-   "corp_code": "00675594",
-   "name": "디티앤씨",
-   "code": "187220",
-   "market": "KOSDAQ",
-   "kind": "direct",
-   "rcept_no": "20261113000139",
-   "decided": "2026-11-13",
-   "start": "2026-11-16",
-   "end": "2026-12-15",
-   "shares": 119331.0,
-   "amount": 200000000.0,
-   "how": "코스닥시장을 통한 장내 매수",
-   "why": "주가안정 및 주주가치 제고",
-   "status": "시작 전",
-   "cap_pct": null,
-   "time_pct": null,
-   "progress_pct": null,
-   "other_corp_net": null,
-   "price_chg": null,
-   "shares_est": null,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113000139"
   },
   {
    "corp_code": "00137809",
@@ -14530,7 +14466,7 @@
    "why": "주식가격의 안정 및 주주가치 제고",
    "status": "완료",
    "cap_pct": 7.29,
-   "time_pct": 82,
+   "time_pct": 83,
    "other_corp_net": 274318,
    "other_corp_curve": [
     9797,
@@ -14604,7 +14540,7 @@
    "why": "주가 안정 및 주주가치 제고",
    "status": "완료",
    "cap_pct": 7.02,
-   "time_pct": 52,
+   "time_pct": 53,
    "other_corp_net": 158985,
    "other_corp_curve": [
     622,
@@ -14939,43 +14875,6 @@
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260721001086"
   },
   {
-   "corp_code": "00377610",
-   "name": "세아홀딩스",
-   "code": "058650",
-   "market": "KOSPI",
-   "kind": "direct",
-   "rcept_no": "20260519000174",
-   "decided": "2026-05-19",
-   "start": "2026-05-20",
-   "end": "2026-06-08",
-   "shares": 187000.0,
-   "amount": 29920000000.0,
-   "how": "공개매수",
-   "why": "기업가치 제고 및 주주권익 보호",
-   "status": "완료",
-   "cap_pct": 5.96,
-   "time_pct": 100,
-   "other_corp_net": 1790,
-   "other_corp_curve": [
-    1933,
-    1935,
-    1929,
-    1837,
-    1823,
-    1720,
-    1648,
-    1645,
-    1700,
-    1664,
-    1664,
-    1790
-   ],
-   "progress_pct": 1.0,
-   "price_chg": -2.85,
-   "shares_est": null,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260519000174"
-  },
-  {
    "corp_code": "01453670",
    "name": "휴럼",
    "code": "353190",
@@ -15061,6 +14960,70 @@
    "price_chg": -0.55,
    "shares_est": null,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260601000479"
+  },
+  {
+   "corp_code": "00104537",
+   "name": "국영지앤엠",
+   "code": "006050",
+   "market": "KOSDAQ",
+   "kind": "direct",
+   "rcept_no": "20260910000446",
+   "decided": "2026-09-10",
+   "start": "2026-09-16",
+   "end": "2026-11-15",
+   "shares": 100000.0,
+   "amount": 504000000.0,
+   "how": "코스닥 증권시장을 통한 장내매수",
+   "why": "주주가치 제고 목적으로 자기주식취득 후 소각 예정임.",
+   "status": "기간 종료",
+   "cap_pct": 5.65,
+   "time_pct": 100,
+   "other_corp_net": 104083,
+   "other_corp_curve": [
+    10001,
+    20000,
+    29955,
+    39982,
+    49990,
+    54898,
+    59898,
+    59898,
+    59898,
+    60583,
+    60583,
+    60583,
+    60583,
+    60583,
+    60583,
+    63583,
+    66565,
+    68583,
+    70583,
+    72583,
+    74583,
+    74583,
+    80083,
+    82083,
+    84083,
+    86083,
+    86083,
+    88083,
+    90083,
+    92083,
+    94083,
+    94083,
+    96083,
+    98083,
+    100083,
+    100083,
+    100083,
+    102083,
+    104083
+   ],
+   "progress_pct": 104.1,
+   "price_chg": -52.77,
+   "shares_est": null,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260910000446"
   },
   {
    "corp_code": "01099861",
@@ -15938,7 +15901,7 @@
    "why": "기업가치 제고를 위한 주주환원정책의 일환으로 자기주식 취득 후 소각",
    "status": "완료",
    "cap_pct": 3.62,
-   "time_pct": 42,
+   "time_pct": 43,
    "other_corp_net": 347642,
    "other_corp_curve": [
     211,
@@ -15989,7 +15952,7 @@
    "why": "주주안정 및 주주가치 제고",
    "status": "완료",
    "cap_pct": 3.47,
-   "time_pct": 50,
+   "time_pct": 51,
    "other_corp_net": 449408,
    "other_corp_curve": [
     51743,
@@ -17782,7 +17745,7 @@
    "why": "임직원 주식보상",
    "status": "완료",
    "cap_pct": 1.25,
-   "time_pct": 93,
+   "time_pct": 94,
    "other_corp_net": 55226908,
    "other_corp_curve": [
     2026114,
@@ -18461,7 +18424,7 @@
    "why": "주가 안정 및 주주가치 제고",
    "status": "완료",
    "cap_pct": 0.85,
-   "time_pct": 34,
+   "time_pct": 35,
    "other_corp_net": 228694,
    "other_corp_curve": [
     22583,
@@ -18632,7 +18595,7 @@
    "why": "임직원 성과보상 재원마련",
    "status": "완료",
    "cap_pct": 0.47,
-   "time_pct": 88,
+   "time_pct": 89,
    "other_corp_net": 151385,
    "other_corp_curve": [
     38954,
@@ -18772,7 +18735,7 @@
    "why": "임직원 주식보상",
    "status": "완료",
    "cap_pct": 0.26,
-   "time_pct": 7,
+   "time_pct": 8,
    "other_corp_net": 203643,
    "other_corp_curve": [
     143325,
@@ -18888,7 +18851,7 @@
    "why": "임직원 주식보상",
    "status": "완료",
    "cap_pct": 0.23,
-   "time_pct": 52,
+   "time_pct": 53,
    "other_corp_net": -7663599,
    "other_corp_curve": [
     12208,
@@ -18945,7 +18908,7 @@
    "why": "직원 성과보상과 연계한 자기주식 지급",
    "status": "완료",
    "cap_pct": 0.22,
-   "time_pct": 84,
+   "time_pct": 87,
    "other_corp_net": 194875,
    "other_corp_curve": [
     84788,
@@ -18989,7 +18952,7 @@
    "why": "주가 안정 및 주주가치 제고",
    "status": "완료",
    "cap_pct": 0.2,
-   "time_pct": 21,
+   "time_pct": 22,
    "other_corp_net": 488132,
    "other_corp_curve": [
     59042,
@@ -19220,32 +19183,6 @@
    "price_chg": -20.39,
    "shares_est": null,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814002504"
-  },
-  {
-   "corp_code": "01204056",
-   "name": "하이브",
-   "code": "352820",
-   "market": "KOSPI",
-   "kind": "direct",
-   "rcept_no": "20260519000290",
-   "decided": "2026-05-19",
-   "start": "2026-05-20",
-   "end": "2026-05-20",
-   "shares": 192126.0,
-   "amount": null,
-   "how": "무상수증",
-   "why": "임직원 등의 성과보상 재원 목적\n취득",
-   "status": "기간 종료",
-   "time_pct": 0,
-   "other_corp_net": -2114,
-   "other_corp_curve": [
-    -2114
-   ],
-   "progress_pct": 0.0,
-   "price_chg": -4.03,
-   "cap_pct": null,
-   "shares_est": null,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260519000290"
   },
   {
    "corp_code": "00438036",
@@ -19700,7 +19637,7 @@
    "status": "해지",
    "cap_pct": 12.44,
    "shares_est": 1233045,
-   "time_pct": 55,
+   "time_pct": 56,
    "other_corp_net": 448,
    "other_corp_curve": [
     300,
@@ -19894,7 +19831,7 @@
    "status": "해지",
    "cap_pct": 11.02,
    "shares_est": 1200000,
-   "time_pct": 48,
+   "time_pct": 49,
    "other_corp_net": -8507,
    "other_corp_curve": [
     -5548,
@@ -19978,7 +19915,7 @@
    "status": "해지",
    "cap_pct": 7.72,
    "shares_est": 368324,
-   "time_pct": 79,
+   "time_pct": 80,
    "other_corp_net": -8685,
    "other_corp_curve": [
     220,
@@ -20218,7 +20155,7 @@
    "status": "해지",
    "cap_pct": 7.19,
    "shares_est": 700280,
-   "time_pct": 73,
+   "time_pct": 74,
    "other_corp_net": 54181,
    "other_corp_curve": [
     -21,
@@ -20461,7 +20398,7 @@
    "status": "해지",
    "cap_pct": 5.45,
    "shares_est": 283553,
-   "time_pct": 56,
+   "time_pct": 57,
    "other_corp_net": -1882,
    "other_corp_curve": [
     1295,
@@ -20769,7 +20706,7 @@
    "status": "해지",
    "cap_pct": 5.27,
    "shares_est": 4065040,
-   "time_pct": 31,
+   "time_pct": 32,
    "other_corp_net": 1500,
    "other_corp_curve": [
     4609,
@@ -21048,7 +20985,7 @@
    "status": "해지",
    "cap_pct": 4.79,
    "shares_est": 490196,
-   "time_pct": 87,
+   "time_pct": 88,
    "other_corp_net": -8827,
    "other_corp_curve": [
     -148,
@@ -21226,7 +21163,7 @@
    "status": "해지",
    "cap_pct": 4.7,
    "shares_est": 530973,
-   "time_pct": 75,
+   "time_pct": 76,
    "other_corp_net": -30285,
    "other_corp_curve": [
     296,
@@ -21344,7 +21281,7 @@
    "status": "해지",
    "cap_pct": 4.5,
    "shares_est": 715137,
-   "time_pct": 62,
+   "time_pct": 63,
    "other_corp_net": 943099,
    "other_corp_curve": [
     11172,
@@ -21878,7 +21815,7 @@
    "status": "해지",
    "cap_pct": 3.64,
    "shares_est": 330578,
-   "time_pct": 86,
+   "time_pct": 87,
    "other_corp_net": -14651,
    "other_corp_curve": [
     0,
@@ -22009,7 +21946,7 @@
    "status": "해지",
    "cap_pct": 3.51,
    "shares_est": 970873,
-   "time_pct": 78,
+   "time_pct": 79,
    "other_corp_net": 15438,
    "other_corp_curve": [
     2515,
@@ -22236,7 +22173,7 @@
    "status": "해지",
    "cap_pct": 3.42,
    "shares_est": 390625,
-   "time_pct": 26,
+   "time_pct": 27,
    "other_corp_net": -72148,
    "other_corp_curve": [
     605,
@@ -22379,7 +22316,7 @@
    "status": "해지",
    "cap_pct": 3.36,
    "shares_est": 100806,
-   "time_pct": 56,
+   "time_pct": 57,
    "other_corp_net": -4908,
    "other_corp_curve": [
     13,
@@ -22508,7 +22445,7 @@
    "status": "해지",
    "cap_pct": 3.16,
    "shares_est": 526315,
-   "time_pct": 97,
+   "time_pct": 98,
    "other_corp_net": 36924,
    "other_corp_curve": [
     -690,
@@ -22652,7 +22589,7 @@
    "status": "해지",
    "cap_pct": 3.11,
    "shares_est": 886262,
-   "time_pct": 63,
+   "time_pct": 64,
    "other_corp_net": 100050,
    "other_corp_curve": [
     -3000,
@@ -22987,7 +22924,7 @@
    "status": "해지",
    "cap_pct": 2.56,
    "shares_est": 130890,
-   "time_pct": 64,
+   "time_pct": 65,
    "other_corp_net": 10,
    "other_corp_curve": [
     0,
@@ -23259,7 +23196,7 @@
    "status": "해지",
    "cap_pct": 2.49,
    "shares_est": 368550,
-   "time_pct": 83,
+   "time_pct": 84,
    "other_corp_net": -13811,
    "other_corp_curve": [
     0,
@@ -23503,7 +23440,7 @@
    "status": "해지",
    "cap_pct": 2.2,
    "shares_est": 360230,
-   "time_pct": 7,
+   "time_pct": 8,
    "other_corp_net": 1878,
    "other_corp_curve": [
     0,
@@ -23740,7 +23677,7 @@
    "status": "해지",
    "cap_pct": 1.94,
    "shares_est": 552486,
-   "time_pct": 81,
+   "time_pct": 82,
    "other_corp_net": 9622,
    "other_corp_curve": [
     -1768,
@@ -23965,7 +23902,7 @@
    "status": "해지",
    "cap_pct": 1.92,
    "shares_est": 180180,
-   "time_pct": 43,
+   "time_pct": 44,
    "other_corp_net": -9031,
    "other_corp_curve": [
     -1064,
@@ -24097,7 +24034,7 @@
    "status": "해지",
    "cap_pct": 1.92,
    "shares_est": 1059883,
-   "time_pct": 83,
+   "time_pct": 84,
    "other_corp_net": 223458,
    "other_corp_curve": [
     438,
@@ -24331,7 +24268,7 @@
    "status": "해지",
    "cap_pct": 1.64,
    "shares_est": 979431,
-   "time_pct": 6,
+   "time_pct": 7,
    "other_corp_net": 929,
    "other_corp_curve": [
     2836,
@@ -24624,7 +24561,7 @@
    "status": "해지",
    "cap_pct": 1.35,
    "shares_est": 165016,
-   "time_pct": 64,
+   "time_pct": 65,
    "other_corp_net": 19695,
    "other_corp_curve": [
     362,
@@ -24816,7 +24753,7 @@
    "status": "해지",
    "cap_pct": 1.19,
    "shares_est": 132013,
-   "time_pct": 70,
+   "time_pct": 71,
    "other_corp_net": -7469,
    "other_corp_curve": [
     205,
@@ -24927,7 +24864,7 @@
    "status": "해지",
    "cap_pct": 0.9,
    "shares_est": 239234,
-   "time_pct": 49,
+   "time_pct": 50,
    "other_corp_net": -2775,
    "other_corp_curve": [
     796,
@@ -24981,7 +24918,7 @@
    "status": "해지",
    "cap_pct": 0.87,
    "shares_est": 507328,
-   "time_pct": 31,
+   "time_pct": 32,
    "other_corp_net": -8804,
    "other_corp_curve": [
     -29,
@@ -25653,7 +25590,7 @@
    "status": "해지",
    "cap_pct": 0.28,
    "shares_est": 33635,
-   "time_pct": 38,
+   "time_pct": 39,
    "other_corp_net": -12379,
    "other_corp_curve": [
     5,
@@ -26273,8 +26210,8 @@
   }
  ],
  "stats": {
-  "active": 191,
-  "active_amount": 24572215490634.0,
+  "active": 193,
+  "active_amount": 24583911493464.0,
   "new_2w": 38,
   "cancels_2w": 40
  }
