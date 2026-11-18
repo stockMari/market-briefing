@@ -2,13 +2,13 @@
  "label": "2026-W47",
  "start": "2026-11-16",
  "end": "2026-11-20",
- "total": 220,
- "headline": "실적 발표 220건 · 월요일 76건으로 최다",
+ "total": 287,
+ "headline": "실적 발표 287건 · 월요일 153건으로 최다",
  "days": [
   {
    "date": "2026-11-16",
    "dow": "월",
-   "total": 76,
+   "total": 153,
    "bmo": {
     "total": 0,
     "shown": [],
@@ -16,20 +16,20 @@
     "small": 0
    },
    "amc": {
-    "total": 13,
+    "total": 0,
     "shown": [],
     "more": [],
-    "small": 13
+    "small": 0
    },
    "tns": {
-    "total": 63,
+    "total": 153,
     "shown": [
      {
       "ticker": "BIDU",
       "company": "Baidu, Inc.",
       "date": "2026-11-16",
       "slot": "tns",
-      "mcap_b": 25.2,
+      "mcap_b": 24.2,
       "eps_est": 6.16,
       "eps_act": 6.78,
       "surprise": 10.02,
@@ -40,7 +40,7 @@
       "company": "Tyson Foods, Inc.",
       "date": "2026-11-16",
       "slot": "tns",
-      "mcap_b": 22.5,
+      "mcap_b": 21.9,
       "eps_est": 0.61,
       "eps_act": 0.61,
       "surprise": -0.23,
@@ -51,7 +51,7 @@
       "company": "KE Holdings Inc.",
       "date": "2026-11-16",
       "slot": "tns",
-      "mcap_b": 20.4,
+      "mcap_b": 20.2,
       "eps_est": 1.71,
       "eps_act": 2.35,
       "surprise": 37.07,
@@ -62,7 +62,7 @@
       "company": "H World Group Limited",
       "date": "2026-11-16",
       "slot": "tns",
-      "mcap_b": 17.3,
+      "mcap_b": 16.9,
       "eps_est": 5.6,
       "eps_act": 6.23,
       "surprise": 11.3,
@@ -73,7 +73,7 @@
       "company": "Aramark",
       "date": "2026-11-16",
       "slot": "tns",
-      "mcap_b": 14.6,
+      "mcap_b": 14.9,
       "eps_est": 0.75,
       "eps_act": 0.71,
       "surprise": -5.9,
@@ -84,7 +84,7 @@
       "company": "AECOM",
       "date": "2026-11-16",
       "slot": "tns",
-      "mcap_b": 9.3,
+      "mcap_b": 10.4,
       "eps_est": 1.59,
       "eps_act": 1.63,
       "surprise": 2.45,
@@ -97,14 +97,14 @@
       "company": "XPeng Inc.",
       "date": "2026-11-16",
       "slot": "tns",
-      "mcap_b": 9.3,
+      "mcap_b": 9.6,
       "eps_est": -0.7,
       "eps_act": -0.93,
       "surprise": -31.91,
       "watch": false
      }
     ],
-    "small": 56
+    "small": 146
    },
    "events": [],
    "checks": []
@@ -112,123 +112,22 @@
   {
    "date": "2026-11-17",
    "dow": "화",
-   "total": 42,
+   "total": 37,
    "bmo": {
-    "total": 27,
-    "shown": [
-     {
-      "ticker": "HD",
-      "company": "The Home Depot, Inc.",
-      "date": "2026-11-17",
-      "slot": "bmo",
-      "mcap_b": 346.7,
-      "eps_est": 3.83,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "DIS",
-      "company": "The Walt Disney Company",
-      "date": "2026-11-17",
-      "slot": "bmo",
-      "mcap_b": 205.0,
-      "eps_est": 1.68,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "VIK",
-      "company": "Viking Holdings Ltd",
-      "date": "2026-11-17",
-      "slot": "bmo",
-      "mcap_b": 40.3,
-      "eps_est": 1.26,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "JD",
-      "company": "JD.com, Inc.",
-      "date": "2026-11-17",
-      "slot": "bmo",
-      "mcap_b": 37.2,
-      "eps_est": 5.88,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "ESLT",
-      "company": "Elbit Systems Ltd.",
-      "date": "2026-11-17",
-      "slot": "bmo",
-      "mcap_b": 31.9,
-      "eps_est": 3.94,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "AS",
-      "company": "Amer Sports, Inc.",
-      "date": "2026-11-17",
-      "slot": "bmo",
-      "mcap_b": 16.9,
-      "eps_est": 0.35,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     }
-    ],
-    "more": [
-     {
-      "ticker": "TME",
-      "company": "Tencent Music Entertainment Group",
-      "date": "2026-11-17",
-      "slot": "bmo",
-      "mcap_b": 14.5,
-      "eps_est": 1.5,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     }
-    ],
-    "small": 20
+    "total": 0,
+    "shown": [],
+    "more": [],
+    "small": 0
    },
    "amc": {
-    "total": 15,
+    "total": 6,
     "shown": [
-     {
-      "ticker": "NVDA",
-      "company": "NVIDIA Corporation",
-      "date": "2026-11-17",
-      "slot": "amc",
-      "mcap_b": 3770.3,
-      "eps_est": 2.47,
-      "eps_act": null,
-      "surprise": null,
-      "watch": true
-     },
-     {
-      "ticker": "ZTO",
-      "company": "ZTO Express (Cayman) Inc.",
-      "date": "2026-11-17",
-      "slot": "amc",
-      "mcap_b": 15.3,
-      "eps_est": 3.13,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
      {
       "ticker": "SQM",
       "company": "Sociedad Química y Minera de Chile S.A.",
       "date": "2026-11-17",
       "slot": "amc",
-      "mcap_b": 14.6,
+      "mcap_b": 14.7,
       "eps_est": 2.08,
       "eps_act": null,
       "surprise": null,
@@ -236,13 +135,103 @@
      }
     ],
     "more": [],
-    "small": 12
+    "small": 5
    },
    "tns": {
-    "total": 0,
-    "shown": [],
-    "more": [],
-    "small": 0
+    "total": 31,
+    "shown": [
+     {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corporation",
+      "date": "2026-11-17",
+      "slot": "tns",
+      "mcap_b": 3753.9,
+      "eps_est": 2.47,
+      "eps_act": 2.68,
+      "surprise": 8.36,
+      "watch": true
+     },
+     {
+      "ticker": "HD",
+      "company": "The Home Depot, Inc.",
+      "date": "2026-11-17",
+      "slot": "tns",
+      "mcap_b": 338.2,
+      "eps_est": 3.84,
+      "eps_act": 3.86,
+      "surprise": 0.57,
+      "watch": false
+     },
+     {
+      "ticker": "DIS",
+      "company": "The Walt Disney Company",
+      "date": "2026-11-17",
+      "slot": "tns",
+      "mcap_b": 201.9,
+      "eps_est": 1.68,
+      "eps_act": 1.77,
+      "surprise": 5.43,
+      "watch": false
+     },
+     {
+      "ticker": "VIK",
+      "company": "Viking Holdings Ltd",
+      "date": "2026-11-17",
+      "slot": "tns",
+      "mcap_b": 42.1,
+      "eps_est": 1.26,
+      "eps_act": 1.11,
+      "surprise": -12.08,
+      "watch": false
+     },
+     {
+      "ticker": "JD",
+      "company": "JD.com, Inc.",
+      "date": "2026-11-17",
+      "slot": "tns",
+      "mcap_b": 34.3,
+      "eps_est": 5.88,
+      "eps_act": 5.88,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ESLT",
+      "company": "Elbit Systems Ltd.",
+      "date": "2026-11-17",
+      "slot": "tns",
+      "mcap_b": 33.8,
+      "eps_est": 3.94,
+      "eps_act": 4.36,
+      "surprise": 10.73,
+      "watch": false
+     }
+    ],
+    "more": [
+     {
+      "ticker": "AS",
+      "company": "Amer Sports, Inc.",
+      "date": "2026-11-17",
+      "slot": "tns",
+      "mcap_b": 17.6,
+      "eps_est": 0.35,
+      "eps_act": 0.42,
+      "surprise": 20.78,
+      "watch": false
+     },
+     {
+      "ticker": "TME",
+      "company": "Tencent Music Entertainment Group",
+      "date": "2026-11-17",
+      "slot": "tns",
+      "mcap_b": 15.4,
+      "eps_est": 1.5,
+      "eps_act": 1.55,
+      "surprise": 3.04,
+      "watch": false
+     }
+    ],
+    "small": 23
    },
    "events": [
     {
@@ -262,7 +251,7 @@
   {
    "date": "2026-11-18",
    "dow": "수",
-   "total": 40,
+   "total": 39,
    "bmo": {
     "total": 17,
     "shown": [
@@ -271,7 +260,7 @@
       "company": "The TJX Companies, Inc.",
       "date": "2026-11-18",
       "slot": "bmo",
-      "mcap_b": 144.2,
+      "mcap_b": 142.8,
       "eps_est": 1.34,
       "eps_act": null,
       "surprise": null,
@@ -282,7 +271,7 @@
       "company": "Lowe's Companies, Inc.",
       "date": "2026-11-18",
       "slot": "bmo",
-      "mcap_b": 126.2,
+      "mcap_b": 123.7,
       "eps_est": 2.95,
       "eps_act": null,
       "surprise": null,
@@ -293,7 +282,7 @@
       "company": "Target Corporation",
       "date": "2026-11-18",
       "slot": "bmo",
-      "mcap_b": 72.8,
+      "mcap_b": 72.5,
       "eps_est": 1.71,
       "eps_act": null,
       "surprise": null,
@@ -304,14 +293,14 @@
     "small": 14
    },
    "amc": {
-    "total": 22,
+    "total": 21,
     "shown": [
      {
       "ticker": "PANW",
       "company": "Palo Alto Networks, Inc.",
       "date": "2026-11-18",
       "slot": "amc",
-      "mcap_b": 258.8,
+      "mcap_b": 253.2,
       "eps_est": 0.97,
       "eps_act": null,
       "surprise": null,
@@ -322,8 +311,8 @@
       "company": "Everpure, Inc.",
       "date": "2026-11-18",
       "slot": "amc",
-      "mcap_b": 34.5,
-      "eps_est": 0.77,
+      "mcap_b": 33.9,
+      "eps_est": 0.78,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -333,7 +322,7 @@
       "company": "Woodward, Inc.",
       "date": "2026-11-18",
       "slot": "amc",
-      "mcap_b": 18.4,
+      "mcap_b": 18.3,
       "eps_est": 2.52,
       "eps_act": null,
       "surprise": null,
@@ -344,7 +333,7 @@
       "company": "UGI Corporation",
       "date": "2026-11-18",
       "slot": "amc",
-      "mcap_b": 8.1,
+      "mcap_b": 8.0,
       "eps_est": -0.91,
       "eps_act": null,
       "surprise": null,
@@ -352,7 +341,7 @@
      }
     ],
     "more": [],
-    "small": 18
+    "small": 17
    },
    "tns": {
     "total": 1,
@@ -366,16 +355,16 @@
   {
    "date": "2026-11-19",
    "dow": "목",
-   "total": 51,
+   "total": 47,
    "bmo": {
-    "total": 28,
+    "total": 27,
     "shown": [
      {
       "ticker": "WMT",
       "company": "Walmart Inc.",
       "date": "2026-11-19",
       "slot": "bmo",
-      "mcap_b": 1021.9,
+      "mcap_b": 1014.8,
       "eps_est": 0.64,
       "eps_act": null,
       "surprise": null,
@@ -386,7 +375,7 @@
       "company": "Alibaba Group Holding Limited",
       "date": "2026-11-19",
       "slot": "bmo",
-      "mcap_b": 225.4,
+      "mcap_b": 215.6,
       "eps_est": 11.03,
       "eps_act": null,
       "surprise": null,
@@ -397,7 +386,7 @@
       "company": "PDD Holdings Inc.",
       "date": "2026-11-19",
       "slot": "bmo",
-      "mcap_b": 111.2,
+      "mcap_b": 110.2,
       "eps_est": 18.84,
       "eps_act": null,
       "surprise": null,
@@ -408,7 +397,7 @@
       "company": "NetEase, Inc.",
       "date": "2026-11-19",
       "slot": "bmo",
-      "mcap_b": 77.8,
+      "mcap_b": 76.6,
       "eps_est": 16.07,
       "eps_act": null,
       "surprise": null,
@@ -419,7 +408,7 @@
       "company": "Williams-Sonoma, Inc.",
       "date": "2026-11-19",
       "slot": "bmo",
-      "mcap_b": 29.7,
+      "mcap_b": 29.5,
       "eps_est": 1.87,
       "eps_act": null,
       "surprise": null,
@@ -443,7 +432,7 @@
       "company": "Futu Holdings Limited",
       "date": "2026-11-19",
       "slot": "bmo",
-      "mcap_b": 12.8,
+      "mcap_b": 12.2,
       "eps_est": 26.15,
       "eps_act": null,
       "surprise": null,
@@ -454,24 +443,24 @@
       "company": "Full Truck Alliance Co. Ltd.",
       "date": "2026-11-19",
       "slot": "bmo",
-      "mcap_b": 9.0,
+      "mcap_b": 8.8,
       "eps_est": 1.32,
       "eps_act": null,
       "surprise": null,
       "watch": false
      }
     ],
-    "small": 20
+    "small": 19
    },
    "amc": {
-    "total": 20,
+    "total": 18,
     "shown": [
      {
       "ticker": "INTU",
       "company": "Intuit Inc.",
       "date": "2026-11-19",
       "slot": "amc",
-      "mcap_b": 92.3,
+      "mcap_b": 85.7,
       "eps_est": 2.64,
       "eps_act": null,
       "surprise": null,
@@ -482,7 +471,7 @@
       "company": "Ross Stores, Inc.",
       "date": "2026-11-19",
       "slot": "amc",
-      "mcap_b": 71.5,
+      "mcap_b": 70.7,
       "eps_est": 1.42,
       "eps_act": null,
       "surprise": null,
@@ -493,19 +482,8 @@
       "company": "Keysight Technologies, Inc.",
       "date": "2026-11-19",
       "slot": "amc",
-      "mcap_b": 48.6,
+      "mcap_b": 48.4,
       "eps_est": 3.38,
-      "eps_act": null,
-      "surprise": null,
-      "watch": false
-     },
-     {
-      "ticker": "CPRT",
-      "company": "Copart, Inc.",
-      "date": "2026-11-19",
-      "slot": "amc",
-      "mcap_b": 29.7,
-      "eps_est": 0.4,
       "eps_act": null,
       "surprise": null,
       "watch": false
@@ -515,7 +493,7 @@
       "company": "Trip.com Group Limited",
       "date": "2026-11-19",
       "slot": "amc",
-      "mcap_b": 27.9,
+      "mcap_b": 27.5,
       "eps_est": 8.22,
       "eps_act": null,
       "surprise": null,
@@ -526,7 +504,7 @@
       "company": "Elastic N.V.",
       "date": "2026-11-19",
       "slot": "amc",
-      "mcap_b": 9.1,
+      "mcap_b": 8.5,
       "eps_est": 0.81,
       "eps_act": null,
       "surprise": null,
@@ -534,13 +512,13 @@
      }
     ],
     "more": [],
-    "small": 14
+    "small": 13
    },
    "tns": {
-    "total": 3,
+    "total": 2,
     "shown": [],
     "more": [],
-    "small": 3
+    "small": 2
    },
    "events": [],
    "checks": []
@@ -557,7 +535,7 @@
       "company": "Bending Spoons S.p.A.",
       "date": "2026-11-20",
       "slot": "bmo",
-      "mcap_b": 26.9,
+      "mcap_b": 27.8,
       "eps_est": 0.3,
       "eps_act": null,
       "surprise": null,
@@ -712,5 +690,5 @@
   "watchlist": 33,
   "logo_url": "https://financialmodelingprep.com/image-stock/{ticker}.png"
  },
- "generated_at": "2026-11-17T13:14+09:00"
+ "generated_at": "2026-11-18T12:12+09:00"
 }
