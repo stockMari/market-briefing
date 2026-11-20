@@ -1,7 +1,7 @@
 {
- "as_of": "2026-11-19",
+ "as_of": "2026-11-20",
  "lookback_days": 14,
- "generated_at": "2026-11-19T11:53+09:00",
+ "generated_at": "2026-11-20T11:42+09:00",
  "results": [
   {
    "period": "26년 3Q",
@@ -48,7 +48,7 @@
    "date": "2026-11-11",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800559",
-   "mcap_eok": 554732,
+   "mcap_eok": 542318,
    "op_margin": 9.7
   },
   {
@@ -96,7 +96,7 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800352",
-   "mcap_eok": 510000,
+   "mcap_eok": 511000,
    "op_margin": 10.8
   },
   {
@@ -144,7 +144,7 @@
    "date": "2026-11-16",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116801515",
-   "mcap_eok": 350144,
+   "mcap_eok": 345309,
    "op_margin": 8.7
   },
   {
@@ -183,7 +183,7 @@
    "date": "2026-11-12",
    "consolidated": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800028",
-   "mcap_eok": 259072,
+   "mcap_eok": 256029,
    "op_margin": 16.4
   },
   {
@@ -231,7 +231,7 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800008",
-   "mcap_eok": 241989,
+   "mcap_eok": 234399,
    "op_margin": 8.9
   },
   {
@@ -279,56 +279,8 @@
    "date": "2026-11-11",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800460",
-   "mcap_eok": 207176,
+   "mcap_eok": 209519,
    "op_margin": 4.0
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 19051.8,
-    "prev_q": 17015.6,
-    "qoq": 12.0,
-    "yago": 18269.0,
-    "yoy": 4.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 5300.8,
-    "prev_q": 4144.5,
-    "qoq": 27.9,
-    "yago": 4652.9,
-    "yoy": 13.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 1041.2,
-    "prev_q": 3620.9,
-    "qoq": -71.2,
-    "yago": 4187.1,
-    "yoy": -75.1,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 1061.0,
-    "prev_q": 3642.7,
-    "qoq": -70.9,
-    "yago": 4192.5,
-    "yoy": -74.7,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "케이티앤지",
-   "code": "033780",
-   "market": "KOSPI",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800482",
-   "mcap_eok": 188935,
-   "op_margin": 27.8
   },
   {
    "period": "26년 3Q",
@@ -375,95 +327,8 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800706",
-   "mcap_eok": 161133,
+   "mcap_eok": 162096,
    "op_margin": 6.1
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "억원",
-   "sales": {
-    "cur": 154960.0,
-    "prev_q": 141759.0,
-    "qoq": 9.3,
-    "yago": 115617.0,
-    "yoy": 34.0,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 5612.0,
-    "prev_q": 5996.0,
-    "qoq": -6.4,
-    "yago": 6797.0,
-    "yoy": -17.4,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -6000.0,
-    "prev_q": 668.0,
-    "qoq": null,
-    "yago": 4473.0,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "ctrl": {
-    "cur": null,
-    "prev_q": null,
-    "qoq": null,
-    "yago": null,
-    "yoy": null,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "LG화학",
-   "code": "051910",
-   "market": "KOSPI",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800303",
-   "mcap_eok": 146832,
-   "op_margin": 3.6
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 7029.1,
-    "prev_q": 7139.5,
-    "qoq": -1.5,
-    "yago": 6384.4,
-    "yoy": 10.1,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 1178.1,
-    "prev_q": 1262.0,
-    "qoq": -6.6,
-    "yago": 1005.4,
-    "yoy": 17.2,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 1003.6,
-    "prev_q": 3184.3,
-    "qoq": -68.5,
-    "yago": 650.9,
-    "yoy": 54.2,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "카카오",
-   "code": "035720",
-   "market": "KOSPI",
-   "date": "2026-11-05",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800008",
-   "mcap_eok": 140874,
-   "op_margin": 16.8
   },
   {
    "period": "26년 3Q",
@@ -510,7 +375,7 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800626",
-   "mcap_eok": 136829,
+   "mcap_eok": 136526,
    "op_margin": 16.1
   },
   {
@@ -558,7 +423,7 @@
    "date": "2026-11-10",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800104",
-   "mcap_eok": 124751,
+   "mcap_eok": 119206,
    "op_margin": 7.2
   },
   {
@@ -606,7 +471,7 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800507",
-   "mcap_eok": 110958,
+   "mcap_eok": 110368,
    "op_margin": 8.6
   },
   {
@@ -654,7 +519,7 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112801045",
-   "mcap_eok": 110505,
+   "mcap_eok": 109147,
    "op_margin": -6.7
   },
   {
@@ -702,104 +567,8 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800605",
-   "mcap_eok": 95895,
+   "mcap_eok": 94163,
    "op_margin": 24.8
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 8106.5,
-    "prev_q": 8215.1,
-    "qoq": -1.3,
-    "yago": 9593.8,
-    "yoy": -15.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 111.6,
-    "prev_q": 335.8,
-    "qoq": -66.8,
-    "yago": 1493.9,
-    "yoy": -92.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -1350.7,
-    "prev_q": 518.0,
-    "qoq": null,
-    "yago": 1739.4,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "ctrl": {
-    "cur": null,
-    "prev_q": null,
-    "qoq": null,
-    "yago": null,
-    "yoy": null,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "에코프로",
-   "code": "086520",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900298",
-   "mcap_eok": 93686,
-   "op_margin": 1.4
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 5579.2,
-    "prev_q": 5767.1,
-    "qoq": -3.3,
-    "yago": 6250.6,
-    "yoy": -10.7,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 120.2,
-    "prev_q": 180.1,
-    "qoq": -33.3,
-    "yago": 504.8,
-    "yoy": -76.2,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -17.9,
-    "prev_q": -4.5,
-    "qoq": -293.4,
-    "yago": 490.7,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": null,
-    "prev_q": null,
-    "qoq": null,
-    "yago": null,
-    "yoy": null,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "에코프로비엠",
-   "code": "247540",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900114",
-   "mcap_eok": 92110,
-   "op_margin": 2.2
   },
   {
    "period": "26년 3Q",
@@ -846,7 +615,7 @@
    "date": "2026-11-10",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800492",
-   "mcap_eok": 89464,
+   "mcap_eok": 89646,
    "op_margin": 23.2
   },
   {
@@ -894,56 +663,8 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109800403",
-   "mcap_eok": 83716,
+   "mcap_eok": 87133,
    "op_margin": 8.5
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "억원",
-   "sales": {
-    "cur": 72706.0,
-    "prev_q": 74131.0,
-    "qoq": -1.92,
-    "yago": 65359.0,
-    "yoy": 11.24,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 12748.0,
-    "prev_q": 17174.0,
-    "qoq": -25.77,
-    "yago": 8706.0,
-    "yoy": 46.43,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 6804.0,
-    "prev_q": 11320.0,
-    "qoq": -39.89,
-    "yago": 4077.0,
-    "yoy": 66.89,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 5969.0,
-    "prev_q": 10577.0,
-    "qoq": -43.57,
-    "yago": 3139.0,
-    "yoy": 90.16,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "GS",
-   "code": "078930",
-   "market": "KOSPI",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800350",
-   "mcap_eok": 77846,
-   "op_margin": 17.5
   },
   {
    "period": "26년 3Q",
@@ -990,7 +711,7 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800588",
-   "mcap_eok": 77330,
+   "mcap_eok": 81620,
    "op_margin": 6.3
   },
   {
@@ -1038,7 +759,7 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800449",
-   "mcap_eok": 76307,
+   "mcap_eok": 78165,
    "op_margin": 11.0
   },
   {
@@ -1086,104 +807,8 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800224",
-   "mcap_eok": 73527,
+   "mcap_eok": 75933,
    "op_margin": 18.3
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 111800.8,
-    "prev_q": 135537.9,
-    "qoq": -17.51,
-    "yago": 60195.0,
-    "yoy": 85.73,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 3004.1,
-    "prev_q": 13441.7,
-    "qoq": -77.65,
-    "yago": 8490.9,
-    "yoy": -64.62,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 2817.6,
-    "prev_q": 9983.9,
-    "qoq": -71.78,
-    "yago": 6748.7,
-    "yoy": -58.25,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 2822.5,
-    "prev_q": 9959.2,
-    "qoq": -71.66,
-    "yago": 6737.6,
-    "yoy": -58.11,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "한국금융지주",
-   "code": "071050",
-   "market": "KOSPI",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800548",
-   "mcap_eok": 69825,
-   "op_margin": 2.7
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 2584.2,
-    "prev_q": 2473.7,
-    "qoq": 4.5,
-    "yago": 1917.3,
-    "yoy": 34.8,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 1162.8,
-    "prev_q": 970.6,
-    "qoq": 19.8,
-    "yago": 701.1,
-    "yoy": 65.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 543.4,
-    "prev_q": 850.6,
-    "qoq": -36.1,
-    "yago": 713.7,
-    "yoy": -23.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 543.4,
-    "prev_q": 850.6,
-    "qoq": -36.1,
-    "yago": 741.4,
-    "yoy": -26.7,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "에스케이바이오팜",
-   "code": "326030",
-   "market": "KOSPI",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800127",
-   "mcap_eok": 67271,
-   "op_margin": 45.0
   },
   {
    "period": "26년 3Q",
@@ -1230,7 +855,7 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800651",
-   "mcap_eok": 66082,
+   "mcap_eok": 64475,
    "op_margin": 7.4
   },
   {
@@ -1278,7 +903,7 @@
    "date": "2026-11-11",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800831",
-   "mcap_eok": 51906,
+   "mcap_eok": 51040,
    "op_margin": 5.9
   },
   {
@@ -1326,7 +951,7 @@
    "date": "2026-11-11",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800588",
-   "mcap_eok": 45142,
+   "mcap_eok": 46763,
    "op_margin": null
   },
   {
@@ -1374,56 +999,8 @@
    "date": "2026-11-11",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800311",
-   "mcap_eok": 39749,
+   "mcap_eok": 39663,
    "op_margin": 17.4
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 75059.3,
-    "prev_q": 75079.6,
-    "qoq": 0.0,
-    "yago": 63721.7,
-    "yoy": 17.8,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 5878.0,
-    "prev_q": 6752.9,
-    "qoq": -13.0,
-    "yago": 3890.0,
-    "yoy": 51.1,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 2724.0,
-    "prev_q": 3388.2,
-    "qoq": -19.6,
-    "yago": 868.0,
-    "yoy": 213.8,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 2667.0,
-    "prev_q": 3390.9,
-    "qoq": -21.3,
-    "yago": 870.5,
-    "yoy": 206.4,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "한국가스공사",
-   "code": "036460",
-   "market": "KOSPI",
-   "date": "2026-11-12",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800429",
-   "mcap_eok": 35448,
-   "op_margin": 7.8
   },
   {
    "period": "26년 3Q",
@@ -1470,56 +1047,56 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900411",
-   "mcap_eok": 34751,
+   "mcap_eok": 37647,
    "op_margin": 19.7
   },
   {
    "period": "26년 3Q",
    "unit_src": "백만원",
    "sales": {
-    "cur": 8757.8,
-    "prev_q": 7948.9,
-    "qoq": 10.18,
-    "yago": 5856.2,
-    "yoy": 49.55,
+    "cur": 75059.3,
+    "prev_q": 75079.6,
+    "qoq": 0.0,
+    "yago": 63721.7,
+    "yoy": 17.8,
     "yflag": "",
     "qflag": ""
    },
    "op": {
-    "cur": 832.9,
-    "prev_q": 737.4,
-    "qoq": 12.96,
-    "yago": 427.3,
-    "yoy": 94.93,
+    "cur": 5878.0,
+    "prev_q": 6752.9,
+    "qoq": -13.0,
+    "yago": 3890.0,
+    "yoy": 51.1,
     "yflag": "",
     "qflag": ""
    },
    "net": {
-    "cur": 445.5,
-    "prev_q": 500.1,
-    "qoq": -10.92,
-    "yago": 106.7,
-    "yoy": 317.72,
+    "cur": 2724.0,
+    "prev_q": 3388.2,
+    "qoq": -19.6,
+    "yago": 868.0,
+    "yoy": 213.8,
     "yflag": "",
     "qflag": ""
    },
    "ctrl": {
-    "cur": 425.8,
-    "prev_q": 486.9,
-    "qoq": -12.55,
-    "yago": 89.5,
-    "yoy": 375.49,
+    "cur": 2667.0,
+    "prev_q": 3390.9,
+    "qoq": -21.3,
+    "yago": 870.5,
+    "yoy": 206.4,
     "yflag": "",
     "qflag": ""
    },
-   "name": "코스맥스",
-   "code": "192820",
+   "name": "한국가스공사",
+   "code": "036460",
    "market": "KOSPI",
-   "date": "2026-11-11",
+   "date": "2026-11-12",
    "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800375",
-   "mcap_eok": 33595,
-   "op_margin": 9.5
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800429",
+   "mcap_eok": 35217,
+   "op_margin": 7.8
   },
   {
    "period": "26년 3Q",
@@ -1566,239 +1143,56 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800091",
-   "mcap_eok": 32324,
+   "mcap_eok": 33020,
    "op_margin": 22.3
   },
   {
    "period": "26년 3Q",
    "unit_src": "백만원",
    "sales": {
-    "cur": 16732.8,
-    "prev_q": 18060.2,
-    "qoq": -7.3,
-    "yago": 16068.4,
-    "yoy": 4.1,
+    "cur": 8757.8,
+    "prev_q": 7948.9,
+    "qoq": 10.18,
+    "yago": 5856.2,
+    "yoy": 49.55,
     "yflag": "",
     "qflag": ""
    },
    "op": {
-    "cur": 851.6,
-    "prev_q": 1288.8,
-    "qoq": -33.9,
-    "yago": 1256.7,
-    "yoy": -32.2,
+    "cur": 832.9,
+    "prev_q": 737.4,
+    "qoq": 12.96,
+    "yago": 427.3,
+    "yoy": 94.93,
     "yflag": "",
     "qflag": ""
    },
    "net": {
-    "cur": -16718.3,
-    "prev_q": 28391.6,
-    "qoq": null,
-    "yago": 3263.4,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
+    "cur": 445.5,
+    "prev_q": 500.1,
+    "qoq": -10.92,
+    "yago": 106.7,
+    "yoy": 317.72,
+    "yflag": "",
+    "qflag": ""
    },
    "ctrl": {
-    "cur": -16718.3,
-    "prev_q": 28391.6,
-    "qoq": null,
-    "yago": 3263.4,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
+    "cur": 425.8,
+    "prev_q": 486.9,
+    "qoq": -12.55,
+    "yago": 89.5,
+    "yoy": 375.49,
+    "yflag": "",
+    "qflag": ""
    },
-   "name": "케이씨씨",
-   "code": "002380",
+   "name": "코스맥스",
+   "code": "192820",
    "market": "KOSPI",
-   "date": "2026-11-05",
+   "date": "2026-11-11",
    "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800261",
-   "mcap_eok": 30891,
-   "op_margin": 5.1
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 26569.3,
-    "prev_q": 28752.5,
-    "qoq": -7.6,
-    "yago": 27057.0,
-    "yoy": -1.8,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 1206.1,
-    "prev_q": 1036.8,
-    "qoq": 16.3,
-    "yago": 953.0,
-    "yoy": 26.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -1421.8,
-    "prev_q": 872.6,
-    "qoq": null,
-    "yago": 552.7,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "ctrl": {
-    "cur": -1430.2,
-    "prev_q": 864.6,
-    "qoq": null,
-    "yago": 546.7,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "name": "한온시스템",
-   "code": "018880",
-   "market": "KOSPI",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800291",
-   "mcap_eok": 30736,
-   "op_margin": 4.5
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 43973.6,
-    "prev_q": 45812.7,
-    "qoq": -4.0,
-    "yago": 42794.8,
-    "yoy": 2.8,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 2372.0,
-    "prev_q": 5049.8,
-    "qoq": -53.0,
-    "yago": 2454.5,
-    "yoy": -3.4,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 1656.9,
-    "prev_q": 3918.5,
-    "qoq": -57.7,
-    "yago": 1831.8,
-    "yoy": -9.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "현대해상",
-   "code": "001450",
-   "market": "KOSPI",
-   "date": "2026-11-13",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113800595",
-   "mcap_eok": 30647,
-   "op_margin": 5.4
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 8744.0,
-    "prev_q": 8850.4,
-    "qoq": -1.2,
-    "yago": 6523.0,
-    "yoy": 34.0,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": -265.0,
-    "prev_q": 208.3,
-    "qoq": null,
-    "yago": 221.2,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "net": {
-    "cur": -327.1,
-    "prev_q": 529.2,
-    "qoq": null,
-    "yago": -1183.1,
-    "yoy": 72.4,
-    "yflag": "",
-    "qflag": "적자전환"
-   },
-   "ctrl": {
-    "cur": -341.1,
-    "prev_q": 533.6,
-    "qoq": null,
-    "yago": -1182.2,
-    "yoy": 71.1,
-    "yflag": "",
-    "qflag": "적자전환"
-   },
-   "name": "엘앤에프",
-   "code": "066970",
-   "market": "KOSPI",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800489",
-   "mcap_eok": 30190,
-   "op_margin": -3.0
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 1824.4,
-    "prev_q": 1557.0,
-    "qoq": 17.2,
-    "yago": 1507.7,
-    "yoy": 21.0,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": -112.2,
-    "prev_q": -157.4,
-    "qoq": 28.7,
-    "yago": -193.7,
-    "yoy": 42.1,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 120.1,
-    "prev_q": -140.9,
-    "qoq": 185.2,
-    "yago": 210.8,
-    "yoy": -43.0,
-    "yflag": "",
-    "qflag": "흑자전환"
-   },
-   "ctrl": {
-    "cur": 105.3,
-    "prev_q": -178.9,
-    "qoq": 158.9,
-    "yago": 244.8,
-    "yoy": -57.0,
-    "yflag": "",
-    "qflag": "흑자전환"
-   },
-   "name": "SK바이오사이언스",
-   "code": "302440",
-   "market": "KOSPI",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800512",
-   "mcap_eok": 29970,
-   "op_margin": -6.1
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800375",
+   "mcap_eok": 32970,
+   "op_margin": 9.5
   },
   {
    "period": "26년 3Q",
@@ -1845,95 +1239,47 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800609",
-   "mcap_eok": 29909,
+   "mcap_eok": 30230,
    "op_margin": 16.2
   },
   {
    "period": "26년 3Q",
    "unit_src": "백만원",
    "sales": {
-    "cur": 6819.3,
-    "prev_q": 6822.1,
-    "qoq": 0.0,
-    "yago": 6496.2,
-    "yoy": 5.0,
+    "cur": 43973.6,
+    "prev_q": 45812.7,
+    "qoq": -4.0,
+    "yago": 42794.8,
+    "yoy": 2.8,
     "yflag": "",
     "qflag": ""
    },
    "op": {
-    "cur": 385.1,
-    "prev_q": 867.5,
-    "qoq": -55.6,
-    "yago": 800.6,
-    "yoy": -51.9,
+    "cur": 2372.0,
+    "prev_q": 5049.8,
+    "qoq": -53.0,
+    "yago": 2454.5,
+    "yoy": -3.4,
     "yflag": "",
     "qflag": ""
    },
    "net": {
-    "cur": 383.5,
-    "prev_q": 654.8,
-    "qoq": -41.4,
-    "yago": 612.9,
-    "yoy": -37.4,
+    "cur": 1656.9,
+    "prev_q": 3918.5,
+    "qoq": -57.7,
+    "yago": 1831.8,
+    "yoy": -9.6,
     "yflag": "",
     "qflag": ""
    },
-   "name": "서울보증보험",
-   "code": "031210",
+   "name": "현대해상",
+   "code": "001450",
    "market": "KOSPI",
    "date": "2026-11-13",
    "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113800315",
-   "mcap_eok": 28103,
-   "op_margin": 5.6
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 73952.0,
-    "prev_q": 73621.1,
-    "qoq": 0.4,
-    "yago": 74395.0,
-    "yoy": -0.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 3090.2,
-    "prev_q": 2575.8,
-    "qoq": 20.0,
-    "yago": 3465.0,
-    "yoy": -10.8,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 616.4,
-    "prev_q": -38.8,
-    "qoq": null,
-    "yago": 1191.9,
-    "yoy": -48.3,
-    "yflag": "",
-    "qflag": "흑자전환"
-   },
-   "ctrl": {
-    "cur": 191.6,
-    "prev_q": -135.3,
-    "qoq": null,
-    "yago": 729.3,
-    "yoy": -73.7,
-    "yflag": "",
-    "qflag": "흑자전환"
-   },
-   "name": "CJ제일제당",
-   "code": "097950",
-   "market": "KOSPI",
-   "date": "2026-11-10",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800079",
-   "mcap_eok": 27700,
-   "op_margin": 4.2
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113800595",
+   "mcap_eok": 29325,
+   "op_margin": 5.4
   },
   {
    "period": "26년 3Q",
@@ -1980,7 +1326,7 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900196",
-   "mcap_eok": 27533,
+   "mcap_eok": 28883,
    "op_margin": 36.5
   },
   {
@@ -2028,56 +1374,134 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800151",
-   "mcap_eok": 27075,
+   "mcap_eok": 27996,
    "op_margin": 9.9
   },
   {
-   "period": "26년 3Q",
-   "unit_src": "억원",
+   "period": "26년 4Q",
+   "unit_src": "백만원",
    "sales": {
-    "cur": 6347.0,
-    "prev_q": 7492.0,
-    "qoq": -15.3,
-    "yago": 6960.0,
-    "yoy": -8.8,
+    "cur": 1763.7,
+    "prev_q": 1981.5,
+    "qoq": -10.99,
+    "yago": 1846.6,
+    "yoy": -4.49,
     "yflag": "",
     "qflag": ""
    },
    "op": {
-    "cur": 504.0,
-    "prev_q": 801.0,
-    "qoq": -37.1,
-    "yago": 909.0,
-    "yoy": -44.6,
+    "cur": null,
+    "prev_q": null,
+    "qoq": null,
+    "yago": null,
+    "yoy": null,
     "yflag": "",
     "qflag": ""
    },
    "net": {
-    "cur": 222.0,
-    "prev_q": 2039.0,
-    "qoq": -89.1,
-    "yago": 406.0,
-    "yoy": -45.3,
+    "cur": null,
+    "prev_q": null,
+    "qoq": null,
+    "yago": null,
+    "yoy": null,
     "yflag": "",
     "qflag": ""
+   },
+   "name": "신세계",
+   "code": "004170",
+   "market": "KOSPI",
+   "date": "2026-11-10",
+   "consolidated": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800301",
+   "mcap_eok": 27911,
+   "op_margin": null
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 73952.0,
+    "prev_q": 73621.1,
+    "qoq": 0.4,
+    "yago": 74395.0,
+    "yoy": -0.6,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 3090.2,
+    "prev_q": 2575.8,
+    "qoq": 20.0,
+    "yago": 3465.0,
+    "yoy": -10.8,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 616.4,
+    "prev_q": -38.8,
+    "qoq": null,
+    "yago": 1191.9,
+    "yoy": -48.3,
+    "yflag": "",
+    "qflag": "흑자전환"
    },
    "ctrl": {
-    "cur": 201.0,
-    "prev_q": 1976.0,
-    "qoq": -89.8,
-    "yago": 375.0,
-    "yoy": -46.4,
+    "cur": 191.6,
+    "prev_q": -135.3,
+    "qoq": null,
+    "yago": 729.3,
+    "yoy": -73.7,
+    "yflag": "",
+    "qflag": "흑자전환"
+   },
+   "name": "CJ제일제당",
+   "code": "097950",
+   "market": "KOSPI",
+   "date": "2026-11-10",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800079",
+   "mcap_eok": 27835,
+   "op_margin": 4.2
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 6819.3,
+    "prev_q": 6822.1,
+    "qoq": 0.0,
+    "yago": 6496.2,
+    "yoy": 5.0,
     "yflag": "",
     "qflag": ""
    },
-   "name": "넷마블",
-   "code": "251270",
+   "op": {
+    "cur": 385.1,
+    "prev_q": 867.5,
+    "qoq": -55.6,
+    "yago": 800.6,
+    "yoy": -51.9,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 383.5,
+    "prev_q": 654.8,
+    "qoq": -41.4,
+    "yago": 612.9,
+    "yoy": -37.4,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "서울보증보험",
+   "code": "031210",
    "market": "KOSPI",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800523",
-   "mcap_eok": 25945,
-   "op_margin": 7.9
+   "date": "2026-11-13",
+   "consolidated": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113800315",
+   "mcap_eok": 27684,
+   "op_margin": 5.6
   },
   {
    "period": "26년 3Q",
@@ -2124,95 +1548,104 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109800643",
-   "mcap_eok": 25416,
+   "mcap_eok": 25646,
    "op_margin": 7.5
   },
   {
-   "period": "26년 4Q",
+   "period": "26년 3Q",
    "unit_src": "백만원",
    "sales": {
-    "cur": 1763.7,
-    "prev_q": 1981.5,
-    "qoq": -10.99,
-    "yago": 1846.6,
-    "yoy": -4.49,
+    "cur": 36532.0,
+    "prev_q": 34850.3,
+    "qoq": 4.8,
+    "yago": 34100.6,
+    "yoy": 7.1,
     "yflag": "",
     "qflag": ""
    },
    "op": {
-    "cur": null,
-    "prev_q": null,
-    "qoq": null,
-    "yago": null,
-    "yoy": null,
+    "cur": 1755.6,
+    "prev_q": 899.1,
+    "qoq": 95.3,
+    "yago": 1305.1,
+    "yoy": 34.5,
     "yflag": "",
     "qflag": ""
    },
    "net": {
-    "cur": null,
-    "prev_q": null,
-    "qoq": null,
-    "yago": null,
+    "cur": 1423.7,
+    "prev_q": 146.2,
+    "qoq": 874.0,
+    "yago": -487.4,
     "yoy": null,
-    "yflag": "",
+    "yflag": "흑자전환",
     "qflag": ""
    },
-   "name": "신세계",
-   "code": "004170",
+   "ctrl": {
+    "cur": 1314.6,
+    "prev_q": -28.5,
+    "qoq": null,
+    "yago": -566.4,
+    "yoy": null,
+    "yflag": "흑자전환",
+    "qflag": "흑자전환"
+   },
+   "name": "롯데쇼핑",
+   "code": "023530",
    "market": "KOSPI",
-   "date": "2026-11-10",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800301",
-   "mcap_eok": 25266,
-   "op_margin": null
+   "date": "2026-11-06",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800080",
+   "mcap_eok": 23989,
+   "op_margin": 4.8
   },
   {
    "period": "26년 3Q",
-   "unit_src": "억원",
+   "unit_src": "백만원",
    "sales": {
-    "cur": 25152.0,
-    "prev_q": 24268.0,
-    "qoq": 3.6,
-    "yago": 24623.0,
-    "yoy": 2.1,
+    "cur": 4521.2,
+    "prev_q": 3996.2,
+    "qoq": 13.1,
+    "yago": 4742.6,
+    "yoy": -4.7,
     "yflag": "",
     "qflag": ""
    },
    "op": {
-    "cur": 1008.0,
-    "prev_q": 849.0,
-    "qoq": 18.7,
-    "yago": 977.0,
-    "yoy": 3.2,
+    "cur": 1084.3,
+    "prev_q": 865.0,
+    "qoq": 25.4,
+    "yago": 1280.2,
+    "yoy": -15.3,
     "yflag": "",
     "qflag": ""
    },
    "net": {
-    "cur": 742.0,
-    "prev_q": 568.0,
-    "qoq": 30.6,
-    "yago": 793.0,
-    "yoy": -6.4,
+    "cur": 658.9,
+    "prev_q": 729.9,
+    "qoq": -9.7,
+    "yago": 1007.0,
+    "yoy": -34.6,
     "yflag": "",
     "qflag": ""
    },
    "ctrl": {
-    "cur": 742.0,
-    "prev_q": 568.0,
-    "qoq": 30.6,
-    "yago": 793.0,
-    "yoy": -6.4,
+    "cur": 658.9,
+    "prev_q": 769.4,
+    "qoq": -14.4,
+    "yago": 981.6,
+    "yoy": -32.9,
     "yflag": "",
     "qflag": ""
    },
-   "name": "BGF리테일",
-   "code": "282330",
+   "name": "F&F",
+   "code": "383220",
    "market": "KOSPI",
-   "date": "2026-11-05",
+   "date": "2026-11-10",
    "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800405",
-   "mcap_eok": 24128,
-   "op_margin": 4.0
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800544",
+   "mcap_eok": 23444,
+   "op_margin": 24.0
   },
   {
    "period": "26년 3Q",
@@ -2259,7 +1692,7 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800457",
-   "mcap_eok": 23823,
+   "mcap_eok": 23175,
    "op_margin": -1.1
   },
   {
@@ -2307,152 +1740,8 @@
    "date": "2026-11-13",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113800328",
-   "mcap_eok": 23819,
+   "mcap_eok": 22751,
    "op_margin": -2.8
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 36532.0,
-    "prev_q": 34850.3,
-    "qoq": 4.8,
-    "yago": 34100.6,
-    "yoy": 7.1,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 1755.6,
-    "prev_q": 899.1,
-    "qoq": 95.3,
-    "yago": 1305.1,
-    "yoy": 34.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 1423.7,
-    "prev_q": 146.2,
-    "qoq": 874.0,
-    "yago": -487.4,
-    "yoy": null,
-    "yflag": "흑자전환",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 1314.6,
-    "prev_q": -28.5,
-    "qoq": null,
-    "yago": -566.4,
-    "yoy": null,
-    "yflag": "흑자전환",
-    "qflag": "흑자전환"
-   },
-   "name": "롯데쇼핑",
-   "code": "023530",
-   "market": "KOSPI",
-   "date": "2026-11-06",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800080",
-   "mcap_eok": 23508,
-   "op_margin": 4.8
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 7583.1,
-    "prev_q": 7579.2,
-    "qoq": 0.1,
-    "yago": 6256.0,
-    "yoy": 21.2,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 587.7,
-    "prev_q": 579.1,
-    "qoq": 1.5,
-    "yago": 276.4,
-    "yoy": 112.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 388.5,
-    "prev_q": 290.8,
-    "qoq": 33.6,
-    "yago": 180.0,
-    "yoy": 115.8,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 291.6,
-    "prev_q": 200.1,
-    "qoq": 45.7,
-    "yago": 120.9,
-    "yoy": 141.2,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "NHN",
-   "code": "181710",
-   "market": "KOSPI",
-   "date": "2026-11-10",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800041",
-   "mcap_eok": 23309,
-   "op_margin": 7.8
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 4521.2,
-    "prev_q": 3996.2,
-    "qoq": 13.1,
-    "yago": 4742.6,
-    "yoy": -4.7,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 1084.3,
-    "prev_q": 865.0,
-    "qoq": 25.4,
-    "yago": 1280.2,
-    "yoy": -15.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 658.9,
-    "prev_q": 729.9,
-    "qoq": -9.7,
-    "yago": 1007.0,
-    "yoy": -34.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 658.9,
-    "prev_q": 769.4,
-    "qoq": -14.4,
-    "yago": 981.6,
-    "yoy": -32.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "F&F",
-   "code": "383220",
-   "market": "KOSPI",
-   "date": "2026-11-10",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800544",
-   "mcap_eok": 22754,
-   "op_margin": 24.0
   },
   {
    "period": "26년 3Q",
@@ -2490,56 +1779,8 @@
    "date": "2026-11-13",
    "consolidated": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113800181",
-   "mcap_eok": 22744,
+   "mcap_eok": 22444,
    "op_margin": 5.0
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 7753.9,
-    "prev_q": 7657.6,
-    "qoq": 1.3,
-    "yago": 7579.7,
-    "yoy": 2.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 929.0,
-    "prev_q": 846.4,
-    "qoq": 9.8,
-    "yago": 890.0,
-    "yoy": 4.4,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 293.5,
-    "prev_q": 182.9,
-    "qoq": 60.5,
-    "yago": 387.4,
-    "yoy": -24.2,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 304.6,
-    "prev_q": 196.7,
-    "qoq": 54.8,
-    "yago": 390.3,
-    "yoy": -22.0,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "롯데렌탈",
-   "code": "089860",
-   "market": "KOSPI",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800495",
-   "mcap_eok": 21241,
-   "op_margin": 12.0
   },
   {
    "period": "26년 3Q",
@@ -2586,56 +1827,56 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800399",
-   "mcap_eok": 20871,
+   "mcap_eok": 21604,
    "op_margin": 3.3
   },
   {
    "period": "26년 3Q",
-   "unit_src": "억원",
+   "unit_src": "백만원",
    "sales": {
-    "cur": 2897.0,
-    "prev_q": 1942.0,
-    "qoq": 49.2,
-    "yago": 1437.0,
-    "yoy": 101.6,
+    "cur": 7583.1,
+    "prev_q": 7579.2,
+    "qoq": 0.1,
+    "yago": 6256.0,
+    "yoy": 21.2,
     "yflag": "",
     "qflag": ""
    },
    "op": {
-    "cur": -213.0,
-    "prev_q": -169.0,
-    "qoq": -25.8,
-    "yago": -343.0,
-    "yoy": 38.0,
+    "cur": 587.7,
+    "prev_q": 579.1,
+    "qoq": 1.5,
+    "yago": 276.4,
+    "yoy": 112.6,
     "yflag": "",
     "qflag": ""
    },
    "net": {
-    "cur": 704.0,
-    "prev_q": -188.0,
-    "qoq": null,
-    "yago": -245.0,
-    "yoy": null,
-    "yflag": "흑자전환",
-    "qflag": "흑자전환"
+    "cur": 388.5,
+    "prev_q": 290.8,
+    "qoq": 33.6,
+    "yago": 180.0,
+    "yoy": 115.8,
+    "yflag": "",
+    "qflag": ""
    },
    "ctrl": {
-    "cur": 697.0,
-    "prev_q": -205.0,
-    "qoq": null,
-    "yago": -254.0,
-    "yoy": null,
-    "yflag": "흑자전환",
-    "qflag": "흑자전환"
+    "cur": 291.6,
+    "prev_q": 200.1,
+    "qoq": 45.7,
+    "yago": 120.9,
+    "yoy": 141.2,
+    "yflag": "",
+    "qflag": ""
    },
-   "name": "롯데에너지머티리얼즈",
-   "code": "020150",
+   "name": "NHN",
+   "code": "181710",
    "market": "KOSPI",
-   "date": "2026-11-05",
+   "date": "2026-11-10",
    "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800089",
-   "mcap_eok": 19794,
-   "op_margin": -7.4
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800041",
+   "mcap_eok": 20723,
+   "op_margin": 7.8
   },
   {
    "period": "26년 3Q",
@@ -2682,7 +1923,7 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800463",
-   "mcap_eok": 19610,
+   "mcap_eok": 19902,
    "op_margin": 9.9
   },
   {
@@ -2730,56 +1971,8 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800601",
-   "mcap_eok": 19334,
+   "mcap_eok": 19784,
    "op_margin": -5.2
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 1811.5,
-    "prev_q": 1787.9,
-    "qoq": 1.3,
-    "yago": 631.5,
-    "yoy": 186.8,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": -289.7,
-    "prev_q": -105.8,
-    "qoq": -173.7,
-    "yago": -251.4,
-    "yoy": -15.2,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -909.0,
-    "prev_q": -124.5,
-    "qoq": -630.1,
-    "yago": 1615.9,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": null,
-    "prev_q": null,
-    "qoq": null,
-    "yago": null,
-    "yoy": null,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "에코프로머티",
-   "code": "450080",
-   "market": "KOSPI",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800323",
-   "mcap_eok": 19297,
-   "op_margin": -16.0
   },
   {
    "period": "26년 3Q",
@@ -2826,47 +2019,8 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109800233",
-   "mcap_eok": 18484,
+   "mcap_eok": 18797,
    "op_margin": 20.3
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 1618.7,
-    "prev_q": 1532.9,
-    "qoq": 5.6,
-    "yago": 1381.8,
-    "yoy": 17.15,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 239.0,
-    "prev_q": 193.1,
-    "qoq": 23.8,
-    "yago": 161.1,
-    "yoy": 48.38,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 176.7,
-    "prev_q": 137.2,
-    "qoq": 28.79,
-    "yago": 114.6,
-    "yoy": 54.21,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "셀트리온제약",
-   "code": "068760",
-   "market": "KOSDAQ",
-   "date": "2026-11-09",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900452",
-   "mcap_eok": 17872,
-   "op_margin": 14.8
   },
   {
    "period": "26년 3Q",
@@ -2913,8 +2067,47 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112900686",
-   "mcap_eok": 17408,
+   "mcap_eok": 18445,
    "op_margin": 20.4
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 1618.7,
+    "prev_q": 1532.9,
+    "qoq": 5.6,
+    "yago": 1381.8,
+    "yoy": 17.15,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 239.0,
+    "prev_q": 193.1,
+    "qoq": 23.8,
+    "yago": 161.1,
+    "yoy": 48.38,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 176.7,
+    "prev_q": 137.2,
+    "qoq": 28.79,
+    "yago": 114.6,
+    "yoy": 54.21,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "셀트리온제약",
+   "code": "068760",
+   "market": "KOSDAQ",
+   "date": "2026-11-09",
+   "consolidated": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900452",
+   "mcap_eok": 18427,
+   "op_margin": 14.8
   },
   {
    "period": "26년 4Q",
@@ -2952,7 +2145,7 @@
    "date": "2026-11-11",
    "consolidated": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800242",
-   "mcap_eok": 17319,
+   "mcap_eok": 17481,
    "op_margin": null
   },
   {
@@ -3000,7 +2193,7 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800395",
-   "mcap_eok": 17290,
+   "mcap_eok": 17480,
    "op_margin": 11.9
   },
   {
@@ -3048,7 +2241,7 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112900261",
-   "mcap_eok": 16944,
+   "mcap_eok": 17387,
    "op_margin": 4.2
   },
   {
@@ -3096,152 +2289,8 @@
    "date": "2026-11-11",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900490",
-   "mcap_eok": 16611,
+   "mcap_eok": 17038,
    "op_margin": 17.9
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 33581.4,
-    "prev_q": 33799.8,
-    "qoq": -0.6,
-    "yago": 30666.1,
-    "yoy": 9.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 1105.5,
-    "prev_q": 1015.7,
-    "qoq": 8.8,
-    "yago": 1479.1,
-    "yoy": -25.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 546.7,
-    "prev_q": 367.7,
-    "qoq": 48.7,
-    "yago": 734.3,
-    "yoy": -25.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 537.8,
-    "prev_q": 346.3,
-    "qoq": 55.3,
-    "yago": 710.6,
-    "yoy": -24.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "CJ대한통운",
-   "code": "000120",
-   "market": "KOSPI",
-   "date": "2026-11-10",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800050",
-   "mcap_eok": 16014,
-   "op_margin": 3.3
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 3304.7,
-    "prev_q": 4379.4,
-    "qoq": -24.54,
-    "yago": 3936.8,
-    "yoy": -16.06,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 116.6,
-    "prev_q": 435.8,
-    "qoq": -73.25,
-    "yago": 474.3,
-    "yoy": -75.43,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 57.5,
-    "prev_q": 382.7,
-    "qoq": -84.98,
-    "yago": 427.1,
-    "yoy": -86.54,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 57.3,
-    "prev_q": 382.9,
-    "qoq": -85.04,
-    "yago": 427.1,
-    "yoy": -86.58,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "한전KPS",
-   "code": "051600",
-   "market": "KOSPI",
-   "date": "2026-11-09",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109800416",
-   "mcap_eok": 15975,
-   "op_margin": 3.5
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 4243.6,
-    "prev_q": 4026.0,
-    "qoq": 5.4,
-    "yago": 2993.8,
-    "yoy": 41.7,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 696.2,
-    "prev_q": 829.7,
-    "qoq": -16.1,
-    "yago": 630.7,
-    "yoy": 10.4,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 88.0,
-    "prev_q": 723.3,
-    "qoq": -87.8,
-    "yago": 584.0,
-    "yoy": -84.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 88.0,
-    "prev_q": 723.3,
-    "qoq": -87.8,
-    "yago": 584.0,
-    "yoy": -84.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "실리콘투",
-   "code": "257720",
-   "market": "KOSDAQ",
-   "date": "2026-11-11",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900551",
-   "mcap_eok": 15542,
-   "op_margin": 16.4
   },
   {
    "period": "26년 3Q",
@@ -3288,56 +2337,104 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800251",
-   "mcap_eok": 14606,
+   "mcap_eok": 16462,
    "op_margin": 21.5
   },
   {
    "period": "26년 3Q",
    "unit_src": "백만원",
    "sales": {
-    "cur": 830.2,
-    "prev_q": 1055.2,
-    "qoq": -21.3,
-    "yago": 830.0,
-    "yoy": 0.0,
+    "cur": 33581.4,
+    "prev_q": 33799.8,
+    "qoq": -0.6,
+    "yago": 30666.1,
+    "yoy": 9.5,
     "yflag": "",
     "qflag": ""
    },
    "op": {
-    "cur": 270.0,
-    "prev_q": 439.4,
-    "qoq": -38.5,
-    "yago": 376.2,
-    "yoy": -28.2,
+    "cur": 1105.5,
+    "prev_q": 1015.7,
+    "qoq": 8.8,
+    "yago": 1479.1,
+    "yoy": -25.3,
     "yflag": "",
     "qflag": ""
    },
    "net": {
-    "cur": 58.9,
-    "prev_q": 255.2,
-    "qoq": -76.9,
-    "yago": 331.1,
-    "yoy": -82.2,
+    "cur": 546.7,
+    "prev_q": 367.7,
+    "qoq": 48.7,
+    "yago": 734.3,
+    "yoy": -25.5,
     "yflag": "",
     "qflag": ""
    },
    "ctrl": {
-    "cur": 62.8,
-    "prev_q": 283.7,
-    "qoq": -77.9,
-    "yago": 330.1,
-    "yoy": -81.0,
+    "cur": 537.8,
+    "prev_q": 346.3,
+    "qoq": 55.3,
+    "yago": 710.6,
+    "yoy": -24.3,
     "yflag": "",
     "qflag": ""
    },
-   "name": "클래시스",
-   "code": "214150",
-   "market": "KOSDAQ",
-   "date": "2026-11-12",
+   "name": "CJ대한통운",
+   "code": "000120",
+   "market": "KOSPI",
+   "date": "2026-11-10",
    "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112900535",
-   "mcap_eok": 14482,
-   "op_margin": 32.5
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800050",
+   "mcap_eok": 16265,
+   "op_margin": 3.3
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 4243.6,
+    "prev_q": 4026.0,
+    "qoq": 5.4,
+    "yago": 2993.8,
+    "yoy": 41.7,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 696.2,
+    "prev_q": 829.7,
+    "qoq": -16.1,
+    "yago": 630.7,
+    "yoy": 10.4,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 88.0,
+    "prev_q": 723.3,
+    "qoq": -87.8,
+    "yago": 584.0,
+    "yoy": -84.9,
+    "yflag": "",
+    "qflag": ""
+   },
+   "ctrl": {
+    "cur": 88.0,
+    "prev_q": 723.3,
+    "qoq": -87.8,
+    "yago": 584.0,
+    "yoy": -84.9,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "실리콘투",
+   "code": "257720",
+   "market": "KOSDAQ",
+   "date": "2026-11-11",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900551",
+   "mcap_eok": 15869,
+   "op_margin": 16.4
   },
   {
    "period": "26년 3Q",
@@ -3384,47 +2481,104 @@
    "date": "2026-11-10",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800546",
-   "mcap_eok": 14304,
+   "mcap_eok": 15860,
    "op_margin": 44.8
   },
   {
    "period": "26년 3Q",
    "unit_src": "백만원",
    "sales": {
-    "cur": 2733.1,
-    "prev_q": 3364.3,
-    "qoq": -18.8,
-    "yago": 2490.1,
-    "yoy": 9.8,
+    "cur": 3304.7,
+    "prev_q": 4379.4,
+    "qoq": -24.54,
+    "yago": 3936.8,
+    "yoy": -16.06,
     "yflag": "",
     "qflag": ""
    },
    "op": {
-    "cur": 125.2,
-    "prev_q": 560.0,
-    "qoq": -77.6,
-    "yago": 189.9,
-    "yoy": -34.0,
+    "cur": 116.6,
+    "prev_q": 435.8,
+    "qoq": -73.25,
+    "yago": 474.3,
+    "yoy": -75.43,
     "yflag": "",
     "qflag": ""
    },
    "net": {
-    "cur": -95.0,
-    "prev_q": 425.7,
-    "qoq": null,
-    "yago": 127.0,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
+    "cur": 57.5,
+    "prev_q": 382.7,
+    "qoq": -84.98,
+    "yago": 427.1,
+    "yoy": -86.54,
+    "yflag": "",
+    "qflag": ""
    },
-   "name": "동원산업",
-   "code": "006040",
+   "ctrl": {
+    "cur": 57.3,
+    "prev_q": 382.9,
+    "qoq": -85.04,
+    "yago": 427.1,
+    "yoy": -86.58,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "한전KPS",
+   "code": "051600",
    "market": "KOSPI",
-   "date": "2026-11-10",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800770",
-   "mcap_eok": 14015,
-   "op_margin": 4.6
+   "date": "2026-11-09",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109800416",
+   "mcap_eok": 15660,
+   "op_margin": 3.5
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 830.2,
+    "prev_q": 1055.2,
+    "qoq": -21.3,
+    "yago": 830.0,
+    "yoy": 0.0,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 270.0,
+    "prev_q": 439.4,
+    "qoq": -38.5,
+    "yago": 376.2,
+    "yoy": -28.2,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 58.9,
+    "prev_q": 255.2,
+    "qoq": -76.9,
+    "yago": 331.1,
+    "yoy": -82.2,
+    "yflag": "",
+    "qflag": ""
+   },
+   "ctrl": {
+    "cur": 62.8,
+    "prev_q": 283.7,
+    "qoq": -77.9,
+    "yago": 330.1,
+    "yoy": -81.0,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "클래시스",
+   "code": "214150",
+   "market": "KOSDAQ",
+   "date": "2026-11-12",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112900535",
+   "mcap_eok": 14874,
+   "op_margin": 32.5
   },
   {
    "period": "26년 3Q",
@@ -3471,8 +2625,86 @@
    "date": "2026-11-11",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800253",
-   "mcap_eok": 13598,
+   "mcap_eok": 14207,
    "op_margin": 25.2
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 2733.1,
+    "prev_q": 3364.3,
+    "qoq": -18.8,
+    "yago": 2490.1,
+    "yoy": 9.8,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 125.2,
+    "prev_q": 560.0,
+    "qoq": -77.6,
+    "yago": 189.9,
+    "yoy": -34.0,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": -95.0,
+    "prev_q": 425.7,
+    "qoq": null,
+    "yago": 127.0,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": "적자전환"
+   },
+   "name": "동원산업",
+   "code": "006040",
+   "market": "KOSPI",
+   "date": "2026-11-10",
+   "consolidated": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800770",
+   "mcap_eok": 14081,
+   "op_margin": 4.6
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 312.9,
+    "prev_q": 315.8,
+    "qoq": -0.9,
+    "yago": 177.0,
+    "yoy": 76.7,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 104.3,
+    "prev_q": 88.5,
+    "qoq": 17.9,
+    "yago": 38.1,
+    "yoy": 174.0,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 52.2,
+    "prev_q": -273.4,
+    "qoq": null,
+    "yago": -503.7,
+    "yoy": null,
+    "yflag": "흑자전환",
+    "qflag": "흑자전환"
+   },
+   "name": "엘앤씨바이오",
+   "code": "290650",
+   "market": "KOSDAQ",
+   "date": "2026-11-09",
+   "consolidated": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900321",
+   "mcap_eok": 12924,
+   "op_margin": 33.3
   },
   {
    "period": "26년 3Q",
@@ -3519,47 +2751,8 @@
    "date": "2026-11-11",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800116",
-   "mcap_eok": 12813,
+   "mcap_eok": 12831,
    "op_margin": 7.7
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 312.9,
-    "prev_q": 315.8,
-    "qoq": -0.9,
-    "yago": 177.0,
-    "yoy": 76.7,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 104.3,
-    "prev_q": 88.5,
-    "qoq": 17.9,
-    "yago": 38.1,
-    "yoy": 174.0,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 52.2,
-    "prev_q": -273.4,
-    "qoq": null,
-    "yago": -503.7,
-    "yoy": null,
-    "yflag": "흑자전환",
-    "qflag": "흑자전환"
-   },
-   "name": "엘앤씨바이오",
-   "code": "290650",
-   "market": "KOSDAQ",
-   "date": "2026-11-09",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900321",
-   "mcap_eok": 12283,
-   "op_margin": 33.3
   },
   {
    "period": "26년 3Q",
@@ -3597,7 +2790,7 @@
    "date": "2026-11-12",
    "consolidated": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800030",
-   "mcap_eok": 12111,
+   "mcap_eok": 12027,
    "op_margin": 32.2
   },
   {
@@ -3645,7 +2838,7 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900602",
-   "mcap_eok": 11417,
+   "mcap_eok": 11609,
    "op_margin": 11.0
   },
   {
@@ -3693,56 +2886,8 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900600",
-   "mcap_eok": 11076,
+   "mcap_eok": 11170,
    "op_margin": 9.5
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 17105.8,
-    "prev_q": 15197.1,
-    "qoq": 12.6,
-    "yago": 18220.6,
-    "yoy": -6.1,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 2800.0,
-    "prev_q": 2283.8,
-    "qoq": 22.6,
-    "yago": 1961.6,
-    "yoy": 42.7,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 1821.6,
-    "prev_q": 2567.8,
-    "qoq": -29.1,
-    "yago": 1168.9,
-    "yoy": 55.8,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 1105.3,
-    "prev_q": 2022.4,
-    "qoq": -45.3,
-    "yago": 734.7,
-    "yoy": 50.4,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "HDC",
-   "code": "012630",
-   "market": "KOSPI",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800611",
-   "mcap_eok": 11074,
-   "op_margin": 16.4
   },
   {
    "period": "26년 3Q",
@@ -3789,104 +2934,8 @@
    "date": "2026-11-11",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800429",
-   "mcap_eok": 10945,
+   "mcap_eok": 11140,
    "op_margin": 3.2
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 19356.9,
-    "prev_q": 14445.0,
-    "qoq": 34.0,
-    "yago": 19726.0,
-    "yoy": -1.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 201.4,
-    "prev_q": 247.9,
-    "qoq": -18.8,
-    "yago": 223.5,
-    "yoy": -9.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -5.1,
-    "prev_q": 496.5,
-    "qoq": null,
-    "yago": 191.5,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "ctrl": {
-    "cur": -35.9,
-    "prev_q": 482.7,
-    "qoq": null,
-    "yago": 191.6,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "name": "SK네트웍스",
-   "code": "001740",
-   "market": "KOSPI",
-   "date": "2026-11-06",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800840",
-   "mcap_eok": 10391,
-   "op_margin": 1.0
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 939.6,
-    "prev_q": 882.4,
-    "qoq": 6.5,
-    "yago": 688.9,
-    "yoy": 36.4,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 166.0,
-    "prev_q": 127.7,
-    "qoq": 29.9,
-    "yago": 86.5,
-    "yoy": 91.8,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 117.0,
-    "prev_q": 107.6,
-    "qoq": 8.8,
-    "yago": 65.3,
-    "yoy": 79.1,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 117.3,
-    "prev_q": 107.9,
-    "qoq": 8.7,
-    "yago": 65.3,
-    "yoy": 79.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "티엘비",
-   "code": "356860",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900643",
-   "mcap_eok": 9812,
-   "op_margin": 17.7
   },
   {
    "period": "26년 3Q",
@@ -3933,56 +2982,56 @@
    "date": "2026-11-10",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800734",
-   "mcap_eok": 9698,
+   "mcap_eok": 10717,
    "op_margin": 18.2
   },
   {
    "period": "26년 3Q",
-   "unit_src": "억원",
+   "unit_src": "백만원",
    "sales": {
-    "cur": 10501.0,
-    "prev_q": 11129.0,
-    "qoq": -5.6,
-    "yago": 10792.0,
-    "yoy": -2.7,
+    "cur": 19356.9,
+    "prev_q": 14445.0,
+    "qoq": 34.0,
+    "yago": 19726.0,
+    "yoy": -1.9,
     "yflag": "",
     "qflag": ""
    },
    "op": {
-    "cur": 570.0,
-    "prev_q": 558.0,
-    "qoq": 2.1,
-    "yago": 918.0,
-    "yoy": -37.9,
+    "cur": 201.4,
+    "prev_q": 247.9,
+    "qoq": -18.8,
+    "yago": 223.5,
+    "yoy": -9.9,
     "yflag": "",
     "qflag": ""
    },
    "net": {
-    "cur": 405.0,
-    "prev_q": 282.0,
-    "qoq": 43.8,
-    "yago": 620.0,
-    "yoy": -34.6,
-    "yflag": "",
-    "qflag": ""
+    "cur": -5.1,
+    "prev_q": 496.5,
+    "qoq": null,
+    "yago": 191.5,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": "적자전환"
    },
    "ctrl": {
-    "cur": 401.0,
-    "prev_q": 256.0,
-    "qoq": 56.5,
-    "yago": 594.0,
-    "yoy": -32.4,
-    "yflag": "",
-    "qflag": ""
+    "cur": -35.9,
+    "prev_q": 482.7,
+    "qoq": null,
+    "yago": 191.6,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": "적자전환"
    },
-   "name": "롯데칠성음료",
-   "code": "005300",
+   "name": "SK네트웍스",
+   "code": "001740",
    "market": "KOSPI",
-   "date": "2026-11-09",
+   "date": "2026-11-06",
    "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109800266",
-   "mcap_eok": 9659,
-   "op_margin": 5.4
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800840",
+   "mcap_eok": 10631,
+   "op_margin": 1.0
   },
   {
    "period": "26년 3Q",
@@ -4029,56 +3078,56 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900494",
-   "mcap_eok": 9560,
+   "mcap_eok": 9908,
    "op_margin": 20.3
   },
   {
    "period": "26년 3Q",
-   "unit_src": "백만원",
+   "unit_src": "억원",
    "sales": {
-    "cur": 11903.8,
-    "prev_q": 12032.8,
-    "qoq": -1.1,
-    "yago": 12456.1,
-    "yoy": -4.4,
+    "cur": 10501.0,
+    "prev_q": 11129.0,
+    "qoq": -5.6,
+    "yago": 10792.0,
+    "yoy": -2.7,
     "yflag": "",
     "qflag": ""
    },
    "op": {
-    "cur": 220.5,
-    "prev_q": 334.5,
-    "qoq": -34.1,
-    "yago": 175.7,
-    "yoy": 25.5,
+    "cur": 570.0,
+    "prev_q": 558.0,
+    "qoq": 2.1,
+    "yago": 918.0,
+    "yoy": -37.9,
     "yflag": "",
     "qflag": ""
    },
    "net": {
-    "cur": -250.2,
-    "prev_q": 222.5,
-    "qoq": null,
-    "yago": 797.8,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
+    "cur": 405.0,
+    "prev_q": 282.0,
+    "qoq": 43.8,
+    "yago": 620.0,
+    "yoy": -34.6,
+    "yflag": "",
+    "qflag": ""
    },
    "ctrl": {
-    "cur": -179.3,
-    "prev_q": 237.2,
-    "qoq": null,
-    "yago": 457.8,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
+    "cur": 401.0,
+    "prev_q": 256.0,
+    "qoq": 56.5,
+    "yago": 594.0,
+    "yoy": -32.4,
+    "yflag": "",
+    "qflag": ""
    },
-   "name": "CJ ENM",
-   "code": "035760",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
+   "name": "롯데칠성음료",
+   "code": "005300",
+   "market": "KOSPI",
+   "date": "2026-11-09",
    "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900301",
-   "mcap_eok": 9243,
-   "op_margin": 1.9
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109800266",
+   "mcap_eok": 9863,
+   "op_margin": 5.4
   },
   {
    "period": "26년 3Q",
@@ -4125,7 +3174,7 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800767",
-   "mcap_eok": 9199,
+   "mcap_eok": 9407,
    "op_margin": -0.1
   },
   {
@@ -4173,7 +3222,7 @@
    "date": "2026-11-10",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800567",
-   "mcap_eok": 8901,
+   "mcap_eok": 8974,
    "op_margin": 9.9
   },
   {
@@ -4221,56 +3270,8 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900258",
-   "mcap_eok": 8766,
+   "mcap_eok": 8841,
    "op_margin": 8.6
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 445.3,
-    "prev_q": 425.1,
-    "qoq": 4.77,
-    "yago": 394.7,
-    "yoy": 12.83,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 95.2,
-    "prev_q": 88.2,
-    "qoq": 8.02,
-    "yago": 62.0,
-    "yoy": 53.54,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 56.8,
-    "prev_q": 67.7,
-    "qoq": -16.1,
-    "yago": 48.4,
-    "yoy": 17.45,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 52.7,
-    "prev_q": 63.7,
-    "qoq": -17.3,
-    "yago": 41.0,
-    "yoy": 28.44,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "케이아이엔엑스",
-   "code": "093320",
-   "market": "KOSDAQ",
-   "date": "2026-11-11",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900306",
-   "mcap_eok": 8491,
-   "op_margin": 21.4
   },
   {
    "period": "26년 3Q",
@@ -4317,8 +3318,56 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800724",
-   "mcap_eok": 8362,
+   "mcap_eok": 8826,
    "op_margin": 10.7
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 445.3,
+    "prev_q": 425.1,
+    "qoq": 4.77,
+    "yago": 394.7,
+    "yoy": 12.83,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 95.2,
+    "prev_q": 88.2,
+    "qoq": 8.02,
+    "yago": 62.0,
+    "yoy": 53.54,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 56.8,
+    "prev_q": 67.7,
+    "qoq": -16.1,
+    "yago": 48.4,
+    "yoy": 17.45,
+    "yflag": "",
+    "qflag": ""
+   },
+   "ctrl": {
+    "cur": 52.7,
+    "prev_q": 63.7,
+    "qoq": -17.3,
+    "yago": 41.0,
+    "yoy": 28.44,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "케이아이엔엑스",
+   "code": "093320",
+   "market": "KOSDAQ",
+   "date": "2026-11-11",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900306",
+   "mcap_eok": 8516,
+   "op_margin": 21.4
   },
   {
    "period": "26년 3Q",
@@ -4365,7 +3414,7 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109800732",
-   "mcap_eok": 8025,
+   "mcap_eok": 7778,
    "op_margin": 0.5
   },
   {
@@ -4413,134 +3462,8 @@
    "date": "2026-11-10",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800117",
-   "mcap_eok": 7422,
+   "mcap_eok": 7561,
    "op_margin": -1.3
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 19379.4,
-    "prev_q": 19773.8,
-    "qoq": -2.0,
-    "yago": 15991.5,
-    "yoy": 21.2,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 1147.4,
-    "prev_q": 1351.5,
-    "qoq": -15.1,
-    "yago": 928.1,
-    "yoy": 23.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 960.6,
-    "prev_q": 1164.3,
-    "qoq": -17.5,
-    "yago": 716.3,
-    "yoy": 34.1,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "한화손해보험",
-   "code": "000370",
-   "market": "KOSPI",
-   "date": "2026-11-11",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800554",
-   "mcap_eok": 7203,
-   "op_margin": 5.9
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 1589.9,
-    "prev_q": 1452.9,
-    "qoq": 9.4,
-    "yago": 1365.1,
-    "yoy": 16.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 151.2,
-    "prev_q": 154.5,
-    "qoq": -2.1,
-    "yago": 104.7,
-    "yoy": 44.4,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 45.3,
-    "prev_q": 130.2,
-    "qoq": -65.2,
-    "yago": 89.0,
-    "yoy": -49.1,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 45.3,
-    "prev_q": 130.2,
-    "qoq": -65.2,
-    "yago": 89.0,
-    "yoy": -49.1,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "스튜디오드래곤",
-   "code": "253450",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900281",
-   "mcap_eok": 7124,
-   "op_margin": 9.5
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 4021.2,
-    "prev_q": 4791.5,
-    "qoq": -16.1,
-    "yago": 3714.9,
-    "yoy": 8.2,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 164.3,
-    "prev_q": 318.7,
-    "qoq": -48.5,
-    "yago": 298.7,
-    "yoy": -45.0,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 116.4,
-    "prev_q": 2182.7,
-    "qoq": -94.7,
-    "yago": 247.0,
-    "yoy": -52.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "SK케미칼",
-   "code": "285130",
-   "market": "KOSPI",
-   "date": "2026-11-09",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109800451",
-   "mcap_eok": 6625,
-   "op_margin": 4.1
   },
   {
    "period": "26년 3Q",
@@ -4587,8 +3510,86 @@
    "date": "2026-11-13",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113900562",
-   "mcap_eok": 6559,
+   "mcap_eok": 7137,
    "op_margin": 15.7
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 19379.4,
+    "prev_q": 19773.8,
+    "qoq": -2.0,
+    "yago": 15991.5,
+    "yoy": 21.2,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 1147.4,
+    "prev_q": 1351.5,
+    "qoq": -15.1,
+    "yago": 928.1,
+    "yoy": 23.6,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 960.6,
+    "prev_q": 1164.3,
+    "qoq": -17.5,
+    "yago": 716.3,
+    "yoy": 34.1,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "한화손해보험",
+   "code": "000370",
+   "market": "KOSPI",
+   "date": "2026-11-11",
+   "consolidated": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800554",
+   "mcap_eok": 7074,
+   "op_margin": 5.9
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 4021.2,
+    "prev_q": 4791.5,
+    "qoq": -16.1,
+    "yago": 3714.9,
+    "yoy": 8.2,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 164.3,
+    "prev_q": 318.7,
+    "qoq": -48.5,
+    "yago": 298.7,
+    "yoy": -45.0,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 116.4,
+    "prev_q": 2182.7,
+    "qoq": -94.7,
+    "yago": 247.0,
+    "yoy": -52.9,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "SK케미칼",
+   "code": "285130",
+   "market": "KOSPI",
+   "date": "2026-11-09",
+   "consolidated": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109800451",
+   "mcap_eok": 6747,
+   "op_margin": 4.1
   },
   {
    "period": "26년 3Q",
@@ -4635,7 +3636,7 @@
    "date": "2026-11-11",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900511",
-   "mcap_eok": 6516,
+   "mcap_eok": 6569,
    "op_margin": 13.8
   },
   {
@@ -4683,7 +3684,7 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800632",
-   "mcap_eok": 5842,
+   "mcap_eok": 6092,
    "op_margin": 14.5
   },
   {
@@ -4731,296 +3732,8 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900145",
-   "mcap_eok": 5461,
+   "mcap_eok": 5652,
    "op_margin": 6.6
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 712.7,
-    "prev_q": 732.5,
-    "qoq": -2.7,
-    "yago": 598.0,
-    "yoy": 19.2,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 193.2,
-    "prev_q": 177.4,
-    "qoq": 8.9,
-    "yago": 98.4,
-    "yoy": 96.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 44.0,
-    "prev_q": 145.3,
-    "qoq": -69.7,
-    "yago": 93.9,
-    "yoy": -53.1,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 47.5,
-    "prev_q": 141.6,
-    "qoq": -66.4,
-    "yago": 96.4,
-    "yoy": -50.7,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "인바디",
-   "code": "041830",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900410",
-   "mcap_eok": 5392,
-   "op_margin": 27.1
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 428.4,
-    "prev_q": 641.3,
-    "qoq": -33.2,
-    "yago": 645.6,
-    "yoy": -33.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": -11.7,
-    "prev_q": 100.1,
-    "qoq": null,
-    "yago": 117.3,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "net": {
-    "cur": -60.9,
-    "prev_q": 95.8,
-    "qoq": null,
-    "yago": 107.8,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "ctrl": {
-    "cur": -60.9,
-    "prev_q": 95.8,
-    "qoq": null,
-    "yago": 107.8,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "name": "성광벤드",
-   "code": "014620",
-   "market": "KOSDAQ",
-   "date": "2026-11-06",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900261",
-   "mcap_eok": 5094,
-   "op_margin": -2.7
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 593.1,
-    "prev_q": 687.0,
-    "qoq": -13.7,
-    "yago": 610.2,
-    "yoy": -2.8,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 155.3,
-    "prev_q": 47.6,
-    "qoq": 225.9,
-    "yago": 89.0,
-    "yoy": 74.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 116.2,
-    "prev_q": 31.3,
-    "qoq": 271.4,
-    "yago": 72.0,
-    "yoy": 61.4,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 115.7,
-    "prev_q": 31.1,
-    "qoq": 272.4,
-    "yago": 74.3,
-    "yoy": 55.7,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "메디톡스",
-   "code": "086900",
-   "market": "KOSDAQ",
-   "date": "2026-11-10",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110900215",
-   "mcap_eok": 4992,
-   "op_margin": 26.2
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 2100.6,
-    "prev_q": 2299.6,
-    "qoq": -8.7,
-    "yago": 1593.1,
-    "yoy": 31.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 136.7,
-    "prev_q": 129.1,
-    "qoq": 5.9,
-    "yago": 130.0,
-    "yoy": 5.1,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 102.7,
-    "prev_q": 251.6,
-    "qoq": -59.2,
-    "yago": 267.2,
-    "yoy": -61.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 102.7,
-    "prev_q": 251.6,
-    "qoq": -59.2,
-    "yago": 265.7,
-    "yoy": -61.4,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "DB",
-   "code": "012030",
-   "market": "KOSPI",
-   "date": "2026-11-12",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800722",
-   "mcap_eok": 4949,
-   "op_margin": 6.5
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 1067.8,
-    "prev_q": 945.9,
-    "qoq": 12.9,
-    "yago": 983.3,
-    "yoy": 8.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 239.6,
-    "prev_q": 185.0,
-    "qoq": 29.5,
-    "yago": 175.0,
-    "yoy": 36.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 120.5,
-    "prev_q": 199.4,
-    "qoq": -39.6,
-    "yago": 140.9,
-    "yoy": -14.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 123.8,
-    "prev_q": 194.7,
-    "qoq": -36.4,
-    "yago": 134.4,
-    "yoy": -7.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "덕산네오룩스",
-   "code": "213420",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900210",
-   "mcap_eok": 4899,
-   "op_margin": 22.4
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 4112.0,
-    "prev_q": 3972.0,
-    "qoq": 3.5,
-    "yago": 2917.4,
-    "yoy": 40.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 211.3,
-    "prev_q": 328.2,
-    "qoq": -35.6,
-    "yago": 264.0,
-    "yoy": -20.0,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -1338.5,
-    "prev_q": 222.9,
-    "qoq": null,
-    "yago": 283.0,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "ctrl": {
-    "cur": -1331.3,
-    "prev_q": 234.3,
-    "qoq": null,
-    "yago": 284.8,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "name": "티케이지휴켐스",
-   "code": "069260",
-   "market": "KOSPI",
-   "date": "2026-11-13",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113801408",
-   "mcap_eok": 4832,
-   "op_margin": 5.1
   },
   {
    "period": "26년 3Q",
@@ -5067,8 +3780,104 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900007",
-   "mcap_eok": 4747,
+   "mcap_eok": 5545,
    "op_margin": -19.4
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 593.1,
+    "prev_q": 687.0,
+    "qoq": -13.7,
+    "yago": 610.2,
+    "yoy": -2.8,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 155.3,
+    "prev_q": 47.6,
+    "qoq": 225.9,
+    "yago": 89.0,
+    "yoy": 74.5,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 116.2,
+    "prev_q": 31.3,
+    "qoq": 271.4,
+    "yago": 72.0,
+    "yoy": 61.4,
+    "yflag": "",
+    "qflag": ""
+   },
+   "ctrl": {
+    "cur": 115.7,
+    "prev_q": 31.1,
+    "qoq": 272.4,
+    "yago": 74.3,
+    "yoy": 55.7,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "메디톡스",
+   "code": "086900",
+   "market": "KOSDAQ",
+   "date": "2026-11-10",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110900215",
+   "mcap_eok": 5328,
+   "op_margin": 26.2
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 428.4,
+    "prev_q": 641.3,
+    "qoq": -33.2,
+    "yago": 645.6,
+    "yoy": -33.6,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": -11.7,
+    "prev_q": 100.1,
+    "qoq": null,
+    "yago": 117.3,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": "적자전환"
+   },
+   "net": {
+    "cur": -60.9,
+    "prev_q": 95.8,
+    "qoq": null,
+    "yago": 107.8,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": "적자전환"
+   },
+   "ctrl": {
+    "cur": -60.9,
+    "prev_q": 95.8,
+    "qoq": null,
+    "yago": 107.8,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": "적자전환"
+   },
+   "name": "성광벤드",
+   "code": "014620",
+   "market": "KOSDAQ",
+   "date": "2026-11-06",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900261",
+   "mcap_eok": 5086,
+   "op_margin": -2.7
   },
   {
    "period": "26년 3Q",
@@ -5115,8 +3924,152 @@
    "date": "2026-11-11",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900537",
-   "mcap_eok": 4644,
+   "mcap_eok": 5045,
    "op_margin": 18.1
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 1096.7,
+    "prev_q": 1204.5,
+    "qoq": -8.9,
+    "yago": 1093.8,
+    "yoy": 0.3,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 96.2,
+    "prev_q": 208.3,
+    "qoq": -53.8,
+    "yago": 173.2,
+    "yoy": -44.4,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 69.5,
+    "prev_q": 180.2,
+    "qoq": -61.4,
+    "yago": 146.7,
+    "yoy": -52.6,
+    "yflag": "",
+    "qflag": ""
+   },
+   "ctrl": {
+    "cur": 69.5,
+    "prev_q": 180.2,
+    "qoq": -61.4,
+    "yago": 146.7,
+    "yoy": -52.6,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "GKL",
+   "code": "114090",
+   "market": "KOSPI",
+   "date": "2026-11-10",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800321",
+   "mcap_eok": 4998,
+   "op_margin": 8.8
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 2100.6,
+    "prev_q": 2299.6,
+    "qoq": -8.7,
+    "yago": 1593.1,
+    "yoy": 31.9,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 136.7,
+    "prev_q": 129.1,
+    "qoq": 5.9,
+    "yago": 130.0,
+    "yoy": 5.1,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 102.7,
+    "prev_q": 251.6,
+    "qoq": -59.2,
+    "yago": 267.2,
+    "yoy": -61.6,
+    "yflag": "",
+    "qflag": ""
+   },
+   "ctrl": {
+    "cur": 102.7,
+    "prev_q": 251.6,
+    "qoq": -59.2,
+    "yago": 265.7,
+    "yoy": -61.4,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "DB",
+   "code": "012030",
+   "market": "KOSPI",
+   "date": "2026-11-12",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800722",
+   "mcap_eok": 4858,
+   "op_margin": 6.5
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 4112.0,
+    "prev_q": 3972.0,
+    "qoq": 3.5,
+    "yago": 2917.4,
+    "yoy": 40.9,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 211.3,
+    "prev_q": 328.2,
+    "qoq": -35.6,
+    "yago": 264.0,
+    "yoy": -20.0,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": -1338.5,
+    "prev_q": 222.9,
+    "qoq": null,
+    "yago": 283.0,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": "적자전환"
+   },
+   "ctrl": {
+    "cur": -1331.3,
+    "prev_q": 234.3,
+    "qoq": null,
+    "yago": 284.8,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": "적자전환"
+   },
+   "name": "티케이지휴켐스",
+   "code": "069260",
+   "market": "KOSPI",
+   "date": "2026-11-13",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113801408",
+   "mcap_eok": 4803,
+   "op_margin": 5.1
   },
   {
    "period": "26년 3Q",
@@ -5163,7 +4116,7 @@
    "date": "2026-11-11",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900477",
-   "mcap_eok": 4600,
+   "mcap_eok": 4694,
    "op_margin": 1.6
   },
   {
@@ -5211,104 +4164,8 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800369",
-   "mcap_eok": 4534,
+   "mcap_eok": 4554,
    "op_margin": 24.9
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 1096.7,
-    "prev_q": 1204.5,
-    "qoq": -8.9,
-    "yago": 1093.8,
-    "yoy": 0.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 96.2,
-    "prev_q": 208.3,
-    "qoq": -53.8,
-    "yago": 173.2,
-    "yoy": -44.4,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 69.5,
-    "prev_q": 180.2,
-    "qoq": -61.4,
-    "yago": 146.7,
-    "yoy": -52.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 69.5,
-    "prev_q": 180.2,
-    "qoq": -61.4,
-    "yago": 146.7,
-    "yoy": -52.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "GKL",
-   "code": "114090",
-   "market": "KOSPI",
-   "date": "2026-11-10",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800321",
-   "mcap_eok": 4491,
-   "op_margin": 8.8
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 528.3,
-    "prev_q": 515.3,
-    "qoq": 2.5,
-    "yago": 284.0,
-    "yoy": 86.0,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 113.5,
-    "prev_q": 57.6,
-    "qoq": 96.9,
-    "yago": 23.3,
-    "yoy": 386.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 121.8,
-    "prev_q": 50.7,
-    "qoq": 140.2,
-    "yago": 25.0,
-    "yoy": 387.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": null,
-    "prev_q": null,
-    "qoq": null,
-    "yago": null,
-    "yoy": null,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "에코프로에이치엔",
-   "code": "383310",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900294",
-   "mcap_eok": 4468,
-   "op_margin": 21.5
   },
   {
    "period": "26년 3Q",
@@ -5355,7 +4212,7 @@
    "date": "2026-11-10",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110900014",
-   "mcap_eok": 4450,
+   "mcap_eok": 4518,
    "op_margin": 3.6
   },
   {
@@ -5403,7 +4260,7 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900376",
-   "mcap_eok": 4312,
+   "mcap_eok": 4419,
    "op_margin": 19.8
   },
   {
@@ -5451,7 +4308,7 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800395",
-   "mcap_eok": 4276,
+   "mcap_eok": 4325,
    "op_margin": -24.0
   },
   {
@@ -5499,47 +4356,8 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900648",
-   "mcap_eok": 4198,
+   "mcap_eok": 4281,
    "op_margin": 20.6
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 424.3,
-    "prev_q": 394.8,
-    "qoq": 7.5,
-    "yago": 323.9,
-    "yoy": 31.0,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 58.8,
-    "prev_q": 47.6,
-    "qoq": 23.5,
-    "yago": 42.2,
-    "yoy": 39.4,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 43.7,
-    "prev_q": 38.3,
-    "qoq": 14.1,
-    "yago": 33.4,
-    "yoy": 30.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "아이쓰리시스템",
-   "code": "214430",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900183",
-   "mcap_eok": 4150,
-   "op_margin": 13.9
   },
   {
    "period": "26년 3Q",
@@ -5577,7 +4395,7 @@
    "date": "2026-11-06",
    "consolidated": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800652",
-   "mcap_eok": 4072,
+   "mcap_eok": 4233,
    "op_margin": 1.9
   },
   {
@@ -5625,8 +4443,95 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900615",
-   "mcap_eok": 3651,
+   "mcap_eok": 3855,
    "op_margin": 15.0
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 393.8,
+    "prev_q": 435.7,
+    "qoq": -9.6,
+    "yago": 322.0,
+    "yoy": 22.3,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 100.4,
+    "prev_q": 97.9,
+    "qoq": 2.6,
+    "yago": 67.7,
+    "yoy": 48.4,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 49.4,
+    "prev_q": 84.0,
+    "qoq": -41.2,
+    "yago": 68.6,
+    "yoy": -28.0,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "네오팜",
+   "code": "092730",
+   "market": "KOSDAQ",
+   "date": "2026-11-09",
+   "consolidated": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900455",
+   "mcap_eok": 3558,
+   "op_margin": 25.5
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 299.1,
+    "prev_q": 337.0,
+    "qoq": -11.2,
+    "yago": 381.6,
+    "yoy": -21.6,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": -135.4,
+    "prev_q": -154.3,
+    "qoq": 12.2,
+    "yago": -117.5,
+    "yoy": -15.3,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": -119.0,
+    "prev_q": -143.8,
+    "qoq": 17.2,
+    "yago": -87.1,
+    "yoy": -36.7,
+    "yflag": "",
+    "qflag": ""
+   },
+   "ctrl": {
+    "cur": -108.2,
+    "prev_q": -144.0,
+    "qoq": 24.8,
+    "yago": -83.5,
+    "yoy": -29.5,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "위메이드맥스",
+   "code": "101730",
+   "market": "KOSDAQ",
+   "date": "2026-11-11",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900593",
+   "mcap_eok": 3549,
+   "op_margin": -45.3
   },
   {
    "period": "26년 3Q",
@@ -5673,335 +4578,8 @@
    "date": "2026-11-10",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800677",
-   "mcap_eok": 3473,
+   "mcap_eok": 3549,
    "op_margin": 8.2
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 2995.3,
-    "prev_q": 2915.8,
-    "qoq": 2.7,
-    "yago": 2567.9,
-    "yoy": 16.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 51.5,
-    "prev_q": 69.7,
-    "qoq": -26.1,
-    "yago": -42.6,
-    "yoy": null,
-    "yflag": "흑자전환",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 135.2,
-    "prev_q": 68.1,
-    "qoq": 98.6,
-    "yago": -20.3,
-    "yoy": null,
-    "yflag": "흑자전환",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 137.1,
-    "prev_q": 68.2,
-    "qoq": 101.0,
-    "yago": -18.5,
-    "yoy": null,
-    "yflag": "흑자전환",
-    "qflag": ""
-   },
-   "name": "신세계인터내셔날",
-   "code": "031430",
-   "market": "KOSPI",
-   "date": "2026-11-10",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800326",
-   "mcap_eok": 3471,
-   "op_margin": 1.7
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "억원",
-   "sales": {
-    "cur": 8234.0,
-    "prev_q": 8478.0,
-    "qoq": -2.9,
-    "yago": 8631.0,
-    "yoy": -4.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 19.3,
-    "prev_q": 1.1,
-    "qoq": 1648.8,
-    "yago": 91.5,
-    "yoy": -78.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -22.7,
-    "prev_q": -30.5,
-    "qoq": 25.8,
-    "yago": 6.6,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": -22.7,
-    "prev_q": -30.5,
-    "qoq": 25.8,
-    "yago": 6.6,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": ""
-   },
-   "name": "삼립",
-   "code": "005610",
-   "market": "KOSPI",
-   "date": "2026-11-16",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116801001",
-   "mcap_eok": 3452,
-   "op_margin": 0.2
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 393.8,
-    "prev_q": 435.7,
-    "qoq": -9.6,
-    "yago": 322.0,
-    "yoy": 22.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 100.4,
-    "prev_q": 97.9,
-    "qoq": 2.6,
-    "yago": 67.7,
-    "yoy": 48.4,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 49.4,
-    "prev_q": 84.0,
-    "qoq": -41.2,
-    "yago": 68.6,
-    "yoy": -28.0,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "네오팜",
-   "code": "092730",
-   "market": "KOSDAQ",
-   "date": "2026-11-09",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900455",
-   "mcap_eok": 3446,
-   "op_margin": 25.5
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 593.8,
-    "prev_q": 592.5,
-    "qoq": 0.2,
-    "yago": 538.5,
-    "yoy": 10.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 172.1,
-    "prev_q": 169.9,
-    "qoq": 1.3,
-    "yago": 142.0,
-    "yoy": 21.2,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 101.5,
-    "prev_q": 148.5,
-    "qoq": -31.7,
-    "yago": 137.2,
-    "yoy": -26.0,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 100.5,
-    "prev_q": 147.3,
-    "qoq": -31.8,
-    "yago": 134.4,
-    "yoy": -25.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "하이록코리아",
-   "code": "013030",
-   "market": "KOSDAQ",
-   "date": "2026-11-09",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900300",
-   "mcap_eok": 3436,
-   "op_margin": 29.0
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 5534.5,
-    "prev_q": 5771.5,
-    "qoq": -4.1,
-    "yago": 4811.9,
-    "yoy": 15.0,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": -83.3,
-    "prev_q": 48.1,
-    "qoq": null,
-    "yago": -142.4,
-    "yoy": 41.5,
-    "yflag": "",
-    "qflag": "적자전환"
-   },
-   "net": {
-    "cur": -225.7,
-    "prev_q": -118.2,
-    "qoq": -91.0,
-    "yago": -156.1,
-    "yoy": -44.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": -225.7,
-    "prev_q": -118.2,
-    "qoq": -91.0,
-    "yago": -156.1,
-    "yoy": -44.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "케이씨씨글라스",
-   "code": "344820",
-   "market": "KOSPI",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800848",
-   "mcap_eok": 3434,
-   "op_margin": -1.5
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 782.8,
-    "prev_q": 893.5,
-    "qoq": -12.4,
-    "yago": 782.2,
-    "yoy": 0.1,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 159.1,
-    "prev_q": 146.9,
-    "qoq": 8.3,
-    "yago": 124.7,
-    "yoy": 27.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -79.6,
-    "prev_q": 138.9,
-    "qoq": null,
-    "yago": 39.5,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "ctrl": {
-    "cur": -79.4,
-    "prev_q": 139.1,
-    "qoq": null,
-    "yago": 40.0,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "name": "덴티움",
-   "code": "145720",
-   "market": "KOSPI",
-   "date": "2026-11-10",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800570",
-   "mcap_eok": 3432,
-   "op_margin": 20.3
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 1779.5,
-    "prev_q": 1414.5,
-    "qoq": 25.8,
-    "yago": 1315.8,
-    "yoy": 35.2,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 138.7,
-    "prev_q": 117.3,
-    "qoq": 18.3,
-    "yago": -179.3,
-    "yoy": null,
-    "yflag": "흑자전환",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -237.1,
-    "prev_q": -35.1,
-    "qoq": -576.0,
-    "yago": -141.4,
-    "yoy": -67.7,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 260.1,
-    "prev_q": 24.5,
-    "qoq": 963.8,
-    "yago": -113.2,
-    "yoy": null,
-    "yflag": "흑자전환",
-    "qflag": ""
-   },
-   "name": "컴투스",
-   "code": "078340",
-   "market": "KOSDAQ",
-   "date": "2026-11-12",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112900678",
-   "mcap_eok": 3392,
-   "op_margin": 7.8
   },
   {
    "period": "26년 3Q",
@@ -6048,200 +4626,248 @@
    "date": "2026-11-11",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900039",
-   "mcap_eok": 3358,
+   "mcap_eok": 3544,
    "op_margin": 8.7
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 1779.5,
+    "prev_q": 1414.5,
+    "qoq": 25.8,
+    "yago": 1315.8,
+    "yoy": 35.2,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 138.7,
+    "prev_q": 117.3,
+    "qoq": 18.3,
+    "yago": -179.3,
+    "yoy": null,
+    "yflag": "흑자전환",
+    "qflag": ""
+   },
+   "net": {
+    "cur": -237.1,
+    "prev_q": -35.1,
+    "qoq": -576.0,
+    "yago": -141.4,
+    "yoy": -67.7,
+    "yflag": "",
+    "qflag": ""
+   },
+   "ctrl": {
+    "cur": 260.1,
+    "prev_q": 24.5,
+    "qoq": 963.8,
+    "yago": -113.2,
+    "yoy": null,
+    "yflag": "흑자전환",
+    "qflag": ""
+   },
+   "name": "컴투스",
+   "code": "078340",
+   "market": "KOSDAQ",
+   "date": "2026-11-12",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112900678",
+   "mcap_eok": 3531,
+   "op_margin": 7.8
   },
   {
    "period": "26년 3Q",
    "unit_src": "억원",
    "sales": {
-    "cur": 1307.0,
-    "prev_q": 1236.0,
-    "qoq": 5.7,
-    "yago": 1284.0,
-    "yoy": 1.8,
+    "cur": 8234.0,
+    "prev_q": 8478.0,
+    "qoq": -2.9,
+    "yago": 8631.0,
+    "yoy": -4.6,
     "yflag": "",
     "qflag": ""
    },
    "op": {
-    "cur": 240.0,
-    "prev_q": 136.0,
-    "qoq": 76.5,
-    "yago": 268.0,
-    "yoy": -10.4,
+    "cur": 19.3,
+    "prev_q": 1.1,
+    "qoq": 1648.8,
+    "yago": 91.5,
+    "yoy": -78.9,
     "yflag": "",
     "qflag": ""
    },
    "net": {
-    "cur": 173.0,
-    "prev_q": 144.0,
-    "qoq": 20.1,
-    "yago": 261.0,
-    "yoy": -33.7,
-    "yflag": "",
+    "cur": -22.7,
+    "prev_q": -30.5,
+    "qoq": 25.8,
+    "yago": 6.6,
+    "yoy": null,
+    "yflag": "적자전환",
     "qflag": ""
    },
    "ctrl": {
-    "cur": 192.0,
-    "prev_q": 173.0,
-    "qoq": 11.0,
-    "yago": 261.0,
-    "yoy": -26.4,
-    "yflag": "",
+    "cur": -22.7,
+    "prev_q": -30.5,
+    "qoq": 25.8,
+    "yago": 6.6,
+    "yoy": null,
+    "yflag": "적자전환",
     "qflag": ""
    },
-   "name": "BGF",
-   "code": "027410",
+   "name": "삼립",
+   "code": "005610",
    "market": "KOSPI",
-   "date": "2026-11-05",
+   "date": "2026-11-16",
    "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800404",
-   "mcap_eok": 3259,
-   "op_margin": 18.4
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116801001",
+   "mcap_eok": 3529,
+   "op_margin": 0.2
   },
   {
    "period": "26년 3Q",
    "unit_src": "백만원",
    "sales": {
-    "cur": 995.5,
-    "prev_q": 907.5,
-    "qoq": 9.7,
-    "yago": 614.7,
-    "yoy": 61.9,
+    "cur": 2995.3,
+    "prev_q": 2915.8,
+    "qoq": 2.7,
+    "yago": 2567.9,
+    "yoy": 16.6,
     "yflag": "",
     "qflag": ""
    },
    "op": {
-    "cur": 102.3,
-    "prev_q": 100.8,
-    "qoq": 1.5,
-    "yago": 15.7,
-    "yoy": 552.9,
-    "yflag": "",
+    "cur": 51.5,
+    "prev_q": 69.7,
+    "qoq": -26.1,
+    "yago": -42.6,
+    "yoy": null,
+    "yflag": "흑자전환",
     "qflag": ""
    },
    "net": {
-    "cur": 69.3,
-    "prev_q": 124.4,
-    "qoq": -44.3,
-    "yago": 49.9,
-    "yoy": 38.8,
-    "yflag": "",
+    "cur": 135.2,
+    "prev_q": 68.1,
+    "qoq": 98.6,
+    "yago": -20.3,
+    "yoy": null,
+    "yflag": "흑자전환",
     "qflag": ""
    },
    "ctrl": {
-    "cur": 69.2,
-    "prev_q": 123.6,
-    "qoq": -44.0,
-    "yago": 52.9,
-    "yoy": 30.8,
-    "yflag": "",
+    "cur": 137.1,
+    "prev_q": 68.2,
+    "qoq": 101.0,
+    "yago": -18.5,
+    "yoy": null,
+    "yflag": "흑자전환",
     "qflag": ""
    },
-   "name": "덕산하이메탈",
-   "code": "077360",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900184",
-   "mcap_eok": 3190,
-   "op_margin": 10.3
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 787.5,
-    "prev_q": 834.3,
-    "qoq": -5.6,
-    "yago": 767.7,
-    "yoy": 2.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 58.7,
-    "prev_q": 82.3,
-    "qoq": -28.7,
-    "yago": 100.4,
-    "yoy": -41.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 45.4,
-    "prev_q": 88.3,
-    "qoq": -48.7,
-    "yago": 75.2,
-    "yoy": -39.7,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 45.4,
-    "prev_q": 88.3,
-    "qoq": -48.7,
-    "yago": 75.2,
-    "yoy": -39.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "카페24",
-   "code": "042000",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900546",
-   "mcap_eok": 3085,
-   "op_margin": 7.5
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 4606.1,
-    "prev_q": 4398.2,
-    "qoq": 4.7,
-    "yago": 4445.2,
-    "yoy": 3.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 70.4,
-    "prev_q": 28.2,
-    "qoq": 149.4,
-    "yago": 108.7,
-    "yoy": -35.2,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 6.6,
-    "prev_q": 31.6,
-    "qoq": -79.2,
-    "yago": 111.1,
-    "yoy": -94.1,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 11.5,
-    "prev_q": 27.1,
-    "qoq": -57.4,
-    "yago": 107.9,
-    "yoy": -89.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "광동제약",
-   "code": "009290",
+   "name": "신세계인터내셔날",
+   "code": "031430",
    "market": "KOSPI",
-   "date": "2026-11-11",
+   "date": "2026-11-10",
    "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800697",
-   "mcap_eok": 3023,
-   "op_margin": 1.5
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800326",
+   "mcap_eok": 3527,
+   "op_margin": 1.7
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 782.8,
+    "prev_q": 893.5,
+    "qoq": -12.4,
+    "yago": 782.2,
+    "yoy": 0.1,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 159.1,
+    "prev_q": 146.9,
+    "qoq": 8.3,
+    "yago": 124.7,
+    "yoy": 27.6,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": -79.6,
+    "prev_q": 138.9,
+    "qoq": null,
+    "yago": 39.5,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": "적자전환"
+   },
+   "ctrl": {
+    "cur": -79.4,
+    "prev_q": 139.1,
+    "qoq": null,
+    "yago": 40.0,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": "적자전환"
+   },
+   "name": "덴티움",
+   "code": "145720",
+   "market": "KOSPI",
+   "date": "2026-11-10",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800570",
+   "mcap_eok": 3523,
+   "op_margin": 20.3
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 593.8,
+    "prev_q": 592.5,
+    "qoq": 0.2,
+    "yago": 538.5,
+    "yoy": 10.3,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 172.1,
+    "prev_q": 169.9,
+    "qoq": 1.3,
+    "yago": 142.0,
+    "yoy": 21.2,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 101.5,
+    "prev_q": 148.5,
+    "qoq": -31.7,
+    "yago": 137.2,
+    "yoy": -26.0,
+    "yflag": "",
+    "qflag": ""
+   },
+   "ctrl": {
+    "cur": 100.5,
+    "prev_q": 147.3,
+    "qoq": -31.8,
+    "yago": 134.4,
+    "yoy": -25.3,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "하이록코리아",
+   "code": "013030",
+   "market": "KOSDAQ",
+   "date": "2026-11-09",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900300",
+   "mcap_eok": 3466,
+   "op_margin": 29.0
   },
   {
    "period": "26년 3Q",
@@ -6288,8 +4914,56 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900589",
-   "mcap_eok": 3001,
+   "mcap_eok": 3127,
    "op_margin": 17.7
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 4606.1,
+    "prev_q": 4398.2,
+    "qoq": 4.7,
+    "yago": 4445.2,
+    "yoy": 3.6,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 70.4,
+    "prev_q": 28.2,
+    "qoq": 149.4,
+    "yago": 108.7,
+    "yoy": -35.2,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 6.6,
+    "prev_q": 31.6,
+    "qoq": -79.2,
+    "yago": 111.1,
+    "yoy": -94.1,
+    "yflag": "",
+    "qflag": ""
+   },
+   "ctrl": {
+    "cur": 11.5,
+    "prev_q": 27.1,
+    "qoq": -57.4,
+    "yago": 107.9,
+    "yoy": -89.3,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "광동제약",
+   "code": "009290",
+   "market": "KOSPI",
+   "date": "2026-11-11",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800697",
+   "mcap_eok": 3038,
+   "op_margin": 1.5
   },
   {
    "period": "26년 3Q",
@@ -6336,7 +5010,7 @@
    "date": "2026-11-13",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113801469",
-   "mcap_eok": 2829,
+   "mcap_eok": 2939,
    "op_margin": 14.5
   },
   {
@@ -6384,56 +5058,8 @@
    "date": "2026-11-10",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110900487",
-   "mcap_eok": 2775,
+   "mcap_eok": 2844,
    "op_margin": 5.4
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 299.1,
-    "prev_q": 337.0,
-    "qoq": -11.2,
-    "yago": 381.6,
-    "yoy": -21.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": -135.4,
-    "prev_q": -154.3,
-    "qoq": 12.2,
-    "yago": -117.5,
-    "yoy": -15.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -119.0,
-    "prev_q": -143.8,
-    "qoq": 17.2,
-    "yago": -87.1,
-    "yoy": -36.7,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": -108.2,
-    "prev_q": -144.0,
-    "qoq": 24.8,
-    "yago": -83.5,
-    "yoy": -29.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "위메이드맥스",
-   "code": "101730",
-   "market": "KOSDAQ",
-   "date": "2026-11-11",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900593",
-   "mcap_eok": 2732,
-   "op_margin": -45.3
   },
   {
    "period": "26년 3Q",
@@ -6480,7 +5106,7 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109800522",
-   "mcap_eok": 2724,
+   "mcap_eok": 2751,
    "op_margin": 2.0
   },
   {
@@ -6519,7 +5145,7 @@
    "date": "2026-11-10",
    "consolidated": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800443",
-   "mcap_eok": 2715,
+   "mcap_eok": 2742,
    "op_margin": null
   },
   {
@@ -6567,104 +5193,56 @@
    "date": "2026-11-11",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900346",
-   "mcap_eok": 2531,
+   "mcap_eok": 2558,
    "op_margin": 14.0
   },
   {
    "period": "26년 3Q",
    "unit_src": "백만원",
    "sales": {
-    "cur": 3497.6,
-    "prev_q": 3718.5,
-    "qoq": -5.9,
-    "yago": 3559.3,
-    "yoy": -1.7,
+    "cur": 707.8,
+    "prev_q": 733.2,
+    "qoq": -3.5,
+    "yago": 753.6,
+    "yoy": -6.1,
     "yflag": "",
     "qflag": ""
    },
    "op": {
-    "cur": 220.7,
-    "prev_q": 286.1,
-    "qoq": -22.9,
-    "yago": 283.1,
-    "yoy": -22.0,
-    "yflag": "",
-    "qflag": ""
+    "cur": -4.4,
+    "prev_q": 16.0,
+    "qoq": null,
+    "yago": 69.0,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": "적자전환"
    },
    "net": {
-    "cur": 144.6,
-    "prev_q": 196.8,
-    "qoq": -26.6,
-    "yago": 204.6,
-    "yoy": -29.3,
-    "yflag": "",
+    "cur": -77.6,
+    "prev_q": -62.3,
+    "qoq": -24.5,
+    "yago": 74.6,
+    "yoy": null,
+    "yflag": "적자전환",
     "qflag": ""
    },
    "ctrl": {
-    "cur": 106.9,
-    "prev_q": 153.7,
-    "qoq": -30.5,
-    "yago": 163.1,
-    "yoy": -34.5,
-    "yflag": "",
+    "cur": -77.6,
+    "prev_q": -62.3,
+    "qoq": -24.5,
+    "yago": 74.6,
+    "yoy": null,
+    "yflag": "적자전환",
     "qflag": ""
    },
-   "name": "KG이니시스",
-   "code": "035600",
+   "name": "씨앤씨인터내셔널",
+   "code": "352480",
    "market": "KOSDAQ",
-   "date": "2026-11-05",
+   "date": "2026-11-09",
    "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900954",
-   "mcap_eok": 2463,
-   "op_margin": 6.3
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 9614.2,
-    "prev_q": 9231.6,
-    "qoq": 4.1,
-    "yago": 9011.6,
-    "yoy": 6.7,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 238.1,
-    "prev_q": 235.3,
-    "qoq": 1.2,
-    "yago": 336.3,
-    "yoy": -29.2,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 223.3,
-    "prev_q": 101.4,
-    "qoq": 120.2,
-    "yago": 232.7,
-    "yoy": -4.1,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 250.1,
-    "prev_q": 116.9,
-    "qoq": 114.0,
-    "yago": 232.7,
-    "yoy": 7.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "CJ프레시웨이",
-   "code": "051500",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900319",
-   "mcap_eok": 2422,
-   "op_margin": 2.5
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900490",
+   "mcap_eok": 2447,
+   "op_margin": -0.6
   },
   {
    "period": "26년 3Q",
@@ -6702,7 +5280,7 @@
    "date": "2026-11-11",
    "consolidated": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900417",
-   "mcap_eok": 2395,
+   "mcap_eok": 2417,
    "op_margin": 12.3
   },
   {
@@ -6750,7 +5328,7 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900131",
-   "mcap_eok": 2369,
+   "mcap_eok": 2413,
    "op_margin": 9.1
   },
   {
@@ -6798,56 +5376,8 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900830",
-   "mcap_eok": 2309,
+   "mcap_eok": 2288,
    "op_margin": 3.1
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 707.8,
-    "prev_q": 733.2,
-    "qoq": -3.5,
-    "yago": 753.6,
-    "yoy": -6.1,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": -4.4,
-    "prev_q": 16.0,
-    "qoq": null,
-    "yago": 69.0,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "net": {
-    "cur": -77.6,
-    "prev_q": -62.3,
-    "qoq": -24.5,
-    "yago": 74.6,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": -77.6,
-    "prev_q": -62.3,
-    "qoq": -24.5,
-    "yago": 74.6,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": ""
-   },
-   "name": "씨앤씨인터내셔널",
-   "code": "352480",
-   "market": "KOSDAQ",
-   "date": "2026-11-09",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900490",
-   "mcap_eok": 2273,
-   "op_margin": -0.6
   },
   {
    "period": "26년 3Q",
@@ -6894,55 +5424,7 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800484",
-   "mcap_eok": 2226,
-   "op_margin": 0.4
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 10777.4,
-    "prev_q": 11348.9,
-    "qoq": -5.0,
-    "yago": 9457.8,
-    "yoy": 14.0,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 39.4,
-    "prev_q": 117.2,
-    "qoq": -66.4,
-    "yago": 64.5,
-    "yoy": -39.0,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 24.0,
-    "prev_q": 78.6,
-    "qoq": -69.4,
-    "yago": -16.7,
-    "yoy": null,
-    "yflag": "흑자전환",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 45.6,
-    "prev_q": 96.6,
-    "qoq": -52.8,
-    "yago": 10.5,
-    "yoy": 335.7,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "GS글로벌",
-   "code": "001250",
-   "market": "KOSPI",
-   "date": "2026-11-12",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800594",
-   "mcap_eok": 2105,
+   "mcap_eok": 2201,
    "op_margin": 0.4
   },
   {
@@ -6990,8 +5472,56 @@
    "date": "2026-11-10",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110900334",
-   "mcap_eok": 2104,
+   "mcap_eok": 2188,
    "op_margin": 14.7
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 10777.4,
+    "prev_q": 11348.9,
+    "qoq": -5.0,
+    "yago": 9457.8,
+    "yoy": 14.0,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 39.4,
+    "prev_q": 117.2,
+    "qoq": -66.4,
+    "yago": 64.5,
+    "yoy": -39.0,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 24.0,
+    "prev_q": 78.6,
+    "qoq": -69.4,
+    "yago": -16.7,
+    "yoy": null,
+    "yflag": "흑자전환",
+    "qflag": ""
+   },
+   "ctrl": {
+    "cur": 45.6,
+    "prev_q": 96.6,
+    "qoq": -52.8,
+    "yago": 10.5,
+    "yoy": 335.7,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "GS글로벌",
+   "code": "001250",
+   "market": "KOSPI",
+   "date": "2026-11-12",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800594",
+   "mcap_eok": 2142,
+   "op_margin": 0.4
   },
   {
    "period": "26년 3Q",
@@ -7038,56 +5568,8 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900371",
-   "mcap_eok": 2086,
+   "mcap_eok": 2110,
    "op_margin": 18.6
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 7478.5,
-    "prev_q": 7504.9,
-    "qoq": -0.4,
-    "yago": 6073.6,
-    "yoy": 23.1,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 342.4,
-    "prev_q": 522.1,
-    "qoq": -34.4,
-    "yago": 277.2,
-    "yoy": 23.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 96.7,
-    "prev_q": 322.6,
-    "qoq": -70.0,
-    "yago": 128.7,
-    "yoy": -24.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 97.4,
-    "prev_q": 326.0,
-    "qoq": -70.1,
-    "yago": 127.9,
-    "yoy": -23.8,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "코오롱글로벌",
-   "code": "003070",
-   "market": "KOSPI",
-   "date": "2026-11-12",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800408",
-   "mcap_eok": 2082,
-   "op_margin": 4.6
   },
   {
    "period": "26년 3Q",
@@ -7134,8 +5616,56 @@
    "date": "2026-11-11",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800459",
-   "mcap_eok": 2078,
+   "mcap_eok": 2098,
    "op_margin": 0.2
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 7478.5,
+    "prev_q": 7504.9,
+    "qoq": -0.4,
+    "yago": 6073.6,
+    "yoy": 23.1,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 342.4,
+    "prev_q": 522.1,
+    "qoq": -34.4,
+    "yago": 277.2,
+    "yoy": 23.5,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 96.7,
+    "prev_q": 322.6,
+    "qoq": -70.0,
+    "yago": 128.7,
+    "yoy": -24.9,
+    "yflag": "",
+    "qflag": ""
+   },
+   "ctrl": {
+    "cur": 97.4,
+    "prev_q": 326.0,
+    "qoq": -70.1,
+    "yago": 127.9,
+    "yoy": -23.8,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "코오롱글로벌",
+   "code": "003070",
+   "market": "KOSPI",
+   "date": "2026-11-12",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800408",
+   "mcap_eok": 2085,
+   "op_margin": 4.6
   },
   {
    "period": "26년 3Q",
@@ -7182,104 +5712,8 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800611",
-   "mcap_eok": 1954,
+   "mcap_eok": 1966,
    "op_margin": 8.5
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 1440.2,
-    "prev_q": 1469.8,
-    "qoq": -2.0,
-    "yago": 1537.2,
-    "yoy": -6.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": -44.7,
-    "prev_q": 29.3,
-    "qoq": null,
-    "yago": 98.7,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "net": {
-    "cur": 154.2,
-    "prev_q": -10.8,
-    "qoq": null,
-    "yago": 82.3,
-    "yoy": 87.5,
-    "yflag": "",
-    "qflag": "흑자전환"
-   },
-   "ctrl": {
-    "cur": 161.4,
-    "prev_q": -2.5,
-    "qoq": null,
-    "yago": 79.2,
-    "yoy": 103.8,
-    "yflag": "",
-    "qflag": "흑자전환"
-   },
-   "name": "휴온스",
-   "code": "243070",
-   "market": "KOSDAQ",
-   "date": "2026-11-12",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112900558",
-   "mcap_eok": 1820,
-   "op_margin": -3.1
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 1768.9,
-    "prev_q": 1749.5,
-    "qoq": 1.11,
-    "yago": 1635.6,
-    "yoy": 8.15,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 161.9,
-    "prev_q": 152.4,
-    "qoq": 6.28,
-    "yago": 125.5,
-    "yoy": 29.03,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 140.9,
-    "prev_q": 128.4,
-    "qoq": 9.73,
-    "yago": 126.0,
-    "yoy": 11.8,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 140.9,
-    "prev_q": 128.4,
-    "qoq": 9.73,
-    "yago": 126.0,
-    "yoy": 11.8,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "신세계I&C",
-   "code": "035510",
-   "market": "KOSPI",
-   "date": "2026-11-06",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800695",
-   "mcap_eok": 1812,
-   "op_margin": 9.2
   },
   {
    "period": "26년 3Q",
@@ -7326,8 +5760,104 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112900880",
-   "mcap_eok": 1798,
+   "mcap_eok": 1935,
    "op_margin": 9.5
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 1768.9,
+    "prev_q": 1749.5,
+    "qoq": 1.11,
+    "yago": 1635.6,
+    "yoy": 8.15,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 161.9,
+    "prev_q": 152.4,
+    "qoq": 6.28,
+    "yago": 125.5,
+    "yoy": 29.03,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 140.9,
+    "prev_q": 128.4,
+    "qoq": 9.73,
+    "yago": 126.0,
+    "yoy": 11.8,
+    "yflag": "",
+    "qflag": ""
+   },
+   "ctrl": {
+    "cur": 140.9,
+    "prev_q": 128.4,
+    "qoq": 9.73,
+    "yago": 126.0,
+    "yoy": 11.8,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "신세계I&C",
+   "code": "035510",
+   "market": "KOSPI",
+   "date": "2026-11-06",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800695",
+   "mcap_eok": 1862,
+   "op_margin": 9.2
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 1440.2,
+    "prev_q": 1469.8,
+    "qoq": -2.0,
+    "yago": 1537.2,
+    "yoy": -6.3,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": -44.7,
+    "prev_q": 29.3,
+    "qoq": null,
+    "yago": 98.7,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": "적자전환"
+   },
+   "net": {
+    "cur": 154.2,
+    "prev_q": -10.8,
+    "qoq": null,
+    "yago": 82.3,
+    "yoy": 87.5,
+    "yflag": "",
+    "qflag": "흑자전환"
+   },
+   "ctrl": {
+    "cur": 161.4,
+    "prev_q": -2.5,
+    "qoq": null,
+    "yago": 79.2,
+    "yoy": 103.8,
+    "yflag": "",
+    "qflag": "흑자전환"
+   },
+   "name": "휴온스",
+   "code": "243070",
+   "market": "KOSDAQ",
+   "date": "2026-11-12",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112900558",
+   "mcap_eok": 1851,
+   "op_margin": -3.1
   },
   {
    "period": "26년 3Q",
@@ -7374,7 +5904,7 @@
    "date": "2026-11-11",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900354",
-   "mcap_eok": 1740,
+   "mcap_eok": 1745,
    "op_margin": -1.1
   },
   {
@@ -7422,95 +5952,8 @@
    "date": "2026-11-10",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110900127",
-   "mcap_eok": 1740,
+   "mcap_eok": 1701,
    "op_margin": 14.0
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 1044.2,
-    "prev_q": 1026.5,
-    "qoq": 1.7,
-    "yago": 1008.4,
-    "yoy": 3.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 41.4,
-    "prev_q": 12.0,
-    "qoq": 244.3,
-    "yago": 57.9,
-    "yoy": -28.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -29.5,
-    "prev_q": 9.3,
-    "qoq": null,
-    "yago": 43.5,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "ctrl": {
-    "cur": -22.5,
-    "prev_q": 43.7,
-    "qoq": null,
-    "yago": 52.8,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "name": "BGF에코머티리얼즈",
-   "code": "126600",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900304",
-   "mcap_eok": 1688,
-   "op_margin": 4.0
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 566.6,
-    "prev_q": 567.3,
-    "qoq": -0.13,
-    "yago": 567.3,
-    "yoy": -0.14,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 80.2,
-    "prev_q": 78.4,
-    "qoq": 2.21,
-    "yago": 65.7,
-    "yoy": 22.07,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 60.9,
-    "prev_q": 66.2,
-    "qoq": -7.93,
-    "yago": 46.2,
-    "yoy": 31.85,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "JW생명과학",
-   "code": "234080",
-   "market": "KOSPI",
-   "date": "2026-11-05",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105800786",
-   "mcap_eok": 1675,
-   "op_margin": 14.2
   },
   {
    "period": "26년 3Q",
@@ -7557,47 +6000,8 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112900471",
-   "mcap_eok": 1660,
+   "mcap_eok": 1675,
    "op_margin": 12.9
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 186.1,
-    "prev_q": 342.7,
-    "qoq": -45.7,
-    "yago": 279.9,
-    "yoy": -33.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 22.9,
-    "prev_q": 69.8,
-    "qoq": -67.2,
-    "yago": 28.9,
-    "yoy": -20.8,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 27.8,
-    "prev_q": 68.6,
-    "qoq": -59.5,
-    "yago": 22.7,
-    "yoy": 22.4,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "KZ정밀",
-   "code": "036560",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900514",
-   "mcap_eok": 1646,
-   "op_margin": 12.3
   },
   {
    "period": "26년 3Q",
@@ -7644,56 +6048,8 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900187",
-   "mcap_eok": 1579,
+   "mcap_eok": 1630,
    "op_margin": 17.8
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 884.5,
-    "prev_q": 1296.1,
-    "qoq": -31.8,
-    "yago": 1056.4,
-    "yoy": -16.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 73.5,
-    "prev_q": 160.4,
-    "qoq": -54.2,
-    "yago": 82.4,
-    "yoy": -10.8,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -21.1,
-    "prev_q": 161.8,
-    "qoq": null,
-    "yago": 57.7,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "ctrl": {
-    "cur": -18.3,
-    "prev_q": 157.2,
-    "qoq": null,
-    "yago": 55.5,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "name": "코텍",
-   "code": "052330",
-   "market": "KOSDAQ",
-   "date": "2026-11-09",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900205",
-   "mcap_eok": 1515,
-   "op_margin": 8.3
   },
   {
    "period": "26년 3Q",
@@ -7740,143 +6096,56 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900159",
-   "mcap_eok": 1501,
+   "mcap_eok": 1522,
    "op_margin": 11.1
   },
   {
    "period": "26년 3Q",
    "unit_src": "백만원",
    "sales": {
-    "cur": 342.0,
-    "prev_q": 91.3,
-    "qoq": 274.8,
-    "yago": 76.4,
-    "yoy": 347.7,
+    "cur": 884.5,
+    "prev_q": 1296.1,
+    "qoq": -31.8,
+    "yago": 1056.4,
+    "yoy": -16.3,
     "yflag": "",
     "qflag": ""
    },
    "op": {
-    "cur": 35.5,
-    "prev_q": -1.7,
-    "qoq": null,
-    "yago": 0.2,
-    "yoy": 16027.3,
+    "cur": 73.5,
+    "prev_q": 160.4,
+    "qoq": -54.2,
+    "yago": 82.4,
+    "yoy": -10.8,
     "yflag": "",
-    "qflag": "흑자전환"
+    "qflag": ""
    },
    "net": {
-    "cur": 33.7,
-    "prev_q": -3.1,
+    "cur": -21.1,
+    "prev_q": 161.8,
     "qoq": null,
-    "yago": -1.1,
+    "yago": 57.7,
     "yoy": null,
-    "yflag": "흑자전환",
-    "qflag": "흑자전환"
+    "yflag": "적자전환",
+    "qflag": "적자전환"
    },
    "ctrl": {
-    "cur": 28.9,
-    "prev_q": null,
+    "cur": -18.3,
+    "prev_q": 157.2,
     "qoq": null,
-    "yago": null,
-    "yoy": null,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "우양피앤엘",
-   "code": "002420",
-   "market": "KOSPI",
-   "date": "2026-11-16",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116800465",
-   "mcap_eok": 1474,
-   "op_margin": 10.4
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 473.2,
-    "prev_q": 119.7,
-    "qoq": 295.4,
-    "yago": 503.3,
-    "yoy": -6.0,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": -46.1,
-    "prev_q": -126.8,
-    "qoq": 63.7,
-    "yago": 60.6,
+    "yago": 55.5,
     "yoy": null,
     "yflag": "적자전환",
-    "qflag": ""
+    "qflag": "적자전환"
    },
-   "net": {
-    "cur": -211.9,
-    "prev_q": -89.9,
-    "qoq": -135.7,
-    "yago": 83.6,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": ""
-   },
-   "name": "아바코",
-   "code": "083930",
+   "name": "코텍",
+   "code": "052330",
    "market": "KOSDAQ",
-   "date": "2026-11-06",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900736",
-   "mcap_eok": 1465,
-   "op_margin": -9.7
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 1357.0,
-    "prev_q": 1314.8,
-    "qoq": 3.21,
-    "yago": 1252.7,
-    "yoy": 8.33,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 128.7,
-    "prev_q": 170.5,
-    "qoq": -24.5,
-    "yago": 158.2,
-    "yoy": -18.65,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 108.8,
-    "prev_q": 135.7,
-    "qoq": -19.79,
-    "yago": 128.7,
-    "yoy": -15.44,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 108.8,
-    "prev_q": 135.7,
-    "qoq": -19.79,
-    "yago": 128.7,
-    "yoy": -15.44,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "삼양패키징",
-   "code": "272550",
-   "market": "KOSPI",
-   "date": "2026-11-10",
+   "date": "2026-11-09",
    "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800575",
-   "mcap_eok": 1454,
-   "op_margin": 9.5
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900205",
+   "mcap_eok": 1508,
+   "op_margin": 8.3
   },
   {
    "period": "26년 3Q",
@@ -7923,56 +6192,143 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900251",
-   "mcap_eok": 1453,
+   "mcap_eok": 1495,
    "op_margin": 16.0
   },
   {
    "period": "26년 3Q",
    "unit_src": "백만원",
    "sales": {
-    "cur": 711.2,
-    "prev_q": 622.5,
-    "qoq": 14.26,
-    "yago": 608.1,
-    "yoy": 16.96,
+    "cur": 1357.0,
+    "prev_q": 1314.8,
+    "qoq": 3.21,
+    "yago": 1252.7,
+    "yoy": 8.33,
     "yflag": "",
     "qflag": ""
    },
    "op": {
-    "cur": 104.4,
-    "prev_q": 88.1,
-    "qoq": 18.47,
-    "yago": 101.7,
-    "yoy": 2.66,
+    "cur": 128.7,
+    "prev_q": 170.5,
+    "qoq": -24.5,
+    "yago": 158.2,
+    "yoy": -18.65,
     "yflag": "",
     "qflag": ""
    },
    "net": {
-    "cur": 81.3,
-    "prev_q": 67.2,
-    "qoq": 20.97,
-    "yago": 78.0,
-    "yoy": 4.13,
+    "cur": 108.8,
+    "prev_q": 135.7,
+    "qoq": -19.79,
+    "yago": 128.7,
+    "yoy": -15.44,
     "yflag": "",
     "qflag": ""
    },
    "ctrl": {
-    "cur": 81.2,
-    "prev_q": 66.3,
-    "qoq": 22.51,
-    "yago": 77.2,
-    "yoy": 5.3,
+    "cur": 108.8,
+    "prev_q": 135.7,
+    "qoq": -19.79,
+    "yago": 128.7,
+    "yoy": -15.44,
     "yflag": "",
     "qflag": ""
    },
-   "name": "KG파이낸셜",
-   "code": "046440",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
+   "name": "삼양패키징",
+   "code": "272550",
+   "market": "KOSPI",
+   "date": "2026-11-10",
    "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900118",
-   "mcap_eok": 1407,
-   "op_margin": 14.7
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800575",
+   "mcap_eok": 1465,
+   "op_margin": 9.5
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 473.2,
+    "prev_q": 119.7,
+    "qoq": 295.4,
+    "yago": 503.3,
+    "yoy": -6.0,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": -46.1,
+    "prev_q": -126.8,
+    "qoq": 63.7,
+    "yago": 60.6,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": ""
+   },
+   "net": {
+    "cur": -211.9,
+    "prev_q": -89.9,
+    "qoq": -135.7,
+    "yago": 83.6,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": ""
+   },
+   "name": "아바코",
+   "code": "083930",
+   "market": "KOSDAQ",
+   "date": "2026-11-06",
+   "consolidated": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900736",
+   "mcap_eok": 1465,
+   "op_margin": -9.7
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 342.0,
+    "prev_q": 91.3,
+    "qoq": 274.8,
+    "yago": 76.4,
+    "yoy": 347.7,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 35.5,
+    "prev_q": -1.7,
+    "qoq": null,
+    "yago": 0.2,
+    "yoy": 16027.3,
+    "yflag": "",
+    "qflag": "흑자전환"
+   },
+   "net": {
+    "cur": 33.7,
+    "prev_q": -3.1,
+    "qoq": null,
+    "yago": -1.1,
+    "yoy": null,
+    "yflag": "흑자전환",
+    "qflag": "흑자전환"
+   },
+   "ctrl": {
+    "cur": 28.9,
+    "prev_q": null,
+    "qoq": null,
+    "yago": null,
+    "yoy": null,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "우양피앤엘",
+   "code": "002420",
+   "market": "KOSPI",
+   "date": "2026-11-16",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116800465",
+   "mcap_eok": 1435,
+   "op_margin": 10.4
   },
   {
    "period": "26년 3Q",
@@ -8010,230 +6366,8 @@
    "date": "2026-11-09",
    "consolidated": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900460",
-   "mcap_eok": 1369,
+   "mcap_eok": 1386,
    "op_margin": 19.2
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 147.8,
-    "prev_q": 150.1,
-    "qoq": -1.5,
-    "yago": 150.9,
-    "yoy": -2.1,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 25.6,
-    "prev_q": 36.4,
-    "qoq": -29.7,
-    "yago": 39.7,
-    "yoy": -35.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 36.4,
-    "prev_q": 27.3,
-    "qoq": 33.2,
-    "yago": 35.0,
-    "yoy": 4.0,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 37.3,
-    "prev_q": 28.7,
-    "qoq": 29.9,
-    "yago": 35.6,
-    "yoy": 4.7,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "더즌",
-   "code": "462860",
-   "market": "KOSDAQ",
-   "date": "2026-11-06",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900195",
-   "mcap_eok": 1340,
-   "op_margin": 17.3
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 93.6,
-    "prev_q": 149.3,
-    "qoq": -37.3,
-    "yago": 157.3,
-    "yoy": -40.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": -63.1,
-    "prev_q": 4.8,
-    "qoq": null,
-    "yago": 5.6,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "net": {
-    "cur": -86.2,
-    "prev_q": 31.7,
-    "qoq": null,
-    "yago": -2.6,
-    "yoy": -3280.0,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "name": "이수앱지스",
-   "code": "086890",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900637",
-   "mcap_eok": 1297,
-   "op_margin": -67.4
-  },
-  {
-   "period": "26년 4Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 148.5,
-    "prev_q": 158.1,
-    "qoq": -6.1,
-    "yago": 153.6,
-    "yoy": -3.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 20.1,
-    "prev_q": 16.4,
-    "qoq": 22.4,
-    "yago": 22.2,
-    "yoy": -9.4,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -42.7,
-    "prev_q": 36.1,
-    "qoq": null,
-    "yago": 34.5,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "ctrl": {
-    "cur": -42.7,
-    "prev_q": 36.1,
-    "qoq": null,
-    "yago": 34.5,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "name": "쎌바이오텍",
-   "code": "049960",
-   "market": "KOSDAQ",
-   "date": "2026-11-06",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900577",
-   "mcap_eok": 1292,
-   "op_margin": 13.5
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 243.9,
-    "prev_q": 302.7,
-    "qoq": -19.43,
-    "yago": 119.2,
-    "yoy": 104.68,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 50.8,
-    "prev_q": 62.7,
-    "qoq": -19.09,
-    "yago": 8.1,
-    "yoy": 524.35,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 40.2,
-    "prev_q": 47.3,
-    "qoq": -15.09,
-    "yago": 7.9,
-    "yoy": 410.03,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 32.8,
-    "prev_q": 35.8,
-    "qoq": -8.31,
-    "yago": 7.3,
-    "yoy": 347.95,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "에이유브랜즈",
-   "code": "481070",
-   "market": "KOSDAQ",
-   "date": "2026-11-13",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113900296",
-   "mcap_eok": 1261,
-   "op_margin": 20.8
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 212.6,
-    "prev_q": 215.4,
-    "qoq": -1.3,
-    "yago": 205.9,
-    "yoy": 3.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 26.1,
-    "prev_q": 35.8,
-    "qoq": -27.2,
-    "yago": 26.9,
-    "yoy": -3.1,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 24.8,
-    "prev_q": 35.7,
-    "qoq": -30.5,
-    "yago": 20.1,
-    "yoy": 23.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "JW신약",
-   "code": "067290",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900858",
-   "mcap_eok": 1224,
-   "op_margin": 12.3
   },
   {
    "period": "26년 3Q",
@@ -8280,8 +6414,152 @@
    "date": "2026-11-10",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110900194",
-   "mcap_eok": 1213,
+   "mcap_eok": 1362,
    "op_margin": 8.9
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 243.9,
+    "prev_q": 302.7,
+    "qoq": -19.43,
+    "yago": 119.2,
+    "yoy": 104.68,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 50.8,
+    "prev_q": 62.7,
+    "qoq": -19.09,
+    "yago": 8.1,
+    "yoy": 524.35,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 40.2,
+    "prev_q": 47.3,
+    "qoq": -15.09,
+    "yago": 7.9,
+    "yoy": 410.03,
+    "yflag": "",
+    "qflag": ""
+   },
+   "ctrl": {
+    "cur": 32.8,
+    "prev_q": 35.8,
+    "qoq": -8.31,
+    "yago": 7.3,
+    "yoy": 347.95,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "에이유브랜즈",
+   "code": "481070",
+   "market": "KOSDAQ",
+   "date": "2026-11-13",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113900296",
+   "mcap_eok": 1356,
+   "op_margin": 20.8
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 147.8,
+    "prev_q": 150.1,
+    "qoq": -1.5,
+    "yago": 150.9,
+    "yoy": -2.1,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 25.6,
+    "prev_q": 36.4,
+    "qoq": -29.7,
+    "yago": 39.7,
+    "yoy": -35.6,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 36.4,
+    "prev_q": 27.3,
+    "qoq": 33.2,
+    "yago": 35.0,
+    "yoy": 4.0,
+    "yflag": "",
+    "qflag": ""
+   },
+   "ctrl": {
+    "cur": 37.3,
+    "prev_q": 28.7,
+    "qoq": 29.9,
+    "yago": 35.6,
+    "yoy": 4.7,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "더즌",
+   "code": "462860",
+   "market": "KOSDAQ",
+   "date": "2026-11-06",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900195",
+   "mcap_eok": 1349,
+   "op_margin": 17.3
+  },
+  {
+   "period": "26년 4Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 148.5,
+    "prev_q": 158.1,
+    "qoq": -6.1,
+    "yago": 153.6,
+    "yoy": -3.3,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 20.1,
+    "prev_q": 16.4,
+    "qoq": 22.4,
+    "yago": 22.2,
+    "yoy": -9.4,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": -42.7,
+    "prev_q": 36.1,
+    "qoq": null,
+    "yago": 34.5,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": "적자전환"
+   },
+   "ctrl": {
+    "cur": -42.7,
+    "prev_q": 36.1,
+    "qoq": null,
+    "yago": 34.5,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": "적자전환"
+   },
+   "name": "쎌바이오텍",
+   "code": "049960",
+   "market": "KOSDAQ",
+   "date": "2026-11-06",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900577",
+   "mcap_eok": 1295,
+   "op_margin": 13.5
   },
   {
    "period": "26년 3Q",
@@ -8328,7 +6606,7 @@
    "date": "2026-11-11",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800317",
-   "mcap_eok": 1186,
+   "mcap_eok": 1218,
    "op_margin": 7.2
   },
   {
@@ -8376,56 +6654,8 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900712",
-   "mcap_eok": 1178,
+   "mcap_eok": 1206,
    "op_margin": 11.3
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 358.6,
-    "prev_q": 364.6,
-    "qoq": -1.6,
-    "yago": 293.5,
-    "yoy": 22.2,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 35.1,
-    "prev_q": 25.1,
-    "qoq": 39.9,
-    "yago": 10.2,
-    "yoy": 246.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -13.9,
-    "prev_q": 25.7,
-    "qoq": null,
-    "yago": 24.8,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "ctrl": {
-    "cur": -14.2,
-    "prev_q": 25.4,
-    "qoq": null,
-    "yago": 24.7,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "name": "레이언스",
-   "code": "228850",
-   "market": "KOSDAQ",
-   "date": "2026-11-11",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900353",
-   "mcap_eok": 1161,
-   "op_margin": 9.8
   },
   {
    "period": "26년 3Q",
@@ -8472,8 +6702,56 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112900727",
-   "mcap_eok": 1136,
+   "mcap_eok": 1166,
    "op_margin": 0.8
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 358.6,
+    "prev_q": 364.6,
+    "qoq": -1.6,
+    "yago": 293.5,
+    "yoy": 22.2,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 35.1,
+    "prev_q": 25.1,
+    "qoq": 39.9,
+    "yago": 10.2,
+    "yoy": 246.3,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": -13.9,
+    "prev_q": 25.7,
+    "qoq": null,
+    "yago": 24.8,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": "적자전환"
+   },
+   "ctrl": {
+    "cur": -14.2,
+    "prev_q": 25.4,
+    "qoq": null,
+    "yago": 24.7,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": "적자전환"
+   },
+   "name": "레이언스",
+   "code": "228850",
+   "market": "KOSDAQ",
+   "date": "2026-11-11",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900353",
+   "mcap_eok": 1166,
+   "op_margin": 9.8
   },
   {
    "period": "26년 3Q",
@@ -8520,7 +6798,7 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900216",
-   "mcap_eok": 1115,
+   "mcap_eok": 1120,
    "op_margin": 22.4
   },
   {
@@ -8568,7 +6846,7 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112900923",
-   "mcap_eok": 1086,
+   "mcap_eok": 1113,
    "op_margin": 16.7
   },
   {
@@ -8616,7 +6894,7 @@
    "date": "2026-11-10",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110900157",
-   "mcap_eok": 1026,
+   "mcap_eok": 1025,
    "op_margin": 8.6
   },
   {
@@ -8671,102 +6949,6 @@
    "period": "26년 3Q",
    "unit_src": "백만원",
    "sales": {
-    "cur": 570.2,
-    "prev_q": 797.2,
-    "qoq": -28.5,
-    "yago": 647.3,
-    "yoy": -11.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": -15.2,
-    "prev_q": 32.0,
-    "qoq": null,
-    "yago": 5.0,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "net": {
-    "cur": -49.2,
-    "prev_q": 29.6,
-    "qoq": null,
-    "yago": 17.1,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "ctrl": {
-    "cur": -49.2,
-    "prev_q": 29.6,
-    "qoq": null,
-    "yago": 17.1,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "name": "현대에버다임",
-   "code": "041440",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900829",
-   "mcap_eok": 985,
-   "op_margin": -2.7
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 227.2,
-    "prev_q": 184.1,
-    "qoq": 23.39,
-    "yago": 199.0,
-    "yoy": 14.19,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 12.9,
-    "prev_q": -18.4,
-    "qoq": null,
-    "yago": -4.6,
-    "yoy": null,
-    "yflag": "흑자전환",
-    "qflag": "흑자전환"
-   },
-   "net": {
-    "cur": -13.0,
-    "prev_q": -75.9,
-    "qoq": 82.91,
-    "yago": -8.8,
-    "yoy": -47.04,
-    "yflag": "",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": -13.0,
-    "prev_q": -75.9,
-    "qoq": 82.91,
-    "yago": -8.8,
-    "yoy": -47.04,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "케이엔더블유",
-   "code": "105330",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900295",
-   "mcap_eok": 953,
-   "op_margin": 5.7
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
     "cur": 1733.2,
     "prev_q": 1613.9,
     "qoq": 7.4,
@@ -8799,47 +6981,8 @@
    "date": "2026-11-06",
    "consolidated": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800467",
-   "mcap_eok": 950,
+   "mcap_eok": 963,
    "op_margin": 6.4
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 1652.0,
-    "prev_q": 1553.5,
-    "qoq": 6.3,
-    "yago": 1559.9,
-    "yoy": 5.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 91.9,
-    "prev_q": 71.3,
-    "qoq": 28.9,
-    "yago": 65.7,
-    "yoy": 39.8,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 76.6,
-    "prev_q": 57.9,
-    "qoq": 32.3,
-    "yago": 241.1,
-    "yoy": -68.2,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "KTis",
-   "code": "058860",
-   "market": "KOSPI",
-   "date": "2026-11-11",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800568",
-   "mcap_eok": 917,
-   "op_margin": 5.6
   },
   {
    "period": "26년 3Q",
@@ -8886,8 +7029,47 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900553",
-   "mcap_eok": 913,
+   "mcap_eok": 935,
    "op_margin": -1.9
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 1652.0,
+    "prev_q": 1553.5,
+    "qoq": 6.3,
+    "yago": 1559.9,
+    "yoy": 5.9,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 91.9,
+    "prev_q": 71.3,
+    "qoq": 28.9,
+    "yago": 65.7,
+    "yoy": 39.8,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 76.6,
+    "prev_q": 57.9,
+    "qoq": 32.3,
+    "yago": 241.1,
+    "yoy": -68.2,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "KTis",
+   "code": "058860",
+   "market": "KOSPI",
+   "date": "2026-11-11",
+   "consolidated": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800568",
+   "mcap_eok": 908,
+   "op_margin": 5.6
   },
   {
    "period": "26년 3Q",
@@ -8925,95 +7107,8 @@
    "date": "2026-11-10",
    "consolidated": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800813",
-   "mcap_eok": 868,
+   "mcap_eok": 878,
    "op_margin": -5.8
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 914.5,
-    "prev_q": 1022.6,
-    "qoq": -10.6,
-    "yago": 656.7,
-    "yoy": 39.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 48.0,
-    "prev_q": 84.7,
-    "qoq": -43.3,
-    "yago": -11.6,
-    "yoy": null,
-    "yflag": "흑자전환",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 11.6,
-    "prev_q": 303.1,
-    "qoq": -96.2,
-    "yago": -91.4,
-    "yoy": null,
-    "yflag": "흑자전환",
-    "qflag": ""
-   },
-   "ctrl": {
-    "cur": 11.6,
-    "prev_q": 303.1,
-    "qoq": -96.2,
-    "yago": -91.0,
-    "yoy": null,
-    "yflag": "흑자전환",
-    "qflag": ""
-   },
-   "name": "코스맥스엔비티",
-   "code": "222040",
-   "market": "KOSDAQ",
-   "date": "2026-11-06",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900590",
-   "mcap_eok": 828,
-   "op_margin": 5.2
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 115.1,
-    "prev_q": 119.0,
-    "qoq": -3.3,
-    "yago": 109.8,
-    "yoy": 4.8,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 15.9,
-    "prev_q": 11.4,
-    "qoq": 39.3,
-    "yago": 15.5,
-    "yoy": 2.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -1.5,
-    "prev_q": 12.9,
-    "qoq": null,
-    "yago": 17.0,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "name": "중앙백신",
-   "code": "072020",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900802",
-   "mcap_eok": 828,
-   "op_margin": 13.8
   },
   {
    "period": "26년 3Q",
@@ -9060,8 +7155,56 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112900922",
-   "mcap_eok": 826,
+   "mcap_eok": 854,
    "op_margin": 11.8
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 914.5,
+    "prev_q": 1022.6,
+    "qoq": -10.6,
+    "yago": 656.7,
+    "yoy": 39.3,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 48.0,
+    "prev_q": 84.7,
+    "qoq": -43.3,
+    "yago": -11.6,
+    "yoy": null,
+    "yflag": "흑자전환",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 11.6,
+    "prev_q": 303.1,
+    "qoq": -96.2,
+    "yago": -91.4,
+    "yoy": null,
+    "yflag": "흑자전환",
+    "qflag": ""
+   },
+   "ctrl": {
+    "cur": 11.6,
+    "prev_q": 303.1,
+    "qoq": -96.2,
+    "yago": -91.0,
+    "yoy": null,
+    "yflag": "흑자전환",
+    "qflag": ""
+   },
+   "name": "코스맥스엔비티",
+   "code": "222040",
+   "market": "KOSDAQ",
+   "date": "2026-11-06",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900590",
+   "mcap_eok": 843,
+   "op_margin": 5.2
   },
   {
    "period": "26년 3Q",
@@ -9099,56 +7242,8 @@
    "date": "2026-11-09",
    "consolidated": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109800780",
-   "mcap_eok": 786,
+   "mcap_eok": 799,
    "op_margin": -0.4
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 217.9,
-    "prev_q": 225.7,
-    "qoq": -3.5,
-    "yago": 244.8,
-    "yoy": -11.0,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 16.3,
-    "prev_q": 6.2,
-    "qoq": 161.7,
-    "yago": 14.3,
-    "yoy": 14.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 7.8,
-    "prev_q": -5.7,
-    "qoq": null,
-    "yago": 3.7,
-    "yoy": 107.8,
-    "yflag": "",
-    "qflag": "흑자전환"
-   },
-   "ctrl": {
-    "cur": 7.8,
-    "prev_q": -5.7,
-    "qoq": null,
-    "yago": 3.7,
-    "yoy": 107.8,
-    "yflag": "",
-    "qflag": "흑자전환"
-   },
-   "name": "빅텍",
-   "code": "065450",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900330",
-   "mcap_eok": 760,
-   "op_margin": 7.5
   },
   {
    "period": "26년 3Q",
@@ -9195,7 +7290,7 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900727",
-   "mcap_eok": 729,
+   "mcap_eok": 740,
    "op_margin": 12.0
   },
   {
@@ -9243,7 +7338,7 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900171",
-   "mcap_eok": 699,
+   "mcap_eok": 711,
    "op_margin": 10.4
   },
   {
@@ -9291,7 +7386,7 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112900711",
-   "mcap_eok": 665,
+   "mcap_eok": 691,
    "op_margin": 19.1
   },
   {
@@ -9339,7 +7434,7 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109800552",
-   "mcap_eok": 636,
+   "mcap_eok": 642,
    "op_margin": 2.3
   },
   {
@@ -9394,54 +7489,6 @@
    "period": "26년 3Q",
    "unit_src": "백만원",
    "sales": {
-    "cur": 2113.1,
-    "prev_q": 2135.7,
-    "qoq": -1.1,
-    "yago": 1741.0,
-    "yoy": 21.4,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 8.8,
-    "prev_q": 89.2,
-    "qoq": -90.1,
-    "yago": 85.9,
-    "yoy": -89.7,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -78.8,
-    "prev_q": 53.2,
-    "qoq": null,
-    "yago": 72.2,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "ctrl": {
-    "cur": -57.7,
-    "prev_q": 43.8,
-    "qoq": null,
-    "yago": 68.8,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "name": "케이피에프",
-   "code": "024880",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900572",
-   "mcap_eok": 609,
-   "op_margin": 0.4
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
     "cur": 637.5,
     "prev_q": 482.5,
     "qoq": 32.1,
@@ -9474,7 +7521,7 @@
    "date": "2026-11-10",
    "consolidated": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800341",
-   "mcap_eok": 589,
+   "mcap_eok": 600,
    "op_margin": -1.3
   },
   {
@@ -9522,7 +7569,7 @@
    "date": "2026-11-11",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900470",
-   "mcap_eok": 529,
+   "mcap_eok": 567,
    "op_margin": 6.8
   },
   {
@@ -9561,86 +7608,8 @@
    "date": "2026-11-10",
    "consolidated": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110900531",
-   "mcap_eok": 527,
+   "mcap_eok": 528,
    "op_margin": 1.8
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 204.4,
-    "prev_q": 200.4,
-    "qoq": 1.99,
-    "yago": 205.2,
-    "yoy": -0.36,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 13.1,
-    "prev_q": 17.9,
-    "qoq": -26.65,
-    "yago": 33.1,
-    "yoy": -60.46,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 1.3,
-    "prev_q": 17.3,
-    "qoq": -92.37,
-    "yago": 30.7,
-    "yoy": -95.7,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "모델솔루션",
-   "code": "417970",
-   "market": "KOSDAQ",
-   "date": "2026-11-05",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261105900273",
-   "mcap_eok": 511,
-   "op_margin": 6.4
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 382.4,
-    "prev_q": 380.7,
-    "qoq": 0.4,
-    "yago": 416.8,
-    "yoy": -8.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 19.9,
-    "prev_q": 10.9,
-    "qoq": 82.1,
-    "yago": 19.6,
-    "yoy": 1.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": 13.4,
-    "prev_q": 3.5,
-    "qoq": 287.0,
-    "yago": 16.9,
-    "yoy": -20.5,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "아진전자부품",
-   "code": "009320",
-   "market": "KOSPI",
-   "date": "2026-11-10",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800148",
-   "mcap_eok": 476,
-   "op_margin": 5.2
   },
   {
    "period": "26년 3Q",
@@ -9687,8 +7656,47 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112900459",
-   "mcap_eok": 472,
+   "mcap_eok": 479,
    "op_margin": 5.1
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 382.4,
+    "prev_q": 380.7,
+    "qoq": 0.4,
+    "yago": 416.8,
+    "yoy": -8.3,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 19.9,
+    "prev_q": 10.9,
+    "qoq": 82.1,
+    "yago": 19.6,
+    "yoy": 1.5,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": 13.4,
+    "prev_q": 3.5,
+    "qoq": 287.0,
+    "yago": 16.9,
+    "yoy": -20.5,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "아진전자부품",
+   "code": "009320",
+   "market": "KOSPI",
+   "date": "2026-11-10",
+   "consolidated": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110800148",
+   "mcap_eok": 477,
+   "op_margin": 5.2
   },
   {
    "period": "26년 3Q",
@@ -9783,8 +7791,47 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112901066",
-   "mcap_eok": 434,
+   "mcap_eok": 445,
    "op_margin": 6.5
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 55.6,
+    "prev_q": 65.8,
+    "qoq": -15.5,
+    "yago": 51.3,
+    "yoy": 8.3,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 11.9,
+    "prev_q": 12.6,
+    "qoq": -5.7,
+    "yago": 7.5,
+    "yoy": 59.3,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": -13.0,
+    "prev_q": 18.8,
+    "qoq": null,
+    "yago": 12.7,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": "적자전환"
+   },
+   "name": "옵티시스",
+   "code": "109080",
+   "market": "KOSDAQ",
+   "date": "2026-11-13",
+   "consolidated": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113900971",
+   "mcap_eok": 427,
+   "op_margin": 21.4
   },
   {
    "period": "26년 3Q",
@@ -9838,45 +7885,6 @@
    "period": "26년 3Q",
    "unit_src": "백만원",
    "sales": {
-    "cur": 55.6,
-    "prev_q": 65.8,
-    "qoq": -15.5,
-    "yago": 51.3,
-    "yoy": 8.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 11.9,
-    "prev_q": 12.6,
-    "qoq": -5.7,
-    "yago": 7.5,
-    "yoy": 59.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -13.0,
-    "prev_q": 18.8,
-    "qoq": null,
-    "yago": 12.7,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "name": "옵티시스",
-   "code": "109080",
-   "market": "KOSDAQ",
-   "date": "2026-11-13",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113900971",
-   "mcap_eok": 421,
-   "op_margin": 21.4
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
     "cur": 275.7,
     "prev_q": 256.1,
     "qoq": 7.6,
@@ -9918,56 +7926,8 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900222",
-   "mcap_eok": 419,
+   "mcap_eok": 425,
    "op_margin": 9.1
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 602.0,
-    "prev_q": 557.6,
-    "qoq": 7.9,
-    "yago": 449.6,
-    "yoy": 33.9,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 36.5,
-    "prev_q": 8.0,
-    "qoq": 355.3,
-    "yago": -6.0,
-    "yoy": null,
-    "yflag": "흑자전환",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -15.0,
-    "prev_q": 9.2,
-    "qoq": null,
-    "yago": 2.2,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "ctrl": {
-    "cur": -15.0,
-    "prev_q": 9.2,
-    "qoq": null,
-    "yago": 2.2,
-    "yoy": null,
-    "yflag": "적자전환",
-    "qflag": "적자전환"
-   },
-   "name": "우진플라임",
-   "code": "049800",
-   "market": "KOSPI",
-   "date": "2026-11-12",
-   "consolidated": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800231",
-   "mcap_eok": 367,
-   "op_margin": 6.1
   },
   {
    "period": "26년 3Q",
@@ -10014,7 +7974,7 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106800688",
-   "mcap_eok": 354,
+   "mcap_eok": 363,
    "op_margin": -3.3
   },
   {
@@ -10053,8 +8013,134 @@
    "date": "2026-11-11",
    "consolidated": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800437",
-   "mcap_eok": 352,
+   "mcap_eok": 359,
    "op_margin": 4.3
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 602.0,
+    "prev_q": 557.6,
+    "qoq": 7.9,
+    "yago": 449.6,
+    "yoy": 33.9,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 36.5,
+    "prev_q": 8.0,
+    "qoq": 355.3,
+    "yago": -6.0,
+    "yoy": null,
+    "yflag": "흑자전환",
+    "qflag": ""
+   },
+   "net": {
+    "cur": -15.0,
+    "prev_q": 9.2,
+    "qoq": null,
+    "yago": 2.2,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": "적자전환"
+   },
+   "ctrl": {
+    "cur": -15.0,
+    "prev_q": 9.2,
+    "qoq": null,
+    "yago": 2.2,
+    "yoy": null,
+    "yflag": "적자전환",
+    "qflag": "적자전환"
+   },
+   "name": "우진플라임",
+   "code": "049800",
+   "market": "KOSPI",
+   "date": "2026-11-12",
+   "consolidated": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800231",
+   "mcap_eok": 357,
+   "op_margin": 6.1
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 127.2,
+    "prev_q": 107.2,
+    "qoq": 18.6,
+    "yago": 36.3,
+    "yoy": 250.6,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": -13.9,
+    "prev_q": -10.4,
+    "qoq": -33.7,
+    "yago": -10.1,
+    "yoy": -37.4,
+    "yflag": "",
+    "qflag": ""
+   },
+   "net": {
+    "cur": -16.9,
+    "prev_q": -17.2,
+    "qoq": 1.7,
+    "yago": -11.1,
+    "yoy": -52.3,
+    "yflag": "",
+    "qflag": ""
+   },
+   "name": "키이스트",
+   "code": "054780",
+   "market": "KOSDAQ",
+   "date": "2026-11-13",
+   "consolidated": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113901139",
+   "mcap_eok": 339,
+   "op_margin": -10.9
+  },
+  {
+   "period": "26년 3Q",
+   "unit_src": "백만원",
+   "sales": {
+    "cur": 99.7,
+    "prev_q": 106.0,
+    "qoq": -6.0,
+    "yago": 109.0,
+    "yoy": -8.6,
+    "yflag": "",
+    "qflag": ""
+   },
+   "op": {
+    "cur": 2.2,
+    "prev_q": 5.0,
+    "qoq": -55.4,
+    "yago": -4.1,
+    "yoy": null,
+    "yflag": "흑자전환",
+    "qflag": ""
+   },
+   "net": {
+    "cur": -8.1,
+    "prev_q": 2.4,
+    "qoq": null,
+    "yago": -2.3,
+    "yoy": -260.2,
+    "yflag": "",
+    "qflag": "적자전환"
+   },
+   "name": "NHN벅스",
+   "code": "104200",
+   "market": "KOSDAQ",
+   "date": "2026-11-10",
+   "consolidated": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110900034",
+   "mcap_eok": 337,
+   "op_margin": 2.2
   },
   {
    "period": "26년 3Q",
@@ -10101,86 +8187,8 @@
    "date": "2026-11-10",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110900478",
-   "mcap_eok": 327,
+   "mcap_eok": 311,
    "op_margin": -11.6
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 127.2,
-    "prev_q": 107.2,
-    "qoq": 18.6,
-    "yago": 36.3,
-    "yoy": 250.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": -13.9,
-    "prev_q": -10.4,
-    "qoq": -33.7,
-    "yago": -10.1,
-    "yoy": -37.4,
-    "yflag": "",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -16.9,
-    "prev_q": -17.2,
-    "qoq": 1.7,
-    "yago": -11.1,
-    "yoy": -52.3,
-    "yflag": "",
-    "qflag": ""
-   },
-   "name": "키이스트",
-   "code": "054780",
-   "market": "KOSDAQ",
-   "date": "2026-11-13",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113901139",
-   "mcap_eok": 323,
-   "op_margin": -10.9
-  },
-  {
-   "period": "26년 3Q",
-   "unit_src": "백만원",
-   "sales": {
-    "cur": 99.7,
-    "prev_q": 106.0,
-    "qoq": -6.0,
-    "yago": 109.0,
-    "yoy": -8.6,
-    "yflag": "",
-    "qflag": ""
-   },
-   "op": {
-    "cur": 2.2,
-    "prev_q": 5.0,
-    "qoq": -55.4,
-    "yago": -4.1,
-    "yoy": null,
-    "yflag": "흑자전환",
-    "qflag": ""
-   },
-   "net": {
-    "cur": -8.1,
-    "prev_q": 2.4,
-    "qoq": null,
-    "yago": -2.3,
-    "yoy": -260.2,
-    "yflag": "",
-    "qflag": "적자전환"
-   },
-   "name": "NHN벅스",
-   "code": "104200",
-   "market": "KOSDAQ",
-   "date": "2026-11-10",
-   "consolidated": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110900034",
-   "mcap_eok": 317,
-   "op_margin": 2.2
   },
   {
    "period": "26년 3Q",
@@ -10218,7 +8226,7 @@
    "date": "2026-11-13",
    "consolidated": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113900629",
-   "mcap_eok": 302,
+   "mcap_eok": 309,
    "op_margin": 23.5
   },
   {
@@ -10266,7 +8274,7 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109800371",
-   "mcap_eok": 277,
+   "mcap_eok": 279,
    "op_margin": 4.1
   },
   {
@@ -10362,7 +8370,7 @@
    "date": "2026-11-13",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113901235",
-   "mcap_eok": 251,
+   "mcap_eok": 255,
    "op_margin": -0.6
   },
   {
@@ -10410,7 +8418,7 @@
    "date": "2026-11-09",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109900239",
-   "mcap_eok": 206,
+   "mcap_eok": 204,
    "op_margin": 8.0
   },
   {
@@ -10458,7 +8466,7 @@
    "date": "2026-11-16",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116801028",
-   "mcap_eok": 181,
+   "mcap_eok": 180,
    "op_margin": 5.9
   },
   {
@@ -10506,7 +8514,7 @@
    "date": "2026-11-12",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112900249",
-   "mcap_eok": 180,
+   "mcap_eok": 179,
    "op_margin": 13.4
   },
   {
@@ -10554,473 +8562,11 @@
    "date": "2026-11-06",
    "consolidated": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261106900711",
-   "mcap_eok": 113,
+   "mcap_eok": 118,
    "op_margin": -281.1
   }
  ],
  "events": [
-  {
-   "date": "2026-11-18",
-   "time": "09:00",
-   "name": "코스맥스",
-   "code": "192820",
-   "market": "KOSPI",
-   "about": "2026년 3분기 실적 및 주요 사업 현황 설명",
-   "how": "대면미팅",
-   "earnings": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117800380"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "09:00",
-   "name": "한섬",
-   "code": "020000",
-   "market": "KOSPI",
-   "about": "최근 경영현황 및 전략, 주요 관심사항에 대한 Q&A 진행",
-   "how": "One on One 미팅",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117800170"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "09:00",
-   "name": "한국금융지주",
-   "code": "071050",
-   "market": "KOSPI",
-   "about": "1. 최근 경영실적 및 주요 사업전략 설명",
-   "how": "컨퍼런스콜",
-   "earnings": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113801196"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "09:00",
-   "name": "세아제강지주",
-   "code": "003030",
-   "market": "KOSPI",
-   "about": "경영실적 및 주요 경영현황 설명, Q&A",
-   "how": "대면미팅",
-   "earnings": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113800511"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "09:00",
-   "name": "LG씨엔에스",
-   "code": "064400",
-   "market": "KOSPI",
-   "about": "2026년 3분기 경영실적 및 Q&A",
-   "how": "One-on-One 미팅 및 Small-Group 미팅",
-   "earnings": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800751"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "09:00",
-   "name": "BGF리테일",
-   "code": "282330",
-   "market": "KOSPI",
-   "about": "'26년 3분기 경영실적 및 주요 관심사항 Q&A진행",
-   "how": "'APAC Technology, Innovation a",
-   "earnings": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800482"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "09:00",
-   "name": "삼성에스디에스",
-   "code": "018260",
-   "market": "KOSPI",
-   "about": "경영실적 및 사업전략 설명",
-   "how": "One-on-One 및 소규모 그룹 미팅",
-   "earnings": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261027800455"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "09:10",
-   "name": "쏘카",
-   "code": "403550",
-   "market": "KOSPI",
-   "about": "2026년 3분기 경영실적 발표, Q&A",
-   "how": "1:1 미팅(One-on-one meeting)",
-   "earnings": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116801010"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "09:10",
-   "name": "씨에스윈드",
-   "code": "112610",
-   "market": "KOSPI",
-   "about": "경영실적 및 산업전망",
-   "how": "One-on-One 미팅",
-   "earnings": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116800158"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "09:10",
-   "name": "티케이지휴켐스",
-   "code": "069260",
-   "market": "KOSPI",
-   "about": "2026년 3분기 경영실적 및 주요 현황",
-   "how": "일대일미팅",
-   "earnings": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113801594"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "09:30",
-   "name": "아모레퍼시픽",
-   "code": "090430",
-   "market": "KOSPI",
-   "about": "사업 실적 및 현황 설명",
-   "how": "1:1, 그룹미팅",
-   "earnings": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800321"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "09:30",
-   "name": "현대백화점",
-   "code": "069960",
-   "market": "KOSPI",
-   "about": "최근 경영현황 및 전략, 주요 관심사항에 대한 Q&A 진행",
-   "how": "NDR(One on One 미팅)",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800332"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "09:30",
-   "name": "현대건설",
-   "code": "000720",
-   "market": "KOSPI",
-   "about": "경영현황 및 계획, Q&A",
-   "how": "대면미팅",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261109800419"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "13:00",
-   "name": "삼성전자",
-   "code": "005930",
-   "market": "KOSPI",
-   "about": "투자자 관심도가 높은 주요 내용에 대해 발표 - Corporate Overview: DS Division's",
-   "how": "Samsung Electronics Investor F",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113801115"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "14:00",
-   "name": "NH투자증권",
-   "code": "005940",
-   "market": "KOSPI",
-   "about": "Review of 3Q 26 financial performance and Q&A",
-   "how": "Group meeting",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113801708"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "14:00",
-   "name": "현대제철",
-   "code": "004020",
-   "market": "KOSPI",
-   "about": "2026년 3분기 실적 및 주요경영현황 질의응답 진행",
-   "how": "소규모 그룹 미팅",
-   "earnings": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800716"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "15:30",
-   "name": "IPARK현대산업개발",
-   "code": "294870",
-   "market": "KOSPI",
-   "about": "주요 경영현황 설명, Q&A",
-   "how": "대면미팅, Q&A",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117800127"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "아이엘",
-   "code": "307180",
-   "market": "KOSDAQ",
-   "about": "",
-   "how": "",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118900143"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "샘씨엔에스",
-   "code": "252990",
-   "market": "KOSDAQ",
-   "about": "",
-   "how": "",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118900119"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "엠엑스로보틱스",
-   "code": "007820",
-   "market": "KOSDAQ",
-   "about": "",
-   "how": "",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118900083"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "성광벤드",
-   "code": "014620",
-   "market": "KOSDAQ",
-   "about": "",
-   "how": "",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118900050"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "엠엑스온",
-   "code": "347890",
-   "market": "KOSDAQ",
-   "about": "",
-   "how": "",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118900047"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "크로넥스",
-   "code": "215570",
-   "market": "기타",
-   "about": "",
-   "how": "",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118600612"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "엘에이티",
-   "code": "311060",
-   "market": "기타",
-   "about": "",
-   "how": "",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118600550"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "코셋",
-   "code": "189350",
-   "market": "기타",
-   "about": "",
-   "how": "",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118600081"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "스트라드비젼",
-   "code": "475040",
-   "market": "KOSDAQ",
-   "about": "",
-   "how": "",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117900614"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "아이에스티이",
-   "code": "212710",
-   "market": "KOSDAQ",
-   "about": "",
-   "how": "",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117900339"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "에코아이",
-   "code": "448280",
-   "market": "KOSDAQ",
-   "about": "",
-   "how": "",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117900285"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "신세계",
-   "code": "004170",
-   "market": "KOSPI",
-   "about": "ㅁ경영실적 및 주요사업 설명 ㅁQ&A 진행",
-   "how": "Morgan Stanley Asia Pacific Su",
-   "earnings": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117800419"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "동진쎄미켐",
-   "code": "005290",
-   "market": "KOSDAQ",
-   "about": "",
-   "how": "",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116900630"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "iM금융지주",
-   "code": "139130",
-   "market": "KOSPI",
-   "about": "2026년도 3분기 경영실적 등 주요 관심사항 설명",
-   "how": "One-on-One 미팅 또는 소규모 그룹 미팅",
-   "earnings": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116800956"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "고영",
-   "code": "098460",
-   "market": "KOSDAQ",
-   "about": "",
-   "how": "",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113901903"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "우리금융지주",
-   "code": "316140",
-   "market": "KOSPI",
-   "about": "2026년 3분기 경영실적 및 투자자 주요 관심사항 등",
-   "how": "One-on-One 미팅 또는 소규모 그룹 미팅",
-   "earnings": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113801383"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "하나금융지주",
-   "code": "086790",
-   "market": "KOSPI",
-   "about": "주요 경영실적 및 관심사",
-   "how": "일대일 또는 그룹 면담",
-   "earnings": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113801137"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "미래에셋증권",
-   "code": "006800",
-   "market": "KOSPI",
-   "about": "2026년 3분기 경영실적 및 주요 관심사항",
-   "how": "그룹 미팅",
-   "earnings": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261113800756"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "쎄크",
-   "code": "081180",
-   "market": "KOSDAQ",
-   "about": "",
-   "how": "",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112900812"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "한온시스템",
-   "code": "018880",
-   "market": "KOSPI",
-   "about": "최근 경영실적 및 경영현황, 질의 응답",
-   "how": "One-on-One 및 그룹미팅",
-   "earnings": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800625"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "한국타이어앤테크놀로지",
-   "code": "161390",
-   "market": "KOSPI",
-   "about": "최근 경영현황 및 질의응답",
-   "how": "1on1 및 소그룹 미팅",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800356"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "네오위즈",
-   "code": "095660",
-   "market": "KOSDAQ",
-   "about": "",
-   "how": "",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111900045"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "신한지주",
-   "code": "055550",
-   "market": "KOSPI",
-   "about": "2026년 3분기 경영실적 및 영업현황 등",
-   "how": "1:1 또는 그룹 미팅",
-   "earnings": true,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800522"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "한미반도체",
-   "code": "042700",
-   "market": "KOSPI",
-   "about": "[2027년 한미반도체의 글로벌 성장 전략] - HBM TC본더 시장점유율 확대, HBM4/4E 생산용 TC",
-   "how": "One-on-One 및 그룹 미팅",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261111800077"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "",
-   "name": "플리토",
-   "code": "300080",
-   "market": "KOSDAQ",
-   "about": "",
-   "how": "",
-   "earnings": false,
-   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261110900841"
-  },
   {
    "date": "2026-11-19",
    "time": "09:00",
@@ -11086,6 +8632,39 @@
    "how": "투자자 미팅(소그룹 미팅)",
    "earnings": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261118800300"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "",
+   "name": "셀레믹스",
+   "code": "331920",
+   "market": "KOSDAQ",
+   "about": "",
+   "how": "",
+   "earnings": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119900252"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "",
+   "name": "예선테크",
+   "code": "250930",
+   "market": "KOSDAQ",
+   "about": "",
+   "how": "",
+   "earnings": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119900205"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "",
+   "name": "엔솔바이오사이언스",
+   "code": "140610",
+   "market": "기타",
+   "about": "",
+   "how": "",
+   "earnings": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119600283"
   },
   {
    "date": "2026-11-19",
@@ -11189,6 +8768,17 @@
   {
    "date": "2026-11-20",
    "time": "09:30",
+   "name": "DB증권",
+   "code": "016610",
+   "market": "KOSPI",
+   "about": "2026년 3분기 경영실적 및 주요 경영현황 설명",
+   "how": "홈페이지 IR 자료 게재 및 웹캐스팅을 통한 기업설명",
+   "earnings": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800197"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "09:30",
    "name": "한미약품",
    "code": "128940",
    "market": "KOSPI",
@@ -11196,6 +8786,17 @@
    "how": "그룹 대면 미팅",
    "earnings": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261116802492"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "13:10",
+   "name": "현대모비스",
+   "code": "012330",
+   "market": "KOSPI",
+   "about": "최근 경영현황 및 전략, 주요 관심사항 등",
+   "how": "투자자 미팅(소그룹 미팅)",
+   "earnings": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119800372"
   },
   {
    "date": "2026-11-20",
@@ -11221,6 +8822,17 @@
   },
   {
    "date": "2026-11-20",
+   "time": "14:30",
+   "name": "코스맥스",
+   "code": "192820",
+   "market": "KOSPI",
+   "about": "2026년 3분기 실적 및 주요 사업 현황 설명",
+   "how": "대면미팅",
+   "earnings": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119800347"
+  },
+  {
+   "date": "2026-11-20",
    "time": "15:05",
    "name": "현대건설",
    "code": "000720",
@@ -11240,6 +8852,61 @@
    "how": "온라인 화상회의",
    "earnings": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117800386"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "",
+   "name": "성호전자",
+   "code": "043260",
+   "market": "KOSDAQ",
+   "about": "",
+   "how": "",
+   "earnings": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900351"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "",
+   "name": "클래시스",
+   "code": "214150",
+   "market": "KOSDAQ",
+   "about": "",
+   "how": "",
+   "earnings": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900339"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "",
+   "name": "선익시스템",
+   "code": "171090",
+   "market": "KOSDAQ",
+   "about": "",
+   "how": "",
+   "earnings": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900319"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "",
+   "name": "태양기계",
+   "code": "116100",
+   "market": "기타",
+   "about": "",
+   "how": "",
+   "earnings": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120600315"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "",
+   "name": "나무가",
+   "code": "190510",
+   "market": "KOSDAQ",
+   "about": "",
+   "how": "",
+   "earnings": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119900494"
   },
   {
    "date": "2026-11-20",
@@ -11332,6 +8999,39 @@
   {
    "date": "2026-11-23",
    "time": "",
+   "name": "디오",
+   "code": "039840",
+   "market": "KOSDAQ",
+   "about": "",
+   "how": "",
+   "earnings": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900348"
+  },
+  {
+   "date": "2026-11-23",
+   "time": "",
+   "name": "아이지넷",
+   "code": "462980",
+   "market": "KOSDAQ",
+   "about": "",
+   "how": "",
+   "earnings": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120900176"
+  },
+  {
+   "date": "2026-11-23",
+   "time": "",
+   "name": "삼양컴텍",
+   "code": "484590",
+   "market": "KOSDAQ",
+   "about": "",
+   "how": "",
+   "earnings": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119900421"
+  },
+  {
+   "date": "2026-11-23",
+   "time": "",
    "name": "오픈놀",
    "code": "440320",
    "market": "KOSDAQ",
@@ -11361,6 +9061,17 @@
    "how": "",
    "earnings": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261021600232"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "09:00",
+   "name": "LG",
+   "code": "003550",
+   "market": "KOSPI",
+   "about": "3분기 실적 및 주요 경영현황 관련 질의응답",
+   "how": "주주/투자자 대면 미팅",
+   "earnings": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119800486"
   },
   {
    "date": "2026-11-24",
@@ -11416,6 +9127,17 @@
    "how": "",
    "earnings": false,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119900081"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "",
+   "name": "케이씨씨글라스",
+   "code": "344820",
+   "market": "KOSPI",
+   "about": "영업실적 및 주요경영환경, Q&A 등",
+   "how": "Conference Call",
+   "earnings": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119800508"
   },
   {
    "date": "2026-11-24",
@@ -11595,6 +9317,17 @@
   },
   {
    "date": "2026-11-26",
+   "time": "09:00",
+   "name": "LG",
+   "code": "003550",
+   "market": "KOSPI",
+   "about": "3분기 실적 및 주요 경영현황 관련 질의응답",
+   "how": "주주/투자자 대면 미팅",
+   "earnings": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119800490"
+  },
+  {
+   "date": "2026-11-26",
    "time": "14:30",
    "name": "현대제철",
    "code": "004020",
@@ -11603,6 +9336,17 @@
    "how": "소규모 그룹 미팅",
    "earnings": true,
    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261112800718"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "16:00",
+   "name": "포스코인터내셔널",
+   "code": "047050",
+   "market": "KOSPI",
+   "about": "팜농장 현장 방문 및 당사 인니팜사업 Value Chain 단계별 추진현황·비전 설명, 질의응답",
+   "how": "애널리스트 간담회",
+   "earnings": false,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261119800406"
   },
   {
    "date": "2026-11-26",
@@ -11672,6 +9416,17 @@
   },
   {
    "date": "2026-11-30",
+   "time": "09:00",
+   "name": "강원랜드",
+   "code": "035250",
+   "market": "KOSPI",
+   "about": "영업실적리뷰, 영업현황, 주요현안, 질의응답",
+   "how": "기관투자자 방문 미팅(Non-Deal Roadshow)",
+   "earnings": true,
+   "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261120800350"
+  },
+  {
+   "date": "2026-11-30",
    "time": "",
    "name": "인터로이드",
    "code": "311960",
@@ -11694,10 +9449,10 @@
   }
  ],
  "stats": {
-  "week": 51,
-  "op_up": 26,
-  "op_down": 25,
-  "turnaround": 7,
-  "ir_upcoming": 61
+  "week": 17,
+  "op_up": 10,
+  "op_down": 7,
+  "turnaround": 2,
+  "ir_upcoming": 62
  }
 }
