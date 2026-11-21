@@ -1,0 +1,485 @@
+{
+ "label": "2026-W48",
+ "start": "2026-11-23",
+ "end": "2026-11-27",
+ "total": 109,
+ "headline": "실적 발표 109건 · 화요일 46건으로 최다 · PCE 물가, 한국은행 금통위 기준금리 결정",
+ "days": [
+  {
+   "date": "2026-11-23",
+   "dow": "월",
+   "total": 40,
+   "bmo": {
+    "total": 10,
+    "shown": [],
+    "more": [],
+    "small": 10
+   },
+   "amc": {
+    "total": 26,
+    "shown": [
+     {
+      "ticker": "HPE",
+      "company": "Hewlett Packard Enterprise Company",
+      "date": "2026-11-23",
+      "slot": "amc",
+      "mcap_b": 54.3,
+      "eps_est": 1.29,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "A",
+      "company": "Agilent Technologies, Inc.",
+      "date": "2026-11-23",
+      "slot": "amc",
+      "mcap_b": 48.0,
+      "eps_est": 1.73,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ZM",
+      "company": "Zoom Communications, Inc.",
+      "date": "2026-11-23",
+      "slot": "amc",
+      "mcap_b": 23.7,
+      "eps_est": 1.5,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "J",
+      "company": "Jacobs Solutions Inc.",
+      "date": "2026-11-23",
+      "slot": "amc",
+      "mcap_b": 17.8,
+      "eps_est": 2.12,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SMTC",
+      "company": "Semtech Corporation",
+      "date": "2026-11-23",
+      "slot": "amc",
+      "mcap_b": 8.2,
+      "eps_est": 1.13,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "more": [],
+    "small": 21
+   },
+   "tns": {
+    "total": 4,
+    "shown": [],
+    "more": [],
+    "small": 4
+   },
+   "events": [],
+   "checks": []
+  },
+  {
+   "date": "2026-11-24",
+   "dow": "화",
+   "total": 46,
+   "bmo": {
+    "total": 29,
+    "shown": [
+     {
+      "ticker": "ADI",
+      "company": "Analog Devices, Inc.",
+      "date": "2026-11-24",
+      "slot": "bmo",
+      "mcap_b": 167.6,
+      "eps_est": 3.88,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "MDT",
+      "company": "Medtronic plc",
+      "date": "2026-11-24",
+      "slot": "bmo",
+      "mcap_b": 127.8,
+      "eps_est": 1.33,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "DLTR",
+      "company": "Dollar Tree, Inc.",
+      "date": "2026-11-24",
+      "slot": "bmo",
+      "mcap_b": 25.9,
+      "eps_est": 1.08,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "BBY",
+      "company": "Best Buy Co., Inc.",
+      "date": "2026-11-24",
+      "slot": "bmo",
+      "mcap_b": 20.5,
+      "eps_est": 1.49,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "BURL",
+      "company": "Burlington Stores, Inc.",
+      "date": "2026-11-24",
+      "slot": "bmo",
+      "mcap_b": 15.4,
+      "eps_est": 1.64,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "SJM",
+      "company": "The J. M. Smucker Company",
+      "date": "2026-11-24",
+      "slot": "bmo",
+      "mcap_b": 14.3,
+      "eps_est": 2.56,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "more": [
+     {
+      "ticker": "DKS",
+      "company": "DICK'S Sporting Goods, Inc.",
+      "date": "2026-11-24",
+      "slot": "bmo",
+      "mcap_b": 11.8,
+      "eps_est": 2.71,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "small": 22
+   },
+   "amc": {
+    "total": 15,
+    "shown": [
+     {
+      "ticker": "DELL",
+      "company": "Dell Technologies Inc.",
+      "date": "2026-11-24",
+      "slot": "amc",
+      "mcap_b": 176.8,
+      "eps_est": 6.55,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "ADSK",
+      "company": "Autodesk, Inc.",
+      "date": "2026-11-24",
+      "slot": "amc",
+      "mcap_b": 51.1,
+      "eps_est": 3.07,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "WDAY",
+      "company": "Workday, Inc.",
+      "date": "2026-11-24",
+      "slot": "amc",
+      "mcap_b": 42.1,
+      "eps_est": 2.74,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "HPQ",
+      "company": "HP Inc.",
+      "date": "2026-11-24",
+      "slot": "amc",
+      "mcap_b": 25.2,
+      "eps_est": 0.74,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "NTNX",
+      "company": "Nutanix, Inc.",
+      "date": "2026-11-24",
+      "slot": "amc",
+      "mcap_b": 14.8,
+      "eps_est": 0.61,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "more": [],
+    "small": 10
+   },
+   "tns": {
+    "total": 2,
+    "shown": [],
+    "more": [],
+    "small": 2
+   },
+   "events": [
+    {
+     "date": "2026-11-24",
+     "time": "10:00",
+     "title": "컨퍼런스보드 소비자신뢰 (Nov)",
+     "importance": 2,
+     "key": "소비자신뢰",
+     "country": "US",
+     "tz": "ET"
+    }
+   ],
+   "checks": []
+  },
+  {
+   "date": "2026-11-25",
+   "dow": "수",
+   "total": 18,
+   "bmo": {
+    "total": 12,
+    "shown": [
+     {
+      "ticker": "DE",
+      "company": "Deere & Company",
+      "date": "2026-11-25",
+      "slot": "bmo",
+      "mcap_b": 164.3,
+      "eps_est": 4.06,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     },
+     {
+      "ticker": "LI",
+      "company": "Li Auto Inc.",
+      "date": "2026-11-25",
+      "slot": "bmo",
+      "mcap_b": 10.2,
+      "eps_est": -0.84,
+      "eps_act": null,
+      "surprise": null,
+      "watch": false
+     }
+    ],
+    "more": [],
+    "small": 10
+   },
+   "amc": {
+    "total": 6,
+    "shown": [],
+    "more": [],
+    "small": 6
+   },
+   "tns": {
+    "total": 0,
+    "shown": [],
+    "more": [],
+    "small": 0
+   },
+   "events": [
+    {
+     "date": "2026-11-25",
+     "time": "08:30",
+     "title": "PCE 물가 (Oct)",
+     "importance": 3,
+     "key": "PCE",
+     "country": "US",
+     "tz": "ET"
+    },
+    {
+     "date": "2026-11-25",
+     "time": "08:30",
+     "title": "내구재 주문 (Oct)",
+     "importance": 1,
+     "key": "내구재",
+     "country": "US",
+     "tz": "ET"
+    }
+   ],
+   "checks": []
+  },
+  {
+   "date": "2026-11-26",
+   "dow": "목",
+   "total": 0,
+   "bmo": {
+    "total": 0,
+    "shown": [],
+    "more": [],
+    "small": 0
+   },
+   "amc": {
+    "total": 0,
+    "shown": [],
+    "more": [],
+    "small": 0
+   },
+   "tns": {
+    "total": 0,
+    "shown": [],
+    "more": [],
+    "small": 0
+   },
+   "events": [
+    {
+     "date": "2026-11-26",
+     "time": "",
+     "title": "한국은행 금통위 기준금리 결정",
+     "importance": 3,
+     "country": "KR",
+     "tz": "KST",
+     "category": "통화정책",
+     "key": ""
+    },
+    {
+     "date": "2026-11-26",
+     "time": "",
+     "title": "미국 증시 휴장 (추수감사절)",
+     "importance": 1,
+     "country": "US",
+     "tz": "KST",
+     "category": "휴장",
+     "key": ""
+    }
+   ],
+   "checks": []
+  },
+  {
+   "date": "2026-11-27",
+   "dow": "금",
+   "total": 5,
+   "bmo": {
+    "total": 4,
+    "shown": [],
+    "more": [],
+    "small": 4
+   },
+   "amc": {
+    "total": 0,
+    "shown": [],
+    "more": [],
+    "small": 0
+   },
+   "tns": {
+    "total": 1,
+    "shown": [],
+    "more": [],
+    "small": 1
+   },
+   "events": [
+    {
+     "date": "2026-11-27",
+     "time": "",
+     "title": "미국 증시 조기 폐장 (블랙프라이데이)",
+     "importance": 1,
+     "country": "US",
+     "tz": "KST",
+     "category": "휴장",
+     "key": ""
+    }
+   ],
+   "checks": []
+  }
+ ],
+ "later": {
+  "start": "2026-11-30",
+  "end": "2026-12-11",
+  "days": [
+   {
+    "date": "2026-12-01",
+    "dow": "화",
+    "events": [
+     "10:00 ISM 제조업 (Nov)"
+    ],
+    "earnings": [
+     "CRWD(장후)",
+     "MRVL(장후)"
+    ]
+   },
+   {
+    "date": "2026-12-02",
+    "dow": "수",
+    "events": [
+     "08:15 ADP 민간고용 (Nov)"
+    ],
+    "earnings": [
+     "CRM(장후)",
+     "BMO(장전)",
+     "BNS(장전)"
+    ]
+   },
+   {
+    "date": "2026-12-03",
+    "dow": "목",
+    "events": [
+     "10:00 ISM 서비스업 (Nov)"
+    ],
+    "earnings": [
+     "RY(장전)",
+     "TD(장전)"
+    ]
+   },
+   {
+    "date": "2026-12-04",
+    "dow": "금",
+    "events": [
+     "08:30 미국 11월 고용보고서 (비농업 고용·실업률)"
+    ],
+    "earnings": []
+   },
+   {
+    "date": "2026-12-09",
+    "dow": "수",
+    "events": [
+     "14:00 FOMC 금리 결정 · 경제전망(점도표) · 기자회견"
+    ],
+    "earnings": [
+     "AVGO(장후)"
+    ]
+   },
+   {
+    "date": "2026-12-10",
+    "dow": "목",
+    "events": [
+     "08:30 미국 11월 소비자물가(CPI)"
+    ],
+    "earnings": [
+     "COST(장후)"
+    ]
+   }
+  ],
+  "min_mcap_b": 100
+ },
+ "filters": {
+  "min_mcap_b": 8,
+  "per_slot": 6,
+  "watchlist": 33,
+  "logo_url": "https://financialmodelingprep.com/image-stock/{ticker}.png"
+ },
+ "generated_at": "2026-11-21T13:03+09:00"
+}
